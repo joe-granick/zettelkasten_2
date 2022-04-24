@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "daily notes/Zettelkasten Tech Notes.md",
+            "file": "reference/A Common Sense Guide to Data Structures and Algorithms.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "daily notes/Zettelkasten Tech Notes.md",
+                "file": "reference/A Common Sense Guide to Data Structures and Algorithms.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Templates/Core Idea.md",
+                "file": "templates/Core Idea.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Templates/Core Idea.md",
+                "file": "templates/Core Idea.md",
                 "mode": "source",
                 "source": false
               }
@@ -136,15 +136,15 @@
   },
   "active": "5e53bf5dab8154d2",
   "lastOpenFiles": [
-    "daily notes/Zettelkasten Tech Notes.md",
     "reference/A Common Sense Guide to Data Structures and Algorithms.md",
-    "Templates/Book Reference.md",
-    "Index/Data Structures and Algorithms.md",
-    "Index/Trees.md",
-    "Index/Computer Science.md",
+    "templates/book reference.md",
+    "reference/Thinking Strategically.md",
+    "index/Data Structures and Algorithms.md",
+    "daily notes/Zettelkasten Tech Notes.md",
+    "index/Trees.md",
+    "index/Computer Science.md",
     "daily notes/vscode.md",
     "daily notes/how to zettel.md",
-    "Index/Note Structure.md",
-    "Templates/Core Idea.md"
+    "index/Note Structure.md"
   ]
 }
