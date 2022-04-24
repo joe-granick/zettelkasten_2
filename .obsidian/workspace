@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Literature Notes/A Common Sense Guide to Data Structures and Algorithms.md",
+            "file": "daily notes/Zettelkasten Tech Notes.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Literature Notes/A Common Sense Guide to Data Structures and Algorithms.md",
+                "file": "daily notes/Zettelkasten Tech Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,14 +136,14 @@
   },
   "active": "5e53bf5dab8154d2",
   "lastOpenFiles": [
-    "Literature Notes/A Common Sense Guide to Data Structures and Algorithms.md",
+    "daily notes/Zettelkasten Tech Notes.md",
+    "reference/A Common Sense Guide to Data Structures and Algorithms.md",
     "Templates/Book Reference.md",
     "Index/Data Structures and Algorithms.md",
     "Index/Trees.md",
     "Index/Computer Science.md",
-    "Fleeting Notes/vscode.md",
-    "Fleeting Notes/Zettelkasten Tech Notes.md",
-    "Fleeting Notes/how to zettel.md",
+    "daily notes/vscode.md",
+    "daily notes/how to zettel.md",
     "Index/Note Structure.md",
     "Templates/Core Idea.md"
   ]
