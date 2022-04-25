@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "daily notes/Zettelkasten Tech Notes.md",
+            "file": "Untitled.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#References",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -53,7 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 246
   },
   "right": {
     "id": "d463d23ef01edba9",
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "daily notes/Zettelkasten Tech Notes.md",
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -90,9 +90,21 @@
                 "useHierarchy": true
               }
             }
+          },
+          {
+            "id": "12a240f2b9c3759f",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Untitled.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "576cc23836abd6df",
@@ -132,19 +144,20 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 191.5,
+    "collapsed": true
   },
   "active": "5e53bf5dab8154d2",
   "lastOpenFiles": [
+    "Untitled.md",
+    "slip-box/Operational Analytics UX vs. Yelp.md",
+    "daily notes/score interpretation.md",
+    "slip-box/Operational Analytics and Context switching.md",
+    "daily notes/cognitive bias.md",
+    "Operational Analytics}], [[Operational Analytics.md",
+    "reference/Thinking Fast and Slow.md",
     "daily notes/Zettelkasten Tech Notes.md",
     "reference/A Common Sense Guide to Data Structures and Algorithms.md",
-    "Templates/Book Reference.md",
-    "Index/Data Structures and Algorithms.md",
-    "Index/Trees.md",
-    "Index/Computer Science.md",
-    "daily notes/vscode.md",
-    "daily notes/how to zettel.md",
-    "Index/Note Structure.md",
-    "Templates/Core Idea.md"
+    "Templates/Book Reference.md"
   ]
 }
