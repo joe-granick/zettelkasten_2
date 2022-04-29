@@ -1,10 +1,11 @@
-{{date:YYYYMMDD}}{{time:HHmm}}
+202204241659
 
 Status: #idea
 
-Tags:
+Tags: [[game theory]]
 
-#{{Very Unique idea}}
+Decision making can be done either sequentially or concurrently
+
 
 #{{What is it about}...?}
 
@@ -19,4 +20,4 @@ Tags:
 
 ___
 #References
-
+[[Thinking Strategically]] CH2 pg33

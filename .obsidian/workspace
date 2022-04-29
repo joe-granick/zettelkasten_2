@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Untitled.md",
+            "file": "daily notes/Data cleaning is analysis.md",
             "mode": "source",
             "source": false
           }
@@ -53,7 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 246
+    "width": 358
   },
   "right": {
     "id": "d463d23ef01edba9",
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.md",
+                "file": "daily notes/Data cleaning is analysis.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,9 +97,9 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled.md",
+                "file": "daily notes/Data cleaning is analysis.md",
                 "linksCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               }
             }
           }
@@ -116,7 +116,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Templates/Core Idea.md",
+                "file": "Templates/slip-box note.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Templates/Core Idea.md",
+                "file": "Templates/slip-box note.md",
                 "mode": "source",
                 "source": false
               }
@@ -144,20 +144,20 @@
       }
     ],
     "direction": "horizontal",
-    "width": 191.5,
+    "width": 321,
     "collapsed": true
   },
   "active": "5e53bf5dab8154d2",
   "lastOpenFiles": [
-    "Untitled.md",
-    "slip-box/Operational Analytics UX vs. Yelp.md",
-    "daily notes/score interpretation.md",
+    "daily notes/Data cleaning is analysis.md",
+    "daily notes/Data Lakehouse Research.md",
     "slip-box/Operational Analytics and Context switching.md",
-    "daily notes/cognitive bias.md",
-    "Operational Analytics}], [[Operational Analytics.md",
-    "reference/Thinking Fast and Slow.md",
-    "daily notes/Zettelkasten Tech Notes.md",
-    "reference/A Common Sense Guide to Data Structures and Algorithms.md",
-    "Templates/Book Reference.md"
+    "index/Analytics Engineering.md",
+    "index/Reverse ETL.md",
+    "Pasted image 20220429081854.png",
+    "new.md",
+    "DL Research.md",
+    "Templates/slip-box note.md",
+    "Templates/book reference.md"
   ]
 }
