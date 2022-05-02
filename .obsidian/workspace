@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "5e53bf5dab8154d2",
+        "id": "4e4b17621dfffbe4",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "daily notes/Data cleaning is analysis.md",
+            "file": "reference/Wengrow 2020.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#References",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -53,7 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 358
+    "width": 300
   },
   "right": {
     "id": "d463d23ef01edba9",
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "daily notes/Data cleaning is analysis.md",
+                "file": "reference/Wengrow 2020.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -90,21 +90,9 @@
                 "useHierarchy": true
               }
             }
-          },
-          {
-            "id": "12a240f2b9c3759f",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "daily notes/Data cleaning is analysis.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": false
-              }
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "576cc23836abd6df",
@@ -114,12 +102,8 @@
             "id": "1ade9ecba5ffb556",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Templates/slip-box note.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -132,32 +116,27 @@
             "id": "9bd6335325b03970",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Templates/slip-box note.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 321,
-    "collapsed": true
+    "width": 300
   },
-  "active": "5e53bf5dab8154d2",
+  "active": "4e4b17621dfffbe4",
   "lastOpenFiles": [
-    "daily notes/Data cleaning is analysis.md",
-    "daily notes/Data Lakehouse Research.md",
-    "slip-box/Operational Analytics and Context switching.md",
-    "index/Analytics Engineering.md",
-    "index/Reverse ETL.md",
-    "Pasted image 20220429081854.png",
-    "new.md",
-    "DL Research.md",
-    "Templates/slip-box note.md",
-    "Templates/book reference.md"
+    "reference/Wengrow 2020.md",
+    "daily notes/2022-04-29.md",
+    "daily notes/2022-04-28.md",
+    "insertion.md",
+    "daily notes/202204291226.md",
+    "Untitled.md",
+    "reference/Inmon, Levin 2021.md",
+    "Templates/Book Reference.md",
+    "reference/Thinking Strategically.md",
+    "Templates/slip-box note.md"
   ]
 }

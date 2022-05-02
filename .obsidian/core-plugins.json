@@ -4,7 +4,6 @@
   "switcher",
   "graph",
   "backlink",
-  "outgoing-link",
   "tag-pane",
   "page-preview",
   "daily-notes",
@@ -15,7 +14,6 @@
   "editor-status",
   "markdown-importer",
   "zk-prefixer",
-  "random-note",
   "word-count",
   "open-with-default-app",
   "file-recovery"
