@@ -80,7 +80,7 @@ Topic: [[Binary Search Trees]]
 **tree node** implementation
 ``` python
 # binary tree class stores a value and a left and right child node initialized to none
-class TreeNode:
+class tree_node:
 	def __init(self, val, left = None, right = None)__:
 		self.value = val
 		self.right_child = right
@@ -101,7 +101,22 @@ class TreeNode:
 #### 253
 - [[binary tree search]] is fast so long as the tree is **balanced**  
 	- since each iteration throws away all nodes descended to the left or right depending on if the value is greater than or less than the node value, a perfectly balanced tree will lose half of the remaining nodes each time if it is perfectly balanced making it naturall  **O(logN)** 
-	- If tree is perfectly imblanced operation could be **O(N)** (eg: tree only has branches going to the right, if value is greater than all nodes search will have to iterate over every single node) 
+
+
+#### 254
+##### Binary tree efficiency
+*	If tree is perfectly imbalanced operation could be **O(N)** (eg: tree only has branches going to the right, if value is greater than all nodes search will have to iterate over every single node) 
+-  "if there are **n** nodes in a tree, then there are **logN** levels"
+- each additional level potentially doubles number of nodes
+-  each step moves down a level,  eliminating the preceding level at , meaning all nodes contained in this level are elliminated
+- if each level is full, then half of the remaining elements have been eliminated
+- [[binary tree search]] has same time efficiency as [[binary search]]  over an [[ordered array]], [[binary tree insertion]] and [[binary tree deletion]] are considerably faster
+
+
+#### 255
+##### Binary Tree Search Implementation
+- **trees** are data structure with an arbitrary level of depth, making them well suited for **recursion** 
+- **base case:** search value matches the node value, or the node doesn't exist
 ``` python
 def binary_tree_search(node, searchVal):
 	#Base case: if node matches or node doesn't exist return the current node
@@ -113,13 +128,32 @@ def binary_tree_search(node, searchVal):
 			binary_tree_search(node.right_child, searchVal)
 	#Else search value less than current node value recurse over left branch
 	else: 
-		if node.rleft_child:
+		if node.left_child:
 			binary_tree_search(node.left_child, searchVal)
 ```
 
+#### 256 - 257
+- [[binary tree insertion]] is much more efficient than [[ordered array insertion]]
+- **binary tree insertion**
+1. compare insertion value to root node
+2. `if:` value is less than the node value check `check` left child node `else:` check the right node
+3.  `if:` child node is `None` insert value `else:` repeat operation until empty child node is found
+#### 258
+###### Binary  Tree Insertion Implementation
+```python
 
-
-```
+	def binary_tree_insertion(node,insertVal):
+		if insertVal < node.value:
+			if node.left_child is None:
+				node.left_child = tree_node(insertVal)
+			else:
+				binary_tree_insertion(node.left_child, insertVal)
+		
+		elif insertVal > node.value
+			if node.right_child is None:
+				node.right_child = tree_node(insertVal)
+			else:
+				binary_tree_insertion(node.righht_child, insertVal)
 ```
 
 ## Chapter 16:
