@@ -1,9 +1,12 @@
-{{date:YYYYMMDD}}{{time:HHmm}}
+Added: {{date:YYYYMMDD}}{{time:HHmm}}
+Name:
 Tags: #book
 Topics: 
 Author: 
 Year: 
+Edition:
 URL: 
-Cite
+Cite:
 
-#### Chapter 
+## Chapter :
+Topic:

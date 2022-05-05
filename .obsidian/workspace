@@ -1,15 +1,15 @@
 {
   "main": {
-    "id": "925902a6b48fb13e",
+    "id": "2a267089cfc2a0f3",
     "type": "split",
     "children": [
       {
-        "id": "5e53bf5dab8154d2",
+        "id": "39d59d290e3f1db1",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "reference/A Common Sense Guide to Data Structures and Algorithms.md",
+            "file": "reference/Wengrow 2020.md",
             "mode": "source",
             "source": false
           }
@@ -19,15 +19,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "c6f2c7717421a21a",
+    "id": "a8030e8cb818f547",
     "type": "split",
     "children": [
       {
-        "id": "6057bbfdab1851cd",
+        "id": "84ee5911fcbb06f4",
         "type": "tabs",
         "children": [
           {
-            "id": "9109976b85703eed",
+            "id": "5ed3d2cbaed3e861",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -35,12 +35,12 @@
             }
           },
           {
-            "id": "451a21c11ae47c87",
+            "id": "e36fa8cfd4341b67",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#References",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -53,23 +53,24 @@
       }
     ],
     "direction": "horizontal",
-    "width": 358
+    "width": 100,
+    "collapsed": true
   },
   "right": {
-    "id": "d463d23ef01edba9",
+    "id": "aaab726b304a7cd1",
     "type": "split",
     "children": [
       {
-        "id": "2f7a8e0618ce5842",
+        "id": "4697adf1c0a8e401",
         "type": "tabs",
         "children": [
           {
-            "id": "6abafe7149cc3252",
+            "id": "8280e44c4e9510a2",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "reference/A Common Sense Guide to Data Structures and Algorithms.md",
+                "file": "reference/Wengrow 2020.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -81,7 +82,7 @@
             }
           },
           {
-            "id": "3ba327b9b1f504d3",
+            "id": "d7901cc6754c85cf",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -92,51 +93,14 @@
             }
           },
           {
-            "id": "12a240f2b9c3759f",
+            "id": "d7d435d192a9a30c",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "reference/A Common Sense Guide to Data Structures and Algorithms.md",
+                "file": "reference/Wengrow 2020.md",
                 "linksCollapsed": false,
-                "unlinkedCollapsed": false
-              }
-            }
-          }
-        ],
-        "currentTab": 2
-      },
-      {
-        "id": "576cc23836abd6df",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "1ade9ecba5ffb556",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Templates/slip-box note.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "398b8ea1f677529a",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "9bd6335325b03970",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Templates/slip-box note.md",
-                "mode": "source",
-                "source": false
+                "unlinkedCollapsed": true
               }
             }
           }
@@ -144,20 +108,16 @@
       }
     ],
     "direction": "horizontal",
-    "width": 321,
+    "width": 300,
     "collapsed": true
   },
-  "active": "5e53bf5dab8154d2",
+  "active": "39d59d290e3f1db1",
   "lastOpenFiles": [
-    "reference/A Common Sense Guide to Data Structures and Algorithms.md",
-    "202205021205 context switching damages productivty.md",
-    "daily notes/Data cleaning is analysis.md",
-    "daily notes/Data Lakehouse Research.md",
+    "reference/Wengrow 2020.md",
     "slip-box/Operational Analytics and Context switching.md",
-    "index/Analytics Engineering.md",
-    "index/Reverse ETL.md",
-    "Pasted image 20220429081854.png",
-    "new.md",
-    "DL Research.md"
+    "random note.md",
+    "daily notes/2022-05-04.md",
+    "preamble.sty.md",
+    "Wengrow 2020^pg5.md"
   ]
 }
