@@ -272,6 +272,39 @@ def traverse_print(node):
 	- Answer: $log_{2}1000$ takes 10 steps  
 3. Write an algorithm that finds the maximum value in a Binary Search Tree
 	- Answer: this just requires finding the rightmost child node
+```python
+def bTree_max(node):
+    if node.right_child:
+        bTree_max(node.right_child)
+    else:
+        return node.value
+```
+
+4. What order would the rtee below print using a [[preorder traversal]] defined by the code below
+```python 
+#preorder traversal
+def traverse_print(node):
+	if node is None:
+		return 
+
+	print(node.value)
+	traverse_print(node.left_child)
+	traverse_print(node.right_child)
+```
+![[binary search tree preorder traversal.svg]]
+5. What order would the tree below print using a [[postorder traversak]]defined by the code below
+```python 
+#postorder traversal
+def traverse_print(node):
+	if node is None:
+		return 
+		
+	traverse_print(node.left_child)
+	traverse_print(node.right_child)
+	print(node.value)
+```
+
+
 ## Chapter 16:
 Topic: 
 
