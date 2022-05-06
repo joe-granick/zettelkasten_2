@@ -246,9 +246,16 @@ return value of `successor()` become's current node's right child. This either:
 
 [[binary tree deletion]] has the same time complexity of [[binary tree insertion]] and has the same efficiency advantage over [[ordered array deletion]] 
 
-#### 272 -
+#### 272 - 277
 ##### Traversal
-[[binary search tree traversal]]
+- [[binary search tree traversal]] visits each node within a tree, can be used to perform some,  operation while there
+	- traversing just means accessing each node
+- by definition traversal has a time complexity  $O(N)$ as every node needs to be visited
+- binary search tree traversal can be done in alphabetical order as demonstrated in the code block implementation below
+	- recursive implementation natural here
+- traversal imporatant operation for node based data structure, with more complex algorithm traversal implementation adapted fro [[graphs]]
+- 
+
 
 ```python 
 def traverse_print(node):
@@ -272,50 +279,4 @@ Topic:
 Topic: 
 
 ## Chapter20:
-Topic: 
 
-Tags: #book
-Topics: [[Trees]]
-Author: [[Jay Wengrow]]
-Year: [[2020]]
-URL:https://pragprog.com/titles/jwdsal2/a-common-sense-guide-to-data-structures-and-algorithms-second-edition/#resources
-
-#{{Chapter 1}}
-
-#{{Chapter 2}}
-
-#{{Chapter 3}}
-
-#{{Chapter 4}}
-
-#{{Chapter 5}}
-
-#{{Chapter 6}}
-
-#{{Chapter 7}}
-
-#{{Chapter 8}}
-
-#{{Chapter 9}}
-
-#{{Chapter 10}}
-
-#{{Chapter 11}}
-
-#{{Chapter 12}}
-
-#{{Chapter 13}}
-
-#{{Chapter 14}}
-
-#{{Chapter 15}}
-
-#{{Chapter 16}}
-
-#{{Chapter 17}}
-
-#{{Chapter 18}}
-
-#{{Chapter 19}}
-
-#{{Chapter 20}}
