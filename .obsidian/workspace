@@ -4,33 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "15bba59e299e5c88",
-        "type": "split",
-        "children": [
-          {
-            "id": "3f41f9ef9dd53383",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "reference/Wengrow 2020.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "93193c1266f5ef4f",
-            "type": "leaf",
-            "state": {
-              "type": "diagram-edit",
-              "state": {
-                "file": "reference/binary search tree preorder traversal.svg"
-              }
-            }
+        "id": "08228f54cb23c8a5",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "reference/Wengrow 2020.md",
+            "mode": "source",
+            "source": false
           }
-        ],
-        "direction": "horizontal"
+        }
       }
     ],
     "direction": "vertical"
@@ -70,8 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 307,
-    "collapsed": true
+    "width": 307
   },
   "right": {
     "id": "aaab726b304a7cd1",
@@ -87,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "reference/binary search tree preorder traversal.svg",
+                "file": "reference/Wengrow 2020.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +97,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "reference/binary search tree preorder traversal.svg",
+                "file": "reference/Wengrow 2020.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -128,17 +110,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "93193c1266f5ef4f",
+  "active": "08228f54cb23c8a5",
   "lastOpenFiles": [
-    "reference/binary search tree preorder traversal.svg",
     "reference/Wengrow 2020.md",
+    "reference/Wengrow 2020 Chapter 15 Exercise 1.svg",
+    "reference/binary search tree postorder traversal.svg",
+    "binary search tree postorder traversal.svg.md",
+    "reference/binary search tree preorder traversal.svg",
     "Untitled 1.md",
     "Untitled Diagram.svg",
-    "reference/Wengrowm 2020 Chapter 15 Exercise 1.svg",
     "daily notes/2022-05-05.md",
     "slip-box/Operational Analytics and Context switching.md",
-    "random note.md",
-    "daily notes/2022-05-04.md",
-    "preamble.sty.md"
+    "random note.md"
   ]
 }

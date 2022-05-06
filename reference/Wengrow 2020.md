@@ -267,7 +267,7 @@ def traverse_print(node):
 
 ##### Exercises
 1.  Insert following array of number into an empyt binary search tree. What does the resulting tree look like?
-![[Wengrowm 2020 Chapter 15 Exercise 1.svg]]
+![[Wengrow 2020 Chapter 15 Exercise 1.svg]]
 2. What are the mac number of steps needed to search for a value in a well balanced binary search tree?
 	- Answer: $log_{2}1000$ takes 10 steps  
 3. Write an algorithm that finds the maximum value in a Binary Search Tree
@@ -303,7 +303,7 @@ def traverse_print(node):
 	traverse_print(node.right_child)
 	print(node.value)
 ```
-
+![[binary search tree postorder traversal.svg]]
 
 ## Chapter 16:
 Topic: 
