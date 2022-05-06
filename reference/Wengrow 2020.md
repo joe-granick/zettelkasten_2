@@ -254,8 +254,6 @@ return value of `successor()` become's current node's right child. This either:
 - binary search tree traversal can be done in alphabetical order as demonstrated in the code block implementation below
 	- recursive implementation natural here
 - traversal imporatant operation for node based data structure, with more complex algorithm traversal implementation adapted fro [[graphs]]
-- 
-
 
 ```python 
 def traverse_print(node):
@@ -266,6 +264,11 @@ def traverse_print(node):
 	print(node.value)
 	traverse_print(node.right_child)
 ```
+
+##### Exercises
+1.  Insert following array of number into an empyt binary search tree. What does the resulting tree look like
+![[Wengrowm 2020 Chapter 15 Exercise 1.svg]]
+2. 
 ## Chapter 16:
 Topic: 
 
