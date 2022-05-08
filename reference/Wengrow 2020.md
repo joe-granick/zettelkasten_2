@@ -1,7 +1,7 @@
 Added: 202204231010
 Name: [[Wengrow 2020]]
 Tags: #book
-Topics: [[Data Structures]], [[Algorithms]]
+Topics: [[data structure]]s, [[algorithm]]s, [[binary search tree]]s, [[priority queue]]s, [[heap]]s
 Author: [[Jay Wengrow]]
 Year: [[2020]]
 Edition: 2nd
@@ -52,23 +52,23 @@ Topic:
 
 ## Chapter 15: Speeding up all the things with binary search trees
 Topic: [[Binary Search Tree]]s
-#### [248]
-- [[sort]] algorithms like [[quicksort]] take [[O(NlogN)]] which is still expensive if data needs to be sorted often. 
+#### 248
+- [[sort]] algorithms like [[quicksort]] take $O(NlogN)$ which is still expensive if data needs to be sorted often. 
 - [[ordered array]]s have fast read and search maintaining sorted data. However it is slow for inserting and deleting data.
-	- Pro: [[O(1)]] [[read]] 
-	- Pro: [[O(logN)]] [[search]]
-	- Con: [[O(N)]] with O(N/2) average [[insert]] and [[delete]]
--  [[hash table]]s have O(1) search, insertion, and deletion but it does not maintain order
+	- Pro: $O(1)$  [[read]] 
+	- Pro: $O(logN)$ [[search]]
+	- Con: $O(N)$ with $O(N/2)$ average [[insert]] and [[delete]]
+-  [[hash table]]s have $O(1)$ search, insertion, and deletion but it does not maintain order
 #### [249]
 - [[binary search trees]] are a data structure that maintain order and have fast search search, insert, and delete operations
-- [[trees]] are a [[node based data structure]] with multiple [[nodes]]
+- [[trees]] are a [[node based data structure]] with multiple [[node]]s
 	- [[root node]] a tree's initial node
 	- [[parent node]] links to one or more [[child node]]
 	- a node's [[descendants]]  are all nodes with the node in question as the root
 	- a node's ancestor are all node's from which the node proceeded
 	- the root node is the ancestor for all other nodes in the treee [[me]]
 	- each row of child nodes make up a tree's [[tree-levels]]
-	- [[balnace]] is important porperty of trees
+	- [[balance]] is important porperty of trees
 
 #### 250
 - [[binary tree]]s defining property are nodes limited to 0 - 2  **child nodes**
@@ -292,7 +292,7 @@ def traverse_print(node):
 	traverse_print(node.right_child)
 ```
 ![[binary search tree preorder traversal.svg]]
-5. What order would the tree below print using a [[postorder traversak]]defined by the code below
+5. What order would the tree below print using a [[postorder traversal]]defined by the code below
 ```python 
 #postorder traversal
 def traverse_print(node):
@@ -305,8 +305,82 @@ def traverse_print(node):
 ```
 ![[binary search tree postorder traversal.svg]]
 
-## Chapter 16:
-Topic: 
+## Chapter 16: Keeping your priorities straight with heaps
+Topic: [[heap]]s, [[priority queue]]s
+
+#### 279
+**heaps** are a tree data structure particularly useful when leatest or great element needs to be tracked 
+
+
+##### Priority Queues
+- [[priority queue]] *deletion* and *access* work [[FIFO]] like a normal **queue**
+	- data accessed and removed from **front only**
+- *insertion* work like an **ordered array** 
+	- maintains sort order
+	- e.g. ER triage prioritizes by severity of symptoms
+
+#### 280 - 283
+##### heaps
+- **heaps** more efficient way to implement **priority queue** than **ordered arrays**
+- specifically use a [[binary heap]]
+	- type of **binary tree**
+	- [[max heap]] or [[min heap]], both work the same way but opposite
+- heap maintains following conditions
+	1.  [[heap condition]]: each node must be greater than all descendants (or less than in the case of a **min heap**)
+		- differs from *binary search tree* since a node will never have descendants greater than it 
+	2. [[complete tree]]: all nodes in row must be filled before moving to next row 
+		- bottom row can have empty nodes as long as no node to the right of empty node
+
+![[heap condition.svg]]
+
+![[complete trees.svg]]
+#### 284 -
+##### heap properties
+- heaps are [[weakly ordered]]
+	- weak ordering not useful for search as it is unclear whether value among right or left descendants
+- root node is always the greatest (or least in the caase of *min heap*) valued node
+	- this makes heaps ideal for implementing priority queues
+	- priority queues alwasy want to access greatest (or least) node value 
+	- root node represent node with highest priority
+- heap has two primary operations 
+	1. [[heap insert]] 
+	2. [[heap delete]]
+	- optionally can have read operation
+	- search is not effective, and typically not an operation for heaps
+- heaps have a[[last node]], the rightmosty node in the bottom level
+##### 285 -287
+###### heap insertion
+insertion algorithm steps
+1. create node with new value and insert into first available rightmost spot in bottom row, this now becomes the **last node**
+2. compare new node with parent bnode
+3. `if:` new node is greater `swap:` with parent node
+4. `repeat:` until nodes parent has value greater than the inserted node
+- process [[trickle]]s up node until placed in location with parent greater than value
+- *heap insert* has efficiency of $O(logN)$ 
+	- by nature tree is organized into $logN$ rows
+	- each move up eliminates half of remaining elements
+	- worse case scenario have to insert into top row, taking $logN$ steps at most
+
+##### 287 - 288, 293 -
+###### problem of finding the last node
+- all that can be seen is root node, and heap can only be traversed through links from node to node
+- problem in finding **last node** without having to searh through all nodes
+
+##### 288 -292
+###### heap deletion
+- important to note that for heaps **root node**  is only node ever to be deleted
+	- this is exactly what is needed for a **priority queue**
+
+deletion algorithm steps
+1. `replace:` **root node** value with value of **last node**
+2. `trickle down:`  new **root node** to proper location
+	1.  
+
+- process [[trickle]]s node up until placed in location with parent greater than value
+- *heap insert* has efficiency of $O(logN)$ 
+	- by nature tree is organized into $logN$ rows
+	- each move up eliminates half of remaining elements
+	- worse case scenario have to insert into top row, taking $logN$ steps at most
 
 ## Chapter 17:
 Topic: 

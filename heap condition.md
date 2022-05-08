@@ -1,0 +1,1 @@
+![[heap condition.svg]]

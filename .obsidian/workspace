@@ -1,33 +1,73 @@
 {
   "main": {
-    "id": "2a267089cfc2a0f3",
+    "id": "925902a6b48fb13e",
     "type": "split",
     "children": [
       {
-        "id": "08228f54cb23c8a5",
+        "id": "102c906be9ae7c06",
         "type": "leaf",
+        "dimension": 78.2258064516129,
         "state": {
           "type": "markdown",
           "state": {
             "file": "reference/Wengrow 2020.md",
             "mode": "source",
+            "backlinks": true,
             "source": false
           }
-        }
+        },
+        "group": "80b4d5463308621d"
+      },
+      {
+        "id": "6fce8836632613f0",
+        "type": "leaf",
+        "dimension": 21.774193548387096,
+        "state": {
+          "type": "localgraph",
+          "state": {
+            "file": "reference/Wengrow 2020.md",
+            "options": {
+              "collapse-filter": true,
+              "search": "",
+              "localJumps": 1,
+              "localBacklinks": true,
+              "localForelinks": true,
+              "localInterlinks": false,
+              "showTags": false,
+              "showAttachments": false,
+              "hideUnresolved": false,
+              "collapse-color-groups": true,
+              "colorGroups": [],
+              "collapse-display": true,
+              "showArrow": false,
+              "textFadeMultiplier": 0,
+              "nodeSizeMultiplier": 1,
+              "lineSizeMultiplier": 1,
+              "collapse-forces": true,
+              "centerStrength": 0.518713248970312,
+              "repelStrength": 10,
+              "linkStrength": 1,
+              "linkDistance": 250,
+              "scale": 0.6150289403090602,
+              "close": true
+            }
+          }
+        },
+        "group": "80b4d5463308621d"
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "a8030e8cb818f547",
+    "id": "c6f2c7717421a21a",
     "type": "split",
     "children": [
       {
-        "id": "84ee5911fcbb06f4",
+        "id": "6057bbfdab1851cd",
         "type": "tabs",
         "children": [
           {
-            "id": "5ed3d2cbaed3e861",
+            "id": "9109976b85703eed",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -35,7 +75,7 @@
             }
           },
           {
-            "id": "e36fa8cfd4341b67",
+            "id": "451a21c11ae47c87",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -53,18 +93,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 307
+    "width": 300,
+    "collapsed": true
   },
   "right": {
-    "id": "aaab726b304a7cd1",
+    "id": "d463d23ef01edba9",
     "type": "split",
     "children": [
       {
-        "id": "4697adf1c0a8e401",
+        "id": "2f7a8e0618ce5842",
         "type": "tabs",
         "children": [
           {
-            "id": "8280e44c4e9510a2",
+            "id": "6abafe7149cc3252",
             "type": "leaf",
             "state": {
               "type": "backlink",
@@ -81,7 +122,7 @@
             }
           },
           {
-            "id": "d7901cc6754c85cf",
+            "id": "3ba327b9b1f504d3",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -90,17 +131,34 @@
                 "useHierarchy": true
               }
             }
-          },
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "576cc23836abd6df",
+        "type": "tabs",
+        "children": [
           {
-            "id": "d7d435d192a9a30c",
+            "id": "1ade9ecba5ffb556",
             "type": "leaf",
             "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "reference/Wengrow 2020.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              }
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "398b8ea1f677529a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9bd6335325b03970",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -110,17 +168,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "08228f54cb23c8a5",
+  "active": "102c906be9ae7c06",
   "lastOpenFiles": [
     "reference/Wengrow 2020.md",
-    "reference/Wengrow 2020 Chapter 15 Exercise 1.svg",
-    "reference/binary search tree postorder traversal.svg",
-    "binary search tree postorder traversal.svg.md",
-    "reference/binary search tree preorder traversal.svg",
-    "Untitled 1.md",
-    "Untitled Diagram.svg",
-    "daily notes/2022-05-05.md",
-    "slip-box/Operational Analytics and Context switching.md",
-    "random note.md"
+    "reference/complete trees.svg",
+    "heap condition.svg",
+    "heap condition.md",
+    "O(NlogN).md",
+    "postorder traversal.md",
+    "daily notes/2022-05-02.md",
+    "daily notes/2022-04-29.md",
+    "daily notes/2022-04-28.md",
+    "insertion.md"
   ]
 }
