@@ -376,11 +376,14 @@ deletion algorithm steps
 2. `trickle down:`  new **root node** to proper location
 	1.  
 
+![[heap deletion.svg]]
 - process [[trickle]]s node up until placed in location with parent greater than value
 - *heap insert* has efficiency of $O(logN)$ 
 	- by nature tree is organized into $logN$ rows
 	- each move up eliminates half of remaining elements
 	- worse case scenario have to insert into top row, taking $logN$ steps at most
+- 
+
 
 ## Chapter 17:
 Topic: 

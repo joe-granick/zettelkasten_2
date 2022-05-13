@@ -6,7 +6,7 @@
       {
         "id": "102c906be9ae7c06",
         "type": "leaf",
-        "dimension": 78.2258064516129,
+        "dimension": 87.17948717948718,
         "state": {
           "type": "markdown",
           "state": {
@@ -21,7 +21,7 @@
       {
         "id": "6fce8836632613f0",
         "type": "leaf",
-        "dimension": 21.774193548387096,
+        "dimension": 12.82051282051282,
         "state": {
           "type": "localgraph",
           "state": {
@@ -93,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "d463d23ef01edba9",
@@ -129,6 +128,18 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "ac4a19525ee67359",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "reference/Wengrow 2020.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
               }
             }
           }
@@ -171,14 +182,14 @@
   "active": "102c906be9ae7c06",
   "lastOpenFiles": [
     "reference/Wengrow 2020.md",
-    "reference/complete trees.svg",
+    "reference/heap deletion.svg",
+    "daily notes/2022-05-12.md",
+    "Untitled 2.md",
     "heap condition.svg",
+    "reference/complete trees.svg",
     "heap condition.md",
     "O(NlogN).md",
     "postorder traversal.md",
-    "daily notes/2022-05-02.md",
-    "daily notes/2022-04-29.md",
-    "daily notes/2022-04-28.md",
-    "insertion.md"
+    "daily notes/2022-05-02.md"
   ]
 }
