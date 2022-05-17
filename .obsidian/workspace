@@ -6,96 +6,54 @@
       {
         "id": "77b03e411f2483fa",
         "type": "leaf",
-        "dimension": 52.147239263803684,
+        "dimension": 66.73267326732673,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "daily notes/2022-05-17.md",
+            "file": "_inbox/Wengrow 2020.md",
             "mode": "source",
             "backlinks": true,
             "source": false
           }
         },
-        "group": "0c70a78efdfbbe55"
+        "group": "2733aa1848aacca7"
       },
       {
-        "id": "05f473698055eddf",
-        "type": "split",
-        "dimension": 47.85276073619633,
-        "children": [
-          {
-            "id": "efa37f147df3c249",
-            "type": "split",
-            "dimension": 52.00803212851406,
-            "children": [
-              {
-                "id": "63850b489270d681",
-                "type": "leaf",
-                "state": {
-                  "type": "localgraph",
-                  "state": {
-                    "file": "daily notes/2022-05-17.md",
-                    "options": {
-                      "collapse-filter": true,
-                      "search": "",
-                      "localJumps": 1,
-                      "localBacklinks": true,
-                      "localForelinks": true,
-                      "localInterlinks": false,
-                      "showTags": false,
-                      "showAttachments": false,
-                      "hideUnresolved": false,
-                      "collapse-color-groups": true,
-                      "colorGroups": [],
-                      "collapse-display": true,
-                      "showArrow": false,
-                      "textFadeMultiplier": 0,
-                      "nodeSizeMultiplier": 1,
-                      "lineSizeMultiplier": 1,
-                      "collapse-forces": true,
-                      "centerStrength": 0.518713248970312,
-                      "repelStrength": 10,
-                      "linkStrength": 1,
-                      "linkDistance": 250,
-                      "scale": 0.713275462622442,
-                      "close": true
-                    }
-                  }
-                },
-                "group": "0c70a78efdfbbe55"
-              },
-              {
-                "id": "e2c243fd623bc3b1",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Templates/vendor.md",
-                    "mode": "source",
-                    "backlinks": true,
-                    "source": false
-                  }
-                }
-              }
-            ],
-            "direction": "vertical"
-          },
-          {
-            "id": "7748375ff451cabe",
-            "type": "leaf",
-            "dimension": 47.99196787148594,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "quantum.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
+        "id": "a2e4cf9077bb4bb0",
+        "type": "leaf",
+        "dimension": 33.26732673267327,
+        "state": {
+          "type": "localgraph",
+          "state": {
+            "file": "_inbox/Wengrow 2020.md",
+            "options": {
+              "collapse-filter": true,
+              "search": "",
+              "localJumps": 1,
+              "localBacklinks": true,
+              "localForelinks": true,
+              "localInterlinks": false,
+              "showTags": false,
+              "showAttachments": false,
+              "hideUnresolved": false,
+              "collapse-color-groups": true,
+              "colorGroups": [],
+              "collapse-display": true,
+              "showArrow": false,
+              "textFadeMultiplier": 0,
+              "nodeSizeMultiplier": 1,
+              "lineSizeMultiplier": 1,
+              "collapse-forces": true,
+              "centerStrength": 0.518713248970312,
+              "repelStrength": 10,
+              "linkStrength": 1,
+              "linkDistance": 250,
+              "scale": 1.0000000000000002,
+              "close": true
             }
           }
-        ],
-        "direction": "horizontal"
+        },
+        "group": "2733aa1848aacca7"
       }
     ],
     "direction": "vertical"
@@ -135,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 392,
-    "collapsed": true
+    "width": 345
   },
   "right": {
     "id": "2a7852978bd323e4",
@@ -152,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "daily notes/2022-05-17.md",
+                "file": "_inbox/Wengrow 2020.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "daily notes/2022-05-17.md",
+                "file": "_inbox/Wengrow 2020.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -195,15 +152,15 @@
   },
   "active": "77b03e411f2483fa",
   "lastOpenFiles": [
-    "daily notes/2022-05-17.md",
     "_inbox/Wengrow 2020.md",
+    "daily notes/2022-05-17.md",
+    "preorder traversal.md",
     "reference/incomplete heap insertion deletion imbalance.svg",
     "quantum.md",
     "slip-box/Data activation pipelines are difficult.md",
     "daily notes/Pasted image 20220425073211.png",
     "daily notes/cognitive bias.md",
     "daily notes/Zettelkasten Tech Notes.md",
-    "daily notes/score interpretation.md",
-    "slip-box/CDPs are a poor solution to data activation.md"
+    "daily notes/score interpretation.md"
   ]
 }
