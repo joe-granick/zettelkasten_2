@@ -487,9 +487,18 @@ Topic: [[trie]]s
 
 ##### tries consist of collections of nodes that oint to other nodes like all trees, but unlike binary tress can have an unlimited number of children[306]
 - for autocomplete each **trie node** contains a [[hash table]] with english characters as keys and values of the child node hash tables, which then point to the hash tables of their children
-[[trie node.svg]]
-```python
+![[trie node.svg]]
 
+- right now the trie only has one path for each letter sequence, but can add more children to create more word paths [308]
+- "act" could be encoded by adding "t" as a descendant of "a" in the root level [308]
+
+![[trie branching word paths.svg]]
+- tries can be visualized in a more stripped down way shown below [309]
+![[trie stripped down diagram.svg]]
+
+
+```python
+#page 307
 # trie node contains hash table of child
 class TrieNode:
 	def __init__(self):
@@ -501,7 +510,12 @@ class Trie:
 		self.root = TrieNode()
 ```
 
-
+##### using the asterisk as a key in paths contaning "russian doll words" is crucial for indicating when a word has ended, otherwise wods that contain other words may be ambiguous, it indicates what parts of words are words themselves [310]
+- storing the words "bat" and "batter" poses a problem, as "batter" contains "bat"
+- asterisk needs to be placed as key in tree level that contains the second "t"
+	- first "t" will point to a node that contains the hash table with "\*" and terminates there as well as "t" and it's children
+- this allows the tire to return "bat" as a potential suggestion while still allowing the path to continue to return "batter" as well
+![[trie prefixes words within words.svg]]
 
 ## Chapter 18:
 Topic: 
