@@ -6,54 +6,15 @@
       {
         "id": "77b03e411f2483fa",
         "type": "leaf",
-        "dimension": 66.73267326732673,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_inbox/Wengrow 2020.md",
+            "file": "daily notes/2022-05-17.md",
             "mode": "source",
             "backlinks": true,
             "source": false
           }
-        },
-        "group": "2733aa1848aacca7"
-      },
-      {
-        "id": "a2e4cf9077bb4bb0",
-        "type": "leaf",
-        "dimension": 33.26732673267327,
-        "state": {
-          "type": "localgraph",
-          "state": {
-            "file": "_inbox/Wengrow 2020.md",
-            "options": {
-              "collapse-filter": true,
-              "search": "",
-              "localJumps": 1,
-              "localBacklinks": true,
-              "localForelinks": true,
-              "localInterlinks": false,
-              "showTags": false,
-              "showAttachments": false,
-              "hideUnresolved": false,
-              "collapse-color-groups": true,
-              "colorGroups": [],
-              "collapse-display": true,
-              "showArrow": false,
-              "textFadeMultiplier": 0,
-              "nodeSizeMultiplier": 1,
-              "lineSizeMultiplier": 1,
-              "collapse-forces": true,
-              "centerStrength": 0.518713248970312,
-              "repelStrength": 10,
-              "linkStrength": 1,
-              "linkDistance": 250,
-              "scale": 1.0000000000000002,
-              "close": true
-            }
-          }
-        },
-        "group": "2733aa1848aacca7"
+        }
       }
     ],
     "direction": "vertical"
@@ -93,7 +54,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 345
+    "width": 345,
+    "collapsed": true
   },
   "right": {
     "id": "2a7852978bd323e4",
@@ -109,7 +71,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_inbox/Wengrow 2020.md",
+                "file": "daily notes/2022-05-17.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +88,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_inbox/Wengrow 2020.md",
+                "file": "daily notes/2022-05-17.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,10 +114,10 @@
   },
   "active": "77b03e411f2483fa",
   "lastOpenFiles": [
-    "_inbox/Wengrow 2020.md",
     "daily notes/2022-05-17.md",
-    "preorder traversal.md",
+    "_inbox/Wengrow 2020.md",
     "reference/incomplete heap insertion deletion imbalance.svg",
+    "preorder traversal.md",
     "quantum.md",
     "slip-box/Data activation pipelines are difficult.md",
     "daily notes/Pasted image 20220425073211.png",
