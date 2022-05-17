@@ -4,9 +4,8 @@
     "type": "split",
     "children": [
       {
-        "id": "102c906be9ae7c06",
+        "id": "290c906beba03295",
         "type": "leaf",
-        "dimension": 87.17948717948718,
         "state": {
           "type": "markdown",
           "state": {
@@ -15,45 +14,7 @@
             "backlinks": true,
             "source": false
           }
-        },
-        "group": "80b4d5463308621d"
-      },
-      {
-        "id": "6fce8836632613f0",
-        "type": "leaf",
-        "dimension": 12.82051282051282,
-        "state": {
-          "type": "localgraph",
-          "state": {
-            "file": "reference/Wengrow 2020.md",
-            "options": {
-              "collapse-filter": true,
-              "search": "",
-              "localJumps": 1,
-              "localBacklinks": true,
-              "localForelinks": true,
-              "localInterlinks": false,
-              "showTags": false,
-              "showAttachments": false,
-              "hideUnresolved": false,
-              "collapse-color-groups": true,
-              "colorGroups": [],
-              "collapse-display": true,
-              "showArrow": false,
-              "textFadeMultiplier": 0,
-              "nodeSizeMultiplier": 1,
-              "lineSizeMultiplier": 1,
-              "collapse-forces": true,
-              "centerStrength": 0.518713248970312,
-              "repelStrength": 10,
-              "linkStrength": 1,
-              "linkDistance": 250,
-              "scale": 0.6150289403090602,
-              "close": true
-            }
-          }
-        },
-        "group": "80b4d5463308621d"
+        }
       }
     ],
     "direction": "vertical"
@@ -93,7 +54,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "d463d23ef01edba9",
@@ -142,9 +104,17 @@
                 "unlinkedCollapsed": true
               }
             }
+          },
+          {
+            "id": "0be57e3256acfee2",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       },
       {
         "id": "576cc23836abd6df",
@@ -179,17 +149,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "102c906be9ae7c06",
+  "active": "290c906beba03295",
   "lastOpenFiles": [
     "reference/Wengrow 2020.md",
+    "reference/trie node.svg",
+    "reference/heap ordered array implementation.svg",
     "reference/heap deletion.svg",
-    "daily notes/2022-05-12.md",
-    "Untitled 2.md",
+    "reference/Thinking Strategically.md",
+    "reference/incomplete heap insertion deletion imbalance.svg",
+    "reference/Untitled Diagram.svg",
     "heap condition.svg",
-    "reference/complete trees.svg",
-    "heap condition.md",
-    "O(NlogN).md",
-    "postorder traversal.md",
-    "daily notes/2022-05-02.md"
+    "reference/heap insertion.svg",
+    "Untitled 2.md"
   ]
 }
