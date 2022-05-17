@@ -360,6 +360,9 @@ insertion algorithm steps
 	- by nature tree is organized into $logN$ rows
 	- each move up eliminates half of remaining elements
 	- worse case scenario have to insert into top row, taking $logN$ steps at most
+![[heap insertion.svg]]
+
+
 
 ##### 287 - 288, 293 -
 ###### problem of finding the last node
@@ -374,16 +377,131 @@ insertion algorithm steps
 deletion algorithm steps
 1. `replace:` **root node** value with value of **last node**
 2. `trickle down:`  new **root node** to proper location
-	1.  
+	1.  check if either existing child node is greater than the **trickle node**
+		-  if at least one is swap with root node
+		- repeat with children nodes until no child node remains that is greater than the trickle node
+- time complexity of $O(logN)$ as in worst case all node will need to be trickled through all *levels* and be placed in the last level
+	- a heap has $logN$ levels with $N$ being the number of nodes
 
+![[heap deletion.svg]]
 - process [[trickle]]s node up until placed in location with parent greater than value
 - *heap insert* has efficiency of $O(logN)$ 
 	- by nature tree is organized into $logN$ rows
 	- each move up eliminates half of remaining elements
 	- worse case scenario have to insert into top row, taking $logN$ steps at most
+##### heap consistency between insertion and deletion outweigh faster insertion of ordered arrays for priority queues
+the efficiency of heaps make them a better choice for implementing priority queues
+|           | ordered array | heaps     |
+|:--------- |:------------- |:--------- |
+| insertion | $O(N)$        | $O(logN)$ |
+| deletion  | $O(1)$        | $O(logN)$ |
 
-## Chapter 17:
-Topic: 
+while *ordered array insertion* is very fast with $O(1)$ deletion for deletion *ordered array insertion* is **slow** with time complexity $O(N)$ 
+
+*heap insertion* and *heap deletion* are both consistently fast with time complexity $O(logN$)
+|           | ordered array  | heaps |
+|:--------- |:-------------- |:----- |
+| insertion | slow           | fast  |
+| deletion  | extremely fast | fast  |
+
+- for common use cases insertions and deletions occur in close to equal frequency
+- with insertions equal to deletions the consitency of heaps is preferable because it will be consistently very fast for the priority queues primary operations
+	- heaps are optimized for 
+- the slow speed of array insertion slows down entire operation to the speed of the worst case operation
+- example would be an emergency room triage where patients are going in at an equal rate of being removed, if faster removal can't be performed until recieval is finished it will slow down serving patients to the doctor to the rate of receival because it is just as likely to be occuring
+##### implementing a heap with an ordered array is a common way to solve the issue of tracking the last node
+- insertion requires placement into last node and deletion starts with replacing the root node with the last node
+- linked node based data structures like trees can only see the node it is connected too, so to find the last node requires searching every node which has a time complexity of $O(N)$
+- insertion can't just place node anywhere (always to the left most node) and deletion can't just replace the  the root node with the next node to arbitrarily (always with the right child for example) because it violates the heap's **completeness** constraint
+- completeness is critical to the heap's benefits because it guarentees the heap will be **well-balanced**
+- a **well-balanced** tree limits the growth of level to $log(N)$ levels for ever $N$ node
+![[incomplete heap insertion deletion imbalance.svg]]
+
+##### using ordered arrays to implement heaps is a common abstraction that efficiently keeps track of the last node, which is critical to the priority queue's most common operations *insertion* and *deletion* [295], [296]
+- finding the last node is critical to the heap's operations
+- ordered arrays are an efficient way to keep track of the last node
+- even though heaps are naturally expressed as independent linked nodes the heap can actually just finction as an abstract data type traversing the array as if the indexes were individual nodes, and tracking the relationship between them as function to define the parents and children
+![[heap ordered array implementation.svg]]
+- each node is assigned an index in the array
+- assignement works in pattern of going top down and left to right
+	- root node is always at index 0
+	- last node is always last element in the array
+
+##### arrays are used for heap implementation because they solve the "problem of the last node" [296]
+- with an array the last node will be the last element and is trivialy to access instantatneously
+- insertion is done at the end as well, then trickled up accordingly maintaining the last node as the last indexed element
+```python
+### class heap to be implemented
+```
+- ordered arrays aren't the only way to solve this problem, although  it is the most common implementation [301], [302]
+	- linked lists can be used ti implement heaps, solving the [[problem of the last node]] using binary numbers [301]
+	-  
+##### traversing a heap with nodes is straightforward, but with a functionaly ruleset and maintenance of the pattern of insertion,  the parent index of a node and child indices can be simply calculated, forgoing need to directly access a link [297]
+- pattern of top down left to right allows child and parent node indexes to be calculated as the following will always be true
+	- `left_child_index = (node_index *2) + 1`
+	-  `right_child_index = (node_index *2) + 2
+	- `parent_index = floor((node_index-1)/2)
+	- since these formulas are deterministic the array can be treated as functionally the same as a tree
+
+##### heap is first example of a tree structure that benefits from implementation with ordered arrays [302]
+- any type of binary tree can be implemented using an array, but the heap is the first one where the structure is advantageous, allowing constant access to the last node
+	- why would [[binary search tree]]s not benefit?
+
+##### heap is a natural fit to use for priority queues as it gives immediate acces to the max value (or min value) items and priority queues need main function is to access the highest priority item [302]
+- heap's root node is assigned highest priority node value, giving immediate access to this value
+- once value is served, next highest priority replaces it
+
+##### the **weakly orderded** structure imposed by the by the heap property is the main advantage, maintaining consistently fast insertion and deletion speed [302]
+- while ordered arrays have fast deletion insertion is slower by an order of magnitude as it needs to be perfectly ordered requiring each index to be shifted $O(N)$ in worst case scenari
+- both heap insertion and deltion are fast as ordering doesn note need top be perfect. 
+	- levels maintain rank order, but nodes do in the same level can be inserted in th next available spot
+	- this imperfect or *weak* order means in worst case scenario the node needs to be shifted through each level
+	- since there are only $logN$ levels for every $N$ element insertion will have worst case time complexity of $O(logN)$
+ 
+
+
+
+
+##### priority queue uses
+- certain implementations of Dijkstra's Shortest Path algortithm
+- dynamically fetch next best or next worse elements
+- huffman encoding (used for lossless data compression)
+- breadth first search (BFS) algorithms like A* use priority queues to continuously grab next most promising node
+- minimum spanning tree (MST) algorithms
+https://www.youtube.com/playlist?list=PLDV1Zeh2NRsCLFSHm1nYb9daYf60lCcag
+
+
+
+
+
+## Chapter 17: It doesn't hurt to trie
+Topic: [[trie]]s 
+
+##### tries are a less common tree data structure that are well structured form any text based tasks like auto-complete approaching $O(1)$ time complexity [305]
+- to have info available to return for autocomplete suggestions, data structure needs to store all combinations of letters branching from each path letter
+- if this "dictionary" were stored in an unordered array search would be $O(N)$ with all the branching paths the $N$ for this data structure is very large and brute force array search would take very long
+- stored in an ordered array [[binary search]] fares better providing a time complexity fo $O(logN)$, but still not ideal
+- tries achieve close to $O(1)$ and can be used for text based operations like autocomplete and autocorrect as well as otherapplications that involve :
+	- ip address
+	- phone number
+
+##### tries consist of collections of nodes that oint to other nodes like all trees, but unlike binary tress can have an unlimited number of children[306]
+- for autocomplete each **trie node** contains a [[hash table]] with english characters as keys and values of the child node hash tables, which then point to the hash tables of their children
+[[trie node.svg]]
+```python
+
+# trie node contains hash table of child
+class TrieNode:
+	def __init__(self):
+		self.children = {}
+
+#trie class keeps track of root node
+class Trie:
+	def __init__(self):
+		self.root = TrieNode()
+```
+
+
 
 ## Chapter 18:
 Topic: 
