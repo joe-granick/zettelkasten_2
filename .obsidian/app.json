@@ -3,7 +3,7 @@
   "livePreview": true,
   "promptDelete": false,
   "alwaysUpdateLinks": true,
-  "fileSortOrder": "byCreatedTime",
+  "fileSortOrder": "byModifiedTime",
   "pdfExportSettings": {
     "pageSize": "Letter",
     "landscape": false,

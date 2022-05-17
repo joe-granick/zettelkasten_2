@@ -1,0 +1,19 @@
+### markdown formatting
+#### ordered list [^1] 
+1. ...
+2. ...
+3. ...
+
+#### unordered list [^1]
+- ...
+- ...
+- ...
+
+
+#### checklist [^1] 
+- [ ] -
+- [ ] -
+- [ ] -
+
+---
+[^1]: https://www.youtube.com/watch?v=qRcVGfsgOC8
