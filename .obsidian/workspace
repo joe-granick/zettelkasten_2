@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Untitled.md",
+            "file": "reference/Wengrow 2020.md",
             "mode": "source",
             "backlinks": true,
             "source": false
@@ -54,8 +54,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 514,
-    "collapsed": true
+    "width": 514
   },
   "right": {
     "id": "d463d23ef01edba9",
@@ -71,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.md",
+                "file": "reference/Wengrow 2020.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +98,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled.md",
+                "file": "reference/Wengrow 2020.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,6 +142,8 @@
   },
   "active": "36f2213f1b1ecbd2",
   "lastOpenFiles": [
+    "reference/Wengrow 2020.md",
+    "slip-box/202205021205 context switching damages productivty.md",
     "Untitled.md",
     "index/obsidian notetaking.md",
     "daily notes/2022-05-11.md",
@@ -150,8 +151,6 @@
     "daily notes/cognitive bias.md",
     "daily notes/score interpretation.md",
     "daily notes/vscode.md",
-    "daily notes/Case Study Operational analytics in automation Vendr automated customer touchpoints.md",
-    "slip-box/Data cleaning is analysis.md",
-    "slip-box/Data activation facilitates action.md"
+    "daily notes/Case Study Operational analytics in automation Vendr automated customer touchpoints.md"
   ]
 }
