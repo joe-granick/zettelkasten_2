@@ -514,8 +514,220 @@ class Trie:
 - storing the words "bat" and "batter" poses a problem, as "batter" contains "bat"
 - asterisk needs to be placed as key in tree level that contains the second "t"
 	- first "t" will point to a node that contains the hash table with "\*" and terminates there as well as "t" and it's children
-- this allows the tire to return "bat" as a potential suggestion while still allowing the path to continue to return "batter" as well
+- this allows the trie to return "bat" as a potential suggestion while still allowing the path to continue to return "batter" as well
 ![[trie prefixes words within words.svg]]
+- most autocmplete tries contain data representing 1000s of the most commonly used words, so tree becomes more complicated but operates in the same fashion
+##### [[trie search]] is the primary trie operation and can be implemented to find only *complete* words or *prefixes* as well [311]
+- both version of search are similiar, [[prefix search]] will find complete words as well as prefix words because a complet word is at least as valid as a prefix
+##### Trie search steos
+1. initialize `current_node` as the tree's root node
+2. iterate over each character in the search string
+3. each iteration evaluate if `current_node` has child with that character as a key
+	- if character is not a key in child dictionary node return `None`, string does not exist in trie
+	- if character is a key in child node 
+		- set `current_node` to be child node
+		- return to step 2 and repeat over next character in search string
+	4. if end of search is reached search string has been found in trie
+
+**Setup:** `current_node` initialized to root node and point to first letter in string [311]
+ **Step 1:** "c" is a child key of root, `current_node` is now set to be the that key's value, which is the child node's dictionary. Iterate thorugh string by pinting to next character "a"  [311],[312]
+
+   ![[trie search setup.svg]]
+**Step 2:** "a" is a child key of  `current_node` repeat previous step so current node is set to child node and point to next character in string "t"[312],[313]
+
+![[trie search step 1.svg]]
+**Step 3:** pointing to character "t" in search string check if `current_node`, it does and follow down to next child [312],[313]
+![[trie search step 3.svg]]
+**Finish:** end of string has been reached meaning "cat" is contained in the trie[313]
+![[trie search complete.svg]]
+##### trie search implementation [313], [314]
+``` python
+def trieSearch(self, search_word):
+	current_node = self.root
+	for char in search_word:
+		if current_node.children.get(char):
+			current_node = current_node.children[char]
+		else:
+			return None
+	return current_node
+
+
+```
+- if loop makes it through string word has been found in tree and `return current_node`
+	- return the node instead of true to help with autocomplete
+	- this is so autocomplete starts collecting words at the prefix's last node collecting all words from there
+	- otherwise collection would have to start searching at root node [327]
+
+##### trie searches grow with the size if the input rather than the size of the data structure with incredibly efficient time cimplexity of $O(K)$ [315]
+- trie search algorithm is very efficient as each character is stored in a hash table with $O(1)$ search
+-  this makes search very efficient compared to the size of the data stucture
+	- much more efficient than $O(logN)$ binary search on an ordered array
+- search time increases with the size of the search string, not the amount of data in the data structure taking only as many steps as number of elements in string ("cat" requires 3 steps)
+- since search time increases with size of data structure it will not have an efficiency of $O(1)$ as it grows with the size of the input, but classifying it as $O(N)$ would be misleading as it is much faster and $N$ refers to the number of elements in the data structure
+- trie search therefore has time complexity of $O(K)$ where $K$ is the size of the input string . This isn't constant $O(1)$ since the string can vary, it is similiar to constant time because it isn't affected by the size of the data structure. This means the trie can be very large and not affect search speed
+	- a string of 3 characters alwasy takes 3 steps
+- speed of algorithm is not affected by the size of all data avaliable, only size of the input making it extremely efficient
+
+##### tree insertion is needed to populate a tree and operates similarly to search [316]
+1. initialize `current_node` variable to root node
+2. iterate over each character in search string
+3. check if current node has child with  character as key
+4. if it does assign child as `current_node` and repeat step 2 with next character in string
+5. if character is not a child node 
+	-  create child node with character assigned
+	- assign new node to be `current_node`
+	- repeat step 2 with next character in string
+6. when last character is inserted add a "\*" as child node of last node indicating word is complete
+- insertion starts off like search and only diverges when `current_node` doesn't have a child with current character as a key [320]
+	- at this point current charavcter is added as a new [[key-value pair]] in current node's hash table
+	- key is current character and value is new `TrieNode()`
+- insertion require $K + 1$ steps (+1 for "\*") giving a time complexity of $O(K)$[320] 
+```python
+def trie_insert(self, word):
+	current_node = self.root
+
+	
+	for char in word:
+	#insertion works like search as long as the character is already 
+	#contained in tree
+		if current_node.children.get(char):
+			current_node = current_node.children[char]
+	#when character doesn't exist insertion adds it as a key-val pair
+	#in the current nodes child hash table
+		else:
+	#current character becomes key and new TrieNode is value
+			new_node = TrieNode()
+			current_node.children[char] = new_node
+
+	#new node now set as current node
+			current_node = new_node
+
+#once loop completes and all characters inserted, "*" to last node's #hash table with value of None
+	current_node.children['*'] = None 
+	
+	
+```
+##### autocomplete benefits from addition of a recursive collection function, to gather all word branches starting from the last node of the search term [320]
+```python
+#current node used as first parameter
+def collectAllWords(self, node = None, word = '', words = []):
+	#if node doesn't exist assign root node
+	current_node = node or self.root
+	#iterate over all descendant nodes
+	for key, child in current_node.children.items():
+		#if child is * that means that word is complete
+		#complete word added to the array
+		if key == "*":
+			words.append(word)
+			
+		else:
+		#recursively call on child node, combine word with each letter
+		#each recursive call uses separate copy of string
+			self.collectALLWords(self, child, word + key,words)
+			
+	return words	
+```
+- simpler function that collects all words starting at the input node and listing all the words that descend from that node [320]
+- don't necessarily want to display all suggestions, but want to have them available [320]
+- `node` specifies the node to start with, becoming the root for all possible words that can be created with node as a  prefix[321]
+	- if no node is provided, will start with root node and collect every possible word in the trie
+- as each recursive copy of word`word` reach complete node"\*" for completed words, can be added to `words` array which is what is returned when function completes [321]
+- function loops over all key-value pairs where `key` is a single character in child hash table and `value` is the next child node
+- `self.collect_words(self, child, word + keyChar, words)` this function recursively calls next node in sequence and adds current node key `keyChar` to the current `word` string object [322]
+- the `words` array collects each completed word, where the recursive call terminates each time the next child is '"\*" the `word` strings is appeneded [322]
+- `words` array is returned when all recurisve calls terminate, if deafult root node is the first node then all words are returned in array [322]
+- function works recursively because  of the difference of how strings are stored in memory vs how arrays/hash tables are stored in memory [322]
+
+##### recursion walkthrough
+**Call 1:** 
+- current node defaults to root, word is empty string, and words is empty array.[323]
+![[collect words call 1.svg]]
+- iterate over root node's children, this node only has one child "c"[323]
+- current calll added to call stack [323]
+- recrusively call `collectAllWords` on "c" child node 
+- string "c" passed to argument `word + key` adding the key of the child node to currently empty strung
+- words array passed in argumenty, still empty string 
+- below displays where trie is once call is made
+![[collect words call 1 call stack.svg]]
+**Call 2:**
+- iterate over current node's children[323]
+- only one child key "a"[323]
+- add current call tothe call stack[323]
+- recurively call `collectAllWords` on child "a" node[324]
+- "a" key from child node added to currenrt word "c" in `key + word` argument[324]
+- word still passed as empty string[324]
+
+![[collect words call 2.svg]]
+**Call 3:**
+- iterate over current node's children "n" and "t"[324]
+- add current call to call stack [325]
+- cuurent node"n/t" node as it has "n" and "t" as children[324]
+- call `collectAllwords` on "n" children with `word` passed as "can" from "ca" `word +` "n" `key`
+![[collect words call 3.svg]]
+**Call 4:** 
+- iterate over current node's children  which is one"\*" meaning words has ended[325]
+- base case reached add `word` "can" to `words` array [324]
+![[collect words call 4.svg]]
+**Call 5:**
+- pop top call from stack which was "n/t" node with word "ca"
+- now return to the call [325]
+	- return to a recursive call every time it is popped[324], [recursion chapter]
+- call is still with `word` "ca" but `words` array maintains the "can" having been passed up the call stack after the previous call finished [325]
+	- this works due to the difference in how arrays and strings are handled in memory [325], [dynamic programming chapter?]
+
+![[collect words call 5.svg]]
+**Call 6:** 
+- "n" has been iterated over, now loop over "t" key [325]
+- add current call to call stack for second time [325]
+- recursively call `collectAllWords` on "t" child node [326]
+- `word` "ca" `+ key` "t" passed as "word" argument, and array \["can"] passed as `words` [326]
+![[collect words call 6.svg]]
+**Call 7:**
+- iterate over current "t" node's children [326]
+- only child is "\*" maining base condition is reached and current `word` "cat" added to `words` array[326]
+- call stack now unwound popping each call finishing their execution returning the `words` array at each call until all are finished and final call return is array containing all words in the trie [326]
+![[collect words call 7.svg]]
+
+##### strings create separate copies in memory which allows separate words to be created from each child [325]
+- arrays and hash table are modified in the same memory location, therefore they can be passed up and down the call stack and can be used for dynamic programming as different recursive branches of the function can access them [325]
+- in contrast each time a string is called a separate copy is created in memory [325]
+- therefore each recursive branch has a different copy of the string, each branch in  prefix will be mainatined in memory and nodes (letters) can be added in each call and created as separate objects
+- since the array containing the words is the same object in memory each separate string object is added to the same array no matter where their recursive call ends [[Granick-2022-05-20]]
+
+
+
+
+##### autocomplete can find any prefix by combining trie search with collectAllWords [326]
+- autocomplete takes whatever string a user types ina as a parameter `prefix` upon which it performs a search, then constructs a list starting at the child node of the last letter in the o `prefix` input string [327]
+```python
+def autcomplete(self, prefix):
+	currentNode = self.trieSearch(prefix)
+	if not currentNode:
+		return None
+	else:
+		return collectAllWords(currentNode, prefix)
+	
+```
+- serch trie for prefixm if it doesn't exits `None` returned
+- if prefix does exist search returns node of last letter in prefix and it is assigned as the current node[327]
+	- - possibly add function the inserts word once user completely types it out and `None` is retunred by the autocomplete? [[Granick-2022-05-21]]
+- `collectAllWords` called starting with the current node and the prefix in the word argument, adding all child descending from that node to words array[327]
+- fonce `collectAllWords` call finished array returned is returned by the `autocomplete` function
+- this array can then be dispalyed to the user if desired
+
+##### autcomplete works better if the most popular words are tracked and display is prioritized [327]
+- if every word combination were displayed, a trie witha even a moderate dictionary could become unusable due to an oevrwhelming amount of words displayed[327]
+- therefor a better user experience can be created by limiting the number of words displayed[327]
+- good way to limit the number of words displayed is by prioritizing by popularity[327]
+- to display most popular words, need to track the frequency of use
+- currently the termination "\*" only stores a null value, but it can track frequency by storing a count that can store a popularity score instead [327]
+- using numbers as the value for the "\*" store their scores along with them and sort in order of their popularity
+	- would this make sense for a priority queue? [[granick]] 
+
+![[autocomplete tries with values.svg]]
+
+
+
 
 ## Chapter 18:
 Topic: 

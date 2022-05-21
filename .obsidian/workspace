@@ -1,10 +1,10 @@
 {
   "main": {
-    "id": "59e82c6eeaac6146",
+    "id": "d7e0f191ab99d835",
     "type": "split",
     "children": [
       {
-        "id": "2938d7454bf1f2e0",
+        "id": "9d6bc039f27d7488",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -20,15 +20,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "eb9443efa6396f34",
+    "id": "929aedee901180c7",
     "type": "split",
     "children": [
       {
-        "id": "aa8ea150668eb3c7",
+        "id": "069e524f7c6e3b73",
         "type": "tabs",
         "children": [
           {
-            "id": "56369d01a538368c",
+            "id": "b24732dd5925187c",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -36,7 +36,7 @@
             }
           },
           {
-            "id": "c0a2982789a2400a",
+            "id": "8de765ad804b5b27",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -54,19 +54,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 667,
     "collapsed": true
   },
   "right": {
-    "id": "c47575bc48b1cfc1",
+    "id": "ebde0287cc9bfadb",
     "type": "split",
     "children": [
       {
-        "id": "360080d5e1c34bae",
+        "id": "7b886ac9d5b9bdfa",
         "type": "tabs",
         "children": [
           {
-            "id": "47535902e3e38afb",
+            "id": "4f8ea8974174c03a",
             "type": "leaf",
             "state": {
               "type": "backlink",
@@ -83,7 +83,7 @@
             }
           },
           {
-            "id": "07f65703cafad7cc",
+            "id": "d7fc50009aa3566b",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
@@ -95,7 +95,7 @@
             }
           },
           {
-            "id": "77cb4be1d638d8e2",
+            "id": "236d1dab58bbc757",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -112,22 +112,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "2938d7454bf1f2e0",
+  "active": "9d6bc039f27d7488",
   "lastOpenFiles": [
     "_inbox/Wengrow 2020.md",
-<<<<<<< HEAD
-    "daily notes/2022-05-17.md",
-    "reference/Wengrow 2020.md",
+    "_inbox/autocomplete tries with values.svg",
     "reference/trie prefixes words within words.svg",
-    "reference/trie stripped down diagram.svg",
-    "reference/trie branching word paths.svg",
-    "reference/trie node.svg",
-    "reference/heap ordered array implementation.svg",
-    "reference/heap deletion.svg",
-    "reference/Thinking Strategically.md"
-=======
-    "reference/trie prefixes words within words.svg",
-    "daily notes/2022-05-17.md"
->>>>>>> ce34c6f3bca02a9c9bab260f9ec3ed148cec8bfc
+    "_inbox/collect words call 7.svg",
+    "_inbox/collect words call 4.svg",
+    "_inbox/collect words call 6.svg",
+    "_inbox/collect words call 3.svg",
+    "_inbox/collect words call 5.svg",
+    "_inbox/collect words call 2.svg",
+    "_inbox/collect words call 1.svg"
   ]
 }
