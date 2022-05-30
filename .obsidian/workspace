@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "9d6bc039f27d7488",
+        "id": "8904a0f0931dda5d",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -112,17 +112,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "9d6bc039f27d7488",
+  "active": "8904a0f0931dda5d",
   "lastOpenFiles": [
     "_inbox/Wengrow 2020.md",
-    "_inbox/autocomplete tries with values.svg",
-    "reference/trie prefixes words within words.svg",
-    "_inbox/collect words call 7.svg",
-    "_inbox/collect words call 4.svg",
-    "_inbox/collect words call 6.svg",
-    "_inbox/collect words call 3.svg",
-    "_inbox/collect words call 5.svg",
-    "_inbox/collect words call 2.svg",
-    "_inbox/collect words call 1.svg"
+    "248.md",
+    "_inbox/depth-first search.svg",
+    "connected graph.md",
+    "daily notes/2022-05-29.md",
+    "___TODO/To do2022-05-21.md",
+    "_inbox/directed graph.svg",
+    "_inbox/Graph Data Structure.svg",
+    "cycles.md",
+    "all trees are graphs not all graphs are trees.md"
   ]
 }

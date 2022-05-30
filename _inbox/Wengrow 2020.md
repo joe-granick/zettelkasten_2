@@ -610,7 +610,10 @@ def trie_insert(self, word):
 ##### autocomplete benefits from addition of a recursive collection function, to gather all word branches starting from the last node of the search term [320]
 ```python
 #current node used as first parameter
-def collectAllWords(self, node = None, word = '', words = []):
+def collectAllWords(self, node = None, word = '', words = None):
+#if words assigned [] in default it will return same list every time
+	if words is None words = [] else words
+
 	#if node doesn't exist assign root node
 	current_node = node or self.root
 	#iterate over all descendant nodes
@@ -627,6 +630,7 @@ def collectAllWords(self, node = None, word = '', words = []):
 			
 	return words	
 ```
+- in book words has default argument assigned to \[\], but this would be incorrect as each time it is called it will use the same list (each time collectAll values is called, new list is appended to previosu list calls)  [[default parameter values in python]]
 - simpler function that collects all words starting at the input node and listing all the words that descend from that node [320]
 - don't necessarily want to display all suggestions, but want to have them available [320]
 - `node` specifies the node to start with, becoming the root for all possible words that can be created with node as a  prefix[321]
@@ -725,12 +729,235 @@ def autcomplete(self, prefix):
 	- would this make sense for a priority queue? [[granick]] 
 
 ![[autocomplete tries with values.svg]]
+```python
 
+class trieNode:
+    def __init__(self):
+        self.children = {}
 
+class trie:
+    def __init__(self):
+        self.root = trieNode()
 
+    def search(self, word):
+        currentNode = self.root
+        for char in word:
+            if currentNode.children.get(char):
+                currentNode = currentNode.children[char]
+            else:
+                return
+        return currentNode
 
-## Chapter 18:
-Topic: 
+    def insert(self, word):
+        currentNode = self.root
+        for char in word:
+            if currentNode.children.get(char):
+                currentNode = currentNode.children[char]
+            else:
+                newNode = trieNode()
+                currentNode.children[char] = newNode
+                currentNode = newNode
+        currentNode.children["*"] = None
+
+    def collectAllWords(self, node = None, word = "", words = None):
+        words = [] if words is None else words
+        # start at beginning if no node passed in
+        currentNode = node or self.root
+        for key, child in currentNode.children.items():
+            if key == "*":
+                words.append(word)
+            else:
+                self.collectAllWords(child, word + key, words)
+        return words
+
+    def autocomplete(self, prefix):
+        startNode = self.search(prefix)
+        if not startNode:
+            return None
+        return self.collectAllWords(startNode, prefix)
+
+    def traverseAndPrint(self, node = None):
+        currentNode = node or self.root
+        for key, child in currentNode.children.items():
+            print(key)
+            if key != "*":
+                return self.traverseAndPrint(child)
+
+    def autcorrect(self, word):
+        currentNode = self.root
+        prefix = ''
+        for char in word:
+            if currentNode.children.get(char):
+                currentNode = currentNode.children[char]
+                prefix = prefix + char
+
+            else:
+                return self.collectAllWords(currentNode, prefix)[0]
+        return word
+
+  
+test = trie()
+insert_words =["ball","bald","balance",
+				"balter","banter","attack",
+				"cat","catnip","catnap"]
+for word in insert_words:
+	test.insert(word)
+
+print(test.collectAllWords())
+print(test.autocomplete("b"))
+print(test.autocomplete("ban"))
+print(test.autcorrect("carnap"))
+```
+
+```python
+def hello(name):
+	print(name)
+
+if __name__ == "__main__":
+	hello("Eve")
+```
+## Chapter 18: Connecting everything with graphs
+Topic: [[graphs]],[[breadth first search]], [[depth first search]], [[djisktra's shortest path algorithm]]
+
+##### graph strcuture is well suited to storing network data like the type of relationships you would need to model for a social meida network [331]
+- when storing relationships, it could be loguically represented as a two dimensional array, each subarray contains a pair of name representing a frienship [331]
+```python
+friendships = [
+			   ["Alice", "Bob"],
+			   ["Bob", "Cynthia"],
+			   ["Alice", "Diana"],
+			   ["Bob", "Diana"],
+			   ["Elise", "Fred"],
+			   ["Diana", "Fred"]
+			   ["Fred", "Alice"]
+]
+```
+- with a set up like this an algorithm would need to look through all elements to determine if a person is another person's friend which has a time complexity of $O(N)$[331]
+- graphs can return [[adjacent vertex]] in $O(1)$
+
+##### graphs are specifically well suited to networks fo relationships as they naturally model connections [332]
+![[Graph Data Structure.svg]]
+- graph represents a social network  [332]
+- each person represented by a node [332]
+	- a node in graph terminology is a [[vertex]] [333]
+- connections are represented by links or [[edge]]s  [333]
+	- edges are the relationship between vertices in a graph
+
+##### trees are a subset of graphs with additional contstraints for completeness and acyclic
+- trees and graphs are both abstract data types made up of linked nodes
+- trees are a specific type of graph with the requirements of being [[connected graph]][333] and cannot have [[cycles]][332] 
+##### edges in a directed graph vertex relationships only work one way, unless cyclical relationship defined xplicitly with additional edge [334]
+- in a social network "alice" may follow "bob", but "bob" doesn't necessarily follow back[334]
+	- if he does a separate edge create from bob to Alice (like with Bob and Cynthia in diagram)[334]
+![[directed graph.svg]]
+##### object-oriented graph implementation [335]
+```python
+class Vertex:
+    def __init__(self, value):
+        self.value = value
+        self.adjacent_vertices = []
+#adds a directed edge between node and neighbor
+    def add_adjacent(self, neighbor_vertex):
+        self.adjacent_vertices.append(neighbor_vertex)
+#adds an undirected edge between node and neighbor
+    def undirected_add_adjacent(self, neighbor_vertex):
+        if neighbor_vertex not in self.adjacent_vertices:
+            self.adjacent_vertices.append(neighbor_vertex)
+            neighbor_vertex.undirected_add_adjacent(self)
+
+joe = Vertex("Joe")
+bob = Vertex("Bob")
+joe.undirected_add_adjacent(bob)
+
+for vertex in joe.adjacent_vertices:
+    print(vertex.value, " is Joe's friend")
+
+for vertex in bob.adjacent_vertices:
+    print(vertex.value, " is Bob's friend")
+```
+
+##### with a connected graph access to one vertex means all other vertcies can be reached, however may not hold true for disconnected graphs [336]
+- with connected graphs this `Vertex` class can achieve all algorithms [336]
+- with a [[disconnected graph]] will need to store all graph vertices in separate data structure like an array[336]
+	- often implememted with a `Graph` class that contains the array
+
+##### adjacency lists store a vertex's adjacent vertices in an array, while adjaceny matrices use a two dimensional array, both implemenations advantages/disadvantages for diffenrent situatiosn [336]
+##### [[graph search]] is the primary graph operation [337]
+- operates a little differently than most other search [337]
+- in most contexts a search operation ivolves finnding an element wiothin data structure [337]
+- search in the context of graphs involves fining one particular vertex  starting at another vertex [337]
+- sequence ofof edges traversed from one vertex to another is the [[path]]
+- multiple paths can exist betwenn vertices [338]
+- graph search use cases [339]
+	- finding a specific vetex within a graph
+		- in a [[connected graph]] search can find any vertex from any other vertex
+	- finding whether two vertices are connected 
+		- path exists where one vertext can be reached from another just by traversing edges to neighbors
+	- search can be use to traverse every vertex in a graph
+		- useful if an operation needs to be performed on each vertex
+- most common methods for traversing graph  are [[depth-first search]] (DFS) and [[breadth-first search]] (BFS) [339]
+- some graph algorithms attempt to find the [[shoretst path]]
+
+##### depth first search
+- works similiarly to [[binary search tree traversal]] [272] and [[file system traversal]] [156]
+- graphs differ because they have cycles which would lead to an infinite loop[339]
+- **DFS** requires keeping track of visited vertices and preventing them from being evisted so that algrothm doesn't run infinitely[339]
+- hash table can be used to store verticeas already visted[340]
+	- each time a vertext visted addad as a Key-Value pair in table[340]
+	- if it is in table emans it ahs been visited and will indicate that algrothm should ignore that vertex [340]
+###### DFS traversal
+- graph traversal similiar but simpler implementation than tryin to find path from one particular vertex to another [339]
+**steps**
+1. start at any vertext in graph
+2. add vertex to visted vertices hash table
+3. iterate through each [[adjacent vertex]]
+4. `if` vertex is in hash table move to next vertex
+5. `else` vertex hasn't been visited recursively call **DFS** on adjacent vertex
+![[depth-first search.svg]]
+##### DFS code implementation
+```python
+#depth-firsts search traversake
+#simpler version that just finds all vertices
+    def dfs_traverse(self, visited = set(), path = ""):
+        #each path recorded as a string
+        #each recursive call has own copy of string so separate paths
+        #recorded in order visited
+        path = path + self.value +","
+        print("current path: ", path)
+        visited.add(self)
+        print("add vertex: ",self.value)
+        for adjacent in self.adjacent_vertices:
+            if adjacent and adjacent not in visited:
+                adjacent.dfs(visited, path)
+```
+
+```python
+# this version finds a specific value
+    def dfs_search(self, searchValue, visited = set(), path = ""):
+        path = path + self.value +","
+        print("current path: ", path)
+        visited.add(self)
+        print("add vertex: ",self.value)
+        if searchValue == self.value:
+            print("Value found")
+            return self
+        for adjacent in self.adjacent_vertices:
+            if adjacent not in visited:
+                if adjacent.value == searchValue:
+                    print("Value found")
+                    path = path + adjacent.value
+                    print("current path: ", path)
+                    return adjacent
+	                vertex_search = adjacent.dfs_search(searchValue, 
+		                visited,path)
+                
+                if vertex_search:
+                    return vertex_search
+        return None
+```
+
+##### [[breadth-first search]]  finds paths horizontally placing each adjacent vertex in a queue and visiting FIFO before descending a level [348]
+
 
 ## Chapter 19:
 Topic: 
