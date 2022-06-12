@@ -28,9 +28,9 @@ The purpose of the book is to explain the key concepts underpinning data science
 
 ## Chapter 1: What is Data Science?
 Topic:
-vi do the simple things right more important than latest tech
+[[202206121102 practical data science empahsizes getting the basics right and actionable insights]]
 
-vi importance of mathematical intuition
+[[202206120752- mathematical intuition is critical for data science]]
 
 [[202206111633 - think like a computer scientist act like a statistician understand like a domain expert]]
 
