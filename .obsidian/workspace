@@ -4,12 +4,25 @@
     "type": "split",
     "children": [
       {
-        "id": "2938d7454bf1f2e0",
+        "id": "954482337e929b8b",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_inbox/Wengrow 2020.md",
+            "file": "daily notes/202206120752- mathematical intuition is critical for data science.md",
+            "mode": "source",
+            "backlinks": true,
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "3d9d66889af70f17",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "_inbox/Data Science  Design Manual.md",
             "mode": "source",
             "backlinks": true,
             "source": false
@@ -54,8 +67,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 536
   },
   "right": {
     "id": "c47575bc48b1cfc1",
@@ -71,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_inbox/Wengrow 2020.md",
+                "file": "daily notes/202206120752- mathematical intuition is critical for data science.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_inbox/Wengrow 2020.md",
+                "file": "daily notes/202206120752- mathematical intuition is critical for data science.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -112,10 +124,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "2938d7454bf1f2e0",
+  "active": "954482337e929b8b",
   "lastOpenFiles": [
-    "_inbox/Wengrow 2020.md",
-    "reference/trie prefixes words within words.svg",
-    "daily notes/2022-05-17.md"
+    "daily notes/202206120752- mathematical intuition is critical for data science.md",
+    "_inbox/202206111633 - think like a computer scientist act like a statistician understand like a domain expert.md",
+    "_inbox/Data Science  Design Manual.md",
+    "_inbox/2022-06-10.md",
+    "Untitled.md",
+    "_inbox/Data Science for Business.md",
+    "Templates/Book Reference.md",
+    "_inbox/score interpretation.md",
+    "_inbox/2022-05-11.md",
+    "_inbox/2022-05-10.md"
   ]
 }
