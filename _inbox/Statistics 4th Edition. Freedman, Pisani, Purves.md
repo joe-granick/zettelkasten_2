@@ -1,17 +1,14 @@
 ---
 aliases: []
 ---
-Added: {{date:YYYYMMDD}}{{time:HHmm}}
-Name: 
+Added: 202206161339
+Name:
 Tags: #book
 Topics: 
 Author: 
-Publisher: 
-Date: 
 Year: 
 Edition:
 URL: 
-
 
 ## What kind of book is this?
 
@@ -19,5 +16,7 @@ URL:
 
 ## What are the major topics and how are they organized, related, and/or independent?
 
-## Chapter :
+## Chapter 3 The histogram:
 Topic:
+
+**43** variables can be Quantitative or Qualitative. Quantitative variable can be on a discrete or continuous scale

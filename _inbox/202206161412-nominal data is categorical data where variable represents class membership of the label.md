@@ -2,7 +2,7 @@
 aliases: []
 ---
 Status: #idea
-Tags: 
+Tags: [[qualitative data]]. [[nominal variable]]
 
 >Direct quote
 

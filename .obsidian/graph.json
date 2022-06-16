@@ -1,5 +1,5 @@
 {
-  "collapse-filter": true,
+  "collapse-filter": false,
   "search": "",
   "showTags": false,
   "showAttachments": false,
@@ -27,18 +27,39 @@
         "a": 1,
         "rgb": 11657298
       }
+    },
+    {
+      "query": "#research-paper",
+      "color": {
+        "a": 1,
+        "rgb": 15110425
+      }
+    },
+    {
+      "query": "#research-request",
+      "color": {
+        "a": 1,
+        "rgb": 5431473
+      }
+    },
+    {
+      "query": "#year",
+      "color": {
+        "a": 1,
+        "rgb": 0
+      }
     }
   ],
-  "collapse-display": true,
+  "collapse-display": false,
   "showArrow": false,
-  "textFadeMultiplier": 0,
-  "nodeSizeMultiplier": 1,
-  "lineSizeMultiplier": 1,
-  "collapse-forces": true,
-  "centerStrength": 0.518713248970312,
-  "repelStrength": 10,
+  "textFadeMultiplier": -3,
+  "nodeSizeMultiplier": 0.980898876404494,
+  "lineSizeMultiplier": 2.02696629213483,
+  "collapse-forces": false,
+  "centerStrength": 0,
+  "repelStrength": 20,
   "linkStrength": 1,
-  "linkDistance": 250,
-  "scale": 0.412662564685257,
+  "linkDistance": 500,
+  "scale": 0.030182895067324512,
   "close": false
 }

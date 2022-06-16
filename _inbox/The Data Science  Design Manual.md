@@ -3,17 +3,18 @@ aliases: [The Data Science Design Manual, Skiena 2017, Ski+17]
 ---
 
 Added: 202205091009
-Name: [[The Data Science Design Manual]]
+Name: The Data Science Design Manual
 Tags: #book
-Topics: 
+Topics: [[Data Science]]
 Author: [[Steven Skiena]]
+Publisher: [[Springer]]
 Year: [[2017]]
 Edition:
 URL: 
 Cite:
 
 ## What kind of book is this?
-A computer practical book on the topic of data science, may fall udner COmputer Science, Statistics, and Math
+A computer practical book on the topic of data science, may fall udner Computer Science, Statistics, and Math
 
 ## What is this book about?
 The purpose of the book is to explain the key concepts underpinning data science. The manual attemopts to explain the underlying influences, teaching the main pricniples and getting the simple thing right over technological complications, devbelopment of mathematical intuition and howthey affect DS decisions without getting overly technical, and how to think like a compuetr scientist but act like a sattistician. This is instructed through traditional text, as well as real world projects applying the concepts many of which illustrate projects that failed and why, take home lessons with the big picture of topics, and homework problems.
@@ -25,49 +26,27 @@ The purpose of the book is to explain the key concepts underpinning data science
 4. Models from simple scoring and ranking heuristics to machine learning
 5. Big data infrastructure to support data intensive workloads
 
-
 ## Chapter 1: What is Data Science?
 Topic:
-[[202206121102 practical data science empahsizes getting the basics right and actionable insights]]
-
-[[202206120752- mathematical intuition is critical for data science]]
-
-[[202206111633 - think like a computer scientist act like a statistician understand like a domain expert]]
-
-1 influences on DS
-
-1 why DS gaining popularity now
-
-2 DS on the spectrum between Computer Science and Real Science
-
-2 - 3 Computer Scientist vs Natural/Social Scientist treat data differently 
-
-3 Data scientists need to turn nimbers into insights and shoudl think like *"real scientists"* in support of this
-
-4 DS requires context and context is built by curiosity and asking good questions of data sets... another way DS and CS are differentiated
-
-5 Broad thinking - answers to big general questions can often be hidden in specific datasets outside of original intended purpose 
-
-5 Baseball records make great datasets for data science
-
-7 Data scientists need to be pragmatic, **statistical proxy** may be needed, as dataset explicitly for desired purpose likely doesn't exist
-
-9 IMDB as direct data and statistical proxy
-
-10 - 11 Google Ngrams for language data
-
-11 aggregates of time series can be used to analyze historical trends
-
-11 - 14 NY Taxicab data
-
-12 large datasets can be used to answer questions oon various scales
-
-14 - 16 Data properties 
-	- structred v. unstructured
-	- Quantitative vs. Categorical
-	- Big Data vs. Small Data
-
-16 *take home lesson* - the right data is better than more data
+- [[202206121102 practical data science empahsizes getting the basics right and actionable insights]]
+- [[202206120752- mathematical intuition is critical for data science]]
+- [[202206111633 - think like a computer scientist act like a statistician understand like a domain expert]]
+- [[202206131033 data science is a field emerging from long established disciplines drive by changes in techology]]
+- [[202206131406-data science methods strongly influenced by CS methods need to be applied in a messy world like real science]]
+- [[202206141427-DS requires context and asking good questions of the dataset]]
+- [[202206141848-broad thinking is needed to find answers in unexpected data sets]]
+- [[202206141913-baseball has many characteristics of a good dataset for DS]]
+- [[202206141946-a statistical proxy is needed when specifically related measure or dataset is unobtainable]]
+-  [[202206141944-using IMDB records to examine questions small and large scale questions related to movies]] **todo**
+- **10 - 11** Google Ngrams for language data
+- **11** aggregates of time series can be used to analyze historical trends
+- **11 - 14** NY Taxicab data
+- **12** large datasets can be used to answer questions on various scales
+- [[202206151429-data can be structured or unstructured]]
+- [[202206151435-data can be quantitative or qualitative]]
+- [[202206151437-big data vs. small data]]
+- [[202206161636-the right data is better than more data]]
+ 
 
 16 supervised learning tasks typicallly either **classification** and **regression**
 
@@ -81,12 +60,6 @@ Topic:
 
 22 - 23 - more info on sources (baseball, google ngram, ny taxi)
 ### contents
-### data science, computer science, real science
-- data science lies at the intersection of computer science, statistics, and applied domains  (pg 1) 
-- DS more popular due to recent advancements
-> think like a computer scientist acta like a statisticican (pg vi)
-
-> *computer scientists* produce *systems* **data scientisits** produce **insights** (pg 3)
 #### computer science vs real science
 data scientists aim to turn numbers into insights and therefore are foucsed on the **why** of a problem/solution like *real scientists* as well as the **how** like *computer scientists* (pg 2)
 
@@ -94,13 +67,7 @@ data scientists should adopt a scientific mindset, and not just limit themselves
 
 the following points of view are important differences that data scientists need to adapt from science vs the traditional CS philosophy
 
-**data centrism vs. method centrism**
-	1
-**emphasis on results**
 
-**robustness**
-
-**precision vs. accuracy**
 
 #### data driven vs hypothesis driven science (pg 3)
 *hypothesis forward:* given a **problem** what data will help solve or answer it
@@ -219,6 +186,6 @@ linear regression serves as a good baseline, can then be approached with more ad
 
 
 
-[^8]:[[Data Science  Design Manual]] pg 4
+[^8]:[[The Data Science  Design Manual]] pg 4
 [^9]:https://www.baseball-reference.com/
-[^10]:[[Data Science  Design Manual]] pg 6
+[^10]:[[The Data Science  Design Manual]] pg 6
