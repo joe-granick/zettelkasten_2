@@ -9,4 +9,4 @@ Tags:
 
 ___
 #References
-[[The Data Science  Design Manual|The Data Science Design Manual]] pgs 7 - 9
+[[Skiena-The Data Science  Design Manual 1st|The Data Science Design Manual]] pgs 7 - 9

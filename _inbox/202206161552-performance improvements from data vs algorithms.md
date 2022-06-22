@@ -27,5 +27,5 @@ The debate isn’t about whether finite data is necessary, but whether it’s su
 > ![[data_hierarchy_of_needs.png]]
  Figure 2-7. The data science hierarchy of needs. Source: Adapted from an image by Monica Rogati[22](https://learning.oreilly.com/library/view/designing-machine-learning/9781098107956/ch02.html#ch01fn55)[^2]
 
-[^1]:[[Designing Machine Learning Systems]] ch 3
+[^1]:[[Huyen-Designing Machine Learning Systems]] ch 3
 [^2]:[[The AI Hierarchy of Need]]

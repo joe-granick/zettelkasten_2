@@ -12,4 +12,4 @@ Links:
 ___
 #References
 https://www.cs.cornell.edu/people/tj/publications/joachims_02c.pdf
-[[The Data Science  Design Manual]] pg 119
+[[Skiena-The Data Science  Design Manual 1st]] pg 119

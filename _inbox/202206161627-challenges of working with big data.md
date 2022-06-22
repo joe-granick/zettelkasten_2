@@ -8,4 +8,4 @@ Tags:
 
 **Complex  to visualize*[^1]
 
-[^1]:[[The Data Science  Design Manual|The Data Science Design Manual]] pg 15
+[^1]:[[Skiena-The Data Science  Design Manual 1st|The Data Science Design Manual]] pg 15

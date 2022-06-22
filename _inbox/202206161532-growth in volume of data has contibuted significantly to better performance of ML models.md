@@ -10,5 +10,5 @@ Tags:
 >Figure 2-8. The size of the datasets (log scale) used for language models over time[^1]
 
 Despite the strength of more data it will does not make up for poor quality data [^2]
-[^1]:[[Designing Machine Learning Systems]] ch 2
+[^1]:[[Huyen-Designing Machine Learning Systems]] ch 2
 [^2]:[[202206161537-more data won't make up for low data quality]]

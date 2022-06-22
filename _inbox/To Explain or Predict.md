@@ -12,4 +12,4 @@ Cite:
 
 ---
 #References 
-[[Data Science for Business]] pg 39
+[[Foster, Fawcett-Data Science for Business]] pg 39

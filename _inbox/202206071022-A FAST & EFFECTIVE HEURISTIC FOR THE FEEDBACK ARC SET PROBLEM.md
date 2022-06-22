@@ -12,4 +12,4 @@ Links:
 ___
 #References
 http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.47.7745&rep=rep1&type=pdf
-[[The Data Science  Design Manual]] pg 119
+[[Skiena-The Data Science  Design Manual 1st]] pg 119

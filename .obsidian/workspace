@@ -4,12 +4,42 @@
     "type": "split",
     "children": [
       {
-        "id": "cfab438ea1a2981f",
+        "id": "3bddc70c5614f174",
+        "type": "leaf",
+        "pinned": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "_inbox/Skiena-The Data Science  Design Manual 1st.md",
+            "mode": "source",
+            "backlinks": true,
+            "source": false
+          },
+          "pinned": true
+        }
+      },
+      {
+        "id": "0f4feef3e2ab2d9c",
+        "type": "leaf",
+        "pinned": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "_inbox/202206221553p-Data Science Math Prereqs.md",
+            "mode": "source",
+            "backlinks": true,
+            "source": false
+          },
+          "pinned": true
+        }
+      },
+      {
+        "id": "9cdbed06288f2d91",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "years/1972.md",
+            "file": "_inbox/l202206221923-probability provides formal frameowrk for assessing uncertainty.md",
             "mode": "source",
             "backlinks": true,
             "source": false
@@ -54,7 +84,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 1027
+    "width": 995,
+    "collapsed": true
   },
   "right": {
     "id": "c47575bc48b1cfc1",
@@ -70,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "years/1972.md",
+                "file": "_inbox/Skiena-The Data Science  Design Manual 1st.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "years/1972.md",
+                "file": "_inbox/Skiena-The Data Science  Design Manual 1st.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -103,25 +134,42 @@
                 "useHierarchy": true
               }
             }
+          },
+          {
+            "id": "b5225628d84b293c",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "1bc6a8a67f61f89e",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
     "width": 300,
     "collapsed": true
   },
-  "active": "cfab438ea1a2981f",
+  "active": "3bddc70c5614f174",
   "lastOpenFiles": [
-    "years/1972.md",
-    "reference/Bornsetin, Li, Casado 2022.md",
-    "_inbox/202206161754-.md",
-    "index/index.md",
-    "_inbox/The Data Science  Design Manual.md",
-    "_inbox/Wengrow 2020.md",
-    "years/1993.md",
-    "years/2013.md",
-    "years/2012.md",
-    "years/2017.md"
+    "_inbox/Skiena-The Data Science  Design Manual 1st.md",
+    "_inbox/l202206221923-probability provides formal frameowrk for assessing uncertainty.md",
+    "_inbox/202206221553p-Data Science Math Prereqs.md",
+    "slip-box/202206161754-supervised learning most common challenge in DS classfication or regression.md",
+    "_inbox/202206221922.md",
+    "_inbox/James, Witten, Hastie, Tibshirani- Introduction to Statistical Learning 2nd.md",
+    "_inbox/Foster, Fawcett-Data Science for Business.md",
+    "_inbox/score interpretation.md",
+    "_inbox/202206171850-linear separability.md",
+    "_inbox/202206161537-more data won't make up for low data quality.md"
   ]
 }

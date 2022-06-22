@@ -32,7 +32,7 @@ Most methods are built for **quantitative data** there are methods built specifi
 ### Ordinal data
 **Ordinal data** is categorical data with a ranked ordering between classes, but the size of difference between classes is meaningless (example, small, medium, and large shirts)[^5]
 
-[^1]: [[The Data Science  Design Manual|The Data Science Design Manual]] pg 15
+[^1]: [[Skiena-The Data Science  Design Manual 1st|The Data Science Design Manual]] pg 15
 [^2]: [[Statistics 4th Edition. Freedman, Pisani, Purves]] pg 43
 [^3]:[[202206161407-Classification and Clustering algorithms generate categorical labels as output from data]]
 [^4]:[[202206161412-nominal data is categorical data where variable represents class membership of the label]]
