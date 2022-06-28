@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "3bddc70c5614f174",
+        "id": "3113b1079a7ff734",
         "type": "leaf",
         "pinned": true,
         "state": {
@@ -19,31 +19,11 @@
         }
       },
       {
-        "id": "0f4feef3e2ab2d9c",
-        "type": "leaf",
-        "pinned": true,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "_inbox/202206221553p-Data Science Math Prereqs.md",
-            "mode": "source",
-            "backlinks": true,
-            "source": false
-          },
-          "pinned": true
-        }
-      },
-      {
-        "id": "9cdbed06288f2d91",
+        "id": "f3036b094d08c564",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "_inbox/l202206221923-probability provides formal frameowrk for assessing uncertainty.md",
-            "mode": "source",
-            "backlinks": true,
-            "source": false
-          }
+          "type": "graph",
+          "state": {}
         }
       }
     ],
@@ -71,7 +51,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#idea",
+                "query": "tag:#idea/undeveloped",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -79,13 +59,20 @@
                 "sortOrder": "alphabetical"
               }
             }
+          },
+          {
+            "id": "388fbc00d714a178",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 995,
-    "collapsed": true
+    "width": 759
   },
   "right": {
     "id": "c47575bc48b1cfc1",
@@ -101,7 +88,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_inbox/Skiena-The Data Science  Design Manual 1st.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +104,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_inbox/Skiena-The Data Science  Design Manual 1st.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,17 +144,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "3bddc70c5614f174",
+  "active": "f3036b094d08c564",
   "lastOpenFiles": [
     "_inbox/Skiena-The Data Science  Design Manual 1st.md",
-    "_inbox/l202206221923-probability provides formal frameowrk for assessing uncertainty.md",
-    "_inbox/202206221553p-Data Science Math Prereqs.md",
-    "slip-box/202206161754-supervised learning most common challenge in DS classfication or regression.md",
-    "_inbox/202206221922.md",
-    "_inbox/James, Witten, Hastie, Tibshirani- Introduction to Statistical Learning 2nd.md",
-    "_inbox/Foster, Fawcett-Data Science for Business.md",
-    "_inbox/score interpretation.md",
-    "_inbox/202206171850-linear separability.md",
-    "_inbox/202206161537-more data won't make up for low data quality.md"
+    "_inbox/202206271334-a probability density function represents the probability of all random variable values in a sample space.md",
+    "_inbox/202206271820- CDF are alternative representation of random variable prob containing same info as PDF.md",
+    "_inbox/202206271838-care must be used with CDFs so it is not abused as avanity metric.md",
+    "_inbox/202206271805-histograms can approximate the PDF of observed value frequencies.md",
+    "_inbox/202206271758-A histogram is a statistical corollary to a PDF and from the frequency of observed events.md",
+    "slip-box/202206231243-Random Variable  a FUNCTION that takes outcomes as input.md",
+    "_inbox/202206271818-discounting offers better way of approximating rare events than hostogram.md",
+    "_inbox/202206271807-histogram value ranges may be bucketed for representative clarity.md",
+    "slip-box/202206221923-probability provides formal framework for assessing uncertainty.md"
   ]
 }

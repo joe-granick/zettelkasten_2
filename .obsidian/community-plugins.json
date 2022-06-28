@@ -3,7 +3,8 @@
   "drawio-obsidian",
   "obsidian-latex",
   "obsidian-mind-map",
-  "sliding-panes-obsidian",
   "calendar",
-  "obsidian-kanban"
+  "obsidian-kanban",
+  "cm-editor-syntax-highlight-obsidian",
+  "sliding-panes-obsidian"
 ]

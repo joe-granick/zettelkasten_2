@@ -61,69 +61,37 @@ Topic:
  **TODO:**  [[1.9 exercises]] 
 ## Chapter 2 : Mathematical Preliminaries
 Topic:
-**27:** basic understanding of probabiltity and statistics, linear algebra, and continuous mathematics needed to work with numerical data
 [[202206221553p-Data Science Math Prereqs#Math Forms the Foundation of Data Science]]
 
 
 ### 2.1 Probability
-**27:** probability theory formal framework for reasoning about likelihood of event
 [[202206221553p-Data Science Math Prereqs#Probability]]
 
-**27-28:** formal language provvides vocabulary for reasoning about discipline
-- $\text{Experiment}$ : procedure that yields one outcome from a set of possible outcomes
-- $\text{Sample Space } S$:
-- $\text{Event } E$: 
-- $\text{Probability of an outcome } p(s)$:
-- $\text{Probability of an event } p(E)$:
-- $\text{Random Variable } V$: 
-- $\text{Expected Value of random variable } E(V)$:
-
 #### 2.1.1 Probability vs. Statistics
-**29:** Differences between **probability** and **statistics**
-**29** probability theory invented by Pascal and Fermat in 1654 to figure out how to split payout of game that ends before completed
+[[202206241833-probability theory of future likelihood, stats applied to frequency of past events]]
+
+**ELABORATE:**[[202206241850-probability invented by pascal and fermat assesing fair payout of unfinished game of chance]]
 
 #### 2.1.2 Compound Events and Independence
-**30** *set difference operation* $B-A=\{\}$
-**30** *intersection* set of common outcomes between two events $A \cap B=A-(S-B)$
-**30** *union* combined  set of all outcomes between events $A\cup B$ 
-**30** *complement* $\bar A = S-A$ 
-**30** can calculate probability for any set by summing probabilities of outcomes in defined sets
-**30** 
-![[setdiff_intersect_union_skiena17_pg30.png]]
+[[202206261106-compound events use set operations to combine events and find complex probability]]
 
-**30** independence means no special structures of outcomes between events 
-**30** intersection of independent outcomes $P(A \cap B) = P(A)\times P(B)$
-**31** independence simplifies calculations of probability
-**31** indpendence less helpful for data science, as prediction needs observable variables upon which the variable of interest has some dependency
-**31** *perfectly correlated* events the opposite of *independent events*
-**31** correlation is the foundation for predictive models
+[[202206270825- independent events prob easier to calculate but  not informative for prediction and inference]]
+
 
 #### 2.1.3 Conditional Probability
-**31** *conditional probability*for independent events  is $$P(A\mid B)=\frac{P(A\cap B)}{P(B)} =\frac{P(A)P(B)}{P(B)}=P(A)$$
-**31** when event are correlated there is a dependency between them
-**31** dependency makes calculation between them more difficult
-**31** *conditional probaility* of A give B  is defined:$$P(A\mid B)=\frac{P(A\cap B)}{P(B)}$$
-**31** classification problems can typically be decomposed to expressing conditional probability of an event given another event
-
-**31** primary tool is *Baye's theorem* which reverses calculation of conitional probability, useful because calculation is usually easier in one direction
-$$P(A\mid B)=\frac{P(A\cap B)}{P(B)}$$ $$P(A\mid B)P(B)=P(A\cap B)$$ $$P(B\mid A) = \frac{P(A\cap B)}{P(A)}$$
-$$P(B\mid A)P(A) = P(A\cap B)$$
-$$P(B\mid A)P(A) = P(A\mid B)P(B)$$
-$$P(B \mid A)=\frac{P(A\mid B)P(B)}{P(A)}$$
-
+[[202206271239-conditional probability needed to find likelihood of an event as a function of another event]]
 
 #### 2.1.4 Probability Distributions
-**32** random variable have value associated with probability of occurence
-**32** probability of a value is sum of all outcomes that add up to that value
-**32** probability of each out come can be represented on a graph as a *probability density function (PDF)*
-**32** *histograms* are statistical representation of a PDF which is a probablistic construct
-**32**  histograms used to estimate PDF
-**33** *cumulative density function CDF* is a running sum of probabilities in PDF
-**33** bot contain same information, and can be converted back and forth
-**33-34** Apple's disingenuos use of CDF over PDF because it looks better
+[[202206271334-a probability density function represents the probability of all random variable values in a sample space]]
+
+[[202206271758-A histogram is a statistical corollary to a PDF and from the frequency of observed events]]
+
+[[202206271820- CDF are alternative representation of random variable prob containing same info as PDF]]
+
+**33-34** Apple's disingenuous use of CDF over PDF because it looks better
 
 ### 2.2 Descriptive Statistics
-**34** *descriptive statistics* describe and summarize imporatnt properties of datasets and samples
+**34** *descriptive statistics* describe and summarize important properties of datasets and samples
 **34** summary statistics used for data reduction
 **34** summary statistics can be used as features themselves for clusters in the dataset
 **34** two main types of descriptive statistics
@@ -131,13 +99,13 @@ $$P(B \mid A)=\frac{P(A\mid B)P(B)}{P(A)}$$
 	- *Variation/variability measures*
 
 #### 2.2.1 Centrality Measures
-**34** *arithmetic mean* is best for describing symettric distributions
+**34** *arithmetic mean* is best for describing symmetric distributions
 **35** *geometric mean* more meaningful for averaging rations (see also *arithmetic mean of log of ratio*)
 **35** *median* is the middle point of the dataset and is a better statistic when the distribution is skewed
 **35** *mode* is most frequent item in a dataset, typically a poor measure of center for large distributions
 
 #### 2.2.2 Variability Measures
-**36** *stabndard deviation* and *variance* both measure on average how far observations will be from the mean
+**36** *standard deviation* and *variance* both measure on average how far observations will be from the mean
 **37** population variance and sample variance have slightly different denominator
 
 #### 2.2.3 Interpreting Variance
@@ -183,6 +151,13 @@ $$P(B \mid A)=\frac{P(A\mid B)P(B)}{P(A)}$$
 **45** Weak signifcant correlation can have value in predictive modeling. Combinations of weak significant predictors **may** have predictive power depending on certain assumption holidng up (see 5.3)
 
 #### 2.3.3 Correlation Does Not Imply Causation!
+>Everyday it rains, so
+>everyday the pain
+>Went ignored and I'm sure
+>ignorance was to blame
+>But life is a chain, cause and effected.
+>**Jay-Z**
+
 **45** many observed correlations are spurious
 **45** can often be hard to to determin causality, few statistical tools availabe
 	- hypothesis testing
@@ -243,6 +218,22 @@ $$y=log_bx \longleftrightarrow b^y=x$$
 ### 2.5 War Story: Fitting Designer Genes
 **52** developing scoring functions that highlight a certain aspect of the data can reveal patterns
 **52** often these type of scores are ratio calulations, and benefit from being tranformed logarithmically
+
+### 2.6 References
+[[Henk Tijms. Understanding Probability. Cambridge University Press, 2012.]]
+[[Understanding-Probability (Henks 3rd.  2012).pdf]]
+
+[[Dimitri Bertsekas and John Tsitsklis. Introduction to Probability. Athena Scientific, 2nd edition, 2008.]]
+[[Introduction to Probability (bertsekas, 2nd, 2008).pdf]]
+
+[[Gareth James, Daniela Witten, Trevor Hastie, and Robert Tibshirani. An Introduction to Statistical Learning. Springer-Verlag, sixth edition, 2013]]
+
+[[Charles Wheelan. Naked Statistics: Stripping the dread from the data. WW Norton & Company, 2013.]]
+
+[[Warren Weaver. Lady Luck. Dover Publications, 1982.]]
+
+### 2.7 Exercises
+
 ## Scoring and Ranking
 [[202206071016-Optimizing Search Engines using Clickthrough Data|learning rannking functions]]
 [[202206071022-A FAST & EFFECTIVE HEURISTIC FOR THE FEEDBACK ARC SET PROBLEM|minimize edge conflicts]]
