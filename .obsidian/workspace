@@ -21,9 +21,29 @@
       {
         "id": "f3036b094d08c564",
         "type": "leaf",
+        "pinned": true,
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "_inbox/202206280953-descriptive statistics reduce large data sets into summary statistics that provide more insight about the distribution than looking at it all at once.md",
+            "mode": "source",
+            "backlinks": true,
+            "source": false
+          },
+          "pinned": true
+        }
+      },
+      {
+        "id": "6c2ead4cdbfa885a",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "_inbox/202206281308-variability measures describe how far the data is spread around the center.md",
+            "mode": "source",
+            "backlinks": true,
+            "source": false
+          }
         }
       }
     ],
@@ -72,7 +92,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 759
+    "width": 759,
+    "collapsed": true
   },
   "right": {
     "id": "c47575bc48b1cfc1",
@@ -88,6 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "_inbox/202206281308-variability measures describe how far the data is spread around the center.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,6 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "_inbox/202206281308-variability measures describe how far the data is spread around the center.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,17 +167,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "f3036b094d08c564",
+  "active": "6c2ead4cdbfa885a",
   "lastOpenFiles": [
+    "_inbox/202206281308-variability measures describe how far the data is spread around the center.md",
     "_inbox/Skiena-The Data Science  Design Manual 1st.md",
-    "_inbox/202206271334-a probability density function represents the probability of all random variable values in a sample space.md",
-    "_inbox/202206271820- CDF are alternative representation of random variable prob containing same info as PDF.md",
-    "_inbox/202206271838-care must be used with CDFs so it is not abused as avanity metric.md",
-    "_inbox/202206271805-histograms can approximate the PDF of observed value frequencies.md",
-    "_inbox/202206271758-A histogram is a statistical corollary to a PDF and from the frequency of observed events.md",
-    "slip-box/202206231243-Random Variable  a FUNCTION that takes outcomes as input.md",
-    "_inbox/202206271818-discounting offers better way of approximating rare events than hostogram.md",
+    "_inbox/202206280953-descriptive statistics reduce large data sets into summary statistics that provide more insight about the distribution than looking at it all at once.md",
+    "_inbox/202206281014-central tendency like mean median and mode describe center of distribution around which data is spread.md",
     "_inbox/202206271807-histogram value ranges may be bucketed for representative clarity.md",
-    "slip-box/202206221923-probability provides formal framework for assessing uncertainty.md"
+    "_inbox/202206281033-median is a better measure than mean for datasets with outliers and skewed distributions.md",
+    "_inbox/202206281028-arithmetic mean most useful for symmetric distributions but is sensitive to outliers.md",
+    "_inbox/202206281229-geometric mean captures central tendency of ratios better than arithmetic mean.md",
+    "_inbox/202206281230-ratios should be log transformed before taking their arithmetic mean.md",
+    "Templates/quick note.md"
   ]
 }

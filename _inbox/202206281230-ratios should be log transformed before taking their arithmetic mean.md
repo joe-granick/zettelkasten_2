@@ -1,6 +1,6 @@
 ---
 aliases: []
 ---
-Status: #idea
+Status: #idea/undeveloped 
 Tags: 
 

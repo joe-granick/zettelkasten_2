@@ -91,22 +91,13 @@ Topic:
 **33-34** Apple's disingenuous use of CDF over PDF because it looks better
 
 ### 2.2 Descriptive Statistics
-**34** *descriptive statistics* describe and summarize important properties of datasets and samples
-**34** summary statistics used for data reduction
-**34** summary statistics can be used as features themselves for clusters in the dataset
-**34** two main types of descriptive statistics
-	- *Central tendency measures*
-	- *Variation/variability measures*
+[[202206280953-descriptive statistics reduce large data sets into summary statistics that provide more insight about the distribution than looking at it all at once]]
 
 #### 2.2.1 Centrality Measures
-**34** *arithmetic mean* is best for describing symmetric distributions
-**35** *geometric mean* more meaningful for averaging rations (see also *arithmetic mean of log of ratio*)
-**35** *median* is the middle point of the dataset and is a better statistic when the distribution is skewed
-**35** *mode* is most frequent item in a dataset, typically a poor measure of center for large distributions
+[[202206281014-central tendency like mean median and mode describe center of distribution around which data is spread]]
 
 #### 2.2.2 Variability Measures
-**36** *standard deviation* and *variance* both measure on average how far observations will be from the mean
-**37** population variance and sample variance have slightly different denominator
+[[202206281308-variability measures describe how far the data is spread around the center]]
 
 #### 2.2.3 Interpreting Variance
 **37** Data scientists try to explain world through data, but often phenomena isn't really and only appears due to variance
