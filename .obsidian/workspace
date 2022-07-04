@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_inbox/Wengrow 2020.md",
+            "file": "daily notes/2022-07-02.md",
             "mode": "source",
             "backlinks": true,
             "source": false
@@ -54,8 +54,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 667,
-    "collapsed": true
+    "width": 667
   },
   "right": {
     "id": "ebde0287cc9bfadb",
@@ -71,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_inbox/Wengrow 2020.md",
+                "file": "daily notes/2022-07-02.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,7 +87,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_inbox/Wengrow 2020.md",
+                "file": "daily notes/2022-07-02.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -114,15 +113,15 @@
   },
   "active": "8904a0f0931dda5d",
   "lastOpenFiles": [
+    "daily notes/2022-07-02.md",
     "_inbox/Wengrow 2020.md",
+    "daily notes/2022-05-30.md",
     "248.md",
     "_inbox/depth-first search.svg",
     "connected graph.md",
     "daily notes/2022-05-29.md",
     "___TODO/To do2022-05-21.md",
     "_inbox/directed graph.svg",
-    "_inbox/Graph Data Structure.svg",
-    "cycles.md",
-    "all trees are graphs not all graphs are trees.md"
+    "_inbox/Graph Data Structure.svg"
   ]
 }

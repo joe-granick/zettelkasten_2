@@ -2,5 +2,6 @@
   "table-editor-obsidian",
   "drawio-obsidian",
   "obsidian-latex",
-  "execute-code"
+  "execute-code",
+  "obsidian-local-rest-api"
 ]
