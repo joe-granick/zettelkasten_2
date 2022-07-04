@@ -2,6 +2,14 @@
   "table-editor-obsidian",
   "drawio-obsidian",
   "obsidian-latex",
+<<<<<<< HEAD
   "execute-code",
   "obsidian-local-rest-api"
+=======
+  "obsidian-mind-map",
+  "calendar",
+  "obsidian-kanban",
+  "cm-editor-syntax-highlight-obsidian",
+  "sliding-panes-obsidian"
+>>>>>>> aa7eb05697db0978a6a34654269cf7517b09cd96
 ]

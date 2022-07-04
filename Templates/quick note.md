@@ -1,10 +1,6 @@
-{{date:YYYYMMDD}}{{time:HHmm}}
+---
+aliases: []
+---
 Status: #idea
 Tags: 
-Links:
-## Topic
->Direct quote
 
-
-___
-#References

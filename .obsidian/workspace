@@ -1,15 +1,49 @@
 {
   "main": {
-    "id": "d7e0f191ab99d835",
+    "id": "59e82c6eeaac6146",
     "type": "split",
     "children": [
       {
-        "id": "8904a0f0931dda5d",
+        "id": "3113b1079a7ff734",
+        "type": "leaf",
+        "pinned": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+<<<<<<< HEAD
+            "file": "daily notes/2022-07-02.md",
+=======
+            "file": "_inbox/Skiena-The Data Science  Design Manual 1st.md",
+            "mode": "source",
+            "backlinks": true,
+            "source": false
+          },
+          "pinned": true
+        }
+      },
+      {
+        "id": "f3036b094d08c564",
+        "type": "leaf",
+        "pinned": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "_inbox/202206280953-descriptive statistics reduce large data sets into summary statistics that provide more insight about the distribution than looking at it all at once.md",
+            "mode": "source",
+            "backlinks": true,
+            "source": false
+          },
+          "pinned": true
+        }
+      },
+      {
+        "id": "6c2ead4cdbfa885a",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "daily notes/2022-07-02.md",
+            "file": "_inbox/202206281308-variability measures describe how far the data is spread around the center.md",
+>>>>>>> aa7eb05697db0978a6a34654269cf7517b09cd96
             "mode": "source",
             "backlinks": true,
             "source": false
@@ -20,15 +54,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "929aedee901180c7",
+    "id": "eb9443efa6396f34",
     "type": "split",
     "children": [
       {
-        "id": "069e524f7c6e3b73",
+        "id": "aa8ea150668eb3c7",
         "type": "tabs",
         "children": [
           {
-            "id": "b24732dd5925187c",
+            "id": "56369d01a538368c",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -36,12 +70,12 @@
             }
           },
           {
-            "id": "8de765ad804b5b27",
+            "id": "c0a2982789a2400a",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#idea/undeveloped",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -49,28 +83,45 @@
                 "sortOrder": "alphabetical"
               }
             }
+          },
+          {
+            "id": "388fbc00d714a178",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
+<<<<<<< HEAD
     "width": 667
+=======
+    "width": 759,
+    "collapsed": true
+>>>>>>> aa7eb05697db0978a6a34654269cf7517b09cd96
   },
   "right": {
-    "id": "ebde0287cc9bfadb",
+    "id": "c47575bc48b1cfc1",
     "type": "split",
     "children": [
       {
-        "id": "7b886ac9d5b9bdfa",
+        "id": "360080d5e1c34bae",
         "type": "tabs",
         "children": [
           {
-            "id": "4f8ea8974174c03a",
+            "id": "47535902e3e38afb",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+<<<<<<< HEAD
                 "file": "daily notes/2022-07-02.md",
+=======
+                "file": "_inbox/202206281308-variability measures describe how far the data is spread around the center.md",
+>>>>>>> aa7eb05697db0978a6a34654269cf7517b09cd96
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -82,19 +133,23 @@
             }
           },
           {
-            "id": "d7fc50009aa3566b",
+            "id": "07f65703cafad7cc",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+<<<<<<< HEAD
                 "file": "daily notes/2022-07-02.md",
+=======
+                "file": "_inbox/202206281308-variability measures describe how far the data is spread around the center.md",
+>>>>>>> aa7eb05697db0978a6a34654269cf7517b09cd96
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "236d1dab58bbc757",
+            "id": "77cb4be1d638d8e2",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -103,16 +158,34 @@
                 "useHierarchy": true
               }
             }
+          },
+          {
+            "id": "b5225628d84b293c",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "1bc6a8a67f61f89e",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
     "width": 300,
     "collapsed": true
   },
-  "active": "8904a0f0931dda5d",
+  "active": "6c2ead4cdbfa885a",
   "lastOpenFiles": [
+<<<<<<< HEAD
     "daily notes/2022-07-02.md",
     "_inbox/Wengrow 2020.md",
     "daily notes/2022-05-30.md",
@@ -123,5 +196,17 @@
     "___TODO/To do2022-05-21.md",
     "_inbox/directed graph.svg",
     "_inbox/Graph Data Structure.svg"
+=======
+    "_inbox/202206281308-variability measures describe how far the data is spread around the center.md",
+    "_inbox/Skiena-The Data Science  Design Manual 1st.md",
+    "_inbox/202206280953-descriptive statistics reduce large data sets into summary statistics that provide more insight about the distribution than looking at it all at once.md",
+    "_inbox/202206281014-central tendency like mean median and mode describe center of distribution around which data is spread.md",
+    "_inbox/202206271807-histogram value ranges may be bucketed for representative clarity.md",
+    "_inbox/202206281033-median is a better measure than mean for datasets with outliers and skewed distributions.md",
+    "_inbox/202206281028-arithmetic mean most useful for symmetric distributions but is sensitive to outliers.md",
+    "_inbox/202206281229-geometric mean captures central tendency of ratios better than arithmetic mean.md",
+    "_inbox/202206281230-ratios should be log transformed before taking their arithmetic mean.md",
+    "Templates/quick note.md"
+>>>>>>> aa7eb05697db0978a6a34654269cf7517b09cd96
   ]
 }
