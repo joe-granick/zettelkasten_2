@@ -2,7 +2,7 @@
 
 Status: #idea
 
-Tags:[[note taking]] [[zettelkasten]] [[programming]] [[vscode]] [[obsidian]] 
+Tags:[[note taking]] [[zettelkasten]] [[programming]] [[vscode]] [[OBSIDIAN LINK COPY PLUGIN]] 
 
 #{{Tech Notes With Zettelkasten}}
 

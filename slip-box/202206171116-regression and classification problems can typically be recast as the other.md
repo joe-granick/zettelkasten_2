@@ -21,7 +21,7 @@ Identification of where reframing will be beneficial as well as appropriate prob
 
 
 
-[^1]:[[202206161754-supervised learning most common challenge in DS classfication or regression]]
+[^1]:[[202206161754-supervised learning most common challenge in DS classification or regression]]
 [^2]: [[Skiena-The Data Science  Design Manual 1st|The Data Science Design Manual]] pg 17
 [^3]:[[202206141427-DS requires context and asking good questions of the dataset]]
 [^4]:[[202206131453- data vs method centrism CS vs Science for DS]]

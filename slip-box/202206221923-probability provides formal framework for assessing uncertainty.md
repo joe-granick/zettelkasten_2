@@ -2,10 +2,10 @@
 aliases: []
 ---
 Status: #map-of-content 
-Tags: [[probabilty]] 
+Tags: [[probability]] 
 
 ## Probability
-Probability theory formal framework for reasoning about likelihood of event. The framework is built on a vocabularly for reasoning about uncetrainty/likelihood.[^1]
+Probability theory formal framework for reasoning about likelihood of event. The framework is built on a vocabulary for reasoning about uncertainty/likelihood.[^1]
 
 The vocabulary connects probability to statistics and allows application of the theoretical study of probability to working with uncertainty in real world data. 
 

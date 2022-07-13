@@ -4,46 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "3113b1079a7ff734",
+        "id": "0cb20cbc1acee415",
         "type": "leaf",
         "pinned": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_inbox/Skiena-The Data Science  Design Manual 1st.md",
+            "file": "_project/why obsidian.md",
             "mode": "source",
             "backlinks": true,
             "source": false
           },
           "pinned": true
-        }
-      },
-      {
-        "id": "f3036b094d08c564",
-        "type": "leaf",
-        "pinned": true,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "_inbox/202206280953-descriptive statistics reduce large data sets into summary statistics that provide more insight about the distribution than looking at it all at once.md",
-            "mode": "source",
-            "backlinks": true,
-            "source": false
-          },
-          "pinned": true
-        }
-      },
-      {
-        "id": "6c2ead4cdbfa885a",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "_inbox/202206281308-variability measures describe how far the data is spread around the center.md",
-            "mode": "source",
-            "backlinks": true,
-            "source": false
-          }
         }
       }
     ],
@@ -92,7 +64,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 759,
+    "width": 559,
     "collapsed": true
   },
   "right": {
@@ -109,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_inbox/202206281308-variability measures describe how far the data is spread around the center.md",
+                "file": "_project/why obsidian.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +98,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_inbox/202206281308-variability measures describe how far the data is spread around the center.md",
+                "file": "_project/why obsidian.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -167,17 +139,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "6c2ead4cdbfa885a",
+  "active": "0cb20cbc1acee415",
   "lastOpenFiles": [
-    "_inbox/202206281308-variability measures describe how far the data is spread around the center.md",
+    "_project/why obsidian.md",
     "_inbox/Skiena-The Data Science  Design Manual 1st.md",
-    "_inbox/202206280953-descriptive statistics reduce large data sets into summary statistics that provide more insight about the distribution than looking at it all at once.md",
-    "_inbox/202206281014-central tendency like mean median and mode describe center of distribution around which data is spread.md",
-    "_inbox/202206271807-histogram value ranges may be bucketed for representative clarity.md",
-    "_inbox/202206281033-median is a better measure than mean for datasets with outliers and skewed distributions.md",
-    "_inbox/202206281028-arithmetic mean most useful for symmetric distributions but is sensitive to outliers.md",
-    "_inbox/202206281229-geometric mean captures central tendency of ratios better than arithmetic mean.md",
-    "_inbox/202206281230-ratios should be log transformed before taking their arithmetic mean.md",
-    "Templates/quick note.md"
+    "_project/202207121447-separator.md",
+    "_project/202207121439-LaTex.md",
+    "_project/202207121434-markdown lists.md",
+    "_project/202207121421-headings.md",
+    "_project/202207121424-headings in html.md",
+    "Untitled.md",
+    "_inbox/Wengrow 2020.md",
+    "_inbox/202206271239-conditional probability needed to find likelihood of an event as a function of another event.md"
   ]
 }

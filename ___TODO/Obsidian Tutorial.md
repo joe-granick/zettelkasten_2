@@ -24,6 +24,7 @@ kanban-plugin: basic
 - [ ] Permanent Note
 - [ ] Zettelkasten
 - [ ] Emergent Hierarchy
+- [ ] [[Problem with Note taking]]
 
 
 ## Data Science Design Manuaal

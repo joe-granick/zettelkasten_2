@@ -1,7 +1,6 @@
 ---
 aliases: [The Data Science Design Manual 1st, Skiena 2017, Ski+17]
 ---
-
 Added: 202205091009
 Name: The Data Science Design Manual
 Tags: #book
@@ -9,29 +8,26 @@ Topics: [[Data Science]]
 Author: [[Steven Skiena]]
 Publisher: [[Springer]]
 Year: [[2017]]
-Edition:
-URL: 
-Cite:
-
-## What kind of book is this?
+Edition: 1st
+#### What kind of book is this?
 A computer practical book on the topic of data science, may fall udner Computer Science, Statistics, and Math
 
-## What is this book about?
+#### What is this book about?
 The purpose of the book is to explain the key concepts underpinning data science. The manual attemopts to explain the underlying influences, teaching the main pricniples and getting the simple thing right over technological complications, devbelopment of mathematical intuition and howthey affect DS decisions without getting overly technical, and how to think like a compuetr scientist but act like a sattistician. This is instructed through traditional text, as well as real world projects applying the concepts many of which illustrate projects that failed and why, take home lessons with the big picture of topics, and homework problems.
 
-## What are the major topics and how are they organized, related, and/or independent?
+#### What are the major topics and how are they organized, related, and/or independent?
 1. What is data science and why has it rose to prominence
 2. Academic undperinnings of data science
 3. Data preparation and exploration
 4. Models from simple scoring and ranking heuristics to machine learning
 5. Big data infrastructure to support data intensive workloads
 
-## Chapter 1: What is Data Science?
+### Chapter 1: What is Data Science?
 Topic:
- [[202206121102 practical data science empahsizes getting the basics right and actionable insights]]
+ [[202206121102 practical data science emphasizes getting the basics right and actionable insights]]
 [[202206120752- mathematical intuition is critical for data science]]
 [[202206111633 - think like a computer scientist act like a statistician understand like a domain expert]]
-[[202206131033 data science is a field emerging from long established disciplines drive by changes in techology]]
+[[202206131033 data science is a field emerging from long established disciplines drive by changes in technology]]
 [[202206131406-data science methods strongly influenced by CS methods need to be applied in a messy world like real science]]
 [[202206141427-DS requires context and asking good questions of the dataset]]
 [[202206141848-broad thinking is needed to find answers in unexpected data sets]]
@@ -47,7 +43,7 @@ Topic:
  **TOD:** Expand **Ordered Nominal**, **ratio scale**, **interval scale**
  [[202206151437-big data vs. small data]]
  [[202206161636-the right data is better than more data]]
- [[202206161754-supervised learning most common challenge in DS classfication or regression]]
+ [[202206161754-supervised learning most common challenge in DS classification or regression]]
 - 17 - 18 *Quant-Shop* challenges
 - 18 - Kaggle contest interviews
 - 19 genius vs. wisdom in data science
@@ -63,27 +59,22 @@ Topic:
 Topic:
 [[202206221553p-Data Science Math Prereqs#Math Forms the Foundation of Data Science]]
 
-
 ### 2.1 Probability
 [[202206221553p-Data Science Math Prereqs#Probability]]
 
 #### 2.1.1 Probability vs. Statistics
 [[202206241833-probability theory of future likelihood, stats applied to frequency of past events]]
-
-**ELABORATE:**[[202206241850-probability invented by pascal and fermat assesing fair payout of unfinished game of chance]]
+**ELABORATE:**[[202206241850-probability invented by Pascal and Fermat assessing fair payout of unfinished game of chance]]
 
 #### 2.1.2 Compound Events and Independence
 [[202206261106-compound events use set operations to combine events and find complex probability]]
-
 [[202206270825- independent events prob easier to calculate but  not informative for prediction and inference]]
-
 
 #### 2.1.3 Conditional Probability
 [[202206271239-conditional probability needed to find likelihood of an event as a function of another event]]
 
 #### 2.1.4 Probability Distributions
 [[202206271334-a probability density function represents the probability of all random variable values in a sample space]]
-
 [[202206271758-A histogram is a statistical corollary to a PDF and from the frequency of observed events]]
 
 [[202206271820- CDF are alternative representation of random variable prob containing same info as PDF]]
@@ -100,27 +91,17 @@ Topic:
 [[202206281308-variability measures describe how far the data is spread around the center]]
 
 #### 2.2.3 Interpreting Variance
-**37** Data scientists try to explain world through data, but often phenomena isn't really and only appears due to variance
-**37** *sampling error* 
-**37** *measurement error*
-**37** *signal to noise ratio* degree to which observations reflect quantity of interest and not just variance
-**37-38** investment performance often a matter of luck
-**38-39** seasonal changes in a baseball player's performance often due to variance
-**39** small differences in model accuracy typically due to variance
+**elaborate**[[202206281654- variance inherent in any measure distorts what are actually real phenomenon rather than just noise in the data]]
 
 #### 2.2.4 Characterizing Distributions
-**40** "Report both the mean and standard deviation to characterize your distribution, written as $\mu \pm \sigma$."
-**39** distribnutions not necessarily concentrated towards setting, but mean and standard deviation combined do a good job of characterizing any distribution, since $\sigma$ is sensitive to points far from mean
-**39** regardless of how data is distributed, for any distribution at least $(1-(1/k^2))$th of mass must lie within $\pm k$ standard deviations of means. This means at least 75% of data is within $2 \sigma$ of the mean and almost 89% within  $3 \sigma$
-**39** for normal guassian distributions the bounds are even tighter
+[[202206281623-mean and standard deviation TOGETHER  characterize  any distribution well]]
 
 ### 2.3 Correlation Analysis
-**40** $x$ and $y$ are *correlated* if knowing the value of $x$ has predictive power for the value of $y$
-**40** *correlation coefficient* $r(X,Y)$ measures the degree to whcih $Y$ is a *linear* function of $X$ and vice versa
-**40** Empircial correlation serves as the basis for many predictive models
-**40** both measures fall in range $[-1,1]$ 
+[[202206282004-for two random variables correlation measures the degree to which one is a linear function of the other]]
 
 #### 2.3.1 Correlation Coefficients: Pearson and Spearman Rank
+[[202206282018-two main types of correlation are pearson and spearman rank]]
+
 ##### Pearson Correlation Coefficient
 **42**  *pearson correlation* defines degree to which a linear predictor can fit the data
 **41** it is more prominent of two correlation measures
