@@ -2,6 +2,7 @@
   "items": [
     {
       "type": "file",
+<<<<<<< HEAD
       "title": "Skiena-The Data Science  Design Manual 1st",
       "path": "_inbox/Skiena-The Data Science  Design Manual 1st.md"
     },
@@ -9,6 +10,15 @@
       "type": "file",
       "title": "202206282018-two main types of correlation are pearson and spearman rank",
       "path": "_inbox/202206282018-two main types of correlation are pearson and spearman rank.md"
+=======
+      "title": "202207130853-identifiers are Java representations for variable names",
+      "path": "_inbox/202207130853-identifiers are Java representations for variable names.md"
+    },
+    {
+      "type": "file",
+      "title": "Computer Science an Interdisciplinary Approach",
+      "path": "class/Computer Science an Interdisciplinary Approach.md"
+>>>>>>> b4a24de10d3ac9cedb57a00412f55d1b36a5a63a
     }
   ]
 }

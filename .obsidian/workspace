@@ -1,36 +1,75 @@
 {
   "main": {
-    "id": "59e82c6eeaac6146",
+    "id": "572ab77dd7a22db9",
     "type": "split",
     "children": [
       {
+<<<<<<< HEAD
         "id": "0cb20cbc1acee415",
+=======
+        "id": "aab31a170cf95523",
+>>>>>>> b4a24de10d3ac9cedb57a00412f55d1b36a5a63a
         "type": "leaf",
         "pinned": true,
         "state": {
           "type": "markdown",
           "state": {
+<<<<<<< HEAD
             "file": "_project/why obsidian.md",
+=======
+            "file": "class/Computer Science an Interdisciplinary Approach.md",
+>>>>>>> b4a24de10d3ac9cedb57a00412f55d1b36a5a63a
             "mode": "source",
             "backlinks": true,
             "source": false
           },
           "pinned": true
         }
+<<<<<<< HEAD
+=======
+      },
+      {
+        "id": "3e4341485079ef7d",
+        "type": "leaf",
+        "pinned": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "_inbox/202207130853-identifiers are Java representations for variable names.md",
+            "mode": "source",
+            "backlinks": true,
+            "source": false
+          },
+          "pinned": true
+        }
+      },
+      {
+        "id": "ba0805cdd2d44c1d",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "_inbox/202207130903-meaningful varable names following stylistic conventions important to managing complexity and writing undertsandble programs.md",
+            "mode": "source",
+            "backlinks": true,
+            "source": false
+          }
+        }
+>>>>>>> b4a24de10d3ac9cedb57a00412f55d1b36a5a63a
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "eb9443efa6396f34",
+    "id": "35e99673fd7c2969",
     "type": "split",
     "children": [
       {
-        "id": "aa8ea150668eb3c7",
+        "id": "c79c68be5fd0c6df",
         "type": "tabs",
         "children": [
           {
-            "id": "56369d01a538368c",
+            "id": "c2c3b9e9934a9c8a",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -38,12 +77,12 @@
             }
           },
           {
-            "id": "c0a2982789a2400a",
+            "id": "84f6d2d399534710",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#idea/undeveloped",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -53,7 +92,7 @@
             }
           },
           {
-            "id": "388fbc00d714a178",
+            "id": "7ab24089a389d9eb",
             "type": "leaf",
             "state": {
               "type": "starred",
@@ -64,24 +103,32 @@
       }
     ],
     "direction": "horizontal",
+<<<<<<< HEAD
     "width": 559,
+=======
+    "width": 574,
+>>>>>>> b4a24de10d3ac9cedb57a00412f55d1b36a5a63a
     "collapsed": true
   },
   "right": {
-    "id": "c47575bc48b1cfc1",
+    "id": "c3be8f9964344a2c",
     "type": "split",
     "children": [
       {
-        "id": "360080d5e1c34bae",
+        "id": "828afffd685890e0",
         "type": "tabs",
         "children": [
           {
-            "id": "47535902e3e38afb",
+            "id": "6cfe239148efc1f6",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+<<<<<<< HEAD
                 "file": "_project/why obsidian.md",
+=======
+                "file": "class/Computer Science an Interdisciplinary Approach.md",
+>>>>>>> b4a24de10d3ac9cedb57a00412f55d1b36a5a63a
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -93,19 +140,23 @@
             }
           },
           {
-            "id": "07f65703cafad7cc",
+            "id": "40e324c07f056dae",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+<<<<<<< HEAD
                 "file": "_project/why obsidian.md",
+=======
+                "file": "class/Computer Science an Interdisciplinary Approach.md",
+>>>>>>> b4a24de10d3ac9cedb57a00412f55d1b36a5a63a
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "77cb4be1d638d8e2",
+            "id": "79c471e3b3afdbec",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -116,29 +167,21 @@
             }
           },
           {
-            "id": "b5225628d84b293c",
+            "id": "ed88daac13d8418b",
             "type": "leaf",
             "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {}
-            }
-          },
-          {
-            "id": "1bc6a8a67f61f89e",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
+              "type": "review-queue-list-view",
               "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
     "width": 300,
     "collapsed": true
   },
+<<<<<<< HEAD
   "active": "0cb20cbc1acee415",
   "lastOpenFiles": [
     "_project/why obsidian.md",
@@ -151,5 +194,19 @@
     "Untitled.md",
     "_inbox/Wengrow 2020.md",
     "_inbox/202206271239-conditional probability needed to find likelihood of an event as a function of another event.md"
+=======
+  "active": "aab31a170cf95523",
+  "lastOpenFiles": [
+    "_inbox/202207130853-identifiers are Java representations for variable names.md",
+    "class/Computer Science an Interdisciplinary Approach.md",
+    "_inbox/202207130903-meaningful varable names following stylistic conventions important to managing complexity and writing undertsandble programs.md",
+    "_inbox/202207130845-operators are Java representations of operations that can be performed on data-types.md",
+    "_inbox/202207130829-literals are how Java represent data-type value.md",
+    "_inbox/202207121924-must always be aware of data typed used in program written in strongly typed language.md",
+    "_inbox/202207121947-data types formally defined by values and operations.md",
+    "_inbox/202207130731-strings in java are represented  sequences of characters.md",
+    "_inbox/202207130821-building data-types beyond Java built-in important for complex programs.md",
+    "daily notes/2022-07-13.md"
+>>>>>>> b4a24de10d3ac9cedb57a00412f55d1b36a5a63a
   ]
 }
