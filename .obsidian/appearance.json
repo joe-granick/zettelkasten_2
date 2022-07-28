@@ -1,9 +1,4 @@
 {
-<<<<<<< HEAD
-  "baseFontSize": 20,
-=======
-  "baseFontSize": 17,
->>>>>>> b4a24de10d3ac9cedb57a00412f55d1b36a5a63a
   "cssTheme": "Deep Work",
-  "theme": "obsidian"
+  "theme": "moonstone"
 }

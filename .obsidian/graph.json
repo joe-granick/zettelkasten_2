@@ -1,6 +1,6 @@
 {
-  "collapse-filter": true,
-  "search": " -tag:year -tag:#book",
+  "collapse-filter": false,
+  "search": "path:slip-box",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": true,
@@ -48,6 +48,20 @@
         "a": 1,
         "rgb": 0
       }
+    },
+    {
+      "query": "#permanent-note",
+      "color": {
+        "a": 1,
+        "rgb": 6053078
+      }
+    },
+    {
+      "query": "#map-of-content",
+      "color": {
+        "a": 1,
+        "rgb": 7601920
+      }
     }
   ],
   "collapse-display": true,
@@ -60,6 +74,6 @@
   "repelStrength": 20,
   "linkStrength": 0.923076923076923,
   "linkDistance": 30,
-  "scale": 0.6316046762907562,
+  "scale": 0.11660891579457397,
   "close": false
 }

@@ -2,15 +2,16 @@
 aliases: []
 ---
 Added: {{date:YYYYMMDD}}{{time:HHmm}}
-Name: 
 Tags: #book
-Topics: 
-Author: 
+Name: 
+Author(s): 
+Edition:
 Publisher: 
 Date: 
 Year: 
-Edition:
 URL: 
+Topic(s):
+Book-Type:
 
 
 ## What kind of book is this?

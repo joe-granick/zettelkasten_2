@@ -1,75 +1,34 @@
 {
   "main": {
-    "id": "572ab77dd7a22db9",
+    "id": "85221ddeeeea1cf6",
     "type": "split",
     "children": [
       {
-<<<<<<< HEAD
-        "id": "0cb20cbc1acee415",
-=======
-        "id": "aab31a170cf95523",
->>>>>>> b4a24de10d3ac9cedb57a00412f55d1b36a5a63a
-        "type": "leaf",
-        "pinned": true,
-        "state": {
-          "type": "markdown",
-          "state": {
-<<<<<<< HEAD
-            "file": "_project/why obsidian.md",
-=======
-            "file": "class/Computer Science an Interdisciplinary Approach.md",
->>>>>>> b4a24de10d3ac9cedb57a00412f55d1b36a5a63a
-            "mode": "source",
-            "backlinks": true,
-            "source": false
-          },
-          "pinned": true
-        }
-<<<<<<< HEAD
-=======
-      },
-      {
-        "id": "3e4341485079ef7d",
-        "type": "leaf",
-        "pinned": true,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "_inbox/202207130853-identifiers are Java representations for variable names.md",
-            "mode": "source",
-            "backlinks": true,
-            "source": false
-          },
-          "pinned": true
-        }
-      },
-      {
-        "id": "ba0805cdd2d44c1d",
+        "id": "4684b28f438a2c04",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_inbox/202207130903-meaningful varable names following stylistic conventions important to managing complexity and writing undertsandble programs.md",
+            "file": "slip-box/202206281014-central tendency like mean median and mode describe center of distribution around which data is spread.md",
             "mode": "source",
             "backlinks": true,
             "source": false
           }
         }
->>>>>>> b4a24de10d3ac9cedb57a00412f55d1b36a5a63a
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "35e99673fd7c2969",
+    "id": "2f5517613896bce0",
     "type": "split",
     "children": [
       {
-        "id": "c79c68be5fd0c6df",
+        "id": "6d65b771162a24c2",
         "type": "tabs",
         "children": [
           {
-            "id": "c2c3b9e9934a9c8a",
+            "id": "a17f5e9b569925f4",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -77,7 +36,7 @@
             }
           },
           {
-            "id": "84f6d2d399534710",
+            "id": "f122ade273206852",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -92,7 +51,7 @@
             }
           },
           {
-            "id": "7ab24089a389d9eb",
+            "id": "28fcb4a19600ec2b",
             "type": "leaf",
             "state": {
               "type": "starred",
@@ -103,32 +62,23 @@
       }
     ],
     "direction": "horizontal",
-<<<<<<< HEAD
-    "width": 559,
-=======
-    "width": 574,
->>>>>>> b4a24de10d3ac9cedb57a00412f55d1b36a5a63a
-    "collapsed": true
+    "width": 466.5
   },
   "right": {
-    "id": "c3be8f9964344a2c",
+    "id": "92c1940b44e40176",
     "type": "split",
     "children": [
       {
-        "id": "828afffd685890e0",
+        "id": "c69f484f212d04b9",
         "type": "tabs",
         "children": [
           {
-            "id": "6cfe239148efc1f6",
+            "id": "dcc758607191b969",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-<<<<<<< HEAD
-                "file": "_project/why obsidian.md",
-=======
-                "file": "class/Computer Science an Interdisciplinary Approach.md",
->>>>>>> b4a24de10d3ac9cedb57a00412f55d1b36a5a63a
+                "file": "slip-box/202206281014-central tendency like mean median and mode describe center of distribution around which data is spread.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,23 +90,19 @@
             }
           },
           {
-            "id": "40e324c07f056dae",
+            "id": "aa88f9ffe4548a46",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-<<<<<<< HEAD
-                "file": "_project/why obsidian.md",
-=======
-                "file": "class/Computer Science an Interdisciplinary Approach.md",
->>>>>>> b4a24de10d3ac9cedb57a00412f55d1b36a5a63a
+                "file": "slip-box/202206281014-central tendency like mean median and mode describe center of distribution around which data is spread.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "79c471e3b3afdbec",
+            "id": "7f518c448d02a08b",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -164,14 +110,6 @@
                 "sortOrder": "frequency",
                 "useHierarchy": true
               }
-            }
-          },
-          {
-            "id": "ed88daac13d8418b",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {}
             }
           }
         ]
@@ -181,32 +119,17 @@
     "width": 300,
     "collapsed": true
   },
-<<<<<<< HEAD
-  "active": "0cb20cbc1acee415",
+  "active": "4684b28f438a2c04",
   "lastOpenFiles": [
-    "_project/why obsidian.md",
-    "_inbox/Skiena-The Data Science  Design Manual 1st.md",
-    "_project/202207121447-separator.md",
-    "_project/202207121439-LaTex.md",
-    "_project/202207121434-markdown lists.md",
-    "_project/202207121421-headings.md",
-    "_project/202207121424-headings in html.md",
-    "Untitled.md",
-    "_inbox/Wengrow 2020.md",
-    "_inbox/202206271239-conditional probability needed to find likelihood of an event as a function of another event.md"
-=======
-  "active": "aab31a170cf95523",
-  "lastOpenFiles": [
-    "_inbox/202207130853-identifiers are Java representations for variable names.md",
-    "class/Computer Science an Interdisciplinary Approach.md",
-    "_inbox/202207130903-meaningful varable names following stylistic conventions important to managing complexity and writing undertsandble programs.md",
-    "_inbox/202207130845-operators are Java representations of operations that can be performed on data-types.md",
-    "_inbox/202207130829-literals are how Java represent data-type value.md",
-    "_inbox/202207121924-must always be aware of data typed used in program written in strongly typed language.md",
-    "_inbox/202207121947-data types formally defined by values and operations.md",
-    "_inbox/202207130731-strings in java are represented  sequences of characters.md",
-    "_inbox/202207130821-building data-types beyond Java built-in important for complex programs.md",
-    "daily notes/2022-07-13.md"
->>>>>>> b4a24de10d3ac9cedb57a00412f55d1b36a5a63a
+    "slip-box/_main-index.md",
+    "slip-box/202206151429a-data can be structured or unstructured.md",
+    "slip-box/202206111633c1- mathematical intuition is critical for data science.md",
+    "slip-box/202206111633c-Data Science Math Prereqs.md",
+    "slip-box/202206151429a1-unstructured data typically can be pre-processed into a structure for analysis.md",
+    "slip-box/202206111633c2h1- independent events prob easier to calculate but  not informative for prediction and inference.md",
+    "slip-box/202206111633c2h-compound events use set operations to combine events and find complex probability.md",
+    "slip-box/202206111633c3b-probability theory of future likelihood, stats applied to frequency of past events.md",
+    "slip-box/202206111633c2g-expected value is the average value of random variables adjusted for probability.md",
+    "slip-box/202206111633c3- statistics bridges the gap between probability theory and real world data.md"
   ]
 }
