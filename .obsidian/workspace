@@ -4,13 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "aab31a170cf95523",
+        "id": "8d4b4fe213cb7a1d",
         "type": "leaf",
+        "dimension": 75.5980861244019,
         "pinned": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "class/Computer Science an Interdisciplinary Approach.md",
+            "file": "_inbox/Computer Science an Interdisciplinary Approach.md",
             "mode": "source",
             "backlinks": true,
             "source": false
@@ -19,13 +20,14 @@
         }
       },
       {
-        "id": "3e4341485079ef7d",
+        "id": "1cdf925181032f19",
         "type": "leaf",
+        "dimension": 12.200956937799047,
         "pinned": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_inbox/202207130853-identifiers are Java representations for variable names.md",
+            "file": "_inbox/202207251946-string primitive-like treatment critical for complex computing programs.md",
             "mode": "source",
             "backlinks": true,
             "source": false
@@ -34,12 +36,13 @@
         }
       },
       {
-        "id": "ba0805cdd2d44c1d",
+        "id": "bb3ed7239aaafe92",
         "type": "leaf",
+        "dimension": 12.200956937799047,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_inbox/202207130903-meaningful varable names following stylistic conventions important to managing complexity and writing undertsandble programs.md",
+            "file": "_inbox/202207130845-operators are Java representations of operations that can be performed on data-types.md",
             "mode": "source",
             "backlinks": true,
             "source": false
@@ -92,8 +95,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 574,
-    "collapsed": true
+    "width": 681.5
   },
   "right": {
     "id": "c3be8f9964344a2c",
@@ -109,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "class/Computer Science an Interdisciplinary Approach.md",
+                "file": "_inbox/Computer Science an Interdisciplinary Approach.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "class/Computer Science an Interdisciplinary Approach.md",
+                "file": "_inbox/Computer Science an Interdisciplinary Approach.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,17 +160,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "aab31a170cf95523",
+  "active": "8d4b4fe213cb7a1d",
   "lastOpenFiles": [
-    "_inbox/202207130853-identifiers are Java representations for variable names.md",
-    "class/Computer Science an Interdisciplinary Approach.md",
-    "_inbox/202207130903-meaningful varable names following stylistic conventions important to managing complexity and writing undertsandble programs.md",
     "_inbox/202207130845-operators are Java representations of operations that can be performed on data-types.md",
-    "_inbox/202207130829-literals are how Java represent data-type value.md",
-    "_inbox/202207121924-must always be aware of data typed used in program written in strongly typed language.md",
+    "_inbox/202207121947c-literals are how Java represent data-type value.md",
+    "_inbox/202207121947b-building data-types beyond Java built-in important for complex programs.md",
+    "_inbox/202207121947a-strings in java represent sequences of characters.md",
+    "_inbox/202207251946-string primitive-like treatment critical for complex computing programs.md",
     "_inbox/202207121947-data types formally defined by values and operations.md",
-    "_inbox/202207130731-strings in java are represented  sequences of characters.md",
-    "_inbox/202207130821-building data-types beyond Java built-in important for complex programs.md",
-    "daily notes/2022-07-13.md"
+    "_inbox/202207121924a-strongly typed languages require object passed to function be of a compatible data type.md",
+    "_inbox/202207121924-must always be aware of data typed used in program written in strongly typed language.md",
+    "_inbox/202207041535-java public class needs associated file with same name.md",
+    "_inbox/202206281230-ratios should be log transformed before taking their arithmetic mean.md"
   ]
 }

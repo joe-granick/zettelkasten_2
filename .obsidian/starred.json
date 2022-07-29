@@ -8,7 +8,12 @@
     {
       "type": "file",
       "title": "Computer Science an Interdisciplinary Approach",
-      "path": "class/Computer Science an Interdisciplinary Approach.md"
+      "path": "_inbox/Computer Science an Interdisciplinary Approach.md"
+    },
+    {
+      "type": "file",
+      "title": "202207251946-string primitive-like treatment critical for complex computing programs",
+      "path": "_inbox/202207251946-string primitive-like treatment critical for complex computing programs.md"
     }
   ]
 }

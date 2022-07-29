@@ -11,5 +11,5 @@ Therefore Java has strong data types formally defined by the *finite* set of val
 Java has 8 primitive data types built-in
 
 
-[^1]: [[202207121932-strongly typed languages require object passed to function be of a compatible data type|202207121932]]
+[^1]: [[202207121924a-strongly typed languages require object passed to function be of a compatible data type|202207121932]]
 [^2]: [[Computer Science an Interdisciplinary Approach]] **pg 14**

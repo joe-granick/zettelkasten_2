@@ -12,7 +12,7 @@ However they must start with a letter, other symbols are restricted, as are **re
 
 Identifiers are case sensitive meanin `A` and `a` are assigned to different memory addresses ^[[[Computer Science an Interdisciplinary Approach]] **pg 16**]
 
-Just because an identifier is valid doesn't mean it is good. For more readable and understandable programs it is important to follow stylistic conventions and use meaningful names.^[[202207130903-meaningful varable names following stylistic conventions important to managing complexity and writing undertsandble programs|202207130903]]
+Just because an identifier is valid doesn't mean it is good. For more readable and understandable programs it is important to follow stylistic conventions and use meaningful names.^[[[202207130903-meaningful varable names following stylistic conventions important to managing complexity and writing undertsandble programs|202207130903]]]
 
 ### Valid Identifiers
 - `abc`
