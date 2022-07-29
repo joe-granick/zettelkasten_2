@@ -2,6 +2,7 @@ Added: 20220726110717
 Status: #map-of-content 
 Tags:
 
+# Data Science
 **academic influences on data science**
 - thinking like a **scientist** vs. **computer scientist** vs. **statistician** [[202206111633b - think like a computer scientist act like a statistician understand like a domain expert|202206111633]]
 	-  **computer science** provides algorithms and tools as well as mindset for composing solutions
@@ -32,8 +33,16 @@ Tags:
 	- For practical applications, majority of DS solutions should be cast as **supervised learning** problems [[202206161754a-supervised learning most common challenge in DS classification or regression|202206161754a]] 
 
 
+# Computer Science
 
+**Data-Type**
+- Formally defined by value domain and associated operations[[202207121923-data types formally defined by values and operations|202207121923]]
 
+- **Strong Typing**
+	- Important to know data-type to prevent errors, especially for **strongly typed** languages (eg *Java*) [[202207121924-must always be aware of data typed used in program written in strongly typed language|202207121924]]
+- **Primitive**
+- **Built-in**
+	
 
 
 ___

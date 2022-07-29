@@ -1,8 +1,10 @@
 ---
-aliases: ['202207121947']
+aliases: ['202207121923']
 ---
-Status: #idea
-Tags: 
+Added: 202207121947
+Status: #permanent-note 
+Tags:[[data-type]]
+Links:
 
 For strongly typed languages not understanding distinction between data types can lead to  unwitting combinations of incompatible data types[^1] 
 

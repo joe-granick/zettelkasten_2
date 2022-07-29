@@ -1,3 +1,0 @@
----
-aliases:[naming convention]
----
