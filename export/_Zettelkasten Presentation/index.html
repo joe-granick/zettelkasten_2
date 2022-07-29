@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title></title>
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="plugin/highlight/zenburn.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="plugin/customcontrols/style.css">
+
+
+    <script defer src="dist/fontawesome/all.min.js"></script>
+
+	<script type="text/javascript">
+		var forgetPop = true;
+		function onPopState(event) {
+			if(forgetPop){
+				forgetPop = false;
+			} else {
+				parent.postMessage(event.target.location.href, "app://obsidian.md");
+			}
+        }
+		window.onpopstate = onPopState;
+		window.onmessage = event => {
+			if(event.data == "reload"){
+				window.document.location.reload();
+			}
+			forgetPop = true;
+		}
+
+		function fitElements(){
+			const itemsToFit = document.getElementsByClassName('fitText');
+			for (const item in itemsToFit) {
+				if (Object.hasOwnProperty.call(itemsToFit, item)) {
+					var element = itemsToFit[item];
+					fitElement(element,1, 1000);
+					element.classList.remove('fitText');
+				}
+			}
+		}
+
+		function fitElement(element, start, end){
+
+			let size = (end + start) / 2;
+			element.style.fontSize = `${size}px`;
+
+			if(Math.abs(start - end) < 1){
+				while(element.scrollHeight > element.offsetHeight){
+					size--;
+					element.style.fontSize = `${size}px`;
+				}
+				return;
+			}
+
+			if(element.scrollHeight > element.offsetHeight){
+				fitElement(element, start, size);
+			} else {
+				fitElement(element, size, end);
+			}		
+		}
+
+
+		document.onreadystatechange = () => {
+			fitElements();
+			if (document.readyState === 'complete') {
+				if (window.location.href.indexOf("?export") != -1){
+					parent.postMessage(event.target.location.href, "app://obsidian.md");
+				}
+				if (window.location.href.indexOf("print-pdf") != -1){
+					let stateCheck = setInterval(() => {
+						clearInterval(stateCheck);
+						window.print();
+					}, 250);
+				}
+			}
+	};
+
+
+        </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template">### Link Your Thinking with Zettelkasten and Obsidian
+
+</script></section><section  data-markdown><script type="text/template">
+
+
+
+
+
+<div class="reset-margin" style="position: absolute; left: 0px; top: -175px; height: 350px; min-height: 350px; width: 720px; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-evenly" align="left">
+
+ZK Reduces Friction
+</div>
+<div class="reset-margin" style="font-size: 25px; position: absolute; left: 0px; top: 105px; height: 595px; min-height: 595px; width: 432px; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start" align="left">
+
+Reduces  planning and decision making required in advance
+<br>
+<br>
+No more "brainstorming"
+<br> 
+<br>
+Notes can be taken simultaneously with research
+<br> 
+<br>
+No need to decide how to organize
+<br>
+<br>
+Natural system for incorporation
+<br>
+<br>
+No more blank-page syndrome
+</div>
+<div class="reset-margin" style="position: absolute; left: 480px; top: 105px; height: 350px; min-height: 350px; width: 432px; display: flex; flex-direction: column; align-items: center; justify-content: flex-start" >
+
+<p style="line-height: 0" class="reset-paragraph image-paragraph"><img src="_project/zettel_multiple_parents.png" alt="" ></img></p>
+
+</div>
+
+
+
+**<aside class="notes"><p>** </p>
+<ul>
+<li>Zettelkasten allows ideas to be developed as research is conducted</li>
+<li>It allows you to defer decision making until later (source of procrastination)<ul>
+<li>No need to decide on a topic beforehand</li>
+<li>Topics develop organically</li>
+<li>Selection can be done by gravity of connections</li>
+<li>No need to deal with blank page syndrome<ul>
+<li> Don&#39;t waste time extracting ideas for manuscript, note sequences can be composed as needed and converted quickly due to way they were written</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- .slide: class="drop" --></aside></script></section><section  data-markdown><script type="text/template">
+
+
+
+<div class="reset-margin" style="position: absolute; left: 0px; top: -175px; height: 350px; min-height: 350px; width: 720px; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-evenly" align="left">
+
+ZK Reduces Wasted Effort
+</div>
+<div class="reset-margin" style="font-size: 25px; position: absolute; left: 0px; top: 105px; height: 595px; min-height: 595px; width: 432px; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start" align="left">
+
+System improves as notes are added
+<br> 
+<br>
+Pre-developed network of ideas indicate content rich topics
+<br> 
+<br>
+Less likely to have to change direction
+<br> 
+<br>
+Connecting notes  prevents ideas from disappearing into abyss
+<br>
+<br>
+Sources  ready for citation or further reference
+</div>
+<div class="reset-margin" style="position: absolute; left: 480px; top: 140px; height: 490px; min-height: 490px; width: 432px; display: flex; flex-direction: column; align-items: center; justify-content: flex-start" >
+
+<p style="line-height: 0" class="reset-paragraph image-paragraph"><img src="_project/path-to-project.png" alt="" ></img></p>
+
+</div>
+
+
+**<aside class="notes"><p>**</p>
+<ul>
+<li>Many times notes become less useful as more are added but ZK improves as notes are added</li>
+<li>Normally have to pre-decide a topic then conduct research this could result in unsatisfactory topics, or the the risk of having to change directions since ideas will already be well developed and topics with an adequate amount of content arise naturally and are indicated by clusters of notes and sequences</li>
+<li>No need  to look through books for highlighted sections or gambling on potentially dead-end sources</li>
+<li>Work done feeds back into the network, since it is connection based the system becomes stronger as more notes added</li>
+<li>Won&#39;t lose work because it was connected to a specific project or the reference can&#39;t be found</li>
+</ul>
+<!-- .slide: class="drop" --></aside></script></section><section  data-markdown><script type="text/template">
+
+
+<div class="reset-margin" style="position: absolute; left: 0px; top: -140px; height: 350px; min-height: 350px; width: 960px; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-evenly" align="left">
+
+ZK Facilitates Natural Complexity through Composed Simplicity
+</div>
+<div class="reset-margin" style="font-size: 25px; position: absolute; left: 0px; top: 105px; height: 595px; min-height: 595px; width: 432px; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start" align="left">
+
+Atomic notes are like shipping containers for ideas
+<br> 
+<br>
+Formalizing context of notes makes more robust foundation
+<br>
+<br>
+Simple notes lead to emergent complexity
+</div>
+<div class="reset-margin" style="position: absolute; left: 480px; top: 105px; height: 350px; min-height: 350px; width: 432px; display: flex; flex-direction: column; align-items: center; justify-content: flex-start" >
+
+<p style="line-height: 0" class="reset-paragraph image-paragraph"><img src="_project/game_of_life.gif" alt="" ></img></p>
+
+</div>
+<div class="reset-margin" style="font-size: 15px; position: absolute; left: 508.79999999999995px; top: 385px; height: 56px; min-height: 56px; width: 384px; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-end" align="left">
+
+*Conway's game of life demonstrates **emergence** and **self-organization** with cellular automaton*
+</div>
+
+
+
+
+**<aside class="notes"><p>**</p>
+<ul>
+<li>each note represents one atomic idea allowing one to focus on building a complete thought</li>
+<li>connections allow one to step back and compose more complex topics from each of these building blocks like stacking shipping containers</li>
+<li>Gives a standard unit for an idea, more complex topics are just built up from these bricks</li>
+<li><strong>emergence</strong> occurs when an entity is observed to have properties its parts do not have on their own, properties or behaviors which emerge only when the parts interact in a wider whole.</li>
+<li><strong>Self-organization</strong> is a process where some form of overall <a href="https://en.wikipedia.org/wiki/Order_and_disorder" title="Order and disorder">order</a> arises from local interactions between parts of an initially disordered <a href="https://en.wikipedia.org/wiki/System" title="System">system</a>. It is often triggered by seemingly random <a href="https://en.wikipedia.org/wiki/Statistical_fluctuations" title="Statistical fluctuations">fluctuations</a>, amplified by <a href="https://en.wikipedia.org/wiki/Positive_feedback" title="Positive feedback">positive feedback</a>. The resulting organization is wholly decentralized, <a href="https://en.wiktionary.org/wiki/distribute" title="wikt:distribute">distributed</a> over all the components of the system. As such, the organization is typically <a href="https://en.wikipedia.org/wiki/Robust_(disambiguation)" title="Robust (disambiguation)">robust</a> and able to survive or self-repair substantial perturbation. <a href="https://en.wikipedia.org/wiki/Chaos_theory" title="Chaos theory">Chaos theory</a> discusses self-organization in terms of islands of <a href="https://en.wikipedia.org/wiki/Predictability" title="Predictability">predictability</a> in a sea of chaotic unpredictability.</li>
+<li><strong>A cellular automaton</strong> consists of a regular grid of <em>cells</em>, each in one of a finite number of <em><a href="https://en.wikipedia.org/wiki/State_(computer_science)" title="State (computer science)">states</a></em>, such as <em>on</em> and <em>off</em> (in contrast to a <a href="https://en.wikipedia.org/wiki/Coupled_map_lattice" title="Coupled map lattice">coupled map lattice</a>). The grid can be in any finite number of dimensions. For each cell, a set of cells called its <em>neighborhood</em> is defined relative to the specified cell. An initial state (time <em>t</em> = 0) is selected by assigning a state for each cell. A new <em>generation</em> is created (advancing <em>t</em> by 1), according to some fixed <em>rule</em> (generally, a mathematical function)3(<a href="https://en.wikipedia.org/wiki/Cellular_automaton#cite_note-3">https://en.wikipedia.org/wiki/Cellular_automaton#cite_note-3</a>) that determines the new state of each cell in terms of the current state of the cell and the states of the cells in its neighborhood.</li>
+</ul>
+<!-- .slide: class="drop" --></aside></script></section><section  data-markdown><script type="text/template">
+<div class="reset-margin" style="position: absolute; left: 0px; top: -140px; height: 350px; min-height: 350px; width: 864px; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-evenly" align="left">
+
+ZK Facilitates Clarity of Reasoning Through Idea Chains
+</div>
+<div class="reset-margin" style="font-size: 25px; position: absolute; left: 0px; top: 105px; height: 595px; min-height: 595px; width: 960px; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start" align="left">
+
+Sequence of reasoning can be developed one note at a time
+<br> 
+<br>
+Emphasis on connection
+<br>
+<br>
+Composing sequences linearly to develop a manuscript draft indicates gaps in reasoning
+<br>
+<br>
+Elaborating ideas in specific context supports more well developed topics
+</div>
+<div class="reset-margin" style="position: absolute; left: 240px; top: 420px; height: 525px; min-height: 525px; width: 624px; display: flex; flex-direction: column; align-items: center; justify-content: flex-start" >
+
+<p style="line-height: 0" class="reset-paragraph image-paragraph"><img src="_project/zettel_sequence.png" alt="" ></img></p>
+
+</div>
+
+
+
+
+**<aside class="notes"><p>**</p>
+<ul>
+<li>strength of Zettel is the emphasis on connection</li>
+<li>connections facilitate better understanding, since you are writing with the aim of relating to other information you are building stronger relationships in ideas</li>
+<li>building relationships helps identify patterns</li>
+</ul>
+<!-- .slide: class="drop" --></aside></script></section><section  data-markdown><script type="text/template">
+
+<div class="reset-margin" style="position: absolute; left: 0px; top: 0px; height: 350px; min-height: 350px; width: 720px; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-evenly" align="left">
+
+ZK Naturally Aligns With Best Learning Practice
+</div>
+
+<div class="reset-margin" style="position: absolute; left: 0px; top: 140px; height: 630px; min-height: 630px; width: 960px; display: flex; flex-direction: column; align-items: center; justify-content: space-evenly" >
+
+**What Works** | **What Doesn't**
+------------ | ------------
+Spacing | Cramming
+Interleaving | One Thing at a Time
+Connecting | Compartmentalization
+Self-testing | Underlining/Highlighting/ Copying
+Elaboration | Re-Reading
+</div>
+
+
+
+
+
+**<aside class="notes"><p>**</p>
+<ul>
+<li>beyond developing individual pieces of work you are deepening your understanding</li>
+<li>memory and understanding are all heavily linked to the connections your brain makes between them</li>
+<li>you are forced to contextualize in connection to other ideas</li>
+<li>you are constantly revisiting and reconsidering ideas</li>
+</ul>
+<!-- .slide: class="drop" --></aside></script></section><section  data-markdown><script type="text/template">
+<div class="reset-margin" style="position: absolute; left: 0px; top: -175px; height: 350px; min-height: 350px; width: 720px; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-evenly" align="left">
+
+The Problem With Research
+</div>
+<div class="reset-margin" style="position: absolute; left: 0px; top: 70px; height: 140px; min-height: 140px; width: 912px; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-evenly" align="left">
+
+<p style="line-height: 0" class="reset-paragraph image-paragraph"><img src="_project/Traditional research worfklow.svg" alt="" ></img></p>
+
+</div>
+<div class="reset-margin" style="position: absolute; left: 0px; top: 245px; height: 455px; min-height: 455px; width: 960px; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start" align="left">
+
+- Compartmentalizes each step
+- Unmanageable complexity
+- Frequent context switching
+- Information lost in the abyss
+</div>
+
+
+
+
+
+**<aside class="notes"><p>**</p>
+<ul>
+<li>segmentation of task creates friction</li>
+<li>have to decide topic before having done research</li>
+<li>this requires<ul>
+<li>brainstorming, which is essentially trying to remember relevant info you already have read</li>
+<li>potentially wasteful excursions into research dead ends</li>
+</ul>
+</li>
+<li>traditional notetaking approaches info<ul>
+<li>gets deleted when project finished and isn&#39;t reusable</li>
+<li>gets lost in abyss</li>
+</ul>
+</li>
+<li>highlighting and underlying do not confer understanding</li>
+<li>notes in margin can often be lost to the rest of notes</li>
+<li>top-down hierarchy silos topic from each other</li>
+<li>Once research is compiled ideas need to be translated and connected</li>
+</ul>
+<!-- .slide: class="drop" --></aside></script></section><section  data-markdown><script type="text/template">
+
+
+<div class="reset-margin" style="position: absolute; left: 0px; top: -175px; height: 350px; min-height: 350px; width: 720px; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-evenly" align="left">
+
+Research is Non-Linear by Nature
+</div>
+<div class="reset-margin" style="position: absolute; left: 0px; top: 35px; height: 280px; min-height: 280px; width: 912px; display: flex; flex-direction: column; align-items: center; justify-content: space-evenly" >
+
+<p style="line-height: 0" class="reset-paragraph image-paragraph"><img src="_project/actual_research_workflow.svg" alt="" ></img></p>
+
+</div>
+<div class="reset-margin" style="position: absolute; left: 0px; top: 329px; height: 455px; min-height: 455px; width: 960px; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start" align="left">
+
+- Favors bottom-up approach
+- Ideas should be developed and integrated as you go
+- Benefits from flexibility
+- Information lost in the abyss
+</div>
+
+
+
+
+**<aside class="notes"><p>**</p>
+<ul>
+<li>researching is constant process of back an forth</li>
+<li>difficult to decide a topic without having researched it before</li>
+<li>topic may turn out to be fruitless</li>
+<li>certain resources may lead to dead end</li>
+<li>this requires<ul>
+<li>brainstorming, which is essentially trying to remember relevant info you already no</li>
+<li>potential</li>
+</ul>
+</li>
+<li>traditional notetaking approaches info<ul>
+<li>gets deleted when project finished and isn&#39;t reusable</li>
+<li>gets lost in abyss</li>
+</ul>
+</li>
+<li>highlighting and underlying do not confer understanding</li>
+<li>notes in margin can often be lost to the rest of notes<!-- .slide: class="drop" --></li>
+</ul>
+</aside></script></section><section  data-markdown><script type="text/template">
+
+
+<div class="reset-margin" style="position: absolute; left: 0px; top: -175px; height: 350px; min-height: 350px; width: 720px; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-evenly" align="left">
+
+Writing is Everything
+</div>
+<div class="reset-margin" style="font-size: 25px; position: absolute; left: 0px; top: 105px; height: 595px; min-height: 595px; width: 432px; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start" align="left">
+
+
+Complex fields require externalizations of thought process <br> <br>Well designed  note-taking  goes beyond record keeping becoming a scaffolding for thought.  <br> <br>
+Effective system creates a structured process for finding associations between ideas and chaining sequences of thought into new insight.
+</div>
+<div class="reset-margin" style="position: absolute; left: 480px; top: 105px; height: 350px; min-height: 350px; width: 432px; display: flex; flex-direction: column; align-items: center; justify-content: flex-start" >
+
+<p style="line-height: 0" class="reset-paragraph image-paragraph"><img src="_project/feynman.jpg" alt="" ></img></p>
+
+</div>
+<div class="reset-margin" style="font-size: 15px; position: absolute; left: 508.79999999999995px; top: 644px; height: 56px; min-height: 56px; width: 384px; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-end" align="left">
+
+"Notes aren’t a record of my thinking process. They are my thinking process" <br>-Richard Feynman
+</div>
+
+
+
+
+
+**<aside class="notes"><p>**</p>
+<ul>
+<li>Feynman biographer commented on impressive record of thought from note</li>
+<li>complex topics need to be externalized for development</li>
+<li>notes aren&#39;t merely a way to keep track of thoughts, they are a way to externalize complex ideas and develop them in a structured way</li>
+<li>beyond trivial topics notes provide a scaffolding for the interaction and composition of ideas</li>
+</ul>
+<!-- .slide: class="drop" --></aside></script></section><section  data-markdown><script type="text/template">
+
+<div class="reset-margin" style="position: absolute; left: 0px; top: -175px; height: 350px; min-height: 350px; width: 720px; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-evenly" align="left">
+
+Niklas Luhmann's Zettelkasten
+</div>
+<div class="reset-margin" style="font-size: 25px; position: absolute; left: 0px; top: 105px; height: 560px; min-height: 560px; width: 432px; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start" align="left">
+
+Luhmann used the Zettelkasten to build a prolific career as a Sociology professor
+<br><br>
+Over 30 years he managed to:
+- Publish 50 books
+- Wrote over 600 articles
+- Several works published posthumously, leaving 150 manuscripts when he died
+ <br><br>
+Luhmann built a note-taking system based on slips of paper to develop his "Theory of Society" over his career
+<br><br>
+Named the system **"Zettelkasten"** which translates to "slip-box"
+</div>
+<div class="reset-margin" style="position: absolute; left: 480px; top: 105px; height: 350px; min-height: 350px; width: 432px; display: flex; flex-direction: column; align-items: center; justify-content: flex-start" >
+
+<p style="line-height: 0" class="reset-paragraph image-paragraph"><img src="_project/Niklas_Luhmann.jpeg" alt="" ></img></p>
+
+</div>
+<div class="reset-margin" style="font-size: 15px; position: absolute; left: 508.79999999999995px; top: 560px; height: 84px; min-height: 84px; width: 384px; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-end" align="left">
+
+"I only do what is easy. I only write when I immediately know how to do it. If I falter for a moment, I put the matter aside and do something else"
+<br>-Niklas Luhmann
+</div>
+
+
+
+
+
+
+**<aside class="notes"><p>**</p>
+<ul>
+<li>had a law degree worked in public administration</li>
+<li>started taking notes on topics he thought was interesting</li>
+<li>found typical system of notes in margin limiting started &quot;slip-box&quot; system</li>
+<li>published two books that served as PhD thesis, and received Doctorate of Sociology</li>
+<li>As a professor over 30 years published 600 articles and 50 books on &quot;Theory of Society&quot;<!-- .slide: class="drop" --></li>
+</ul>
+</aside></script></section><section  data-markdown><script type="text/template">
+
+
+
+<div class="reset-margin" style="position: absolute; left: 0px; top: -140px; height: 350px; min-height: 350px; width: 720px; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-evenly" align="left">
+
+Zettelkasten Provides a System for thinking
+</div>
+<div class="reset-margin" style="font-size: 25px; position: absolute; left: 0px; top: 105px; height: 560px; min-height: 560px; width: 432px; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start" align="left">
+
+A Zettelkasten is a personal tool for thinking and writing. It has hypertextual features to make a web of thought possible. The difference to other systems is that you create a web of thoughts instead of notes of arbitrary size and form, and emphasize connection, not a collection.<br><br>
+
+</div>
+<div class="reset-margin" style="position: absolute; left: 480px; top: 105px; height: 350px; min-height: 350px; width: 432px; display: flex; flex-direction: column; align-items: center; justify-content: flex-start" >
+
+<p style="line-height: 0" class="reset-paragraph image-paragraph"><img src="_project/niklas-luhmann-slip-box-bielefeld-university.jpg" alt="" ></img></p>
+
+</div>
+<div class="reset-margin" style="font-size: 15px; position: absolute; left: 508.79999999999995px; top: 420px; height: 84px; min-height: 84px; width: 384px; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start" align="left">
+
+Worfklow driven by fleeting and permanent notes
+</div>
+
+
+
+
+
+**<aside class="notes"><p>**</p>
+<ul>
+<li>Zettelkasten provides the system to externalize thought as you go along your research</li>
+<li>fleeting notes to capture ideas as you go</li>
+<li>permanent notes for fully formed thoughts to connect to other notes develop topic naturally</li>
+</ul>
+<!-- .slide: class="drop" --></aside></script></section><section  data-markdown><script type="text/template">
+
+
+<div class="reset-margin" style="position: absolute; left: 0px; top: -140px; height: 350px; min-height: 350px; width: 720px; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-evenly" align="left">
+
+Literature Notes Will typically be Bulk of Research
+</div>
+<div class="reset-margin" style="font-size: 25px; position: absolute; left: 0px; top: 105px; height: 595px; min-height: 595px; width: 432px; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start" align="left">
+
+Sources with large number of notes designated their own location
+<br> 
+<br>
+Ideas added with page number
+<br>
+<br>
+Stored in slip-box for future reference
+</div>
+<div class="reset-margin" style="position: absolute; left: 480px; top: 105px; height: 350px; min-height: 350px; width: 432px; display: flex; flex-direction: column; align-items: center; justify-content: flex-start" >
+
+<p style="line-height: 0" class="reset-paragraph image-paragraph"><img src="_project/niklas_luhmann_literature_notes.jpg" alt="" ></img></p>
+
+</div>
+
+
+
+
+
+**<aside class="notes"><p>**</p>
+<ul>
+<li>serves as repository for interesting ideas gleaned from book</li>
+<li>links back to other permanent notes, allowing quick access to specific references</li>
+</ul>
+<!-- .slide: class="drop" --></aside></script></section><section  data-markdown><script type="text/template">
+<div class="reset-margin" style="position: absolute; left: 0px; top: -140px; height: 350px; min-height: 350px; width: 720px; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-evenly" align="left">
+
+Digital Literature Note 
+</div>
+<div class="reset-margin" style="font-size: 20px; position: absolute; left: 0px; top: 245px; height: 455px; min-height: 455px; width: 336px; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start" align="left">
+
+Obsidian Literature Note
+<br> 
+<br>
+Book Template
+<br>
+<br>
+Fleeting Notes => Zettels Indexed on Page
+</div>
+<div class="reset-margin" style="position: absolute; left: 374.4px; top: 35px; height: 21px; min-height: 21px; width: 576px; display: flex; flex-direction: column; align-items: center; justify-content: flex-start" >
+
+<p style="line-height: 0" class="reset-paragraph image-paragraph"><img src="_project/digital_literature_note.png" alt="" ></img></p>
+
+</div>
+<!-- .slide: class="drop" -->
+</script></section><section  data-markdown><script type="text/template">
+
+
+<div class="reset-margin" style="position: absolute; left: 0px; top: -140px; height: 350px; min-height: 350px; width: 720px; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-evenly" align="left">
+
+Zettel Notes
+</div>
+
+<div class="reset-margin" style="font-size: 25px; position: absolute; left: 0px; top: 105px; height: 595px; min-height: 595px; width: 432px; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start" align="left">
+
+Each Zettel Represents one "atomic idea"
+<br> 
+<br>
+Titles should be descriptive
+<br> 
+<br>
+Under what context would I want to stumble upon this note again?
+<br> 
+<br>
+Card represents adaptation of idea in own language framed in way to relate to the rest of work
+<br>
+<br>
+Ideas can be extended by adding more cards
+<br>
+<br>
+Reference material should be noted on card
+<br>
+<br>
+Non-direct links noted on both cards
+</div>
+<div class="reset-margin" style="position: absolute; left: 480px; top: 105px; height: 350px; min-height: 350px; width: 432px; display: flex; flex-direction: column; align-items: center; justify-content: flex-start" >
+
+<p style="line-height: 0" class="reset-paragraph image-paragraph"><img src="_project/niklas-luhmann-zettelkasten-notes-bielefeld-university.jpg" alt="" ></img></p>
+
+</div>
+
+
+
+
+
+
+**<aside class="notes"><p>**</p>
+<ul>
+<li>each permanent note should represent one idea, developed with respect to how it will relate to other content in the slip-box</li>
+<li>these are to be elaborated on in own words, with the frame of reference shifted towards how it affects your current corpus</li>
+</ul>
+<!-- .slide: class="drop" --></aside></script></section><section  data-markdown><script type="text/template">
+<div class="reset-margin" style="position: absolute; left: 0px; top: -175px; height: 350px; min-height: 350px; width: 720px; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-evenly" align="left">
+
+Zettel Note Anatomy
+</div>
+<div class="reset-margin" style="position: absolute; left: 96px; top: 35px; height: 70px; min-height: 70px; width: 672px; display: flex; flex-direction: column; align-items: center; justify-content: flex-start" >
+
+<p style="line-height: 0" class="reset-paragraph image-paragraph"><img src="_project/zettel_anatomy.png" alt="" ></img></p>
+
+</div>
+
+
+
+
+**<aside class="notes"><p>**</p>
+<ol>
+<li> <strong>A unique identifier</strong>. This gives your Zettel an unambiguous address.</li>
+<li> <strong>The body of the Zettel</strong>. This is where you write down what you want to capture: The piece of knowledge.</li>
+<li> <strong>References</strong>. At the bottom of each Zettel, you either reference the source of the knowledge you capture or leave it blank if you capture your own thoughts.</li>
+</ol>
+<!-- .slide: class="drop" --></aside></script></section><section  data-markdown><script type="text/template">
+<div class="reset-margin" style="position: absolute; left: 0px; top: -175px; height: 350px; min-height: 350px; width: 720px; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-evenly" align="left">
+
+Zettel Note Example 1
+</div>
+<div class="reset-margin" style="position: absolute; left: 192px; top: 35px; height: 70px; min-height: 70px; width: 480px; display: flex; flex-direction: column; align-items: center; justify-content: flex-start" >
+
+<p style="line-height: 0" class="reset-paragraph image-paragraph"><img src="_project/example_1_digital_zettel.png" alt="" ></img></p>
+
+</div>
+
+<!-- .slide: class="drop" -->
+</script></section><section  data-markdown><script type="text/template">
+<div class="reset-margin" style="position: absolute; left: 48px; top: -175px; height: 350px; min-height: 350px; width: 720px; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-evenly" align="left">
+
+Zettel Note Example 2
+</div>
+<div class="reset-margin" style="position: absolute; left: 0px; top: 35px; height: 70px; min-height: 70px; width: 672px; display: flex; flex-direction: column; align-items: center; justify-content: flex-start" >
+
+<p style="line-height: 0" class="reset-paragraph image-paragraph"><img src="_project/example_complete-zettel.png" alt="" ></img></p>
+
+</div>
+
+<!-- .slide: class="drop" -->
+</script></section><section  data-markdown><script type="text/template">
+<div class="reset-margin" style="position: absolute; left: 0px; top: -175px; height: 350px; min-height: 350px; width: 720px; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-evenly" align="left">
+
+Zettel Note Example 3
+</div>
+<div class="reset-margin" style="position: absolute; left: 0px; top: 35px; height: 70px; min-height: 70px; width: 672px; display: flex; flex-direction: column; align-items: center; justify-content: flex-start" >
+
+<p style="line-height: 0" class="reset-paragraph image-paragraph"><img src="_project/example_zettel_link-context.png" alt="" ></img></p>
+
+</div>
+
+<!-- .slide: class="drop" -->
+</script></section><section  data-markdown><script type="text/template">
+
+
+
+<div class="reset-margin" style="position: absolute; left: 0px; top: -175px; height: 350px; min-height: 350px; width: 720px; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-evenly" align="left">
+
+The Zettelkasten Sequence
+</div>
+
+<div class="reset-margin" style="font-size: 25px; position: absolute; left: 0px; top: 105px; height: 595px; min-height: 595px; width: 432px; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start" align="left">
+
+With each Zettel as an atomic idea it is in a state to be connected to other notes
+<br> 
+<br>
+Each note added sequentially
+<br>
+<br>
+Any idea can be expanded upon by adding another slip with same number and adding and alphanumeric sequence
+<br>
+<br>
+Chains of directly related cards sequenced behind each other
+<br>
+<br>
+Links to non-direct cards noted on the both new and old cards
+</div>
+<div class="has-light-background reset-margin" style="background-color: white; position: absolute; left: 480px; top: 175px; height: 245px; min-height: 245px; width: 432px; display: flex; flex-direction: column; align-items: center; justify-content: flex-start" >
+
+<p style="line-height: 0" class="reset-paragraph image-paragraph"><img src="_project/folgezettel-sequence.png" alt="" ></img></p>
+
+</div>
+
+
+
+
+
+**<aside class="notes"><p>**</p>
+<ul>
+<li>sequence can be used to develop reasoning one idea at a time</li>
+<li>links can be used to associate related material</li>
+<li>context is key, links won&#39;t be helpful if you don&#39;t know the context for those links. <ul>
+<li>for directly related slips in sequence it is more feasible, but being clear about the context for the the sequence greatly reduces cognitive load when revisiting</li>
+</ul>
+</li>
+<li>key is to express idea in own words with the frame of reference of how it relates to your other work</li>
+</ul>
+<!-- .slide: class="drop" --></aside></script></section><section  data-markdown><script type="text/template">
+
+
+
+<div class="reset-margin" style="position: absolute; left: 0px; top: -175px; height: 350px; min-height: 350px; width: 720px; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-evenly" align="left">
+
+Structure Notes Organize Emergent Topics
+</div>
+<div class="reset-margin" style="font-size: 25px; position: absolute; left: 0px; top: 105px; height: 595px; min-height: 595px; width: 432px; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start" align="left">
+
+Clusters of cards form from linkages
+<br> 
+<br>
+These clusters represent topics growing organically
+<br>
+<br>
+Structure notes provides structure to index into sequence of notes for a topic
+<br>
+<br>
+Topics indicated by keywords
+</div>
+<div class="reset-margin" style="position: absolute; left: 480px; top: 105px; height: 350px; min-height: 350px; width: 432px; display: flex; flex-direction: column; align-items: center; justify-content: flex-start" >
+
+<p style="line-height: 0" class="reset-paragraph image-paragraph"><img src="_project/niklas-luhmann-zettelkasten-keyword-index-card-Rh–Ri.jpg" alt="" ></img></p>
+
+</div>
+<!-- .slide: class="drop" -->
+</script></section><section  data-markdown><script type="text/template">
+
+<div class="reset-margin" style="position: absolute; left: 0px; top: -175px; height: 350px; min-height: 350px; width: 720px; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-evenly" align="left">
+
+Digital Topic Clusters
+</div>
+
+<div class="reset-margin" style="position: absolute; left: 0px; top: 35px; height: 700px; min-height: 700px; width: 960px; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start" align="left">
+
+<p style="line-height: 0" class="reset-paragraph image-paragraph"><img src="_project/digital_clusters_note.png" alt="" ></img></p>
+
+</div>
+
+<!-- .slide: class="drop" -->
+</script></section><section  data-markdown><script type="text/template">
+<div class="reset-margin" style="position: absolute; left: 0px; top: -175px; height: 350px; min-height: 350px; width: 720px; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-evenly" align="left">
+
+Digital Structure Note
+</div>
+
+<div class="reset-margin" style="position: absolute; left: 192px; top: 35px; height: 280px; min-height: 280px; width: 384px; display: flex; flex-direction: column; align-items: center; justify-content: flex-start" >
+
+<p style="line-height: 0" class="reset-paragraph image-paragraph"><img src="_project/digital_structure.png" alt="" ></img></p>
+
+</div>
+
+<!-- .slide: class="drop" -->
+</script></section><section  data-markdown><script type="text/template">
+<div class="reset-margin" style="position: absolute; left: 0px; top: -175px; height: 350px; min-height: 350px; width: 720px; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-evenly" align="left">
+
+More Info
+</div>
+<div class="reset-margin" style="font-size: 12px; position: absolute; left: 0px; top: 35px; height: 245px; min-height: 245px; width: 144px; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start" align="left">
+
+**How to Take Smart Notes**<br>https://www.amazon.com/How-Take-Smart-Notes-Nonfiction/dp/1542866502
+<br>
+<br>
+**Intro to Zettelkasten**<br> https://zettelkasten.de/introduction/
+<br> 
+<br>
+**r/Zettelkasten**<br>
+https://www.reddit.com/r/Zettelkasten/
+<br>
+<br>
+**Obsidian**<br>https://obsidian.md/
+<br> 
+<br>
+**r/ObsidianMD**<br>
+https://www.reddit.com/r/ObsidianMD/
+<br>
+<br>
+**How to Read a Book**<br>
+https://www.amazon.com/How-Read-Book-Classic-Intelligent/dp/0671212095/ref=sr_1_1?keywords=how+to+read+a+book&qid=1657283729&s=books&sprefix=how+to+read%2Cstripbooks%2C74&sr=1-1
+<br>
+<br>
+**Make It stick** <br>https://www.amazon.com/Make-Stick-Science-Successful-Learning/dp/0674729013/ref=asc_df_0674729013/?tag=hyprod-20&linkCode=df0&hvadid=312669563714&hvpos=&hvnetw=g&hvrand=3368619445763397983&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9003562&hvtargid=pla-434742935023&psc=1
+<br>
+<br>
+**A Mind For Numbers**<br>
+https://www.amazon.com/Mind-Numbers-Science-Flunked-Algebra/dp/039916524X/ref=sr_1_1?keywords=a+mind+for+numbers&qid=1657283849&s=books&sprefix=A+mind+f%2Cstripbooks%2C72&sr=1-1
+</div>
+<!-- .slide: class="drop" -->
+</script></section></div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/zoom/zoom.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/math/math.js"></script>
+	<script src="plugin/mermaid/mermaid.js"></script>
+	<script src="plugin/chart/chart.min.js"></script>
+	<script src="plugin/chart/plugin.js"></script>
+	<script src="plugin/customcontrols/plugin.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+	  function isLight(color) {
+		let hex = color.replace('#', '');
+
+		// convert #fff => #ffffff
+		if(hex.length == 3){
+			hex = `${hex[0]}${hex[0]}${hex[1]}${hex[1]}${hex[2]}${hex[2]}`;
+		}
+
+		const c_r = parseInt(hex.substr(0, 2), 16);
+		const c_g = parseInt(hex.substr(2, 2), 16);
+		const c_b = parseInt(hex.substr(4, 2), 16);
+		const brightness = ((c_r * 299) + (c_g * 587) + (c_b * 114)) / 1000;
+		return brightness > 155;
+	}
+
+	var bgColor = getComputedStyle(document.documentElement).getPropertyValue('--r-background-color').trim();
+
+	if(isLight(bgColor)){
+		document.body.classList.add('has-light-background');
+	} else {
+		document.body.classList.add('has-dark-background');
+	}
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealZoom,
+          RevealNotes,
+          RevealMath.MathJax3,
+		  RevealMermaid,
+		  RevealChart,
+		  RevealCustomControls,
+        ],
+
+		mathjax3: {
+			mathjax: 'plugin/math/mathjax/tex-mml-chtml.js',
+		},
+
+		customcontrols: {
+			controls: [
+			]
+		},
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal().getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"width":960,"height":700,"margin":0.04,"controls":true,"progress":true,"slideNumber":true,"transition":"slide","transitionSpeed":"default"}, queryOptions);
+    </script>
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>

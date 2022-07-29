@@ -1,0 +1,6 @@
+---
+aliases: []
+---
+Status: #idea
+Tags: 
+

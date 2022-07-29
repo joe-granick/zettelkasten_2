@@ -1,6 +1,6 @@
 ---
 aliases: []
+
 ---
-Status: #idea
-Tags: 
+Tags: #fleeting-note
 

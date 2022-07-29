@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
   "baseFontSize": 16,
   "cssTheme": "Deep Work",
   "theme": "moonstone",
   "translucency": false
+=======
+  "cssTheme": "Deep Work",
+  "theme": "moonstone"
+>>>>>>> refs/remotes/origin/main
 }

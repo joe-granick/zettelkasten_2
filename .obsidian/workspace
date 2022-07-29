@@ -1,9 +1,10 @@
 {
   "main": {
-    "id": "572ab77dd7a22db9",
+    "id": "85221ddeeeea1cf6",
     "type": "split",
     "children": [
       {
+<<<<<<< HEAD
         "id": "8d4b4fe213cb7a1d",
         "type": "leaf",
         "dimension": 75.5980861244019,
@@ -43,6 +44,14 @@
           "type": "markdown",
           "state": {
             "file": "_inbox/202207130845-operators are Java representations of operations that can be performed on data-types.md",
+=======
+        "id": "4684b28f438a2c04",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "slip-box/202206281014-central tendency like mean median and mode describe center of distribution around which data is spread.md",
+>>>>>>> refs/remotes/origin/main
             "mode": "source",
             "backlinks": true,
             "source": false
@@ -53,15 +62,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "35e99673fd7c2969",
+    "id": "2f5517613896bce0",
     "type": "split",
     "children": [
       {
-        "id": "c79c68be5fd0c6df",
+        "id": "6d65b771162a24c2",
         "type": "tabs",
         "children": [
           {
-            "id": "c2c3b9e9934a9c8a",
+            "id": "a17f5e9b569925f4",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -69,7 +78,7 @@
             }
           },
           {
-            "id": "84f6d2d399534710",
+            "id": "f122ade273206852",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -84,7 +93,7 @@
             }
           },
           {
-            "id": "7ab24089a389d9eb",
+            "id": "28fcb4a19600ec2b",
             "type": "leaf",
             "state": {
               "type": "starred",
@@ -95,23 +104,31 @@
       }
     ],
     "direction": "horizontal",
+<<<<<<< HEAD
     "width": 681.5
+=======
+    "width": 466.5
+>>>>>>> refs/remotes/origin/main
   },
   "right": {
-    "id": "c3be8f9964344a2c",
+    "id": "92c1940b44e40176",
     "type": "split",
     "children": [
       {
-        "id": "828afffd685890e0",
+        "id": "c69f484f212d04b9",
         "type": "tabs",
         "children": [
           {
-            "id": "6cfe239148efc1f6",
+            "id": "dcc758607191b969",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+<<<<<<< HEAD
                 "file": "_inbox/Computer Science an Interdisciplinary Approach.md",
+=======
+                "file": "slip-box/202206281014-central tendency like mean median and mode describe center of distribution around which data is spread.md",
+>>>>>>> refs/remotes/origin/main
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,19 +140,23 @@
             }
           },
           {
-            "id": "40e324c07f056dae",
+            "id": "aa88f9ffe4548a46",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+<<<<<<< HEAD
                 "file": "_inbox/Computer Science an Interdisciplinary Approach.md",
+=======
+                "file": "slip-box/202206281014-central tendency like mean median and mode describe center of distribution around which data is spread.md",
+>>>>>>> refs/remotes/origin/main
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "79c471e3b3afdbec",
+            "id": "7f518c448d02a08b",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -143,14 +164,6 @@
                 "sortOrder": "frequency",
                 "useHierarchy": true
               }
-            }
-          },
-          {
-            "id": "ed88daac13d8418b",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {}
             }
           }
         ]
@@ -160,6 +173,7 @@
     "width": 300,
     "collapsed": true
   },
+<<<<<<< HEAD
   "active": "8d4b4fe213cb7a1d",
   "lastOpenFiles": [
     "_inbox/202207130845-operators are Java representations of operations that can be performed on data-types.md",
@@ -172,5 +186,19 @@
     "_inbox/202207121924-must always be aware of data typed used in program written in strongly typed language.md",
     "_inbox/202207041535-java public class needs associated file with same name.md",
     "_inbox/202206281230-ratios should be log transformed before taking their arithmetic mean.md"
+=======
+  "active": "4684b28f438a2c04",
+  "lastOpenFiles": [
+    "slip-box/_main-index.md",
+    "slip-box/202206151429a-data can be structured or unstructured.md",
+    "slip-box/202206111633c1- mathematical intuition is critical for data science.md",
+    "slip-box/202206111633c-Data Science Math Prereqs.md",
+    "slip-box/202206151429a1-unstructured data typically can be pre-processed into a structure for analysis.md",
+    "slip-box/202206111633c2h1- independent events prob easier to calculate but  not informative for prediction and inference.md",
+    "slip-box/202206111633c2h-compound events use set operations to combine events and find complex probability.md",
+    "slip-box/202206111633c3b-probability theory of future likelihood, stats applied to frequency of past events.md",
+    "slip-box/202206111633c2g-expected value is the average value of random variables adjusted for probability.md",
+    "slip-box/202206111633c3- statistics bridges the gap between probability theory and real world data.md"
+>>>>>>> refs/remotes/origin/main
   ]
 }

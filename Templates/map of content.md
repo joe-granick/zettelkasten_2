@@ -1,8 +1,6 @@
-{{date:YYYYMMDD}}{{time:HHMMSS}}
-
-Status: #idea
-
-Tags
+Status: #map-of-content 
+Topics:
+Added: {{date:YYYYMMDD}}{{time:HHmm}}
 
 #{{Catgegory of Ideas}}
 

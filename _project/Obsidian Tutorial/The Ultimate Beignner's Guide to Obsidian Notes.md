@@ -1,0 +1,28 @@
+https://www.youtube.com/watch?v=47hOfPGsrqk&t=921s
+
+- dark mode/ light mode
+- new note
+- new folder
+- sorting
+- default side bar
+	- open quick switcher
+	- open graph vie
+	- open markdown importer
+- **quick switcher** - open and make files
+- **graph view** - 
+	- filter with tutorial view
+- Vault - master directory where all files and folders g
+	- can open a folder as a vault
+- WYSIWYG vs Markdown
+- Headers
+- Split view
+- edit vs view mode (show side by side)
+- ordered vs. unordered list
+- check box
+- create link
+	- phantom note
+- filters
+- pictures/videos/pdf
+	- drag
+	- paste
+	- save

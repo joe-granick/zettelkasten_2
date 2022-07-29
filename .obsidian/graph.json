@@ -1,9 +1,14 @@
 {
+<<<<<<< HEAD
   "collapse-filter": true,
   "search": "",
+=======
+  "collapse-filter": false,
+  "search": "path:slip-box",
+>>>>>>> refs/remotes/origin/main
   "showTags": false,
   "showAttachments": false,
-  "hideUnresolved": false,
+  "hideUnresolved": true,
   "showOrphans": true,
   "collapse-color-groups": true,
   "colorGroups": [
@@ -48,10 +53,25 @@
         "a": 1,
         "rgb": 0
       }
+    },
+    {
+      "query": "#permanent-note",
+      "color": {
+        "a": 1,
+        "rgb": 6053078
+      }
+    },
+    {
+      "query": "#map-of-content",
+      "color": {
+        "a": 1,
+        "rgb": 7601920
+      }
     }
   ],
   "collapse-display": true,
   "showArrow": false,
+<<<<<<< HEAD
   "textFadeMultiplier": -2.9,
   "nodeSizeMultiplier": 1.88932584269663,
   "lineSizeMultiplier": 2.02696629213483,
@@ -61,5 +81,16 @@
   "linkStrength": 1,
   "linkDistance": 500,
   "scale": 0.4505081176757875,
+=======
+  "textFadeMultiplier": -1.9,
+  "nodeSizeMultiplier": 2.02649572649573,
+  "lineSizeMultiplier": 5,
+  "collapse-forces": true,
+  "centerStrength": 0.145299145299145,
+  "repelStrength": 20,
+  "linkStrength": 0.923076923076923,
+  "linkDistance": 30,
+  "scale": 0.11660891579457397,
+>>>>>>> refs/remotes/origin/main
   "close": false
 }

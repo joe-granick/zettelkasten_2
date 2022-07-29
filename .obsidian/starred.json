@@ -2,11 +2,12 @@
   "items": [
     {
       "type": "file",
-      "title": "202207130853-identifiers are Java representations for variable names",
-      "path": "_inbox/202207130853-identifiers are Java representations for variable names.md"
+      "title": "Jira Notes",
+      "path": "_project/Jira/Jira Notes.md"
     },
     {
       "type": "file",
+<<<<<<< HEAD
       "title": "Computer Science an Interdisciplinary Approach",
       "path": "_inbox/Computer Science an Interdisciplinary Approach.md"
     },
@@ -14,6 +15,20 @@
       "type": "file",
       "title": "202207251946-string primitive-like treatment critical for complex computing programs",
       "path": "_inbox/202207251946-string primitive-like treatment critical for complex computing programs.md"
+=======
+      "title": "_OBSIDIAN TUTORIAL",
+      "path": "_project/Obsidian Tutorial/_OBSIDIAN TUTORIAL.md"
+    },
+    {
+      "type": "file",
+      "title": "How to Take Smart Notes in Obsidian",
+      "path": "_project/Obsidian Tutorial/How to Take Smart Notes in Obsidian.md"
+    },
+    {
+      "type": "file",
+      "title": "_main-index",
+      "path": "slip-box/_main-index.md"
+>>>>>>> refs/remotes/origin/main
     }
   ]
 }
