@@ -4,18 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "352c4b87b23b993a",
+        "id": "3d020206823cc073",
         "type": "leaf",
-        "pinned": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Templates/podcast-episode.md",
+            "file": "reference/books/How to Design Programs.md",
             "mode": "source",
             "backlinks": true,
             "source": false
-          },
-          "pinned": true
+          }
         }
       }
     ],
@@ -64,7 +62,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 496.5
+    "width": 506.5
   },
   "right": {
     "id": "c3be8f9964344a2c",
@@ -80,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Templates/podcast-episode.md",
+                "file": "reference/books/How to Design Programs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Templates/podcast-episode.md",
+                "file": "reference/books/How to Design Programs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,17 +135,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "352c4b87b23b993a",
+  "active": "3d020206823cc073",
   "lastOpenFiles": [
-    "_inbox/developing references/The Real Python Podcast-Natural Language Processing and How ML Models Understand Text.md",
     "Templates/podcast-episode.md",
-    "Templates/Book Reference.md",
     "slip-box/_main-index.md",
+    "reference/pdfs/Sipser-Introduction_To_The_Theory_Of_Computation.pdf",
+    "_inbox/developing references/The Real Python Podcast-Natural Language Processing and How ML Models Understand Text.md",
+    "Templates/Book Reference.md",
     "_inbox/Computer Science an Interdisciplinary Approach.md",
     "naming conventions.md",
     "operator precedence.md",
     "variable.md",
-    "Test-Zettel.md",
-    "Untitled 1.md"
+    "Test-Zettel.md"
   ]
 }
