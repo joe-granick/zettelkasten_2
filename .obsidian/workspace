@@ -17,6 +17,19 @@
           },
           "pinned": true
         }
+      },
+      {
+        "id": "824d621b938ba1a8",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "_inbox/developing references/The Real Python Podcast-Natural Language Processing and How ML Models Understand Text.md",
+            "mode": "source",
+            "backlinks": true,
+            "source": false
+          }
+        }
       }
     ],
     "direction": "vertical"
@@ -80,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Templates/podcast-episode.md",
+                "file": "_inbox/developing references/The Real Python Podcast-Natural Language Processing and How ML Models Understand Text.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Templates/podcast-episode.md",
+                "file": "_inbox/developing references/The Real Python Podcast-Natural Language Processing and How ML Models Understand Text.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,10 +150,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "352c4b87b23b993a",
+  "active": "824d621b938ba1a8",
   "lastOpenFiles": [
-    "_inbox/developing references/The Real Python Podcast-Natural Language Processing and How ML Models Understand Text.md",
     "Templates/podcast-episode.md",
+    "_inbox/developing references/The Real Python Podcast-Natural Language Processing and How ML Models Understand Text.md",
     "Templates/Book Reference.md",
     "slip-box/_main-index.md",
     "_inbox/Computer Science an Interdisciplinary Approach.md",
