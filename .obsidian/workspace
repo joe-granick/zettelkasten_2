@@ -4,18 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "352c4b87b23b993a",
+        "id": "3d020206823cc073",
         "type": "leaf",
-        "pinned": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Templates/podcast-episode.md",
+            "file": "reference/books/How to Design Programs.md",
             "mode": "source",
             "backlinks": true,
             "source": false
-          },
-          "pinned": true
+          }
         }
       },
       {
@@ -77,7 +75,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 496.5
+    "width": 506.5
   },
   "right": {
     "id": "c3be8f9964344a2c",
@@ -93,7 +91,11 @@
             "state": {
               "type": "backlink",
               "state": {
+<<<<<<< HEAD
                 "file": "_inbox/developing references/The Real Python Podcast-Natural Language Processing and How ML Models Understand Text.md",
+=======
+                "file": "reference/books/How to Design Programs.md",
+>>>>>>> d3cc3fdb6860e29b591ed978a219a34937c2281c
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +112,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+<<<<<<< HEAD
                 "file": "_inbox/developing references/The Real Python Podcast-Natural Language Processing and How ML Models Understand Text.md",
+=======
+                "file": "reference/books/How to Design Programs.md",
+>>>>>>> d3cc3fdb6860e29b591ed978a219a34937c2281c
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,17 +156,25 @@
     "width": 300,
     "collapsed": true
   },
+<<<<<<< HEAD
   "active": "824d621b938ba1a8",
   "lastOpenFiles": [
     "Templates/podcast-episode.md",
     "_inbox/developing references/The Real Python Podcast-Natural Language Processing and How ML Models Understand Text.md",
     "Templates/Book Reference.md",
+=======
+  "active": "3d020206823cc073",
+  "lastOpenFiles": [
+    "Templates/podcast-episode.md",
+>>>>>>> d3cc3fdb6860e29b591ed978a219a34937c2281c
     "slip-box/_main-index.md",
+    "reference/pdfs/Sipser-Introduction_To_The_Theory_Of_Computation.pdf",
+    "_inbox/developing references/The Real Python Podcast-Natural Language Processing and How ML Models Understand Text.md",
+    "Templates/Book Reference.md",
     "_inbox/Computer Science an Interdisciplinary Approach.md",
     "naming conventions.md",
     "operator precedence.md",
     "variable.md",
-    "Test-Zettel.md",
-    "Untitled 1.md"
+    "Test-Zettel.md"
   ]
 }
