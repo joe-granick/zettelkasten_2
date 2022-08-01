@@ -1,12 +1,11 @@
 {
   "main": {
-    "id": "85b77a91d4e8b1de",
+    "id": "572ab77dd7a22db9",
     "type": "split",
     "children": [
       {
-        "id": "9d29024560a1ce9a",
+        "id": "d438cfc4ad98dae4",
         "type": "leaf",
-        "pinned": true,
         "state": {
           "type": "markdown",
           "state": {
@@ -14,23 +13,22 @@
             "mode": "source",
             "backlinks": true,
             "source": false
-          },
-          "pinned": true
+          }
         }
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "e01d4d7dc4f6c6a8",
+    "id": "35e99673fd7c2969",
     "type": "split",
     "children": [
       {
-        "id": "1fe0489b642ac2bc",
+        "id": "c79c68be5fd0c6df",
         "type": "tabs",
         "children": [
           {
-            "id": "cee80e5d349ce3b6",
+            "id": "c2c3b9e9934a9c8a",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -38,7 +36,7 @@
             }
           },
           {
-            "id": "47a2a5060acd0528",
+            "id": "84f6d2d399534710",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -53,7 +51,7 @@
             }
           },
           {
-            "id": "372daa3e97195e26",
+            "id": "7ab24089a389d9eb",
             "type": "leaf",
             "state": {
               "type": "starred",
@@ -64,26 +62,18 @@
       }
     ],
     "direction": "horizontal",
-    "width": 490.5
+    "width": 593.5
   },
   "right": {
-    "id": "b980c01009dd5749",
+    "id": "c3be8f9964344a2c",
     "type": "split",
     "children": [
       {
-        "id": "0a3f40f86490a31e",
+        "id": "828afffd685890e0",
         "type": "tabs",
         "children": [
           {
-            "id": "00bb54a8e26a950c",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {}
-            }
-          },
-          {
-            "id": "7de9c06eee1767f0",
+            "id": "6cfe239148efc1f6",
             "type": "leaf",
             "state": {
               "type": "backlink",
@@ -100,7 +90,7 @@
             }
           },
           {
-            "id": "4031a2b88a920ebd",
+            "id": "40e324c07f056dae",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
@@ -112,7 +102,7 @@
             }
           },
           {
-            "id": "cf64c23ca50a23d1",
+            "id": "79c471e3b3afdbec",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -123,10 +113,18 @@
             }
           },
           {
-            "id": "21df330432db5ce5",
+            "id": "ed88daac13d8418b",
             "type": "leaf",
             "state": {
               "type": "review-queue-list-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "2bf53c27a7c44511",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
               "state": {}
             }
           }
@@ -137,12 +135,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "9d29024560a1ce9a",
+  "active": "d438cfc4ad98dae4",
   "lastOpenFiles": [
-    "daily notes/2022-07-31.md",
-    "Templates/Book Reference.md",
+    "_inbox/Do data-driven companies actually win.md",
     "_inbox/Computer Science an Interdisciplinary Approach.md",
-    "_inbox/cognitive bias.md",
-    "daily notes/2022-07-30.md"
+    "daily notes/2022-08-01.md",
+    "Templates/Book Reference.md",
+    "daily notes/2022-07-31.md",
+    "daily notes/2022-07-30.md",
+    "reference/books/How to Design Programs.md",
+    "Templates/podcast-episode.md",
+    "slip-box/_main-index.md",
+    "reference/pdfs/Sipser-Introduction_To_The_Theory_Of_Computation.pdf"
   ]
 }

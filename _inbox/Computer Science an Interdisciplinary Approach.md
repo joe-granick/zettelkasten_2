@@ -292,8 +292,6 @@ public class ThreeSort {
 - **51** **conditional statement** permit a program to have branching execution
 - **51** **loops** let programs conditionally execute statements unlimited number of times
 - **control flow** allows computer to accomplish a wide variety of complex tasks and computations, truly unleashing the power of computers
-
-
 #### Terms
 - [[control flow]]
 - [[loops]]
@@ -312,16 +310,26 @@ public class ThreeSort {
 - [[scope]]
 - [[compound statement]]
 - [[nesting]]
-- [[inner loop]]
-- [[outer loop]]
-- [[break statement]]
-- [[simulation]]
-- [[gambler's ruin]]
-- [[Monte Carlo simulation]]
+	- [[inner loop]]
+	- [[outer loop]]
+- [[infinite loop]]
+- [[finite sum]]
+- [[harmonic number]]
+- [[index variable]]
+- [[accumulation variable]]
+- [[computational approximation]]
+	- [[Taylor series expansion]]
+	- [[Newton's method]]
+- [[number conversion]]
+-  [[simulation]]
+	- [[gambler's ruin]]
+	- [[Monte Carlo simulation]]
+- [[factoring]]
+	- [[prime number]]
+-  [[break statement]]
 - [[continue statement]]
 - [[switch statement]]
 - [[do-while loop]]
-- [[infinite loop]]
 #### Propositions
 - **control flow** unlocks a computer's true potential **51**
 - computers can't generate truly random numbers, but programs can produce **pseudorandom** numbers that have many properties as random **52**numbers ()
@@ -395,6 +403,28 @@ while(power <= n/2){
 ```
 
 - By allowing executions to be repeated an arbitrary number of times specified by condition **while loops** open up a world of computation that would be impossible without computers **(56)**
+
+**Accumulation/index pattern**
+```Java
+public class PowerOfTwo {
+    public static void main(String[] args){
+        int n = Integer.parseInt(args[0]);
+        int power = 1;
+        int i = 0;
+        while(i <= n){
+        System.out.println(i + " " + power);
+        power = 2*result;
+        i++;
+        }
+        System.out.println(result);
+    }    
+}
+
+```
+- `PowersOfTwo` uses common loop computational pattern with two variables: **(64)**
+	- **index variable** that controls the loop
+	- **accumulation variable** that aggregates a computational result over each loop iteration
+**Reasoning through while loop (58)**
 ```Java
 public class PowerTwoLessThan {
     public static void main(String[] args){
@@ -407,11 +437,11 @@ public class PowerTwoLessThan {
     }    
 }
 ```
-**Reasoning through while loop (58)**
 - `power` is always a power of two
 - `power` is never greater than `n`
 - `power` increase each loop iteration and will eventually exceed stopping condition guaranteeing termination
 - After termination `2*power` is greater than or equal to `n` 
+
 
 #### For loops
 - **for loops** are functionally the same as **while loops**, but the extra flexibility provided by the syntax allows for more compact code in some situations **(59)**
@@ -452,12 +482,26 @@ i++; // iteration specific
 ##### Scope
 - a variable's **scope** determines which parts of the program can access that variable **(60)**
 - Scope typically contains the statements in the same block as the variable after it has been declared **(60)**
-- This has different implications with respect to the `<increment>` variable in **for loops** vs **while loops** since in a for loop it is not part of the statemnt block, it is not available for use in the statement, which may be a reason the use a while loop over a for loop for certain applications **60**
+- This has different implications with respect to the `<increment>` variable in **for loops** vs **while loops** since in a for loop it is not part of the statement block, it is not available for use in the statement, which may be a reason the use a while loop over a for loop for certain applications **60**
 
 #### Nesting
-
+- `if`, `while`, and `for` statements have same priority as any other type of statements and can be used anywhere a statement is required **62**
+- that means additional **control flow** statements can be used in the **statement** block to create **compound statements** **(62)**
+- A compound statement of loops can be **nesting** where the **inner loop** iterates through all executions at each iteration of the **outer loop** **(62)**
+- **if statements** can be nested by chaining together **if statements** and **else clauses** nesting the statements to test whether one of the designated *mutually exclusive* conditions is true and executing that statement **(64)**
+```Java
+if (income <           0) rate = 0.00;
+else if (income <   8925) rate = 0.10;
+else if (income <  36250) rate = 0.15;
+else if (income <  87850) rate = 0.23;
+else if (income < 183250) rate = 0.28;
+else if (income < 398350) rate = 0.33;
+else if (income < 400000) rate = 0.35;
+else                      rate = 0.396;
+```
 #### Applications
-
+- loops open full computational capability
+- many computational methods utilized and implemented by computers are based on mathematicl theories and discoveries going back centuries
 ##### Finite sum
 
 ##### Computing the square root
