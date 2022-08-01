@@ -1,47 +1,36 @@
 {
   "main": {
-    "id": "572ab77dd7a22db9",
+    "id": "85b77a91d4e8b1de",
     "type": "split",
     "children": [
       {
-        "id": "3d020206823cc073",
+        "id": "9d29024560a1ce9a",
         "type": "leaf",
+        "pinned": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "reference/books/How to Design Programs.md",
+            "file": "_inbox/Computer Science an Interdisciplinary Approach.md",
             "mode": "source",
             "backlinks": true,
             "source": false
-          }
-        }
-      },
-      {
-        "id": "824d621b938ba1a8",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "_inbox/developing references/The Real Python Podcast-Natural Language Processing and How ML Models Understand Text.md",
-            "mode": "source",
-            "backlinks": true,
-            "source": false
-          }
+          },
+          "pinned": true
         }
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "35e99673fd7c2969",
+    "id": "e01d4d7dc4f6c6a8",
     "type": "split",
     "children": [
       {
-        "id": "c79c68be5fd0c6df",
+        "id": "1fe0489b642ac2bc",
         "type": "tabs",
         "children": [
           {
-            "id": "c2c3b9e9934a9c8a",
+            "id": "cee80e5d349ce3b6",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -49,7 +38,7 @@
             }
           },
           {
-            "id": "84f6d2d399534710",
+            "id": "47a2a5060acd0528",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -64,7 +53,7 @@
             }
           },
           {
-            "id": "7ab24089a389d9eb",
+            "id": "372daa3e97195e26",
             "type": "leaf",
             "state": {
               "type": "starred",
@@ -75,27 +64,31 @@
       }
     ],
     "direction": "horizontal",
-    "width": 506.5
+    "width": 490.5
   },
   "right": {
-    "id": "c3be8f9964344a2c",
+    "id": "b980c01009dd5749",
     "type": "split",
     "children": [
       {
-        "id": "828afffd685890e0",
+        "id": "0a3f40f86490a31e",
         "type": "tabs",
         "children": [
           {
-            "id": "6cfe239148efc1f6",
+            "id": "00bb54a8e26a950c",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "7de9c06eee1767f0",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-<<<<<<< HEAD
-                "file": "_inbox/developing references/The Real Python Podcast-Natural Language Processing and How ML Models Understand Text.md",
-=======
-                "file": "reference/books/How to Design Programs.md",
->>>>>>> d3cc3fdb6860e29b591ed978a219a34937c2281c
+                "file": "_inbox/Computer Science an Interdisciplinary Approach.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,23 +100,19 @@
             }
           },
           {
-            "id": "40e324c07f056dae",
+            "id": "4031a2b88a920ebd",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-<<<<<<< HEAD
-                "file": "_inbox/developing references/The Real Python Podcast-Natural Language Processing and How ML Models Understand Text.md",
-=======
-                "file": "reference/books/How to Design Programs.md",
->>>>>>> d3cc3fdb6860e29b591ed978a219a34937c2281c
+                "file": "_inbox/Computer Science an Interdisciplinary Approach.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "79c471e3b3afdbec",
+            "id": "cf64c23ca50a23d1",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -134,18 +123,10 @@
             }
           },
           {
-            "id": "ed88daac13d8418b",
+            "id": "21df330432db5ce5",
             "type": "leaf",
             "state": {
               "type": "review-queue-list-view",
-              "state": {}
-            }
-          },
-          {
-            "id": "2bf53c27a7c44511",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
               "state": {}
             }
           }
@@ -156,25 +137,12 @@
     "width": 300,
     "collapsed": true
   },
-<<<<<<< HEAD
-  "active": "824d621b938ba1a8",
+  "active": "9d29024560a1ce9a",
   "lastOpenFiles": [
-    "Templates/podcast-episode.md",
-    "_inbox/developing references/The Real Python Podcast-Natural Language Processing and How ML Models Understand Text.md",
-    "Templates/Book Reference.md",
-=======
-  "active": "3d020206823cc073",
-  "lastOpenFiles": [
-    "Templates/podcast-episode.md",
->>>>>>> d3cc3fdb6860e29b591ed978a219a34937c2281c
-    "slip-box/_main-index.md",
-    "reference/pdfs/Sipser-Introduction_To_The_Theory_Of_Computation.pdf",
-    "_inbox/developing references/The Real Python Podcast-Natural Language Processing and How ML Models Understand Text.md",
+    "daily notes/2022-07-31.md",
     "Templates/Book Reference.md",
     "_inbox/Computer Science an Interdisciplinary Approach.md",
-    "naming conventions.md",
-    "operator precedence.md",
-    "variable.md",
-    "Test-Zettel.md"
+    "_inbox/cognitive bias.md",
+    "daily notes/2022-07-30.md"
   ]
 }

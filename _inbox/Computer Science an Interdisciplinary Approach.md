@@ -324,6 +324,7 @@ public class ThreeSort {
 - [[infinite loop]]
 #### Propositions
 - **control flow** unlocks a computer's true potential **51**
+- computers can't generate truly random numbers, but programs can produce **pseudorandom** numbers that have many properties as random **52**numbers ()
 - while statements make large program possible allowing an almost unlimited number of statements to be operated. **pg 54**
 - while loops become much more useful when a statement needs to be repeated many times **pg 54**
 - while loops allows us to express long computations in short programs **pg54-55**
@@ -355,16 +356,103 @@ public class ThreeSort {
 
 
 #### If statements
+- **if statement** allow different actions based for different conditions **(50)**
+- evaluates **Boolean expression** and executes code in following **statement block**  $iff$ `true` **(51)**
+- `if(<boolean expression>){statement block}` **(50)**
+	- braces optional if statement block only one statement
+
+```Java
+if (x < 0) x = -x;//single sequence statement block
+
+if (x > y)  //multi sequence statement block w/ braces
+{
+	int t = x;
+	x = y;
+	y = t;
+}
+```
+- **else clause** can be added to create a branching statement that executes if the **Boolean expression** evaluates false **(51)**
+`if(<boolean expression){ <statements T> }`
+`else                   { <statements F> }`
+```Java
+if (x > y) max = x;
+else       max = y;
+```
 
 #### While loops
+- Many computations are repetitive, requiring multiple executions of the same lines of code
+- **while loops** allow continuous execution of a block of code as long as the condition remains true
+- structured with a **Boolean expression** and a statement block and executing the statement block (*body of the loop*) like an **if statement**, but where an **if statement** executes only once, the while loop will continue to execute the statement until the **Boolean expression** evaluates `false` **(53)**
+	- works like repeated sequence of **if statements**
+`while (<boolean expression>){<satetements>}`
+- require a condition that changes and will eventually evaluate to false at the correct time, otherwise loop will continue infinitely **(54)**
+	- common to use integer value that changes over the course of the execution (rule defined in body of loop) and is evaluated in the **Boolean expression**, which stops execution once it evaluates to `false`
+```Java
+int power = 1;
+while(power <= n/2){
+	power = 2*power;
+}
+```
+
+- By allowing executions to be repeated an arbitrary number of times specified by condition **while loops** open up a world of computation that would be impossible without computers **(56)**
+```Java
+public class PowerTwoLessThan {
+    public static void main(String[] args){
+        int n = Integer.parseInt(args[0]);
+        int power = 1;
+        while(power <= n/2){
+            power = 2*result;
+        }
+        System.out.println(result);
+    }    
+}
+```
+**Reasoning through while loop (58)**
+- `power` is always a power of two
+- `power` is never greater than `n`
+- `power` increase each loop iteration and will eventually exceed stopping condition guaranteeing termination
+- After termination `2*power` is greater than or equal to `n` 
 
 #### For loops
+- **for loops** are functionally the same as **while loops**, but the extra flexibility provided by the syntax allows for more compact code in some situations **(59)**
 
 ##### For notation
+- Many **while loops** structured:
+	- initialize index variable
+	- test continuation condition
+	- increment index variable
+```Java
+<initialize>;
+while (<boolean expression>){
+	<statements>;
+	<increment>;
+}
+
+```
+
+- This pattern can be expressed directly with an **for loop**
+```Java
+for (<initialize>; <boolean expression>; <increment>){
+	<statements>;
+}
+```
 
 ##### Compound assignment notation
+- Java and many other programming languages have built in shorthand for modifying a variable since it is such a common task **(60)**
+- all of the following increment the variable `i` by 1
+```Java
+i = i+1; // standard assignment
+i += 1;// compund assignemnt
+i++; // iteration specific
+++i; // iteration specific
+```
+
+- **compound assignment** like `power *=2` can be used any primitive operator **(60)**
 
 ##### Scope
+- a variable's **scope** determines which parts of the program can access that variable **(60)**
+- Scope typically contains the statements in the same block as the variable after it has been declared **(60)**
+- This has different implications with respect to the `<increment>` variable in **for loops** vs **while loops** since in a for loop it is not part of the statemnt block, it is not available for use in the statement, which may be a reason the use a while loop over a for loop for certain applications **60**
 
 #### Nesting
 
