@@ -9,11 +9,11 @@ Links: [[202206111633a-data science methods strongly influenced by CS methods ne
 
 
 Data Science recently emerged at the intersection of several long established fields.
-**computer science** contributes machine learning and technology that can deal with data and computation at scale. ^[[[202206111633b - think like a computer scientist act like a statistician understand like a domain expert|202206111633]]]
+**computer science** contributes machine learning and technology that can deal with data and computation at scale. ^[[[202206111633a1 - think like a computer scientist act like a statistician understand like a domain expert|202206111633]]]
 
-From **statistics** it takes exploratory data analysis (EDA), significance testing, and visualization techniques. ^[[[202206111633b - think like a computer scientist act like a statistician understand like a domain expert|202206111633]]]
+From **statistics** it takes exploratory data analysis (EDA), significance testing, and visualization techniques. ^[[[202206111633a1 - think like a computer scientist act like a statistician understand like a domain expert|202206111633]]]
 
-**Application domains** in business in science pose interesting and important problems to solve using the tools of data science and standards for which novel DS solution can be measured against. ^[[[202206111633b - think like a computer scientist act like a statistician understand like a domain expert|202206111633]]]
+**Application domains** in business in science pose interesting and important problems to solve using the tools of data science and standards for which novel DS solution can be measured against. ^[[[202206111633a1 - think like a computer scientist act like a statistician understand like a domain expert|202206111633]]]
 
 These fields are well established, Data Science has gained prominence at their intersection only recently due to three recent trends^[[[Skiena-The Data Science  Design Manual 1st]] **pg 1**] 
 1. **Volume and variety of data:** New technology allows generation storage and annotation of much larger complex data sets from sources like social media, sensors and logs. Exploring these data sets encourages new questions and possibilities and creates a performance differential for new methods that can perform even more precisely on "big data"^[[[Skiena-The Data Science  Design Manual 1st]] **pg 1**] 

@@ -52,6 +52,7 @@
 	- [ ] Articles
 	- [ ] People
 	- [ ] Note Type
+	- [ ] command palette 
 - [ ] Settings
 	- [ ] Activate Daily Note
 	- [ ] Activate Prefixer

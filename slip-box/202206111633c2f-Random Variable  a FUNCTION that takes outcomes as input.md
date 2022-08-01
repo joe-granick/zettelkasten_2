@@ -1,7 +1,7 @@
 ---
-aliases: []
+aliases: ['202206111633c2f']
 ---
-Status: #idea
+Status: #permanent-note 
 Tags: [[probability]], [[random variable]]
 
 #### Random Variable
@@ -32,5 +32,5 @@ S_{\in V(s)=12}=\{(6,6)\}\hspace{19.5cm}
 The probability of all random variables can be represented by a *Probability Density Function (PDF)*[^2] or a *Cumulative Density Function (CDF)*[^3]
 
 [^1]: [[Skiena-The Data Science  Design Manual 1st|The Data Science Design Manual 1st]] pg 28
-[^2]: [[202206271334-a probability density function represents the probability of all random variable values in a sample space]]]
-[^3]:[[202206271820- CDF are alternative representation of random variable prob containing same info as PDF]]
+[^2]: [[202206111633c2k-a probability density function represents the probability of all random variable values in a sample space]]]
+[^3]:[[202206111633c2k3- CDF are alternative representation of random variable prob containing same info as PDF]]

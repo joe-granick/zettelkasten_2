@@ -1,7 +1,7 @@
 ---
 aliases: []
 ---
-Status: #idea/undeveloped 
+Status: #permanent-note/undeveloped /undeveloped 
 Tags: [[variability measures]], [[signal-to-noise ratio]]
 
 **37** Data scientists try to explain world through data, but often phenomena isn't really and only appears due to variance

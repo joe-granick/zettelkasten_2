@@ -1,8 +1,8 @@
 ---
-aliases: []
+aliases: ['202206111633c2b']
 ---
-Status: #idea
-Tags: 
+Status: #permanent-note 
+Tags: [[sample space]]
 
 #### Sample Space 
  The $\text{Sample Space } S$ rdefines the set of all outcomes that can result from an individual experiment. For an experiment with two siz sided die the set of outcome has 36 distinct components[^1] $$\begin{aligned}S=\{(1,1), (1,2), (1,3), (1,4), (1,5), (1,6), \\

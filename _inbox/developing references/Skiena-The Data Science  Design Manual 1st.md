@@ -30,9 +30,9 @@ Data Science Built from elements of other disciplines[[202206111633-data science
 
 [[202206111633a-data science methods strongly influenced by CS methods need to be applied in a messy world like real science]]
 [[202206121102a-DS requires context and asking good questions of the dataset]]
-[[202206121102b-broad thinking is needed to find answers in unexpected data sets]]
-[[202206141913-baseball has many characteristics of a good dataset for DS]]
-[[202206111633e4a1-a statistical proxy is needed when specifically related measure or dataset is unobtainable]]
+[[202206121102b1-broad thinking is needed to find answers in unexpected data sets]]
+[[202206151430-baseball has many characteristics of a good dataset for DS]]
+[[202206121102b-a statistical proxy is needed when specifically related measure or dataset is unobtainable]]
 [[202206141944-using IMDB records to examine questions small and large scale questions related to movies]] **todo**
 - **10 - 11** Google Ngrams for language data
 - **11** aggregates of time series can be used to analyze historical trends
@@ -59,6 +59,17 @@ Data Science Built from elements of other disciplines[[202206111633-data science
 Topic:
 [[202206111633c-Data Science Math Prereqs#Math Forms the Foundation of Data Science]]
 
+### Keywords
+[[probability]]
+	[[experiment]]
+	[[sample space]]
+	[[event]]
+	[[outcome]]
+	[[random variable]]
+[[statistics]]
+
+
+
 ### 2.1 Probability
 [[202206111633c-Data Science Math Prereqs#Probability]]
 
@@ -67,37 +78,37 @@ Topic:
 **ELABORATE:**[[202206241850-probability invented by Pascal and Fermat assessing fair payout of unfinished game of chance]]
 
 #### 2.1.2 Compound Events and Independence
-[[202206111633c2h-compound events use set operations to combine events and find complex probability]]
-[[202206111633c2h1- independent events prob easier to calculate but  not informative for prediction and inference]]
+[[202206111633c2h1-compound events use set operations to combine events and find complex probability]]
+[[202206111633c2h2- independent events prob easier to calculate but  not informative for prediction and inference]]
 
 #### 2.1.3 Conditional Probability
 [[202206111633c2h3-conditional probability needed to find likelihood of an event as a function of another event]]
 
 #### 2.1.4 Probability Distributions
-[[202206271334-a probability density function represents the probability of all random variable values in a sample space]]
-[[202206271758-A histogram is a statistical corollary to a PDF and from the frequency of observed events]]
+[[202206111633c2k-a probability density function represents the probability of all random variable values in a sample space]]
+[[202206111633c2k1-A histogram is a statistical corollary to a PDF and from the frequency of observed events]]
 
-[[202206271820- CDF are alternative representation of random variable prob containing same info as PDF]]
+[[202206111633c2k3- CDF are alternative representation of random variable prob containing same info as PDF]]
 
 **33-34** Apple's disingenuous use of CDF over PDF because it looks better
 
 ### 2.2 Descriptive Statistics
-[[202206280953-descriptive statistics reduce large data sets into summary statistics that provide more insight about the distribution than looking at it all at once]]
+[[202206111633c4-descriptive statistics reduce large data sets into summary statistics that provide more insight about the distribution than looking at it all at once]]
 
 #### 2.2.1 Centrality Measures
-[[202206281014-central tendency like mean median and mode describe center of distribution around which data is spread]]
+[[202206111633c4a-central tendency like mean median and mode describe center of distribution around which data is spread]]
 
 #### 2.2.2 Variability Measures
-[[202206281308-variability measures describe how far the data is spread around the center]]
+[[202206111633c4b-variability measures describe how far the data is spread around the center]]
 
 #### 2.2.3 Interpreting Variance
 **elaborate**[[202206281654- variance inherent in any measure distorts what are actually real phenomenon rather than just noise in the data]]
 
 #### 2.2.4 Characterizing Distributions
-[[202206281623-mean and standard deviation TOGETHER  characterize  any distribution well]]
+[[202206111633c4c mean and standard deviation TOGETHER  characterize  any distribution well]]
 
 ### 2.3 Correlation Analysis
-[[202206282004-for two random variables correlation measures the degree to which one is a linear function of the other]]
+[[202206111633c5-for two random variables correlation measures the degree to which one is a linear function of the other]]
 
 #### 2.3.1 Correlation Coefficients: Pearson and Spearman Rank
 [[202206282018-two main types of correlation are pearson and spearman rank]]

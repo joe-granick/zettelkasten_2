@@ -2,7 +2,7 @@
 aliases: []
 ---
 Status: #idea
-Tags: [[linearly seperable]]
+Tags: [[linearly separable]]
 
 >Direct quote
 

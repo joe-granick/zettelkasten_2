@@ -1,5 +1,5 @@
 ---
-aliases: []
+aliases: ['202206111633c2a']
 ---
 Status: #permanent-note 
 Tags: 

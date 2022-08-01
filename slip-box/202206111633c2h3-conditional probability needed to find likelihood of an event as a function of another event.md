@@ -1,5 +1,5 @@
 ---
-aliases: []
+aliases: ['202206111633c2h3']
 ---
 Status: #idea
 Tags: [[conditional probability]], [[bayes theorem]], [[classification]]
@@ -18,7 +18,7 @@ The dependency however makes the calculations more difficult, while independent 
 *Bayes theorem* is commonly used to compute conditional probabilities. It reverse the direction of the dependence, which often makes the task easier since it may be easier to observe events in the opposite directions[^5]
 
 [^1]: [[Skiena-The Data Science  Design Manual 1st|The Data Science Design Manual 1st]] pg 31
-[^2]: [[202206111633c2h2-correlations are critical to predictive modeling and inference]]
-[^3]: [[202206111633c2h1- independent events prob easier to calculate but  not informative for prediction and inference]]
+[^2]: [[202206111633c2h2a-correlations are critical to predictive modeling and inference]]
+[^3]: [[202206111633c2h2- independent events prob easier to calculate but  not informative for prediction and inference]]
 [^4]:[[202206271315-classification can often be reduced to finding conditional probability]]
-[^5]: [[202206111633c2h14-bayes theorem simplifies conditional probability by reversing the dependence]]
+[^5]: [[202206111633c2h3a-bayes theorem simplifies conditional probability by reversing the dependence]]

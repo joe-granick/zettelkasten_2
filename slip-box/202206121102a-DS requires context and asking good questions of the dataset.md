@@ -11,7 +11,7 @@ Data scientists therefore need to be able to adapt knowledge broadly across fiel
 
 Real datasets are scarce in the wild, and data scientists need to ask good questions of the data to formulate effective solutions that make sense in the context of the problem domain. [[[Skiena-The Data Science  Design Manual 1st|The Data Science Design Manual]] **pg 4**]
 
-Often an answer or solution may lie in datasets that were intended for a completely unrelated purpose. ^[[[202206121102b-broad thinking is needed to find answers in unexpected data sets|202206121102b]]]
+Often an answer or solution may lie in datasets that were intended for a completely unrelated purpose. ^[[[202206121102b1-broad thinking is needed to find answers in unexpected data sets|202206121102b]]]
 
 Imagination and the ability to interrogate datasets is crucial to finding the answers because the perfect dataset doesn't exist. [[[Skiena-The Data Science  Design Manual 1st|The Data Science Design Manual]] **pg 4**]
 

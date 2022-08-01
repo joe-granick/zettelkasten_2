@@ -1,8 +1,8 @@
 ---
-aliases: []
+aliases: ['202206111633c2d']
 ---
-Status: #idea
-Tags: [[probabilty]]
+Status: #permanent-note 
+Tags: [[probability]], [[outcome]]
 
 #### Probability of an Outcome
 The $\text{probability of outcome s, denoted } p(s)$ is the number of times an outcome will occur relative to the entire $\text{sample space } S$ . [^1]

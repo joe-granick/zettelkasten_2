@@ -1,8 +1,8 @@
 ---
-aliases: []
+aliases: ['202206111633c2g']
 ---
-Status: #idea
-Tags: [[probabilty]], [[expected value]]
+Status: #permanent-note 
+Tags: [[probability]], [[expected value]]
 
 #### Expected Value
 The $\text{expected value of a random variable, denoted E(V), defined in sample space S}$ is: [^1]

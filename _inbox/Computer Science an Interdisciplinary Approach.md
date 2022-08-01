@@ -64,7 +64,7 @@ Topic:
 	- Have operators
 	- Can be declared as literals
 - **primitive data-type** are basic set of data-types from which all others are constructed
-- Java *data-type* importance- [[202207121924-must always be aware of data typed used in program written in strongly typed language|202207121924]]
+- Java *data-type* importance- [[202207121924a1--must always be aware of data typed used in program written in strongly typed language|202207121924]]
 	- Is this because it is *strongly typed?* (me)
 - **14** in math numbers infinite, but w/ computers operations are only well defined for finite set of values within the data type
 - **14** java 8 primitive data types

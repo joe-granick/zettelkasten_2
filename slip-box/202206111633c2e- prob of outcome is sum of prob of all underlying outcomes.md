@@ -1,8 +1,8 @@
 ---
-aliases: []
+aliases: ['202206111633c2e']
 ---
-Status: #idea
-Tags: [[probability]]
+Status: #permanent-note 
+Tags: [[probability]], [[outcome]], [[event]]
 
 #### Probability of an Event
 The $\text{probability of event E, denoted } p(E)$ is the sum of all individual probabilities of the outcomes. [^1]
@@ -29,4 +29,4 @@ $$p(E=win) = (8/36)$$
 
 
 [^1]: [[Skiena-The Data Science  Design Manual 1st|The Data Science Design Manual 1st]] pg 28
-[^2]: [[202206111633c2j-complement prob useful alternative that often simplifies prob calculation]]
+[^2]: [[202206111633c2c1-complement prob useful alternative that often simplifies prob calculation]]
