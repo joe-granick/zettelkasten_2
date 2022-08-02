@@ -1,45 +1,146 @@
-# intro
-
-# configure environment
-
-# daily note
-
-# reference folder
-
-# slip-box
-
-# projects folder
-
-# take smart notes
-
-## capture fleeting notes
-
-## take literature notes
-
-## take permanent notes
-
-## use structure notes to organize content
-
-## navigate through connections
 
 
-# to-do
-## tasks
-- [ ] What Is Obsidian?
-- [ ] build index
-- [ ] build example sequence from DSM
-- [ ] clean up DSM sequences
-- [ ] build example project
+# using obsidian
+- [ ] **getting started**
+	- [x] vault [[1  initial vault|1]]
+- [ ] **markdown** [[2a Markdown in obsidian|2a]]
+	- [ ] markup language
+	- [ ] advantages
+	- [ ] MD vs. WYSIWYG
+	- [x] headings [[2a2 markdown headings|2a2]]
+		- [x] HTML headings [[2a2a headings in html]]
+	- [ ] lists 
+		- [x] unordered list [[2a3 markdown unordered lists|2a3]]
+		- [x] ordered list [[2a3a markdown ordered list|2a3a]]
+		- [x] checklist [[2a3a markdown ordered list|2a3a]]
+	- [ ] links
+		- [ ] link
+			- [ ] existing note
+			- [ ] new note
+		- [ ] unlinked mentions
+		- [ ] linked Sections
+		- [ ] embed note  `![[]]` 
+			- [ ] images
+			- [ ] pdf
+	- [ ] emphasis
+		- [ ] bold
+		- [ ] italic
+		- [ ] change color
+		- [ ] highlight
+	- [ ] quote blocks
+	- [ ] code blocks
+	- [ ] citations
+- [ ] **core plug-ins**
+	- [ ] backlinks
+	- [ ] command palette
+	- [ ] daily notes
+	- [ ] file explorer
+	- [ ] file recovery
+	- [ ] format converter
+	- [ ] graph view
+	- [ ] note composer
+	- [ ] outgoing links
+	- [ ] page preview
+	- [ ] quick switcher
+	- [ ] search
+	- [ ] slash commands
+	- [ ] slides
+	- [ ] starred
+	- [ ] tag pane
+	- [ ] templates
+	- [ ] unique note creator (prefixer)
+	- [ ] word count
+- [ ] **LaTex**
+	- [ ] TeX Donald Knuth
+- [ ] **settings**
+	- [ ] **ALWAYS UPDATE INTERNAL LINKS**
+	- [ ] deleted files
+	- [ ] Activate Daily Note
+	- [ ] Activate Prefixer
+	- [ ] Activate Spell Check
+	- [ ] Set Recycling Bin
+- [ ] **visuals**
+	- [ ] split pane
+	- [ ] pin pane
+	- [ ] edit/view mode
+	- [ ] light/dark mode
+	- [ ] theme
+- [ ] **navigation**
+	- [ ] new note
+	- [ ] search
+	- [ ] command palette
+	- [ ] quick switcher
+- [ ] **hotkeys** [[obsidian hotkeys]]
+	- [x] open link
+	- [x] toggle edit/view
+	- [x] quick switcher
+	- [x] search
+	- [x] back
+	- [x] forward
+	- [x] new note
+	- [x] open note in new pane
+	- [ ] extended hotkeys
+- [ ] **syncing notes**
+	- [ ] github
+	- [ ] obsidian sync
+	- [ ] dropbox
+- [ ] **community plug-ins**
+	- [ ] admonition
+	- [ ] advanced slides
+	- [ ] advanced tables
+	- [ ] calendar
+	- [ ] dataview
+	- [ ] diagrams
+	- [ ] editor syntax highlighting
+	- [ ] format hotkeys
+	- [ ] kanban
+	- [ ] mind map
+	- [ ] spaced repetitions
+- [ ] external programs
+	- [ ] link collector/copier
+	- [ ] alias correction
+	- [ ] reference collector/formatter
+	- [ ] ML?
+	- [ ] NLP?
+
+# obsidian zettelkasten
+- [ ] fleeting note
+	- [ ] daily note
+	- [ ] lit note 
+- [ ] managing references
+	- [ ] zotaro
+- [ ] permanent notes
+	- [ ] literature note
+		- [ ] template
+		- [ ] *"How to Read a Book"* [[how to read a book 2e 1972|htrb]]
+- [ ] **relating notes**
+	- [ ] links
+		- [ ] link field
+		- [ ] citation references
+	- [ ] tags
+		- [ ] tag search
+	- [ ] graph view
+		- [ ] local graph
+		- [ ] filters
+	- [ ] index [[_main-index]]
+		- [ ] maps of content
+		- [ ] other index types
+			- [ ] images
+			- [ ] people
+			- [ ] years
+	- [ ] sequence
+		- [ ] prefix plugin
+	- [ ] managing references
+	- [ ] folders
+		- [ ] inbox
+		- [ ] references
+		- [ ] index
+		- [ ] slip-box
+		- [ ] templates
+
 
 ## Getting Started
-- [ ] Vault
-- [ ] New Note
-- [ ] Hot-Keys
-	- [ ] New Note
-	- [ ] Toggle View
-	- [ ] Open Note in New Window
-	- [ ] Move Backward
-	- [ ] Move Forward
+
 - [ ] Arrange Panes
 - [ ] Edit vs. View
 - [ ] Graph View
@@ -53,15 +154,9 @@
 	- [ ] People
 	- [ ] Note Type
 	- [ ] command palette 
-- [ ] Settings
-	- [ ] Activate Daily Note
-	- [ ] Activate Prefixer
-	- [ ] Activate Spell Check
-	- [ ] Set Recycling Bin
+
 - [ ] Search
 - [ ] Tag Search
-- [ ] Quick-Switcher
-- [ ] Command Pane
 - [ ] Themes
 	- [ ] CSS
 	- [ ] Community Themes
@@ -104,68 +199,12 @@
 		- [ ] Node Size, vs Index vs Sub-index
 - [ ] Size of nodes at beginning
 
-## Markdown
-- [ ] What is Markdown?
-	- [ ] advantages
-	- [ ] MD vs. WYSIWYG
-	- [ ] HTML
-- [ ] Headings
-- [ ] Links
-	- [ ] Backlinks
-	- [ ] Unlinked mentions
-	- [ ] Linked Sections
-	- [ ] Embed note  `![[]]` 
-		- [ ] images
-		- [ ] pdf
-- [ ] Emphasis
-	- [ ] Bold
-	- [ ] Italic
-	- [ ] Change color
-	- [ ] Highlight
-- [ ] LaTex
-	- [ ] TeX Donald Knuth
-- [ ] code blocks
-- [ ] quote blocks
-- [ ] Lists
-	- [ ] ordered
-	- [ ] unordered
-	- [ ] checklist
-- [ ] Tags
-
-## Plug-ins
-- [ ] Dataview
-- [ ] Calendar
-- [ ] Draw.io
-- [ ] MindMap
-- [ ] Kanban
-
-# vault
-
-# fleeting notes
-
-# permanent notes
-
-
 # markdown
 markdown files let you control all info
 simplified html with stripped down formatting
 
-## links
-
-### external links
-- existing
-- non-existing
-### link to blocks
-
-### internal links
-
-### display links
-
-### images
 
 
-## headings
-[[202207121421-headings#headings]]
 
 
 
@@ -189,8 +228,6 @@ simplified html with stripped down formatting
 
 > this is a block quote
 
-## lists
-[[202207121434-markdown lists]]
 
 ## LaTex
 https://www.youtube.com/watch?v=9eLjt5Lrocw
@@ -198,11 +235,6 @@ https://www.youtube.com/watch?v=9eLjt5Lrocw
 
 ## separator
 [[202207121447-separator]]
-
-## html
-[[202207121424-headings in html]]
-
-## code blocks
 
 
 # tags
@@ -259,3 +291,35 @@ obsidians version of a folder
 Obsidian Publish? ^[https://obsidian.md/publish]
 
 Obsidian Sync ^[https://obsidian.md/sync]
+
+
+# configure environment
+
+# daily note
+
+# reference folder
+
+# slip-box
+
+# projects folder
+
+# take smart notes
+
+## capture fleeting notes
+
+## take literature notes
+
+## take permanent notes
+
+## use structure notes to organize content
+
+## navigate through connections
+
+
+
+## tasks
+- [ ] What Is Obsidian?
+- [ ] build index
+- [ ] build example sequence from DSM
+- [ ] clean up DSM sequences
+- [ ] build example project
