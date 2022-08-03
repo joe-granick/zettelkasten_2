@@ -61,7 +61,7 @@ Topic: [[Binary Search Tree]]s
 -  [[hash table]]s have $O(1)$ search, insertion, and deletion but it does not maintain order
 #### [249]
 - [[binary search trees]] are a data structure that maintain order and have fast search search, insert, and delete operations
-- [[trees]] are a [[node based data structure]] with multiple [[node]]s
+- [[Trees]] are a [[node based data structure]] with multiple [[node]]s
 	- [[root node]] a tree's initial node
 	- [[parent node]] links to one or more [[child node]]
 	- a node's [[descendants]]  are all nodes with the node in question as the root

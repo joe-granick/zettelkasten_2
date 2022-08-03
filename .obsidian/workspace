@@ -4,13 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "f7d35b2c82ad44a3",
+        "id": "cb1f3bad4cbed0b0",
         "type": "leaf",
         "pinned": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_project/Obsidian Tutorial/_OBSIDIAN TUTORIAL.md",
+            "file": "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
             "mode": "source",
             "backlinks": true,
             "source": false
@@ -64,8 +64,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 526.5,
-    "collapsed": true
+    "width": 1285.5
   },
   "right": {
     "id": "c3be8f9964344a2c",
@@ -81,7 +80,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_project/Obsidian Tutorial/_OBSIDIAN TUTORIAL.md",
+                "file": "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +97,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_project/Obsidian Tutorial/_OBSIDIAN TUTORIAL.md",
+                "file": "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,17 +137,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "f7d35b2c82ad44a3",
+  "active": "cb1f3bad4cbed0b0",
   "lastOpenFiles": [
-    "_project/Obsidian Tutorial/how to read a book 2e 1972.md",
-    "_project/Obsidian Tutorial/_OBSIDIAN TUTORIAL.md",
-    "_project/202208021245.md",
-    "_project/Obsidian Tutorial/LYT Obsidian for Beginners- How to Use the Obsidian App for Notes.md",
-    "_project/Obsidian Tutorial/obsidian hotkeys.md",
-    "_project/Obsidian Tutorial/2a1a markdown vs WYSIWYG.md",
-    "_project/Obsidian Tutorial/2a2a headings in html.md",
-    "_project/Obsidian Tutorial/2a1 markup languages define rules for text data.md",
-    "_project/Obsidian Tutorial/2a2 markdown headings.md",
-    "_project/Obsidian Tutorial/1  initial vault.md"
+    "reference/glossary/while loop.md",
+    "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
+    "reference/glossary/Sieve of Eratosthenes.md",
+    "reference/glossary/ragged array.md",
+    "Templates/Glossary-CS Interdisciplinary Approach.md",
+    "Templates/slip-box note.md",
+    "reference/glossary/array.md",
+    "reference/glossary/prime number.md",
+    "reference/glossary/harmonic number.md",
+    "reference/glossary/nesting.md"
   ]
 }

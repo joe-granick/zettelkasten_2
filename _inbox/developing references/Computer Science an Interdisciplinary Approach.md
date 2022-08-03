@@ -30,10 +30,9 @@ Topic:
 - *logical errors* produces wrong answers and bugs when program is executed. Doesn't prevent program from running nd needs to be caught by programmer
 
 ### 1.2 Built-In Types of Data
-#### Terms
+#### Keywords
 - [[primitive data-type]]
 - [[built-in data-type]]
-- [[primitive data-type]]
 - [[String]]
 - [[integer data-type]]
 	- [[byte]]
@@ -46,7 +45,8 @@ Topic:
 - [[character data-type]]
 	- [[char]]
 - [[Boolean data-type]]
-	- [[boolean]]
+	- [[Boolean]]
+- [[dragon curve]]
 
 
 #### Questions
@@ -330,6 +330,7 @@ public class ThreeSort {
 - [[continue statement]]
 - [[switch statement]]
 - [[do-while loop]]
+- [[Marsaglia's method]]
 #### Propositions
 - **control flow** unlocks a computer's true potential **51**
 - computers can't generate truly random numbers, but programs can produce **pseudorandom** numbers that have many properties as random **52**numbers ()
@@ -501,7 +502,7 @@ else                      rate = 0.396;
 ```
 #### Applications
 - loops open full computational capability
-- many computational methods utilized and implemented by computers are based on mathematicl theories and discoveries going back centuries
+- many computational methods utilized and implemented by computers are based on mathematical theories and discoveries going back centuries
 ##### Finite sum
 
 ##### Computing the square root
@@ -523,6 +524,131 @@ else                      rate = 0.396;
 ##### Do-while loops
 
 #### Infinite loops
+
+### Exercises
+#### 1.3.5
+Write program `RollLoadedDie` that prints result of rolling a loaded die such that probability of getting `1,2,3,4,5` is $\frac{1}{8}$ and getting `6` is $\frac{3}{8}$ **(81)**
+
+```Java
+public class RollLoadedDie {
+    //rolls die where probability of rolling 1-5 is 1/6 and getting a 6 is 5/6
+    public static void main(String[] args){
+        double roll = Math.random();
+        double prob = (1.0/6.0);
+        int dice;
+
+        if(roll <= (1.0 * prob))      dice = 1;
+        else if(roll <= (2.0 * prob)) dice = 2;
+        else if(roll <= (3.0 * prob)) dice = 3;
+        else if(roll <= (4.0 * prob)) dice = 4;
+        else if(roll <= (5.0 * prob)) dice = 5;
+        else                          dice = 6;
+        System.out.print(dice);
+    } 
+}
+
+```
+**Remember:** Print a variable instead of writing separate print statements
+
+### 1.4 Arrays
+#### Keywords
+- [[array]] **90**
+	- [[one-dimensional array]]
+	- [[two dimensional array]]
+	- [[ragged array]] **111**
+	- [[multidimensional array]] **111**
+- [[vector]]**90**
+- [[element]]
+- [[indexing]] **90**
+- [[dot product]]
+- [[zero-based index]]
+- [[null]]
+- [[memory address]]
+- [[pointer]]
+- [[memory allocation]]
+- [[buffer overflow]]
+- [[precomputed value]]
+- [[space-time tradeoff]]
+- [[coupon collector problem]]
+- [[Sieve of Eratosthenes]] **103**
+- [[spreadsheet]] **108**
+- [[row-major order]] **108**
+- [[column-major order]] **108**
+-  [[matrix]] **106**
+	- [[matrix operations]] **109**
+		- [[matrix addition]] **109**
+		- [[matrix multiplication]] **109**
+			- [[matrix-vector multiplication]] **110**
+			- [[vector-matrix multiplication]] **110**
+		- [[columnar vector]] **110**
+
+- [[lattice]] **112**
+- [[self-avoiding random walk]] **113**
+- [[state]] **115** 
+- [[binomial distribution]] **125**
+	- [[binomial coefficient]] **125**
+	- [[Pascal's Triangle]] **125**
+
+### Key sentences
+- "Using an expression to index into an array plays a central role and enables a computation that would not otherwise be possible" **100**
+	- Coupon collector
+	- Sieve of Eratosthenes 
+
+### Arrays in Java
+
+#### Zero-based indexing
+
+#### Array length
+
+#### Default array initialization
+
+#### Memory representation
+
+#### Memory allocation
+
+#### Bounds checking
+
+#### Setting array values at compile time
+
+#### Setting array values at run time
+
+#### Exchanging two values in an array
+
+#### Shuffling an array
+
+#### Sampling without replacement
+
+#### Precomputed values
+
+#### Simplifying repetitive code
+
+### Coupon collector
+
+### Sieve of Eratosthenes
+
+### Two-dimensional arrays
+
+#### Default initialization
+
+#### Output
+
+#### Memory representation
+
+#### Setting values at compile time
+
+#### Matrix operations
+
+#### Special cases of matrix multiplication
+
+#### Ragged arrays
+
+#### Multidimensional arrays
+
+### Example: self-avoiding random walks
+
+### Summary
+
+
 
 ### 1.5 Input and Output
 #### Terms

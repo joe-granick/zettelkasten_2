@@ -68,5 +68,25 @@ data properties impose constraints on potential analysis
 - **Built-in**
 	
 
+## Programming
+**4 Basic elements in almost every language**
+1. assignments
+2. conditionals
+3. loops
+4. arrays
+### Paradigms
+- **Procedural**
+- **Functional**
+- **Object-Oriented**
+- **Logic**
+- **Declarative**
+- **Imperative**
+
+
+## Data structures
+
+### Array
+
+
 
 ___
