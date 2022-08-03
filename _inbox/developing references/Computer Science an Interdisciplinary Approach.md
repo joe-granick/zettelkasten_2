@@ -550,6 +550,36 @@ public class RollLoadedDie {
 ```
 **Remember:** Print a variable instead of writing separate print statements
 
+#### to-do
+- [x] **1.3.5**: *Loaded die* **81**
+- [x] **1.3.10**: *Uniform Random Average* **82**
+- [ ] **1.3.19**: *Newton's method* differentiable **83**
+- [ ] **1.3.20**: *Newton's method* for any root **83**
+- [ ] **1.3.21:** *Binary conversion* any change of base **83**
+- [ ] **1.3.23:** *Gambler's ruin* double nested loops **84**
+- [ ] **1.3.24:** *Gambler's ruin* visualization **84**
+- [ ] **1.3.25:** *Gambler's ruin* specify probability **84**
+- [ ] **1.3.26:** *Gambler's ruin* 3 outcomes/expected value **84**
+- [ ] **1.3.27:** *Factors*  **85**
+- [ ] **1.3.29:** *Checkerboard*  **85**
+- [ ] **1.3.30:** *GCD*  **85**
+- [ ] **1.3.31:** *Relatively prime*  **85**
+- [ ] **1.3.33:** *Marsaglia's method*  **85**
+- [ ] **1.3.34:** *Ramanujan's taxi*  **86**
+- [ ] **1.3.35:** *Checksum*  **86**
+- [ ] **1.3.36:** *Counting primes*  **86**
+- [ ] **1.3.37:** *2D Random Walk*  **86**
+- [ ] **1.3.38:** *Exponential Taylor expansion*  **87**
+- [ ] **1.3.39:** *Trig function Taylor expansion*  **88**
+- [ ] **1.3.40:** *Experimental anlaysis of `Math.exp()` Taylor expansion*  **88**
+- [ ] **1.3.41:** *Pepy's problem*  **88**
+- [ ] **1.3.42:** *Monte Hall simulation*  **88**
+- [ ] **1.3.43:** *5-number median*  **89**
+- [ ] **1.3.44:** *3 num sort* **89**
+- [ ] **1.3.45:** *Chaos* **89**
+- [ ] **1.3.46:** *Euler's sum of powers* **89**
+
+
 ### 1.4 Arrays
 #### Keywords
 - [[array]] **90**
