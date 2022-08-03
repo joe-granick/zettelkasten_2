@@ -2,7 +2,7 @@
 aliases: [Computer Science provides tools to work with data while science provides the tools to interpret data]
 ---
 202206141311
-Status: #idea
+Status: #permanent-note 
 Tags: 
 Links:
 

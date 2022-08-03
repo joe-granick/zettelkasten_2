@@ -1,5 +1,5 @@
 {{date:YYYYMMDD}}{{time:HHmm}}
-Status: #idea
+Status: #permanent-note 
 Tags:
 Links:
 
@@ -15,7 +15,4 @@ Links:
 
 ### Does it condtradict, complement, confirm or specify what I believed before
 
-
-___
-#References
 

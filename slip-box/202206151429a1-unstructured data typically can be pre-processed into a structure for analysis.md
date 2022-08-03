@@ -1,7 +1,7 @@
 ---
 aliases: ['202206151429a1']
 ---
-Status: #idea
+Status: #permanent-note 
 Tags: [[unstructured data]],[[text data]], [[bag of words]]. [[matrix]]
 
 

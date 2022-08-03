@@ -1,7 +1,7 @@
 ---
 aliases: []
 ---
-Status: #idea
+Status: #permanent-note 
 Tags: [[cumulative density function]]
 
 *CDF*s are an alternative to *PDF*s for representing the probability of *random variables*. While different in form from the *PDF* both contain the same exact information.[^1]

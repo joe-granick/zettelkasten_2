@@ -1,7 +1,7 @@
 ---
 aliases: []
 ---
-Status: #idea
+Status: #permanent-note 
 Tags: [[histogram]]
 
 >Direct quote

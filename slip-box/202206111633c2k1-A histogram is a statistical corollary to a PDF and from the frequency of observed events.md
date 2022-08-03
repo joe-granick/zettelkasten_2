@@ -1,7 +1,7 @@
 ---
 aliases: []
 ---
-Status: #idea
+Status: #permanent-note 
 Tags: [[statistics]], [[histogram]]
 
 A *histogram* is a statistical tool strongly related to *PDFs*, whereas the *PDF* represents the likelihood of the next observation being a particular value a *histogram* counts the frequency of an observed value.[^1]

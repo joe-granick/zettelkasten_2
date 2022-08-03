@@ -1,7 +1,7 @@
 ---
 aliases: ['202206111633c2h3']
 ---
-Status: #idea
+Status: #permanent-note 
 Tags: [[conditional probability]], [[bayes theorem]], [[classification]]
 
 The *conditional probability* defines the likelihood of the of one event as a function of another event.[^1]

@@ -4,13 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "cb1f3bad4cbed0b0",
+        "id": "165b0060470c3fd0",
         "type": "leaf",
         "pinned": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
+            "file": "_project/Obsidian Tutorial/_OBSIDIAN TUTORIAL.md",
+            "mode": "source",
+            "backlinks": true,
+            "source": false
+          },
+          "pinned": true
+        }
+      },
+      {
+        "id": "11bfd206df742d20",
+        "type": "leaf",
+        "pinned": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "_project/Obsidian Tutorial/2a5 emphasis.md",
             "mode": "source",
             "backlinks": true,
             "source": false
@@ -43,7 +58,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#References",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -64,7 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 1285.5
+    "width": 529.5
   },
   "right": {
     "id": "c3be8f9964344a2c",
@@ -80,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
+                "file": "_project/Obsidian Tutorial/_OBSIDIAN TUTORIAL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
+                "file": "_project/Obsidian Tutorial/_OBSIDIAN TUTORIAL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,17 +152,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "cb1f3bad4cbed0b0",
+  "active": "165b0060470c3fd0",
   "lastOpenFiles": [
-    "reference/glossary/while loop.md",
-    "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
-    "reference/glossary/Sieve of Eratosthenes.md",
-    "reference/glossary/ragged array.md",
-    "Templates/Glossary-CS Interdisciplinary Approach.md",
-    "Templates/slip-box note.md",
-    "reference/glossary/array.md",
-    "reference/glossary/prime number.md",
-    "reference/glossary/harmonic number.md",
-    "reference/glossary/nesting.md"
+    "_project/Obsidian Tutorial/2a5 emphasis.md",
+    "_project/Obsidian Tutorial/2a4 linking notes.md",
+    "_project/Obsidian Tutorial/2a6 LaTex.md",
+    "_project/Obsidian Tutorial/_OBSIDIAN TUTORIAL.md",
+    "_project/Obsidian Tutorial/2a4b.md",
+    "slip-box/Machine Learning Paradigms.md",
+    "_project/Obsidian Tutorial/2a4a embedding links in note.md",
+    "_project/Obsidian Tutorial/2a4b linking to sections.md",
+    "_inbox/developing references/Skiena-The Data Science  Design Manual 1st.md",
+    "slip-box/202206111633c2e- prob of outcome is sum of prob of all underlying outcomes.md"
   ]
 }

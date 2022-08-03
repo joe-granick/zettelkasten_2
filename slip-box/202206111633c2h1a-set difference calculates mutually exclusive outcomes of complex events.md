@@ -33,5 +33,5 @@ Note that one event can encompass the entirety of another event, as long as it h
 $$B-A=\{\}$$
 
 
-[^1]: [[202206261106-compound events constructed from composiition of outcomes in the saople space]]
+[^1]: [[202206261106-compound events constructed from composiition of outcomes in the sample space]]
 [^2]: [[Skiena-The Data Science  Design Manual 1st|The Data Science Design Manual 1st]] pg 30

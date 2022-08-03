@@ -1,8 +1,8 @@
 ---
 aliases: ['202207121924a']
 ---
-Status: #idea
+Status: #permanent-note/undeveloped 
 Tags: [[strongly typed]]
->In 1974, [Liskov](https://en.wikipedia.org/wiki/Barbara_Liskov "Barbara Liskov") and S. Zilles defined a strongly-typed language as one in which "whenever an object is passed from a calling function to a called function, its type must be compatible with the type declared in the called function."[[3]](https://en.wikipedia.org/wiki/Strong_and_weak_typing#cite_note-3) In 1977, K. Jackson wrote, "In a strongly typed language each data area will have a distinct type and each process will state its communication requirements in terms of these types."[[4]](https://en.wikipedia.org/wiki/Strong_and_weak_typing#cite_note-4)
+>In 1974, [Liskov](https://en.wikipedia.org/wiki/Barbara_Liskov "Barbara Liskov") and S. Zilles defined a strongly-typed language as one in which "whenever an object is passed from a calling function to a called function, its type must be compatible with the type declared in the called function."^[ https://en.wikipedia.org/wiki/Strong_and_weak_typing#cite_note-3 ] In 1977, K. Jackson wrote, "In a strongly typed language each data area will have a distinct type and each process will state its communication requirements in terms of these types."^[ (https://en.wikipedia.org/wiki/Strong_and_weak_typing#cite_note-4)]
 
 >Generally, a strongly typed language has stricter typing rules at [compile time](https://en.wikipedia.org/wiki/Compile_time "Compile time"), which implies that errors and exceptions are more likely to happen during compilation. Most of these rules affect variable assignment, function return values, procedure arguments and function calling. [Dynamically typed](https://en.wikipedia.org/wiki/Dynamic_typing "Dynamic typing") languages (where [type checking](https://en.wikipedia.org/wiki/Type_checker "Type checker") happens at [run time](https://en.wikipedia.org/wiki/Runtime_(program_lifecycle_phase) "Runtime (program lifecycle phase)")) can also be strongly typed. Note that in dynamically typed languages, values have types, not variables.

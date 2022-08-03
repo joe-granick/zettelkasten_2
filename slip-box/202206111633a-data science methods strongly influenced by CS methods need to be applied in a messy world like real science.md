@@ -2,7 +2,7 @@
 aliases: ['202206111633a', DS on spectrum from CS to Science]
 ---
 202206131406
-Status: #idea
+Status: #permanent-note 
 Tags: [[data science]], [[DS vs CS]], [[data science vs social and natural science]]
 Links:
 

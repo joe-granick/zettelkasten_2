@@ -1,7 +1,7 @@
 ---
 aliases: ['202206111633c3b']
 ---
-Status: #idea
+Status: #permanent-note 
 Tags: [[probability]], [[statistics]],[[probability vs. statistics]]
 
 Probability and statistics are connected and share a vocabulary, but the differences are important to understand.

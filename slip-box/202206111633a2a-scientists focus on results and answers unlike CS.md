@@ -1,8 +1,8 @@
 ---
-aliases: [Focus on results]
+aliases: ['202206111633a2a', Focus on results]
 ---
 202206131626
-Status: #idea
+Status: #permanent-note 
 Tags: [[CS vs Science]]
 Links:
 

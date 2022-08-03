@@ -1,8 +1,8 @@
 ---
-aliases: [Meaning vs. precision, Precision, Precsion of results]
+aliases: ['202206111633a2d', Meaning vs. precision, Precision, Precsion of results]
 ---
 202206141300
-Status: #idea
+Status: #permanent-note 
 Tags: [[CS vs Science]]
 Links:
 

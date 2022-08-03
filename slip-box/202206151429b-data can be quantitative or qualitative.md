@@ -1,7 +1,7 @@
 ---
-aliases: []
+aliases: ['202206151429b']
 ---
-Status: #idea
+Status: #permanent-note 
 Tags: [[data properties]],[[quantitative data]], [[qualitative data]], [[dsicrete scale]], [[continuous scale]], [[nominal variable]], [[ordinal variable]]
 
 ## Quantitative data

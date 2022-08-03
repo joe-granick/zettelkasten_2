@@ -1,96 +1,58 @@
 {
-<<<<<<< HEAD
-  "collapse-filter": true,
-  "search": "",
-=======
   "collapse-filter": false,
-  "search": "path:slip-box",
->>>>>>> refs/remotes/origin/main
+  "search": "path:\"_project/Obsidian Tutorial\"",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": true,
-  "showOrphans": true,
-  "collapse-color-groups": true,
+  "showOrphans": false,
+  "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "#book",
+      "query": "tag:#map-of-content",
       "color": {
         "a": 1,
-        "rgb": 14701138
+        "rgb": 6184150
       }
     },
     {
-      "query": "#blog",
+      "query": "tag:#permanent-note",
       "color": {
         "a": 1,
-        "rgb": 14725458
+        "rgb": 14048460
       }
     },
     {
-      "query": "#idea",
+      "query": "tag:#permanent-note/undeveloped",
       "color": {
         "a": 1,
-        "rgb": 11657298
+        "rgb": 16777215
       }
     },
     {
-      "query": "#research-paper",
+      "query": "tag:#glossary",
       "color": {
         "a": 1,
-        "rgb": 15110425
+        "rgb": 7254719
       }
     },
     {
-      "query": "#research-request",
+      "query": "tag:#book",
       "color": {
         "a": 1,
-        "rgb": 5431473
-      }
-    },
-    {
-      "query": "#year",
-      "color": {
-        "a": 1,
-        "rgb": 0
-      }
-    },
-    {
-      "query": "#permanent-note",
-      "color": {
-        "a": 1,
-        "rgb": 6053078
-      }
-    },
-    {
-      "query": "#map-of-content",
-      "color": {
-        "a": 1,
-        "rgb": 7601920
+        "rgb": 16749824
       }
     }
   ],
-  "collapse-display": true,
+  "collapse-display": false,
   "showArrow": false,
-<<<<<<< HEAD
-  "textFadeMultiplier": -2.9,
-  "nodeSizeMultiplier": 1.88932584269663,
-  "lineSizeMultiplier": 2.02696629213483,
-  "collapse-forces": true,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 3.00421348314607,
+  "lineSizeMultiplier": 2.67387640449438,
+  "collapse-forces": false,
   "centerStrength": 0,
   "repelStrength": 20,
-  "linkStrength": 1,
+  "linkStrength": 0,
   "linkDistance": 500,
-  "scale": 0.4505081176757875,
-=======
-  "textFadeMultiplier": -1.9,
-  "nodeSizeMultiplier": 2.02649572649573,
-  "lineSizeMultiplier": 5,
-  "collapse-forces": true,
-  "centerStrength": 0.145299145299145,
-  "repelStrength": 20,
-  "linkStrength": 0.923076923076923,
-  "linkDistance": 30,
-  "scale": 0.11660891579457397,
->>>>>>> refs/remotes/origin/main
+  "scale": 0.03408574896700139,
   "close": false
 }

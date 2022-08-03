@@ -14,15 +14,15 @@
 		- [x] ordered list [[2a3a markdown ordered list|2a3a]]
 		- [x] checklist [[2a3a markdown ordered list|2a3a]]
 	- [ ] links
-		- [ ] link
-			- [ ] existing note
-			- [ ] new note
+		- [x] link [[2a4 linking notes|2a4]]
+			- [x] existing note
+			- [x] new note
 		- [ ] unlinked mentions
-		- [ ] linked Sections
-		- [ ] embed note  `![[]]` 
-			- [ ] images
-			- [ ] pdf
-	- [ ] emphasis
+		- [x] linked Sections [[2a4b linking to sections|2a4b]]
+		- [x] embed note  `![[]]` [[2a4a embedding links in note|2a4a]]
+			- [x] images [[2a4a embedding links in note#images|2a4a]]
+			- [x] pdf [[2a4a embedding links in note#pdfs|2a4a]]
+	- [ ] emphasis [[2a5 emphasis|2a5]]
 		- [ ] bold
 		- [ ] italic
 		- [ ] change color
@@ -30,6 +30,8 @@
 	- [ ] quote blocks
 	- [ ] code blocks
 	- [ ] citations
+	- [ ] LaTex [[2a6 LaTex]]
+		- [ ] TeX Donald Knuth
 - [ ] **core plug-ins**
 	- [ ] backlinks
 	- [ ] command palette
@@ -50,8 +52,7 @@
 	- [ ] templates
 	- [ ] unique note creator (prefixer)
 	- [ ] word count
-- [ ] **LaTex**
-	- [ ] TeX Donald Knuth
+
 - [ ] **settings**
 	- [ ] **ALWAYS UPDATE INTERNAL LINKS**
 	- [ ] deleted files
@@ -123,6 +124,7 @@
 		- [ ] local graph
 		- [ ] filters
 	- [ ] index [[_main-index]]
+		- [ ] clean up main index
 		- [ ] maps of content
 		- [ ] other index types
 			- [ ] images
@@ -208,17 +210,7 @@ simplified html with stripped down formatting
 
 
 
-## emphasis
-### bold
-### italics
 
-
-## highlight
-
-```md
-==highlight text==
-```
-==highlight text==
 
 ## block quotes
 
@@ -231,7 +223,7 @@ simplified html with stripped down formatting
 
 ## LaTex
 https://www.youtube.com/watch?v=9eLjt5Lrocw
-[[202207121439-LaTex]]
+[[2a6 LaTex]]
 
 ## separator
 [[202207121447-separator]]
@@ -282,9 +274,6 @@ obsidians version of a folder
 
 
 
-# diagrams
-![[heap insertion.svg]]
-
 
 
 ### Obsidian
@@ -317,9 +306,3 @@ Obsidian Sync ^[https://obsidian.md/sync]
 
 
 
-## tasks
-- [ ] What Is Obsidian?
-- [ ] build index
-- [ ] build example sequence from DSM
-- [ ] clean up DSM sequences
-- [ ] build example project

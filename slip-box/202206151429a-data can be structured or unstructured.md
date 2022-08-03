@@ -1,7 +1,7 @@
 ---
 aliases: []
 ---
-Status: #idea
+Status: #permanent-note 
 Tags: [[data properties]], [[structured data]], [[unstructured data]]
 Links: [[202206151429a1-unstructured data typically can be pre-processed into a structure for analysis|202206151429a1]]
 
