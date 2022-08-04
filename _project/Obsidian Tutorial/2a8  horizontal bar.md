@@ -1,9 +1,15 @@
 ---
 aliases: []
 ---
-Status: #idea
-Tags: 
+Status: #permanent-note 
+Tags: [[markdown]]
 
+# Separator
+
+---
+
+
+# Code
 ``` md
 ---
 ```

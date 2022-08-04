@@ -506,6 +506,21 @@ else                      rate = 0.396;
 ##### Finite sum
 
 ##### Computing the square root
+```Java
+public class NewtonsMethodSqrt{
+	public static void main(String[] args){
+		double c = Double.parseDouble(args[0]);
+		double EPSILON = 1e-15;
+		double t = c;
+		while (Math.abs((t*t)-c) > EPSILON){
+			t =  ((c/t) +t)/2.0;
+		}
+		System.out.println(t);
+	}
+}
+
+
+```
 
 ##### Number conversion
 
@@ -553,7 +568,7 @@ public class RollLoadedDie {
 #### to-do
 - [x] **1.3.5**: *Loaded die* **81**
 - [x] **1.3.10**: *Uniform Random Average* **82**
-==- [ ] **1.3.19**: *Newton's method* differentiable **83** ==
+- [x] ==**1.3.19**: *Newton's method* differentiable **83** ==
 - [ ] **1.3.20**: *Newton's method* for any root **83**
 - [ ] **1.3.21:** *Binary conversion* any change of base **83**
 - [ ] **1.3.23:** *Gambler's ruin* double nested loops **84**

@@ -1,7 +1,7 @@
 ---
 aliases: ['202206161754']
 ---
-Status: #map-of-content/elaborate 
+Status: #permanent-note/elaborate 
 Topics:
 Added: 202207281133
 

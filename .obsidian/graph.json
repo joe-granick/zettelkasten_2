@@ -1,11 +1,11 @@
 {
-  "collapse-filter": false,
-  "search": "path:\"_project/Obsidian Tutorial\"",
+  "collapse-filter": true,
+  "search": "path:slip-box",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": true,
   "showOrphans": false,
-  "collapse-color-groups": false,
+  "collapse-color-groups": true,
   "colorGroups": [
     {
       "query": "tag:#map-of-content",
@@ -44,15 +44,15 @@
     }
   ],
   "collapse-display": false,
-  "showArrow": false,
+  "showArrow": true,
   "textFadeMultiplier": 0,
-  "nodeSizeMultiplier": 3.00421348314607,
-  "lineSizeMultiplier": 2.67387640449438,
-  "collapse-forces": false,
+  "nodeSizeMultiplier": 5,
+  "lineSizeMultiplier": 5,
+  "collapse-forces": true,
   "centerStrength": 0,
   "repelStrength": 20,
   "linkStrength": 0,
   "linkDistance": 500,
-  "scale": 0.03408574896700139,
+  "scale": 0.024312528363270424,
   "close": false
 }
