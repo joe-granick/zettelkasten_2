@@ -4,33 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "165b0060470c3fd0",
+        "id": "57ff08ec8a18ec91",
         "type": "leaf",
-        "pinned": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_project/Obsidian Tutorial/_OBSIDIAN TUTORIAL.md",
+            "file": "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
             "mode": "source",
             "backlinks": true,
             "source": false
-          },
-          "pinned": true
-        }
-      },
-      {
-        "id": "11bfd206df742d20",
-        "type": "leaf",
-        "pinned": true,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "_project/Obsidian Tutorial/2a5 emphasis.md",
-            "mode": "source",
-            "backlinks": true,
-            "source": false
-          },
-          "pinned": true
+          }
         }
       }
     ],
@@ -95,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_project/Obsidian Tutorial/_OBSIDIAN TUTORIAL.md",
+                "file": "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_project/Obsidian Tutorial/_OBSIDIAN TUTORIAL.md",
+                "file": "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,12 +135,12 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "165b0060470c3fd0",
+  "active": "57ff08ec8a18ec91",
   "lastOpenFiles": [
     "_project/Obsidian Tutorial/2a5 emphasis.md",
+    "_project/Obsidian Tutorial/_OBSIDIAN TUTORIAL.md",
     "_project/Obsidian Tutorial/2a4 linking notes.md",
     "_project/Obsidian Tutorial/2a6 LaTex.md",
-    "_project/Obsidian Tutorial/_OBSIDIAN TUTORIAL.md",
     "_project/Obsidian Tutorial/2a4b.md",
     "slip-box/Machine Learning Paradigms.md",
     "_project/Obsidian Tutorial/2a4a embedding links in note.md",
