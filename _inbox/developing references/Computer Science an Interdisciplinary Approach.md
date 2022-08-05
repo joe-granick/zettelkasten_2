@@ -569,7 +569,7 @@ public class RollLoadedDie {
 - [x] **1.3.5**: *Loaded die* **81**
 - [x] **1.3.10**: *Uniform Random Average* **82**
 - [x] ==**1.3.19**: *Newton's method* differentiable **83** ==
-- [ ] **1.3.20**: *Newton's method* for any root **83**
+- [x] **1.3.20**: *Newton's method* for any root **83**
 - [ ] **1.3.21:** *Binary conversion* any change of base **83**
 - [ ] **1.3.23:** *Gambler's ruin* double nested loops **84**
 - [ ] **1.3.24:** *Gambler's ruin* visualization **84**

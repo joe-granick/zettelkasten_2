@@ -17,8 +17,6 @@ Tags:
 ## [[data properties]]
 data properties impose constraints on potential analysis - 
 
-
-
 ![[exemplary datasets#Examples of high quality data sets]]
 
 ![[Machine Learning Paradigms#Machine Learning Paradigms]]

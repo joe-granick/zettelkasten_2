@@ -17,7 +17,7 @@ The purpose of the book is to explain the key concepts underpinning data science
 
 #### What are the major topics and how are they organized, related, and/or independent?
 1. What is data science and why has it rose to prominence
-2. Academic undperinnings of data science
+2. Academic underpinnings of data science
 3. Data preparation and exploration
 4. Models from simple scoring and ranking heuristics to machine learning
 5. Big data infrastructure to support data intensive workloads
