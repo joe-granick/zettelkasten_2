@@ -17,3 +17,7 @@ Links:
 - item 2
 - item 3
 - item 4
+
+
+# List of extended hotkeys
+![[Pasted image 20220805082720.png]]

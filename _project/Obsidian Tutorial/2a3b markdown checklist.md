@@ -7,9 +7,9 @@ Tags: [[markdown]]
 Links: 
 
 # Checklists
-- [ ] item 1
-- [ ] item 2
-- [ ] item 3
+- [x] item 1
+- [x] item 2
+- [x] item 3
 
 # Code Block
 

@@ -14,7 +14,8 @@
 	- [x] search
 	- [x] command palette
 	- [x] quick switcher
-- [ ] **hotkeys** [[obsidian hotkeys]]
+	- [x] graph
+- [x] **hotkeys** [[obsidian hotkeys]]
 	- [x] open link
 	- [x] toggle edit/view
 	- [x] quick switcher
@@ -23,7 +24,7 @@
 	- [x] forward
 	- [x] new note
 	- [x] open note in new pane
-	- [ ] extended hotkeys [[2a6a quote block extended hotkey|2a6a]]
+	- [x] extended hotkeys [[2a6a quote block extended hotkey|2a6a]]
 - [x] **markdown** [[2a Markdown in obsidian|2a]]
 	- [x] headings [[2a2 markdown headings|2a2]]
 		- [x] HTML headings [[2a2a headings in html]]
@@ -50,20 +51,20 @@
 	- [x] callout block [[2a11 callout block|2a11]]
 	- [x] diagrams [[2a10 diagrams|2a10]]
 	- [x] separator [[2a8  horizontal bar|2a8]]
-	- [ ] citations
-	- [ ] alias
+	- [x] citations [[2a13 citations|2a13]]
+	- [x] alias [[2a12 alias|2a12]]
 	- [x] tables [[2a9 tables|2a9]]
 	- [x] LaTex [[2a7 LaTeX]]
 		- [x] TeX Donald Knuth
-- [ ] **core plug-ins**
+- [x] **core plug-ins**
 	- [x] backlinks
 	- [x] command palette
 	- [x] daily notes
 	- [x] file explorer
 	- [x] file recovery
 	- [x] graph view
-	- [ ] note composer
-	- [ ] outgoing links
+	- [x] note composer
+	- [x] outgoing links
 	- [x] page preview
 	- [x] quick switcher
 	- [x] search
@@ -84,17 +85,16 @@
 	- [x] github
 	- [ ] obsidian sync
 	- [ ] dropbox
-- [ ] **community plug-ins**
-	- [ ] admonition
-	- [ ] advanced slides
-	- [ ] advanced tables
-	- [ ] calendar
+- [x] **community plug-ins**
+	- [x] advanced slides
+	- [x] advanced tables
+	- [x] calendar
 	- [x] dataview
-	- [x] diagrams
+	- [x] excalidraw
 	- [x] editor syntax highlighting
-	- [ ] format hotkeys
-	- [ ] kanban
-	- [ ] mind map
+	- [x] format hotkeys
+	- [x] kanban
+	- [x] mind map
 	- [x] spaced repetitions
 - [x] external programs
 	- [ ] link collector/copier

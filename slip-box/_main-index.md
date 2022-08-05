@@ -4,17 +4,8 @@ Tags:
 
 # Data Science
 
-## DS academic influences
-- thinking like a **scientist** vs. **computer scientist** vs. **statistician** [[202206111633a1 - think like a computer scientist act like a statistician understand like a domain expert|202206111633]]
-### [[CS vs Science]]
--  **computer science** provides algorithms and tools as well as mindset for composing solutions
-- **physical science** and **social science** provide methodology for experiment design and evaluating evidence
-### Mathematics
-- foundation of data science [[202206111633c-Data Science Math Prereqs|202206111633c]]
-- understanding of *mathematics* crucial [[202206111633c1- mathematical intuition is critical for data science|202206111633c1]]  
-
-#### Probability and Statistics
-Probability and Stats combine to provide toolset for processing and interpreting data  [[202206111633c1a-Probability and statistics provide tools to analyze data|202206111633c1a]]
+## [[DS academic influences]]
+- thinking like a **scientist** vs. **computer scientist** vs. **statistician** 
 
 
 	

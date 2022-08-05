@@ -64,8 +64,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 529.5,
-    "collapsed": true
+    "width": 721.5
   },
   "right": {
     "id": "c3be8f9964344a2c",
@@ -131,7 +130,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -140,15 +140,15 @@
   },
   "active": "57ff08ec8a18ec91",
   "lastOpenFiles": [
-    "2a11 callout block.md",
+    "_project/Obsidian Tutorial/2a7 LaTeX.md",
     "_project/Obsidian Tutorial/_OBSIDIAN TUTORIAL.md",
-    "2a10 diagrams.md",
-    "_project/Obsidian Tutorial/2a8  horizontal bar.md",
+    "_project/Obsidian Tutorial/2a9 tables.md",
+    "_project/Obsidian Tutorial/2a12 alias.md",
+    "_project/Obsidian Tutorial/2a13 citations.md",
+    "_project/Obsidian Tutorial/2a10 diagrams.md",
+    "_project/Obsidian Tutorial/2a11 callout block.md",
     "_project/Obsidian Tutorial/2a6b code block.md",
-    "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
-    "_project/Obsidian Tutorial/2a5 emphasis.md",
-    "_project/Obsidian Tutorial/2a4 linking notes.md",
-    "_project/Obsidian Tutorial/2a6 LaTex.md",
-    "_project/Obsidian Tutorial/2a4b.md"
+    "_project/Obsidian Tutorial/2a6 quote block.md",
+    "_project/Obsidian Tutorial/2a5 emphasis.md"
   ]
 }

@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="profile" href="https://gmpg.org/xfn/11">
+		<link rel="pingback" href="https://locallyoptimistic.com/xmlrpc.php">
+				<!--[if lt IE 9]>
+		<script src="https://locallyoptimistic.com/wp-content/themes/writing/js/html5.js"></script>
+		<![endif]-->
+		<script>(function(){document.documentElement.className='js'})();</script>
+
+		<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v19.4 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Building an Analytics Stack in 2020 - Locally Optimistic</title>
+	<link rel="canonical" href="https://locallyoptimistic.com/post/0-to-60-analytics-stack/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Building an Analytics Stack in 2020 - Locally Optimistic" />
+	<meta property="og:description" content="Congratulations, you are launching an analytics/data function! Maybe you are the first analytics hire at a brand new company, or perhaps you are bringing analytics to a mature company that historically lacked a comprehensive data strategy. You sold the vision and also put together a roadmap based on your experience and current best practices. What could go wrong (and who could argue that refactoring from a star to snowflake schema is an important company-wide goal)? The reality is that, like any other function, analytics and data exist within the context of an organization &#8211; an organization that has competing priorities, politics, and limited resourcing. I wrote this article to help you combine pragmatism with best practices and prepare for the discussions with engineering, finance, and possibly the senior leadership team. Over the past 5 years, analytics technology has coalesced around three components: a data-moving tool (possibly referred by EL, extract-load, or ETL, extract-transform-load), a data warehouse to store aforementioned data, and a BI layer to analyze the data. You may also want to consider implementing a business logic layer, which I touch on at the end of the article. I am going to sort the article by tool, since that [&hellip;]" />
+	<meta property="og:url" content="https://locallyoptimistic.com/post/0-to-60-analytics-stack/" />
+	<meta property="og:site_name" content="Locally Optimistic" />
+	<meta property="article:published_time" content="2020-04-22T01:05:04+00:00" />
+	<meta property="article:modified_time" content="2020-07-14T00:16:21+00:00" />
+	<meta property="og:image" content="https://locallyoptimistic.com/wp-content/uploads/2020/05/0-to-60-data.jpg" />
+	<meta property="og:image:width" content="2288" />
+	<meta property="og:image:height" content="1383" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="author" content="Nelson Auner" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:creator" content="@localoptimistic" />
+	<meta name="twitter:site" content="@localoptimistic" />
+	<meta name="twitter:label1" content="Written by" />
+	<meta name="twitter:data1" content="Nelson Auner" />
+	<meta name="twitter:label2" content="Est. reading time" />
+	<meta name="twitter:data2" content="8 minutes" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://locallyoptimistic.com/#organization","name":"Locally Optimstic","url":"https://locallyoptimistic.com/","sameAs":["https://www.youtube.com/channel/UC13e1OgG_dOE3BI481swWPg","https://twitter.com/localoptimistic"],"logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://locallyoptimistic.com/#/schema/logo/image/","url":"https://locallyoptimistic.com/wp-content/uploads/2020/05/logo.png","contentUrl":"https://locallyoptimistic.com/wp-content/uploads/2020/05/logo.png","width":1676,"height":656,"caption":"Locally Optimstic"},"image":{"@id":"https://locallyoptimistic.com/#/schema/logo/image/"}},{"@type":"WebSite","@id":"https://locallyoptimistic.com/#website","url":"https://locallyoptimistic.com/","name":"Locally Optimistic","description":"A blog about data organizations","publisher":{"@id":"https://locallyoptimistic.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://locallyoptimistic.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://locallyoptimistic.com/post/0-to-60-analytics-stack/#primaryimage","url":"https://locallyoptimistic.com/wp-content/uploads/2020/05/0-to-60-data.jpg","contentUrl":"https://locallyoptimistic.com/wp-content/uploads/2020/05/0-to-60-data.jpg","width":2288,"height":1383,"caption":"A bunch of people are playing together stacking things up. One group is stacking gold coins, the other is stacking computer monitors, and the last is stacking blocks that spell out \"data\"."},{"@type":"WebPage","@id":"https://locallyoptimistic.com/post/0-to-60-analytics-stack/","url":"https://locallyoptimistic.com/post/0-to-60-analytics-stack/","name":"Building an Analytics Stack in 2020 - Locally Optimistic","isPartOf":{"@id":"https://locallyoptimistic.com/#website"},"primaryImageOfPage":{"@id":"https://locallyoptimistic.com/post/0-to-60-analytics-stack/#primaryimage"},"image":{"@id":"https://locallyoptimistic.com/post/0-to-60-analytics-stack/#primaryimage"},"thumbnailUrl":"https://locallyoptimistic.com/wp-content/uploads/2020/05/0-to-60-data.jpg","datePublished":"2020-04-22T01:05:04+00:00","dateModified":"2020-07-14T00:16:21+00:00","breadcrumb":{"@id":"https://locallyoptimistic.com/post/0-to-60-analytics-stack/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://locallyoptimistic.com/post/0-to-60-analytics-stack/"]}]},{"@type":"BreadcrumbList","@id":"https://locallyoptimistic.com/post/0-to-60-analytics-stack/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://locallyoptimistic.com/"},{"@type":"ListItem","position":2,"name":"Building an Analytics Stack in 2020"}]},{"@type":"Article","@id":"https://locallyoptimistic.com/post/0-to-60-analytics-stack/#article","isPartOf":{"@id":"https://locallyoptimistic.com/post/0-to-60-analytics-stack/"},"author":{"name":"Nelson Auner","@id":"https://locallyoptimistic.com/#/schema/person/35a60ac9f4e4e4d81a837b616e76c623"},"headline":"Building an Analytics Stack in 2020","datePublished":"2020-04-22T01:05:04+00:00","dateModified":"2020-07-14T00:16:21+00:00","mainEntityOfPage":{"@id":"https://locallyoptimistic.com/post/0-to-60-analytics-stack/"},"wordCount":1633,"publisher":{"@id":"https://locallyoptimistic.com/#organization"},"image":{"@id":"https://locallyoptimistic.com/post/0-to-60-analytics-stack/#primaryimage"},"thumbnailUrl":"https://locallyoptimistic.com/wp-content/uploads/2020/05/0-to-60-data.jpg","keywords":["Analytics"],"articleSection":["Management"],"inLanguage":"en-US"},{"@type":"Person","@id":"https://locallyoptimistic.com/#/schema/person/35a60ac9f4e4e4d81a837b616e76c623","name":"Nelson Auner","image":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://locallyoptimistic.com/#/schema/person/image/","url":"https://secure.gravatar.com/avatar/4b432f5e10ff50bcf88eace63d9024d7?s=96&d=mm&r=g","contentUrl":"https://secure.gravatar.com/avatar/4b432f5e10ff50bcf88eace63d9024d7?s=96&d=mm&r=g","caption":"Nelson Auner"},"description":"Nelson is Engineering Manager, Data at Coalition, Inc.","sameAs":["https://www.linkedin.com/in/nelsonauner"],"url":"https://locallyoptimistic.com/post/author/nelson/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Locally Optimistic &raquo; Feed" href="https://locallyoptimistic.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Locally Optimistic &raquo; Comments Feed" href="https://locallyoptimistic.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Locally Optimistic &raquo; Building an Analytics Stack in 2020 Comments Feed" href="https://locallyoptimistic.com/post/0-to-60-analytics-stack/feed/" />
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/locallyoptimistic.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.0.1"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://locallyoptimistic.com/wp-includes/css/dist/block-library/style.min.css?ver=6.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='convertkit-broadcasts-css'  href='https://locallyoptimistic.com/wp-content/plugins/convertkit/resources/frontend/css/broadcasts.css?ver=1.9.8.1' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<link rel='stylesheet' id='chld_thm_cfg_parent-css'  href='https://locallyoptimistic.com/wp-content/themes/writing/style.css?ver=6.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='chld_thm_cfg_child-css'  href='https://locallyoptimistic.com/wp-content/themes/writing-child/style.css?ver=6.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='asalah-lora-css'  href='https://fonts.googleapis.com/css?family=Lora%3A400%2C700&#038;subset=latin%2Clatin-ext&#038;ver=6.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='genericons-css'  href='https://locallyoptimistic.com/wp-content/themes/writing/genericons/genericons.css?ver=3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-css'  href='https://locallyoptimistic.com/wp-content/themes/writing/framework/bootstrap/css/bootstrap.css?ver=1' type='text/css' media='all' />
+<link rel='stylesheet' id='fontawesome-css'  href='https://locallyoptimistic.com/wp-content/themes/writing/framework/font-awesome/css/font-awesome.min.css?ver=1' type='text/css' media='all' />
+<link rel='stylesheet' id='asalah-plugins-css'  href='https://locallyoptimistic.com/wp-content/themes/writing/pluginstyle.css?ver=1' type='text/css' media='all' />
+<link rel='stylesheet' id='asalah-style-css'  href='https://locallyoptimistic.com/wp-content/themes/writing-child/style.css?ver=3.740' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='asalah-ie-css'  href='https://locallyoptimistic.com/wp-content/themes/writing/css/ie.css?ver=6.0.1' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='simcal-qtip-css'  href='https://locallyoptimistic.com/wp-content/plugins/google-calendar-events/assets/css/vendor/jquery.qtip.min.css?ver=3.1.36' type='text/css' media='all' />
+<link rel='stylesheet' id='simcal-default-calendar-grid-css'  href='https://locallyoptimistic.com/wp-content/plugins/google-calendar-events/assets/css/default-calendar-grid.min.css?ver=3.1.36' type='text/css' media='all' />
+<link rel='stylesheet' id='simcal-default-calendar-list-css'  href='https://locallyoptimistic.com/wp-content/plugins/google-calendar-events/assets/css/default-calendar-list.min.css?ver=3.1.36' type='text/css' media='all' />
+<script type='text/javascript' src='https://locallyoptimistic.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://locallyoptimistic.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script type='text/javascript' src='https://locallyoptimistic.com/wp-content/themes/writing/js/modernizr.js?ver=1' id='asalah-modernizr-js'></script>
+<link rel="https://api.w.org/" href="https://locallyoptimistic.com/wp-json/" /><link rel="alternate" type="application/json" href="https://locallyoptimistic.com/wp-json/wp/v2/posts/9" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://locallyoptimistic.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://locallyoptimistic.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 6.0.1" />
+<link rel='shortlink' href='https://locallyoptimistic.com/?p=9' />
+<link rel="alternate" type="application/json+oembed" href="https://locallyoptimistic.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flocallyoptimistic.com%2Fpost%2F0-to-60-analytics-stack%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://locallyoptimistic.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flocallyoptimistic.com%2Fpost%2F0-to-60-analytics-stack%2F&#038;format=xml" />
+<style type="text/css" id="asalah_custom_style_code">@media screen and (min-width: 1150px) {.container { width:1150px; }}@media screen and (min-width: 1321px) {.wp-block-image.alignwide {margin-left: -85px;margin-right: -85px;}}@media screen and (max-width: 1320px) {.wp-block-image.alignwide,
+									  .wp-block-embed.alignwide,
+									  .wp-block-cover-image.alignwide,
+									  .wp-block-cover.alignwide {margin-left: -45px;margin-right: -45px;}}@media screen and (max-width: 1250px) {.wp-block-image.alignwide,
+									  .wp-block-embed.alignwide,
+									  .wp-block-cover-image.alignwide,
+									  .wp-block-cover.alignwide {margin-left: -25px;margin-right: -25px;}}@media screen and (max-width: 1210px) {.wp-block-image.alignwide,
+									  .wp-block-embed.alignwide,
+									  .wp-block-cover-image.alignwide,
+									  .wp-block-cover.alignwide {margin-left: 0px;margin-right: 0px;}}@media screen and (max-width: 1150px) {.wp-block-image.alignwide,
+									  .wp-block-embed.alignwide,
+									  .wp-block-cover-image.alignwide,
+									  .wp-block-cover.alignwide {margin-left: -45px;margin-right: -45px;}}@media screen and (max-width: 798px) {.wp-block-image.alignwide,
+									  .wp-block-embed.alignwide,
+									  .wp-block-cover-image.alignwide,
+									  .wp-block-cover.alignwide {margin-left: 0px;margin-right: 0px;}}.site_logo a { font-size: 50px;}.site_logo, .site_logo a { font-family:"2","Helvetica Neue",sans-serif; letter-spacing: normal;}.logo_dot, .top_header_items_holder .logo_dot {display: none;}.top_menu_wrapper a:hover, .top_menu_wrapper a:hover, .header_search:hover, .top_menu_wrapper .nav > li > a:hover, .header_search input:hover[type='text'], .dropdown-menu > li > a:hover, .top_menu_wrapper a:focus, .top_menu_wrapper a:focus, .header_search:focus, .top_menu_wrapper .nav > li > a:focus, .header_search input:focus[type='text'], .dropdown-menu > li > a:focus, .top_menu_wrapper a:focus, .top_menu_wrapper a:focus, .header_search:focus, .top_menu_wrapper .nav > li > a:focus, .header_search input:focus[type='text'], .dropdown-menu > li > a:focus {color:#3961db !important;}.main_content.col-md-12 .blog_single .blog_post_text, .main_content.col-md-9 .blog_single .blog_post_text {font-size:18px;}.blog_posts_list .blog_post .entry-content p:last-of-type { display: inline;}</style><link rel="icon" href="https://locallyoptimistic.com/wp-content/uploads/2020/06/cropped-logo_square-1-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://locallyoptimistic.com/wp-content/uploads/2020/06/cropped-logo_square-1-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://locallyoptimistic.com/wp-content/uploads/2020/06/cropped-logo_square-1-180x180.png" />
+<meta name="msapplication-TileImage" content="https://locallyoptimistic.com/wp-content/uploads/2020/06/cropped-logo_square-1-270x270.png" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-345857-22"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-345857-22');
+</script>	</head>
+		<body data-rsssl=1 class="post-template-default single single-post postid-9 single-format-standard wp-embed-responsive">
+
+					<!-- Load facebook SDK -->
+			<div id="fb-root"></div>
+			<script>
+			jQuery(document).ready(function() {
+								
+					(function(d, s, id){
+			     var js, fjs = d.getElementsByTagName(s)[0];
+			     if (d.getElementById(id)) {return;}
+			     js = d.createElement(s); js.id = id; js.async = true;
+			     js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11";
+			     fjs.parentNode.insertBefore(js, fjs);
+			   }(document, 'script', 'facebook-jssdk'));
+			 });
+			</script>
+		    <!-- End Load facebook SDK -->
+				<div id="page" class="hfeed site">
+
+			<!-- start site main container -->
+			<div class="site_main_container">
+				<!-- header -->
+					<header class="site_header">
+
+						<!-- top menu area -->
+								<div class="top_menu_wrapper">
+			<div class="container">
+				<div class="site_logo_mobile_topbar">		<div class="logo_wrapper logo_type_image">
+			<style>.site_logo_image { height : 50px;}</style>			<a class="asalah_logo default_logo retina_logo" title="Locally Optimistic" href="https://locallyoptimistic.com/" rel="home">
+					<img  src="https://locallyoptimistic.com/wp-content/uploads/2020/05/logo.png"  class="site_logo img-responsive site_logo_image pull-left clearfix" alt="Locally Optimistic" />
+				</a>
+									<!-- Site name for screen-reader-text -->
+					<h2 class="screen-reader-text site_logo site-title pull-left clearfix">Locally Optimistic</h2>
+							</div> <!-- logo_wrapper -->
+				<div class="header_info_wrapper">
+			<a id="user_info_icon" class="user_info_avatar user_info_button user_info_avatar_icon skin_color_hover" href="#">
+				<i class="fa fa-align-center"></i>			</a>
+		</div>
+	</div><div class="mobile_menu_button">
+											<span class="mobile_menu_text">Menu</span>
+											<div class="writing_mobile_icon"><span></span><span></span><span></span></div>
+				</div><!-- end mobile_menu_button -->
+
+				<div class="top_header_items_holder">
+							<div class="logo_wrapper logo_type_image">
+			<style>.site_logo_image { height : 50px;}</style>			<a class="asalah_logo default_logo retina_logo" title="Locally Optimistic" href="https://locallyoptimistic.com/" rel="home">
+					<img  src="https://locallyoptimistic.com/wp-content/uploads/2020/05/logo.png"  class="site_logo img-responsive site_logo_image pull-left clearfix" alt="Locally Optimistic" />
+				</a>
+									<!-- Site name for screen-reader-text -->
+					<h2 class="screen-reader-text site_logo site-title pull-left clearfix">Locally Optimistic</h2>
+							</div> <!-- logo_wrapper -->
+								<div class="main_menu pull-left">
+							<div class="main_nav"><ul id="menu-main-nav" class="nav navbar-nav"><li id="menu-item-636" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-636 default_menu"><a href="https://locallyoptimistic.com/">Home</a></li>
+<li id="menu-item-31" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-31 dropdown default_menu"><a href="https://www.locallyoptimistic.com/" data-hover="dropdown" class="dropdown-toggle">Blog</a>
+<ul role="menu" class=" dropdown-menu">
+	<li id="menu-item-637" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-637 default_menu"><a href="https://locallyoptimistic.com/post/category/management/">Management</a></li>
+	<li id="menu-item-639" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-639 default_menu"><a href="https://locallyoptimistic.com/post/category/culture/">Culture</a></li>
+	<li id="menu-item-638" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-638 default_menu"><a href="https://locallyoptimistic.com/post/category/roles-responsibilities/">Roles &amp; Responsibilities</a></li>
+	<li id="menu-item-642" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-642 default_menu"><a href="https://locallyoptimistic.com/post/category/tools/">Tools</a></li>
+	<li id="menu-item-641" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-641 default_menu"><a href="https://locallyoptimistic.com/post/category/data-science/">Data Science</a></li>
+	<li id="menu-item-640" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-640 default_menu"><a href="https://locallyoptimistic.com/post/category/business-inteligence/">Business Inteligence</a></li>
+	<li id="menu-item-643" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-643 default_menu"><a href="https://locallyoptimistic.com/post/category/software-engineering/">Software Engineering</a></li>
+</ul>
+</li>
+<li id="menu-item-329" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-329 default_menu"><a href="https://locallyoptimistic.com/events/">Events</a></li>
+<li id="menu-item-35" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-35 dropdown default_menu"><a href="https://locallyoptimistic.com/community/" data-hover="dropdown" class="dropdown-toggle">Get Involved</a>
+<ul role="menu" class=" dropdown-menu">
+	<li id="menu-item-635" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-635 default_menu"><a href="https://locallyoptimistic.com/community/">Join the LO Community</a></li>
+	<li id="menu-item-634" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-634 default_menu"><a href="https://locallyoptimistic.com/write-for-the-blog/">Write for the LO Blog</a></li>
+	<li id="menu-item-633" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-633 default_menu"><a href="https://locallyoptimistic.com/speak-at-an-event/">Speak at an LO Event</a></li>
+	<li id="menu-item-653" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-653 default_menu"><a href="https://locallyoptimistic.com/community/event-sponsorship/">Event Sponsorship</a></li>
+</ul>
+</li>
+<li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-34 default_menu"><a href="https://locallyoptimistic.com/about/">About</a></li>
+</ul></div>						</div>
+									</div> <!-- end .top_header_items_holder -->
+			</div> <!-- end container -->
+		</div>
+							</header><!-- header -->
+
+				<!-- start stie content -->
+				<section id="content" class="site_content">
+					<div class="container">
+						<div class="row"><main class="main_content col-md-12">
+	<!-- Start blog single wrapper div -->
+	<div class="blog_posts_wrapper blog_single blog_posts_single">
+		<div id="post-9" class="blog_post_container post-9 post type-post status-publish format-standard has-post-thumbnail hentry category-management tag-analytics" >
+
+				<div class="blog_post clearfix">
+					<div class="blog_post_title">
+				<h1 class="entry-title title post_title">Building an Analytics Stack in 2020</h1>			</div><!-- end blog_post_title -->
+					<div class="blog_post_meta clearfix">
+				<span class="blog_meta_item blog_meta_category">In <a href="https://locallyoptimistic.com/post/category/management/" rel="category tag">Management</a></span><span class="blog_meta_item blog_meta_tags">Tags <a href="https://locallyoptimistic.com/post/tag/analytics/" rel="tag">Analytics</a></span><span class="blog_meta_item blog_meta_date"><span class="screen-reader-text"></span><time class="entry-date published updated" datetime="2020-04-22T01:05:04-04:00">April 22, 2020</time></span><span class="blog_meta_item blog_meta_author"><span class="author vcard"><a class="meta_author_avatar_url" href="https://locallyoptimistic.com/post/author/nelson/"><img alt='' src='https://secure.gravatar.com/avatar/4b432f5e10ff50bcf88eace63d9024d7?s=25&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/4b432f5e10ff50bcf88eace63d9024d7?s=50&#038;d=mm&#038;r=g 2x' class='avatar avatar-25 photo' height='25' width='25' loading='lazy'/></a> <a class="url fn n" href="https://locallyoptimistic.com/post/author/nelson/">Nelson Auner</a></span></span>			</div>
+		<div class="blog_post_banner blog_post_image undertitle"><img width="844" height="510" src="https://locallyoptimistic.com/wp-content/uploads/2020/05/0-to-60-data-844x510.jpg" class="img-responsive wp-post-image" alt="A bunch of people are playing together stacking things up. One group is stacking gold coins, the other is stacking computer monitors, and the last is stacking blocks that spell out &quot;data&quot;." loading="lazy" srcset="https://locallyoptimistic.com/wp-content/uploads/2020/05/0-to-60-data-844x510.jpg 844w, https://locallyoptimistic.com/wp-content/uploads/2020/05/0-to-60-data-300x181.jpg 300w, https://locallyoptimistic.com/wp-content/uploads/2020/05/0-to-60-data-1024x619.jpg 1024w, https://locallyoptimistic.com/wp-content/uploads/2020/05/0-to-60-data-768x464.jpg 768w, https://locallyoptimistic.com/wp-content/uploads/2020/05/0-to-60-data-561x339.jpg 561w, https://locallyoptimistic.com/wp-content/uploads/2020/05/0-to-60-data-645x390.jpg 645w, https://locallyoptimistic.com/wp-content/uploads/2020/05/0-to-60-data-470x284.jpg 470w, https://locallyoptimistic.com/wp-content/uploads/2020/05/0-to-60-data-309x187.jpg 309w, https://locallyoptimistic.com/wp-content/uploads/2020/05/0-to-60-data-662x400.jpg 662w, https://locallyoptimistic.com/wp-content/uploads/2020/05/0-to-60-data-440x266.jpg 440w, https://locallyoptimistic.com/wp-content/uploads/2020/05/0-to-60-data-425x257.jpg 425w, https://locallyoptimistic.com/wp-content/uploads/2020/05/0-to-60-data-203x123.jpg 203w, https://locallyoptimistic.com/wp-content/uploads/2020/05/0-to-60-data-455x275.jpg 455w, https://locallyoptimistic.com/wp-content/uploads/2020/05/0-to-60-data-340x206.jpg 340w, https://locallyoptimistic.com/wp-content/uploads/2020/05/0-to-60-data-373x225.jpg 373w, https://locallyoptimistic.com/wp-content/uploads/2020/05/0-to-60-data-267x161.jpg 267w, https://locallyoptimistic.com/wp-content/uploads/2020/05/0-to-60-data-525x317.jpg 525w" sizes="(max-width: 992px) calc(100vw - 30px), 844px" />      </div>			<!-- Start entry-content div -->
+				<div class="entry-content blog_post_text blog_post_description">
+				
+<p>Congratulations, you are launching an analytics/data function! Maybe you are the first analytics hire at a brand new company, or perhaps you are bringing analytics to a mature company that historically lacked a comprehensive data strategy. You sold the vision and also put together a roadmap based on your experience and current best practices. What could go wrong (and who could argue that refactoring from a star to snowflake schema is an important company-wide goal)?</p>
+
+
+
+<p>The reality is that, like any other function, analytics and data exist within the context of an organization &#8211; an organization that has competing priorities, politics, and limited resourcing. I wrote this article to help you combine pragmatism with best practices and prepare for the discussions with engineering, finance, and possibly the senior leadership team.</p>
+
+
+
+<p>Over the past 5 years, analytics technology has coalesced around three components: a data-moving tool (possibly referred by EL, extract-load, or ETL, extract-transform-load), a data warehouse to store aforementioned data, and a BI layer to analyze the data. You may also want to consider implementing a business logic layer, which I touch on at the end of the article.</p>
+
+
+
+<p>I am going to sort the article by tool, since that is how you are making discrete decisions. But when talking to the org, you need to do the opposite! It is time to put on your salesperson hat, in two specific ways:</p>
+
+
+
+<ol><li>You are not buying tools &#8211; You are solving problems! Create your “elevator pitch”, framed in terms of the benefits &#8211; faster results because X, Y more revenue because Z &#8211; and not in terms of “this tool is more expensive, but you can visualize as a directed acyclic graph!”. If two tools are most easily explained as solving a single problem, pitch them that way, and combine the cost estimates. Put simply, no one cares if the flapper, float cup and flush valve cost $3, \$5, and \$8. They want a working toilet and are willing to pay \$20.</li><li>You need to understand who in leadership has decision-making power and engage them early to understand the steps towards approval. Otherwise, you can waste a lot of time trotting out presentations to anyone willing to listen.</li></ol>
+
+
+
+<h2 id="el-tool">EL Tool:</h2>
+
+
+
+<ul><li>Some solutions you might consider: Stitch, Fivetran, tray.io</li></ul>
+
+
+
+<p>The data-moving component will transport data from your source (e.g. production database) to a destination where you can easily analyze it. You main consideration is to ensure your tool of choice will support any data sources you will need over the next several years. It is worth opting for a tool that covers software you are planning on using next year to avoid the switching cost down the road, and this is easy to explain.</p>
+
+
+
+<p>For finance, most data-movers costs far less than a full-time Data Engineer, so buying this component saves the company money from paying an engineer to do (unsatisfying) data work. However, some providers bill per number of rows synced, while some bill per number of unique data sources. You may find that the finance team prefers the billing structure of your second choice much more than your first choice provider. Be prepared to either convince finance that you can keep variable costs under control, or convince the sales rep to customize your contract.</p>
+
+
+
+<p>From the engineering side, you may get “Don’t waste money &#8211; we could do this ourselves, it is so easy”. Be prepared to ask if any of your well-intentioned teammates:</p>
+
+
+
+<ol><li>Have actually implemented and maintained a data pipeline for several years</li><li>Are personally volunteering to do so, for you, in a timely manner</li><li>Are excited to be on-call&nbsp;<sup>24</sup>⁄<sub>7</sub>&nbsp;to fix issues</li></ol>
+
+
+
+<h2 id="analytics-database">Analytics Database:</h2>
+
+
+
+<ul><li>Some solutions you might consider: Postgres, Redshift, Snowflake, Google Cloud</li></ul>
+
+
+
+<p>There are more posts comparing analytics databases than there are rows&nbsp;<em>in</em>&nbsp;my database, so I will spare details and instead discuss a useful framework for choosing open-source vs. paid. It is tempting to spin up a open-source database and use it for analytics, but you should carefully evaluate if the benefit of cost savings is worth the switching costs you will incur later.</p>
+
+
+
+<p>In my case, I balked at the price of Snowflake and tried to use a Postgres instance for analytics because we had a small amount of data. In hindsight, this was a poor decision, because the savings of (Snowflake – Postgres) * (time before we needed to switch to Snowflake) is less than the cost of spending time trying to diagnose random Postgres issues once a week. Don’t undervalue your own time!</p>
+
+
+
+<p>For finance, again, different providers have different billing structures and you may not realize how much of a sticking point this can be. Additionally, your company may want to stick with the default analytics DB of the cloud provider you are already using. However, unlike data moving, there are substantial feature differences between paid options. You should be prepared to advocate for your preferred solution by articulating the value add, in terms of faster project throughput and/or less human intervention costs.</p>
+
+
+
+<h2 id="business-intelligence-visualization">Business Intelligence &amp; Visualization:</h2>
+
+
+
+<ul><li>Some solutions you might consider: AWS Quicksight, Periscope (now Sisense), Mode, Looker, Holistic, Metabase (Free), Superset (Free)</li></ul>
+
+
+
+<p>Even though the BI purchase is expensive, it’s often the least contentious since it is the only technology of the three that business people actually see! Build a value proposition by combining expected maintenance costs (in salary/opportunity cost) with the value of avoiding a bad decision due to bad data ($10K?). By my simple back of the envelope calculations, Looker ended up being cheaper than (free) Superset, because it largely runs itself and enables self-serve data exploration.</p>
+
+
+
+<p>This is one of the purchase decisions that may actually merit a deck or formal document outlining the pros and cons of each option. However, I regret over-democratizing the process by involving multiple business users to help make the decision by committee. At the end of the day, making simple dashboards is similar in each system, and it is you, not business users, who will bear the burden of maintaining permissions, fielding questions, and ensuring data accuracy. Reach out to the greater data community and hold yourself accountable to make the right decision.</p>
+
+
+
+<p>I made one specific mistake here that I want to share: Looker was much more expensive than the other options, and, to explain the cost, I leaned on the value proposition of teams not needing to hire an analyst to write SQL queries. This was a mistake for two reasons:</p>
+
+
+
+<ol><li>Business users still need a baseline skill level to use Looker. A surprisingly effective rule-of-thumb is that if a person is comfortable with pivot tables in Excel, they can do Looker. Do a quick calculation of how many people in your org need data, and of those, how many of them you would trust to make a pivot table.</li><li>There are benefits to hiring an analyst beyond simply doing SQL queries. Looker saved us from hiring an analyst to do simple SQL queries, but led to more complex follow-up questions, so there was still a lot of work. Also, another analyst could also have added value by connecting the dots of cross-functional business requests into product priorities. Unless you are severely budget constrained, it doesn’t hurt to have another bright technical person around, and the earlier you hire them, the better.</li></ol>
+
+
+
+<p>Here is a simple chart to help quickly triage possible analytics solutions from your particular situation:</p>
+
+
+
+<figure class="wp-block-image"><img src="https://nelsonauner.com/images/analysts_or_self_serve.png" alt="Analyst or Self Service"/></figure>
+
+
+
+<p>This concludes the three main “courses” of an analytics stack. In this last section, I will touch briefly on the business logic layer, an increasingly necessary component of an analytics stack.</p>
+
+
+
+<h2 id="business-logic-layer">Business Logic Layer:</h2>
+
+
+
+<ul><li>You might consider: Looker, dbt</li></ul>
+
+
+
+<p>What is a “business logic layer”? Great question! If you are querying against copies of raw production tables, eventually different analysts will each use slightly different JOIN conditions and aggregations (<code>COUNT</code>&nbsp;vs&nbsp;<code>COUNT(DISTINCT ..)</code>, and it will cause three types of problems. First, technically, the same expensive queries are getting run repeatedly. Second, financially, if you are paying per-compute, you are spending money for duplicated query work. Third, and most importantly, different teams will build out slightly different queries for the same metrics. Soon, you will end up spending more time trying to understand metric discrepencies than on improving them. Business logic layers solve this problem by centralizing, documenting, and version-controlling the (data &lt;-&gt; business metric) interface.</p>
+
+
+
+<p>If you don’t use Looker, you should at least consider dbt. If you do use Looker, the gains to using dbt are less because LookML is also a way to centralize and version-control business logic. I opted to use dbt because of its advanced capabilities in testing, snapshotting data diffs, allowing for user defined functions, and because it allows us to use dbt’s cleaned data for data science instead of trapping that data in Looker. You can use dbt open source or their paid hosted version, dbt Cloud. dbt Cloud is more user friendly, but still requires a fair amount of technical knowledge to operate.</p>
+
+
+
+<p>Org Discussion Points: Since dbt is either free (run yourself) or very cheap (dbt cloud), this is likely an easy talk. I regret setting up dbt on an EC2 box instead of going directly to dbt’s paid cloud offering, because I had to monitor the EC2 box’s status and manually deploy changes. Once we had multiple team members, coordinating deployments with other data coworkers on a single EC2 box was also overly complicated.</p>
+
+
+
+<p>dbt is much more technical than looker, so your average business user is either going to need to level up their command line skills, or not be involved in the dbt process. Finally, dbt Cloud doesn’t offer automated user provisioning, so this will be yet-another-tool to admin. C’est la vie!<br></p>
+<script async data-uid="40cdd1ca1a" src="https://relentless-architect-5877.ck.page/40cdd1ca1a/index.js"></script>				</div><!-- end entry-content div -->
+					
+					<div class="blog_post_control clearfix">
+
+					        <div class="blog_post_control_item blog_post_share">
+	        	<span class="share_item share_sign"><i class="fa fa-share "></i></span>
+
+							        	<span class="social_share_item_wrapper"><a rel="nofollow" href="https://www.facebook.com/sharer/sharer.php?u=https://locallyoptimistic.com/post/0-to-60-analytics-stack/" class="share_item share_item_social share_facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=https://locallyoptimistic.com/post/0-to-60-analytics-stack/', 'facebook-share-dialog', 'width=626,height=436');
+	                                return false;"><i class="fa fa-facebook"></i></a></span>
+						
+							        	<span class="social_share_item_wrapper"><a rel="nofollow" href="https://twitter.com/share?url=https://locallyoptimistic.com/post/0-to-60-analytics-stack/" target="_blank" class="share_item share_item_social share_twitter"><i class="fa fa-twitter"></i></a></span>
+						
+						
+							        	<span class="social_share_item_wrapper"><a rel="nofollow" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://locallyoptimistic.com/post/0-to-60-analytics-stack/" target="_blank" class="share_item share_item_social share_linkedin"><i class="fa fa-linkedin"></i></a></span>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+	        </div><!-- blog_post_control_item blog_post_share -->
+	        			</div><!-- end blog_post_control -->
+		
+		</div><!-- end blog_post -->
+	</div><!-- end #post-## blog_post_container-->
+	<div class="author_box author-info has_avatar">
+
+			<div class="author-avatar">
+			<a class="author-link" href="https://locallyoptimistic.com/post/author/nelson/" rel="author">
+			<img alt='' src='https://secure.gravatar.com/avatar/4b432f5e10ff50bcf88eace63d9024d7?s=80&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/4b432f5e10ff50bcf88eace63d9024d7?s=160&#038;d=mm&#038;r=g 2x' class='avatar avatar-80 photo' height='80' width='80' loading='lazy'/>			</a>
+		</div><!-- .author-avatar -->
+	
+	<div class="author-description author_text">
+
+		<h3 class="author-title">
+			<a class="author-link" href="https://locallyoptimistic.com/post/author/nelson/" rel="author">
+			Nelson Auner			</a>
+		</h3>
+
+		<p class="author-bio">
+			Nelson is Engineering Manager, Data at Coalition, Inc.		</p><!-- .author-bio -->
+
+			<div class="social_icons_list"><a rel="nofollow" href="https://www.linkedin.com/in/nelsonauner" target="_blank" class="social_icon social_linkedin social_icon_linkdin"><i class="fa fa-linkedin"></i></a></div>	</div><!-- .author-description -->
+</div><!-- .author-info --><section class='post_navigation'><div class='row'><h3 class="screen-reader-text">Post Navigation</h3>				<div class="post_navigation_item post_navigation_prev has_post_thumbnail  col-md-6">
+					<a class="post_navigation_arrow" href="https://locallyoptimistic.com/post/data-analyst/" title="The Many Hats of a Data Analyst" rel="prev">
+					<i class="fa fa-angle-double-left"></i>
+					</a>
+					<div class="post_thumbnail_wrapper">
+						<a href="https://locallyoptimistic.com/post/data-analyst/" title="The Many Hats of a Data Analyst" rel="prev">
+													<img width="60" height="60" src="https://locallyoptimistic.com/wp-content/uploads/2020/05/data-analyst-career-path-60x60.jpg" class="img-responsive wp-post-image" alt="A woman is imagining a lot of different paths to take with signs for different titles pointing in different directions like &quot;engineer&quot;, &quot;product&quot;, and &quot;data&quot;." loading="lazy" srcset=" " />												</a>
+					</div>
+					<div class="post_info_wrapper">
+						<a href="https://locallyoptimistic.com/post/data-analyst/" title="The Many Hats of a Data Analyst" rel="prev">
+						<span class="post_navigation_title title">Previous Post:</span>
+						</a>
+						<h4 class="title post_title"><a href="https://locallyoptimistic.com/post/data-analyst/">The Many Hats of a Data Analyst</a></h4>
+						<p></p>
+					</div>
+				</div>
+								<div class="post_navigation_item post_navigation_next has_post_thumbnail pull-right col-md-6">
+					<a class="post_navigation_arrow" href="https://locallyoptimistic.com/post/proficiency_v_creativity/" title="Proficiency v. Creativity" rel="next">
+					<i class="fa fa-angle-double-right"></i>
+					</a>
+					<div class="post_thumbnail_wrapper">
+						<a href="https://locallyoptimistic.com/post/proficiency_v_creativity/" title="Proficiency v. Creativity" rel="next">
+													<img width="60" height="60" src="https://locallyoptimistic.com/wp-content/uploads/2020/07/proficiency_v_creativity-60x60.jpg" class="img-responsive wp-post-image" alt="A scale holding technical equipment like a calculator and a magnifying glass on one side and with art supplies on the other." loading="lazy" srcset=" " />												</a>
+					</div>
+					<div class="post_info_wrapper">
+						<a href="https://locallyoptimistic.com/post/proficiency_v_creativity/" title="Proficiency v. Creativity" rel="next">
+						<span class="post_navigation_title title">Next Post:</span>
+						</a>
+						<h4 class="title post_title"><a href="https://locallyoptimistic.com/post/proficiency_v_creativity/">Proficiency v. Creativity</a></h4>
+						<p></p>
+					</div>
+				</div>
+				</div></section><div class="post_related"><h3 class="related_title title">Related Posts:</h3><div class="row">					<div id="post-608" class="blog_post_container col-md-4 post-608 post type-post status-publish format-standard has-post-thumbnail hentry category-management tag-org-structure tag-software tag-teams" >
+
+						<div class="blog_post clearfix">
+							<a title="The Next Big Challenge for Data is Organizational" href="https://locallyoptimistic.com/post/the-next-big-challenge-for-data-is-organizational/">
+								
+	<div class="blog_post_banner blog_post_image">
+		<img width="373" height="254" src="https://locallyoptimistic.com/wp-content/uploads/2021/10/Image-from-iOS-14-373x254.jpg" class="attachment-masonry_blog size-masonry_blog wp-post-image" alt="workers assembling a dashboard on an assembly line" loading="lazy" srcset="https://locallyoptimistic.com/wp-content/uploads/2021/10/Image-from-iOS-14-373x254.jpg 373w, https://locallyoptimistic.com/wp-content/uploads/2021/10/Image-from-iOS-14-455x310.jpg 455w, https://locallyoptimistic.com/wp-content/uploads/2021/10/Image-from-iOS-14-340x231.jpg 340w" sizes="(max-width: 992px) calc(100vw - 30px), 373px" />	</div><!-- .post-thumbnail -->
+
+								</a>
+
+							<div class="blog_post_title">
+								<h4 class="entry-title title post_title"><a title="The Next Big Challenge for Data is Organizational" href="https://locallyoptimistic.com/post/the-next-big-challenge-for-data-is-organizational/">The Next Big Challenge for Data is Organizational</a></h4>							</div>
+							<div class="asalah_hidden_schemas" style="display:none;">
+								<span class="blog_meta_item blog_meta_date"><span class="screen-reader-text"></span><time class="entry-date published updated" datetime="2021-10-26T09:15:15-04:00">October 26, 2021</time></span><span class="blog_meta_item blog_meta_author"><span class="author vcard"><a class="meta_author_avatar_url" href="https://locallyoptimistic.com/post/author/bryan_offutt/"><img alt='' src='https://secure.gravatar.com/avatar/214b3005dc3ae2cb38b967050cfc78f1?s=25&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/214b3005dc3ae2cb38b967050cfc78f1?s=50&#038;d=mm&#038;r=g 2x' class='avatar avatar-25 photo' height='25' width='25' loading='lazy'/></a> <a class="url fn n" href="https://locallyoptimistic.com/post/author/bryan_offutt/">Bryan Offutt</a></span></span>							</div>
+
+						</div>
+					</div><!-- #post-## -->
+									<div id="post-502" class="blog_post_container col-md-4 post-502 post type-post status-publish format-standard has-post-thumbnail hentry category-business-inteligence category-culture category-management tag-kpi" >
+
+						<div class="blog_post clearfix">
+							<a title="Forecasts and targets (Part 4)" href="https://locallyoptimistic.com/post/mbr-program-part-4/">
+								
+	<div class="blog_post_banner blog_post_image">
+		<img width="373" height="254" src="https://locallyoptimistic.com/wp-content/uploads/2021/03/Image-from-iOS-1-373x254.jpg" class="attachment-masonry_blog size-masonry_blog wp-post-image" alt="" loading="lazy" srcset="https://locallyoptimistic.com/wp-content/uploads/2021/03/Image-from-iOS-1-373x254.jpg 373w, https://locallyoptimistic.com/wp-content/uploads/2021/03/Image-from-iOS-1-455x310.jpg 455w, https://locallyoptimistic.com/wp-content/uploads/2021/03/Image-from-iOS-1-340x231.jpg 340w" sizes="(max-width: 992px) calc(100vw - 30px), 373px" />	</div><!-- .post-thumbnail -->
+
+								</a>
+
+							<div class="blog_post_title">
+								<h4 class="entry-title title post_title"><a title="Forecasts and targets (Part 4)" href="https://locallyoptimistic.com/post/mbr-program-part-4/">Forecasts and targets (Part 4)</a></h4>							</div>
+							<div class="asalah_hidden_schemas" style="display:none;">
+								<span class="blog_meta_item blog_meta_date"><span class="screen-reader-text"></span><time class="entry-date published updated" datetime="2021-03-18T10:02:00-04:00">March 18, 2021</time></span><span class="blog_meta_item blog_meta_author"><span class="author vcard"><a class="meta_author_avatar_url" href="https://locallyoptimistic.com/post/author/ilan/"><img alt='' src='https://secure.gravatar.com/avatar/790b4c3cafa53954ceb10c33dc9b21e5?s=25&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/790b4c3cafa53954ceb10c33dc9b21e5?s=50&#038;d=mm&#038;r=g 2x' class='avatar avatar-25 photo' height='25' width='25' loading='lazy'/></a> <a class="url fn n" href="https://locallyoptimistic.com/post/author/ilan/">Ilan Man</a></span></span>							</div>
+
+						</div>
+					</div><!-- #post-## -->
+									<div id="post-714" class="blog_post_container col-md-4 post-714 post type-post status-publish format-standard has-post-thumbnail hentry category-culture category-management" >
+
+						<div class="blog_post clearfix">
+							<a title="Data Leadership After a Layoff" href="https://locallyoptimistic.com/post/data-leadership-after-a-layoff/">
+								
+	<div class="blog_post_banner blog_post_image">
+		<img width="373" height="254" src="https://locallyoptimistic.com/wp-content/uploads/2022/07/Image-from-iOS-373x254.jpg" class="attachment-masonry_blog size-masonry_blog wp-post-image" alt="zoom-screen-with-missing-faces" loading="lazy" srcset="https://locallyoptimistic.com/wp-content/uploads/2022/07/Image-from-iOS-373x254.jpg 373w, https://locallyoptimistic.com/wp-content/uploads/2022/07/Image-from-iOS-455x310.jpg 455w, https://locallyoptimistic.com/wp-content/uploads/2022/07/Image-from-iOS-340x231.jpg 340w" sizes="(max-width: 992px) calc(100vw - 30px), 373px" />	</div><!-- .post-thumbnail -->
+
+								</a>
+
+							<div class="blog_post_title">
+								<h4 class="entry-title title post_title"><a title="Data Leadership After a Layoff" href="https://locallyoptimistic.com/post/data-leadership-after-a-layoff/">Data Leadership After a Layoff</a></h4>							</div>
+							<div class="asalah_hidden_schemas" style="display:none;">
+								<span class="blog_meta_item blog_meta_date"><span class="screen-reader-text"></span><time class="entry-date published updated" datetime="2022-07-07T10:11:00-04:00">July 7, 2022</time></span><span class="blog_meta_item blog_meta_author"><span class="author vcard"><a class="meta_author_avatar_url" href="https://locallyoptimistic.com/post/author/caitlin/"><img alt='' src='https://secure.gravatar.com/avatar/71365709132f5afa1c6b247f2bae70b2?s=25&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/71365709132f5afa1c6b247f2bae70b2?s=50&#038;d=mm&#038;r=g 2x' class='avatar avatar-25 photo' height='25' width='25' loading='lazy'/></a> <a class="url fn n" href="https://locallyoptimistic.com/post/author/caitlin/">Caitlin Moorman</a></span></span>							</div>
+
+						</div>
+					</div><!-- #post-## -->
+				</div></div>	</div><!-- .blog_posts_wrapper -->
+</main><!-- .main_content -->
+
+						</div> <!-- .row -->
+					</div> <!-- .container -->
+				</section> <!-- #content .site_content -->
+								<footer class="site-footer">
+
+					<!-- screen-reader-text for site footer section -->
+					<h3 class="screen-reader-text">Site Footer</h3>
+
+					<div class="footer_wrapper">
+						<div class="container">
+
+							
+													</div><!-- end footer .container -->
+					</div><!-- end footer_wrapper -->
+				</footer><!-- .site-footer -->
+			</div><!-- .site_main_container -->
+
+			<!-- start site side container -->
+					</div><!-- #page .site -->
+
+		<!-- show cookies notice -->
+		
+		    <script type="text/javascript">
+      </script>
+  <script type='text/javascript' id='convertkit-broadcasts-js-extra'>
+/* <![CDATA[ */
+var convertkit_broadcasts = {"ajax_url":"https:\/\/locallyoptimistic.com\/wp-admin\/admin-ajax.php","action":"convertkit_broadcasts_render","debug":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://locallyoptimistic.com/wp-content/plugins/convertkit/resources/frontend/js/broadcasts.js?ver=1.9.8.1' id='convertkit-broadcasts-js'></script>
+<script type='text/javascript' id='convertkit-js-js-extra'>
+/* <![CDATA[ */
+var convertkit = {"ajaxurl":"https:\/\/locallyoptimistic.com\/wp-admin\/admin-ajax.php","debug":"","nonce":"a6799c3b77","subscriber_id":"0","tag":"","post_id":"9"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://locallyoptimistic.com/wp-content/plugins/convertkit/resources/frontend/js/convertkit.js?ver=1.9.8.1' id='convertkit-js-js'></script>
+<script type='text/javascript' src='https://locallyoptimistic.com/wp-content/themes/writing/framework/bootstrap/js/bootstrap.min.js?ver=2' id='asalah-bootstrap-js'></script>
+<script type='text/javascript' src='https://locallyoptimistic.com/wp-content/themes/writing/js/asalah.js?ver=3.740' id='asalah-script-js'></script>
+<script type='text/javascript' src='https://locallyoptimistic.com/wp-content/plugins/google-calendar-events/assets/js/vendor/jquery.qtip.min.js?ver=3.1.36' id='simcal-qtip-js'></script>
+<script type='text/javascript' src='https://locallyoptimistic.com/wp-content/plugins/google-calendar-events/assets/js/vendor/moment.min.js?ver=3.1.36' id='simcal-fullcal-moment-js'></script>
+<script type='text/javascript' src='https://locallyoptimistic.com/wp-content/plugins/google-calendar-events/assets/js/vendor/moment-timezone-with-data.min.js?ver=3.1.36' id='simcal-moment-timezone-js'></script>
+<script type='text/javascript' id='simcal-default-calendar-js-extra'>
+/* <![CDATA[ */
+var simcal_default_calendar = {"ajax_url":"\/wp-admin\/admin-ajax.php","nonce":"a47094e599","locale":"en_US","text_dir":"ltr","months":{"full":["January","February","March","April","May","June","July","August","September","October","November","December"],"short":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]},"days":{"full":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"short":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"]},"meridiem":{"AM":"AM","am":"am","PM":"PM","pm":"pm"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://locallyoptimistic.com/wp-content/plugins/google-calendar-events/assets/js/default-calendar.min.js?ver=3.1.36' id='simcal-default-calendar-js'></script>
+<script type='text/javascript' src='https://locallyoptimistic.com/wp-content/plugins/google-calendar-events/assets/js/vendor/imagesloaded.pkgd.min.js?ver=3.1.36' id='simplecalendar-imagesloaded-js'></script>
+	</body>
+</html>

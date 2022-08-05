@@ -1,7 +1,7 @@
 ---
 aliases: ['202206111633c3']
 ---
-Status: #map-of-content/elaborate  
+Status: #permanent-note/elaborate   
 Topics: [[statistics]]
 Added: 202207281221
 
