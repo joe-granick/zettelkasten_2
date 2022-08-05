@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "165b0060470c3fd0",
+        "id": "57ff08ec8a18ec91",
         "type": "leaf",
         "pinned": true,
         "state": {
@@ -16,19 +16,6 @@
             "source": false
           },
           "pinned": true
-        }
-      },
-      {
-        "id": "8c7a8afedf61522b",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "_project/Obsidian Tutorial/2a4a embedding links in note.md",
-            "mode": "source",
-            "backlinks": true,
-            "source": false
-          }
         }
       }
     ],
@@ -94,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_project/Obsidian Tutorial/2a4a embedding links in note.md",
+                "file": "_project/Obsidian Tutorial/_OBSIDIAN TUTORIAL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +98,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_project/Obsidian Tutorial/2a4a embedding links in note.md",
+                "file": "_project/Obsidian Tutorial/_OBSIDIAN TUTORIAL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,17 +138,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "8c7a8afedf61522b",
+  "active": "57ff08ec8a18ec91",
   "lastOpenFiles": [
+    "2a11 callout block.md",
     "_project/Obsidian Tutorial/_OBSIDIAN TUTORIAL.md",
-    "_project/Obsidian Tutorial/2a4a embedding links in note.md",
-    "_project/Obsidian Tutorial/2a9 tables.md",
+    "2a10 diagrams.md",
     "_project/Obsidian Tutorial/2a8  horizontal bar.md",
-    "_project/Obsidian Tutorial/2a6a.md",
-    "_project/Obsidian Tutorial/2a6 quote block.md",
-    "_project/Obsidian Tutorial/how to read a book 2e 1972.md",
-    "_project/Obsidian Tutorial/2a3a markdown ordered list.md",
-    "_project/Obsidian Tutorial/2a7 LaTeX.md",
-    "_project/Obsidian Tutorial/2a Markdown in obsidian.md"
+    "_project/Obsidian Tutorial/2a6b code block.md",
+    "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
+    "_project/Obsidian Tutorial/2a5 emphasis.md",
+    "_project/Obsidian Tutorial/2a4 linking notes.md",
+    "_project/Obsidian Tutorial/2a6 LaTex.md",
+    "_project/Obsidian Tutorial/2a4b.md"
   ]
 }

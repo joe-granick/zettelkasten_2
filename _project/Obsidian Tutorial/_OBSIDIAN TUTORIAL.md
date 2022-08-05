@@ -47,7 +47,9 @@
 		- [x] highlight
 	- [x] quote blocks [[2a6 quote block|2a6]]
 	- [x] code blocks [[2a6b code block|2a6b]]
-	- [x] separator [[2a6b code block|2a6b]]
+	- [x] callout block [[2a11 callout block|2a11]]
+	- [x] diagrams [[2a10 diagrams|2a10]]
+	- [x] separator [[2a8  horizontal bar|2a8]]
 	- [ ] citations
 	- [ ] alias
 	- [x] tables [[2a9 tables|2a9]]
