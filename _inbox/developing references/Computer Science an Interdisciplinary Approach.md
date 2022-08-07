@@ -523,8 +523,78 @@ public class NewtonsMethodSqrt{
 ```
 
 ##### Number conversion
+```Java
+public class Binary {
+    //pattern here is counting up then unraveling
+    //first number will always be 1
+    //for ones reduce bhyh the bit
+    public static void main(String[] args){
+        int n = Integer.parseInt(args[0]);
+        int bit = 1;
+        int i = 0;
+        String code = "";
 
-##### Simulation
+        while(bit <= n/2){
+            i++;
+            bit*=2;
+            System.out.println("value: "+ bit + " power: " + i);
+        } 
+        while (bit > 0){
+            if (n<bit){     code+="0";}
+            else      {code+="1";
+                        n = (n - bit);}
+            bit = bit/2; //since it's an int 1/2 rounds to 0
+                       }       
+                       System.out.println(code);
+    }        
+}
+```
+###### Generalized number conversion (HW 1.3.21)
+```Java
+public class Kary {
+    public static void main(String[] args){
+        int n = Integer.parseInt(args[0]);
+        int k = Integer.parseInt(args[1]);
+        int bit = 1;
+        int i = 0;
+
+        while(bit <= n/k){
+            i++;
+            bit*=k;
+            System.out.println("value: "+ bit + " power: " + i);
+        }
+
+        String code = "";
+        int multiple = k-1; 
+        while (bit > 0){
+                while (n < multiple*bit){
+                    multiple--;
+                    }
+
+            code += multiple;    
+            n = n-multiple*bit;
+            bit = bit/k;
+            multiple = k-1; //since it's an int 1/2 rounds to 0
+                       }       
+                       System.out.println(code);
+    }        
+}
+```
+
+##### Simulation **69 - 71**
+- Common application of computers to solve real world problems is by using them to simulate what will happen in real world in order to make informed decisions **69**
+- Questions to consider when building a simulation: **70**
+	- Is it an accurate model for the real life event it is simulating?
+	- How many trials are needed to get an accurate answer?
+	- What are the computational limits of the simulation?
+- Simulations used in many applied fields and these questions are important to their models
+	- Economics
+	- Science
+	- Engineering
+- Simulation and analysis go hand-in-hand to validate each other
+- Simulations can approximate answers that may be too difficult to solve analytically
+	- What's the expected take away with an upper limit on bets?
+		- Why is this difficult to solve analytically?
 
 ##### Factoring
 
@@ -570,7 +640,7 @@ public class RollLoadedDie {
 - [x] **1.3.10**: *Uniform Random Average* **82**
 - [x] ==**1.3.19**: *Newton's method* differentiable **83** ==
 - [x] **1.3.20**: *Newton's method* for any root **83**
-- [ ] **1.3.21:** *Binary conversion* any change of base **83**
+- [x] **1.3.21:** *Binary conversion* any change of base **83**
 - [ ] **1.3.23:** *Gambler's ruin* double nested loops **84**
 - [ ] **1.3.24:** *Gambler's ruin* visualization **84**
 - [ ] **1.3.25:** *Gambler's ruin* specify probability **84**

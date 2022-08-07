@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "e284eac786de1b8b",
+        "id": "eea47846eef957e0",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -41,7 +41,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#book",
+                "query": "tag:#References",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -62,7 +62,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 784.5
+    "width": 530.5
   },
   "right": {
     "id": "c3be8f9964344a2c",
@@ -128,25 +128,24 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
     "width": 300,
     "collapsed": true
   },
-  "active": "e284eac786de1b8b",
+  "active": "eea47846eef957e0",
   "lastOpenFiles": [
-    "reference/glossary/histogram.md",
-    "Pasted image 20220805082720.png",
-    "reference/glossary/random variable.md",
-    "reference/glossary/variance.md",
-    "reference/glossary/structured data.md",
-    "2a4c phantom link note.md",
-    "daily notes/2022-08-05.md",
-    "slip-box/_main-index.md",
-    "slip-box/202206111633c2k-a probability density function represents the probability of all random variable values in a sample space.md",
-    "slip-box/probability.md"
+    "_project/Obsidian Tutorial/_OBSIDIAN TUTORIAL.md",
+    "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
+    "2a11 callout block.md",
+    "2a10 diagrams.md",
+    "_project/Obsidian Tutorial/2a8  horizontal bar.md",
+    "_project/Obsidian Tutorial/2a6b code block.md",
+    "_project/Obsidian Tutorial/2a5 emphasis.md",
+    "_project/Obsidian Tutorial/2a4 linking notes.md",
+    "_project/Obsidian Tutorial/2a6 LaTex.md",
+    "_project/Obsidian Tutorial/2a4b.md"
   ]
 }
