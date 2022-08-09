@@ -642,14 +642,17 @@ public class RollLoadedDie {
 - [x] **1.3.20**: *Newton's method* for any root **83**
 - [x] **1.3.21:** *Binary conversion* any change of base **83**
 - [ ] **1.3.23:** *Gambler's ruin* double nested loops **84**
-- [ ] **1.3.24:** *Gambler's ruin* visualization **84**
-- [ ] **1.3.25:** *Gambler's ruin* specify probability **84**
-- [ ] **1.3.26:** *Gambler's ruin* 3 outcomes/expected value **84**
-- [ ] **1.3.27:** *Factors*  **85**
-- [ ] **1.3.29:** *Checkerboard*  **85**
-- [ ] **1.3.30:** *GCD*  **85**
-- [ ] **1.3.31:** *Relatively prime*  **85**
-- [ ] **1.3.33:** *Marsaglia's method*  **85**
+- [x] **1.3.24:** *Gambler's ruin* visualization **84**
+- [x] **1.3.25:** *Gambler's ruin* specify probability **84**
+- [x] **1.3.26:** *Gambler's ruin* 3 outcomes/expected value **84**
+- [x] **1.3.27:** *Factors*  **85**
+	- [ ] Write proof of Factors 1.3.9 pg 73
+- [ ] **1.3.28** Factors modified efficiency
+- [x] **1.3.29:** *Checkerboard*  **85**
+- [x] **1.3.30:** *GCD*  **85**
+- [x] **1.3.31:** *Relatively prime*  **85**
+- [ ] **1.3.32** `PowersOfK` **85** 
+- [x] **1.3.33:** *Marsaglia's method*  **85**
 - [ ] **1.3.34:** *Ramanujan's taxi*  **86**
 - [ ] **1.3.35:** *Checksum*  **86**
 - [ ] **1.3.36:** *Counting primes*  **86**
