@@ -653,8 +653,10 @@ public class RollLoadedDie {
 - [x] **1.3.31:** *Relatively prime*  **85**
 - [ ] **1.3.32** `PowersOfK` **85** 
 - [x] **1.3.33:** *Marsaglia's method*  **85**
-- [ ] **1.3.34:** *Ramanujan's taxi*  **86**
-- [ ] **1.3.35:** *Checksum*  **86**
+- [x] **1.3.34:** *Ramanujan's taxi*  **86**
+	- [ ] **Check answer:** https://introcs.cs.princeton.edu/java/13flow/Ramanujan.java.html
+- [x] **1.3.35:** *Checksum*  **86**
+	- [ ] **Check answer:** https://introcs.cs.princeton.edu/java/13flow/ISBN.java.html
 - [ ] **1.3.36:** *Counting primes*  **86**
 - [ ] **1.3.37:** *2D Random Walk*  **86**
 - [ ] **1.3.38:** *Exponential Taylor expansion*  **87**

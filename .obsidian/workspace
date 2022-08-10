@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "eea47846eef957e0",
+        "id": "4034b4f52bc6740f",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -135,8 +135,9 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "eea47846eef957e0",
+  "active": "4034b4f52bc6740f",
   "lastOpenFiles": [
+<<<<<<< HEAD
     "daily notes/2022-08-08.md",
     "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
     "_project/Obsidian Tutorial/_OBSIDIAN TUTORIAL.md",
@@ -147,5 +148,17 @@
     "_project/Obsidian Tutorial/2a5 emphasis.md",
     "_project/Obsidian Tutorial/2a4 linking notes.md",
     "_project/Obsidian Tutorial/2a6 LaTex.md"
+=======
+    "class/F21-solution.pdf",
+    "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
+    "class/Intro to CS Exam 1 Short Answer Problem 2a.md",
+    "class/Intro to CS Exam 1 Short Answer Problem 1a.md",
+    "class/Intro to CS Exam 1 Short Answer Problem 1c.md",
+    "class/Intro to CS Exam 1 Short Answer Problem 1b.md",
+    "class/Intro to CS Exam 1 Problem 4.md",
+    "class/Intro to CS Exam 1 Problem 3.md",
+    "class/Intro to CS Exam 1 Problem 2.md",
+    "class/Intro to CS Exam 1 Problem 1.md"
+>>>>>>> ff6c84d9996c83bab7a40e8a8fa170e20de0908d
   ]
 }
