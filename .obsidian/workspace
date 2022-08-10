@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "daily notes/2022-08-08.md",
+            "file": "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
             "mode": "source",
             "backlinks": true,
             "source": false
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "daily notes/2022-08-08.md",
+                "file": "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "daily notes/2022-08-08.md",
+                "file": "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,6 +137,7 @@
   },
   "active": "eea47846eef957e0",
   "lastOpenFiles": [
+    "daily notes/2022-08-08.md",
     "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
     "_project/Obsidian Tutorial/_OBSIDIAN TUTORIAL.md",
     "2a11 callout block.md",
@@ -145,7 +146,6 @@
     "_project/Obsidian Tutorial/2a6b code block.md",
     "_project/Obsidian Tutorial/2a5 emphasis.md",
     "_project/Obsidian Tutorial/2a4 linking notes.md",
-    "_project/Obsidian Tutorial/2a6 LaTex.md",
-    "_project/Obsidian Tutorial/2a4b.md"
+    "_project/Obsidian Tutorial/2a6 LaTex.md"
   ]
 }
