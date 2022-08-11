@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "4034b4f52bc6740f",
+        "id": "a7359573ff507ea0",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
+            "file": "_project/Jira/Everything You Need to Know about Jira Dashboards.md",
             "mode": "source",
             "backlinks": true,
             "source": false
@@ -62,7 +62,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 530.5
+    "width": 717.5,
+    "collapsed": true
   },
   "right": {
     "id": "c3be8f9964344a2c",
@@ -78,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
+                "file": "_project/Jira/Everything You Need to Know about Jira Dashboards.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +96,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
+                "file": "_project/Jira/Everything You Need to Know about Jira Dashboards.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,30 +136,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "4034b4f52bc6740f",
+  "active": "a7359573ff507ea0",
   "lastOpenFiles": [
-<<<<<<< HEAD
-    "daily notes/2022-08-08.md",
-    "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
-    "_project/Obsidian Tutorial/_OBSIDIAN TUTORIAL.md",
-    "2a11 callout block.md",
-    "2a10 diagrams.md",
-    "_project/Obsidian Tutorial/2a8  horizontal bar.md",
-    "_project/Obsidian Tutorial/2a6b code block.md",
-    "_project/Obsidian Tutorial/2a5 emphasis.md",
-    "_project/Obsidian Tutorial/2a4 linking notes.md",
-    "_project/Obsidian Tutorial/2a6 LaTex.md"
-=======
-    "class/F21-solution.pdf",
-    "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
-    "class/Intro to CS Exam 1 Short Answer Problem 2a.md",
-    "class/Intro to CS Exam 1 Short Answer Problem 1a.md",
-    "class/Intro to CS Exam 1 Short Answer Problem 1c.md",
-    "class/Intro to CS Exam 1 Short Answer Problem 1b.md",
-    "class/Intro to CS Exam 1 Problem 4.md",
-    "class/Intro to CS Exam 1 Problem 3.md",
-    "class/Intro to CS Exam 1 Problem 2.md",
-    "class/Intro to CS Exam 1 Problem 1.md"
->>>>>>> ff6c84d9996c83bab7a40e8a8fa170e20de0908d
+    "daily notes/2022-08-10.md",
+    "_project/Jira/Everything You Need to Know about Jira Dashboards.md",
+    "_project/Jira/JIRA Dashboard Requirements.md",
+    "_project/Jira/How to Create a Jira Dashboard in Under 10 Minutes.md",
+    "_project/Jira/How to create & manage JIRA dashboards-Jira Guided.md",
+    "_project/Jira/5 steps to create a killer dashboard in Jira Software.md",
+    "_project/Jira/Dashboards in Jira made easy.md",
+    "_project/Jira/Jira Notes.md",
+    "_project/Jira/JIRA Dashboards and Metrics.md",
+    "_project/Jira/Jira Dashboard Tutorial (2022).md"
   ]
 }
