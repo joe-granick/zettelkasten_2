@@ -657,7 +657,8 @@ public class RollLoadedDie {
 	- [ ] **Check answer:** https://introcs.cs.princeton.edu/java/13flow/Ramanujan.java.html
 - [x] **1.3.35:** *Checksum*  **86**
 	- [ ] **Check answer:** https://introcs.cs.princeton.edu/java/13flow/ISBN.java.html
-- [ ] **1.3.36:** *Counting primes*  **86**
+- [x] ==**1.3.36:** *Counting primes*  **86**==
+	- [ ] try to find better approach
 - [ ] **1.3.37:** *2D Random Walk*  **86**
 - [ ] **1.3.38:** *Exponential Taylor expansion*  **87**
 - [ ] **1.3.39:** *Trig function Taylor expansion*  **88**

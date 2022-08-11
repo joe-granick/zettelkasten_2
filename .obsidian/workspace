@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_project/Jira/Everything You Need to Know about Jira Dashboards.md",
+            "file": "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
             "mode": "source",
             "backlinks": true,
             "source": false
@@ -62,8 +62,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 717.5,
-    "collapsed": true
+    "width": 717.5
   },
   "right": {
     "id": "c3be8f9964344a2c",
@@ -79,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_project/Jira/Everything You Need to Know about Jira Dashboards.md",
+                "file": "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_project/Jira/Everything You Need to Know about Jira Dashboards.md",
+                "file": "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,8 +137,8 @@
   },
   "active": "a7359573ff507ea0",
   "lastOpenFiles": [
-    "daily notes/2022-08-10.md",
     "_project/Jira/Everything You Need to Know about Jira Dashboards.md",
+    "daily notes/2022-08-10.md",
     "_project/Jira/JIRA Dashboard Requirements.md",
     "_project/Jira/How to Create a Jira Dashboard in Under 10 Minutes.md",
     "_project/Jira/How to create & manage JIRA dashboards-Jira Guided.md",
