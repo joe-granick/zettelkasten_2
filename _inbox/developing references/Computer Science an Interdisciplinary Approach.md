@@ -239,7 +239,9 @@ c = a + b; //assignment statement change value of c to a+b
 - **REMEMBER TO PARSE STRINGS**
 
 #### Exercises
-==**Review 1.2.35 DRAGON CURVES**==
+- [x] ==**Review 1.2.35 DRAGON CURVES**==
+	- Reconsider how path works mathematically
+	- How would we modify this to be recursive?
 
 
 1.2.3.4 `ThreeSort`
@@ -658,7 +660,9 @@ public class RollLoadedDie {
 - [x] **1.3.35:** *Checksum*  **86**
 	- [ ] **Check answer:** https://introcs.cs.princeton.edu/java/13flow/ISBN.java.html
 - [x] ==**1.3.36:** *Counting primes*  **86**==
-	- [ ] try to find better approach
+	- *try to find better approach*
+	- why can we assume a number is prime if for 3 through j for all `j * j < i` for an odd number j
+	- Explanation [[202208111024- Checking primes with square of a factor|202208111024]]
 - [ ] **1.3.37:** *2D Random Walk*  **86**
 - [ ] **1.3.38:** *Exponential Taylor expansion*  **87**
 - [ ] **1.3.39:** *Trig function Taylor expansion*  **88**

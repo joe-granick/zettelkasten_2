@@ -4,8 +4,9 @@
     "type": "split",
     "children": [
       {
-        "id": "a7359573ff507ea0",
+        "id": "951a477f2abb5ef2",
         "type": "leaf",
+        "pinned": true,
         "state": {
           "type": "markdown",
           "state": {
@@ -13,7 +14,8 @@
             "mode": "source",
             "backlinks": true,
             "source": false
-          }
+          },
+          "pinned": true
         }
       }
     ],
@@ -62,7 +64,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 717.5
+    "width": 744.5
   },
   "right": {
     "id": "c3be8f9964344a2c",
@@ -135,17 +137,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "a7359573ff507ea0",
+  "active": "951a477f2abb5ef2",
   "lastOpenFiles": [
+    "_inbox/developing references/Skiena-The Data Science  Design Manual 1st.md",
+    "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
+    "_project/Archive/Obsidian Tutorial/_OBSIDIAN TUTORIAL.md",
+    "_inbox/202208111024- Checking primes with square of a factor.md",
     "_project/Jira/Everything You Need to Know about Jira Dashboards.md",
     "daily notes/2022-08-10.md",
     "_project/Jira/JIRA Dashboard Requirements.md",
     "_project/Jira/How to Create a Jira Dashboard in Under 10 Minutes.md",
     "_project/Jira/How to create & manage JIRA dashboards-Jira Guided.md",
-    "_project/Jira/5 steps to create a killer dashboard in Jira Software.md",
-    "_project/Jira/Dashboards in Jira made easy.md",
-    "_project/Jira/Jira Notes.md",
-    "_project/Jira/JIRA Dashboards and Metrics.md",
-    "_project/Jira/Jira Dashboard Tutorial (2022).md"
+    "_project/Jira/5 steps to create a killer dashboard in Jira Software.md"
   ]
 }
