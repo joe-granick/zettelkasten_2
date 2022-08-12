@@ -666,11 +666,47 @@ public class RollLoadedDie {
 - [x] **1.3.37:** *2D Random Walk*  **86**
 - [x] **1.3.38:** *Exponential Taylor expansion*  **87**
 	- ==Is there a better way to prevent overflows==
-	- [ ] Check book solution
+	- [x] Check book solution
+		-  This converges to the point where an additional expansion doesn't change it so stop condition arrives when a new term doesn't change existing term
 - [ ] **1.3.39:** *Trig function Taylor expansion*  **88**
-- [ ] **1.3.40:** *Experimental anlaysis of `Math.exp()` Taylor expansion*  **88**
+- [ ] **1.3.40:** *Experimental analysis of `Math.exp()` Taylor expansion*  **88**
 - [ ] **1.3.41:** *Pepy's problem*  **88**
-- [ ] **1.3.42:** *Monte Hall simulation*  **88**
+- [x] **1.3.42:** *Monte Hall simulation*  **88**
+
+```Java
+public class MontyHall {
+   public static void main(String[] args){
+    int n = Integer.parseInt(args[0]); // number of rounds to play
+    int switchY = 0; // increment if switching doors after the door is checked wins
+    int switchN = 0; // increment if sticking with original choice wins
+    //int checkDoor;
+
+    for(int i = 0; i < n; i++){
+        int  door = (int)(3.0*Math.random());
+        int choice = (int)(3.0*Math.random());
+        if (door == choice) switchN++;
+        if (door != choice) switchY++;
+        System.out.println("stay: " + switchN + " " + "change: " + switchY);
+        /*
+        *do{
+        *    checkDoor = (int)(3.0*Math.random());
+        *   } while(checkDoor == door || checkDoor == choice);
+        */
+    }
+    
+    System.out.println("stay: " + ((double)switchN/n) + " " + "change: " + ((double)switchY/n));
+   } 
+}
+
+```
+
+- [ ] **Check answer:** https://introcs.cs.princeton.edu/java/13flow/MonteHall.java.html
+- [x] **implementation:** naive, doesn't simulate check door but this might not make a difference
+	- [ ] ==**Idea:** check if you can write a mathematical proof of the above conjecture===
+- Is there a deterministic way to do this with combinatorics?
+- Is there a way to do this by simulating door change
+	- ==**Idea:** hypothetically shouldn't make a difference, but can additional data be gathered from the additional `checkDoor` simulation?==
+- can this be done differently with arrays?
 - [ ] **1.3.43:** *5-number median*  **89**
 - [ ] **1.3.44:** *3 num sort* **89**
 - [ ] **1.3.45:** *Chaos* **89**
