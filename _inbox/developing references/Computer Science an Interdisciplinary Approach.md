@@ -707,7 +707,8 @@ public class MontyHall {
 - Is there a way to do this by simulating door change
 	- ==**Idea:** hypothetically shouldn't make a difference, but can additional data be gathered from the additional `checkDoor` simulation?==
 - can this be done differently with arrays?
-- [ ] **1.3.43:** *5-number median*  **89**
+- [x] **1.3.43:** *5-number median*  **89**
+	- [ ] double check assumptions
 - [ ] **1.3.44:** *3 num sort* **89**
 - [ ] **1.3.45:** *Chaos* **89**
 - [ ] **1.3.46:** *Euler's sum of powers* **89**
