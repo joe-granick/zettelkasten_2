@@ -884,13 +884,40 @@ b[i] = a[i];
 - **off-by-one errors** can occur if the indexing is not understood **92**
 
 #### Array length
-- Array length is fixed
+- Array length is fixed upon creation **92**
+- Arrays need to be explicitly created at run time because Java compiler can't know how much memory to reserve at compile time (since length isn't known until run time) **92**
+- Variables vs array memory allocation **92**
+- `a.length` can be used to refer to the size of an array
+	- last array element is always `a[a.length-1]` **92**
+
 #### Default array initialization
-
-#### Memory representation
-
+- *default array initialization* can be used to save time declaring, creating, adn initializing an array in one line
+- Automatically initialize values of elements
+	- Numeric arrays  0
+	- Boolean arrays: `false`
+	- String arrays `null`
+```Java
+double[] a = new double a[n];
+```
+ 
+ #### Memory representation
+- Arrays directly correspond tp system memory for practically any computer **94**
+- Memory can be modeled as a giant array **94**
+	- sequence of memory location accessed by index
+- Array elements are sequences of memory locations accessed by index as well **94**
+- Location's index in computer memory is it's **address** **94**
+- Arrays store address of first element along with length in another location  **94**
+	- address points to referenced memory location, in this capacity it is a **pointer** **94**
+- if array is stored in memory location `523 -530`
+	- accessing `a[4]` Java would find stored address `523` - index for, accessing memory location `523 + 4 = 527`
+- Accessing element of array by index is efficient requiring only two steps:
+	1. Adding two integers
+	2. Referencing memory location
 #### Memory allocation
-
+- **memory allocation** is process whereby Java reserved space in memory to store specified number of elements **92**
+	- For arrays done when using `new` to create an arrays 
+	- 
+- blocks of memory allocated for n sequence starting with the address of first element **94**
 #### Bounds checking
 
 #### Setting array values at compile time
