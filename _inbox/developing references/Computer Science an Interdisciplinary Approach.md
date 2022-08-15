@@ -767,7 +767,7 @@ public class MontyHall {
 - [[memory address]]
 - [[pointer]]
 - [[memory allocation]]
-- [[buffer overflow]]
+- [[buffer overflow]] **95**
 - [[precomputed value]]
 - [[space-time tradeoff]]
 - [[coupon collector problem]]
@@ -794,6 +794,18 @@ public class MontyHall {
 - "Using an expression to index into an array plays a central role and enables a computation that would not otherwise be possible" **100**
 	- Coupon collector
 	- Sieve of Eratosthenes 
+- 3 Steps Needed to Create an Array **91**
+	1.  declaration
+	2. creation
+	3. initialization
+
+### Key questions
+- What is done at run time
+	- arrays **created** explicitly at run-time because compiler won't always know how much space to allocate at compile time 
+		- Java allocates primitve variable memory at run-time as well?
+		- `new` keyword is used with arrays in run time environment to reserve memory
+		- variables do not need `new` keyword with memory specification as it is standard for each data type
+- What is done at compile time
 
 ### Arrays in Java
 - 3 Steps to make array in Java **(91)**
@@ -919,10 +931,14 @@ double[] a = new double a[n];
 	- 
 - blocks of memory allocated for n sequence starting with the address of first element **94**
 #### Bounds checking
-
+- **buffer overflow**
+- `ArrayIndexOutOfBoundsException` runtime error
 #### Setting array values at compile time
-
+- `new` keyword unnecessary as curly braces with values in declaration implies creation **95**
+- makes sense when all array values known beforehand **96**
 #### Setting array values at run time
+- Typical way to set value as we often want to compute the values to store in the array **96**
+- array name w/ indices are used the same way as variable names in an assignment statement
 
 #### Exchanging two values in an array
 
