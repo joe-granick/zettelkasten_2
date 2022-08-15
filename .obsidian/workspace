@@ -64,7 +64,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 744.5
+    "width": 744.5,
+    "collapsed": true
   },
   "right": {
     "id": "c3be8f9964344a2c",
@@ -139,15 +140,15 @@
   },
   "active": "951a477f2abb5ef2",
   "lastOpenFiles": [
+    "_project/Archive/Obsidian Tutorial/2a11 callout block.md",
+    "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
+    "_project/Archive/Obsidian Tutorial/_OBSIDIAN TUTORIAL.md",
     "_inbox/developing references/The AI Hierarchy of Need.md",
     "_inbox/developing notes/strategic interaction.md",
     "_inbox/developing notes/score interpretation.md",
     "_inbox/developing references/Do data-driven companies actually win.md",
     "_inbox/developing references/Data Management is Context Management.md",
     "_inbox/developing notes/Data cleaning is analysis.md",
-    "_inbox/developing notes/cycles.md",
-    "_inbox/developing notes/connected graph a node can be traversed to any other node.md",
-    "_inbox/developing notes/connected graph.md",
-    "_inbox/developing notes/cognitive bias.md"
+    "_inbox/developing notes/cycles.md"
   ]
 }

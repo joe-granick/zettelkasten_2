@@ -333,6 +333,7 @@ public class ThreeSort {
 - [[switch statement]]
 - [[do-while loop]]
 - [[Marsaglia's method]]
+- [[fecundity parameter]]
 #### Propositions
 - **control flow** unlocks a computer's true potential **51**
 - computers can't generate truly random numbers, but programs can produce **pseudorandom** numbers that have many properties as random **52**numbers ()
@@ -708,13 +709,49 @@ public class MontyHall {
 	- ==**Idea:** hypothetically shouldn't make a difference, but can additional data be gathered from the additional `checkDoor` simulation?==
 - can this be done differently with arrays?
 - [x] **1.3.43:** *5-number median*  **89**
-	- [ ] double check assumptions
+	- [x] double check assumptions
+	- [ ] Check for < 7 comparison **solution** https://stackoverflow.com/questions/480960/how-do-i-calculate-the-median-of-five-in-c
+	
+> 	 An interesting thread here: http://www.ocf.berkeley.edu/~wwu/cgi-bin/yabb/YaBB.cgi?board=riddles_cs;action=display;num=1061827085
+> 	
+> 	Quote from thread:
+> 	
+> 	Put the numbers in an array.
+> 	
+> 	Use three comparisons and shuffle around the numbers so that a[1] < a[2], a[4] < a[5], and a[1] < a[4].
+> 	
+> 	If a[3] > a[2], then the problem is fairly easy. If a[2] < a[4], the median value is the smaller of a[3] and a[4]. If not, the median value is the smaller of a[2] and a[5].
+> 	
+> 	So a[3] < a[2]. If a[3] > a[4], then the solution is the smaller of a[3] and a[5]. Otherwise, the solution is the smaller of a[2] and a[4].
 - [ ] **1.3.44:** *3 num sort* **89**
-- [ ] **1.3.45:** *Chaos* **89**
+- [x] **1.3.45:** *Chaos* **89**
+	- [ ] look into population growth formulations
+	- [ ] [[fecundity parameter]]
 - [ ] **1.3.46:** *Euler's sum of powers* **89**
 
 
 ### 1.4 Arrays
+- **data structures** are abstractions that organize data, and are critical to complex programs **(90)**
+- **arrays** are data structures meant to store and manipulate large volumes of data efficiently **(90)**
+> [!Related] 
+ > *vectors*
+ > *matrices* 
+
+- **one-dimensional array** stores sequence of **elements** of same type **(90)**
+	- **elements** are the components/ values that are stored within an array
+- **indexing** done to reference element in array **(90)**
+- For array of n elements each element indexed from 0 - n-1 **(90)**
+	- how it works in system memory
+- **two-dimensional array** an array of one-dimensional arrays **(90**
+	- **two-number** index
+- arrays often used to store real-world representations of data that can be organized as the same type, often involving large number of values to be stored **(90)**
+> [!Real World dat that can be represented by arrays] 
+ > - Exam Scores
+ > - Stock Prices
+ > - DNA Nucleotides
+ > - Characters in a book
+ > 
+
 #### Keywords
 - [[array]] **90**
 	- [[one-dimensional array]]
@@ -759,11 +796,95 @@ public class MontyHall {
 	- Sieve of Eratosthenes 
 
 ### Arrays in Java
+- 3 Steps to make array in Java **(91)**
+	1. **Declare** array with data type and *indentfier*
+	2. **Create array** specify length*
+	3. **Initialize** array by assigning values to each elements
+```Java
+double[] a;                   // declare array
+a = new double[n];            // create array
+for(int i = 0; i < n; n++){   // initialize arry
+	a[n] = 0.0;
+}
+```
+- declaring array similar to declaring primitive of same type **(91)**
+- `new` keyword required to allocate memory upon creation of all *non-primitive*  data-types including **arrays** **(91)**
+	- specifies number of elements to free up memory for
+- arrays allow a program to define many variables without the need to explicitly name each one **(91)** 
+	- complex programs with many variables would be practically impossible to write if each one needed to be designated individually
+	- now easy to define even millions of variable
+- Variables can be used as **array index** meaning an arbirtrarily large number of variables can be processed using a loop and an *index variable*
+``` Java
+for (int i = 1; i < n; i++){
+	a[i] = 0.0;
+}
+```
+- Each array element can be treated like an individual variable **(91)**
+- **Example** arrays as vectors, calculating the **dot product** **(91)**
+```Java
+double dotProduct = 0.0;
+for (int i = 0; i < n; i++;
+	 dotProuduct += vectorX[i] * vectorY[i];
+```
+- Simplicity of calculations like this are what make arrays useful for many applications **(91)**
+	- ==How would this look without arrays?==
+	- ==What other data structures could be used here?==
+
+##### Examples: Array Processing
+###### Create new array with random values
+```Java
+double[] a = new double[n];
+for(int i = 0; i < n; i++){
+	a[i] = Math.random();
+}
+```
+###### Print array values one line at a time
+```Java
+for(int i = 0; i <n; i++){
+	System.out.println(a[i]);
+}
+```
+
+###### Find max array value
+```Java
+double maxVal = Double.NEGATIVE_INFINITY;
+for(int i = 0; i < n; i++){
+	if(a[i] > maxVal) maxVal = a[i];
+}
+```
+###### Calculate average of array values
+```Java
+double sum = 0.0;
+for(int i = 0; i <n; i++){
+	sum += a[i];
+
+}
+double avg = sum/n;
+```
+
+###### Reverse array values
+```Java
+int t;
+for (int i, i < n/2; i++){
+	t = a[i];
+	a[i] = a[(n-1-i)]; // n = a.length()
+	a[(n-1-i)] = t;
+}
+```
+###### Copy array to another array
+```Java
+double b[] = new double[n];
+for(int i = 0; i < n; i++){
+b[i] = a[i];
+}
+```
 
 #### Zero-based indexing
+- *Array indexes start at 0* in Java similar standard to indexing most objects in most languages **92**
+- **off-by-one errors** can occur if the indexing is not understood **92**
 
 #### Array length
-
+- Array length is fixed
 #### Default array initialization
 
 #### Memory representation
