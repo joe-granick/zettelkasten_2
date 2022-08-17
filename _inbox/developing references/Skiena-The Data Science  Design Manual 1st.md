@@ -217,6 +217,156 @@ $$y=log_bx \longleftrightarrow b^y=x$$
 
 ### 2.7 Exercises
 
+## Chapter 3 : Data Munging
+- **Data Munging** important as it works to mitigate two persistent low-level problems in DS **57**
+	1. cleaning/formatting
+	2. availability of data in sufficient volumes
+- First step in any DS project obtaining the right data, but can be very difficult in practice **67**
+	- Where to look for data resources?
+	- Cleaning it once found
+- "Garbage in Garbage out"
+
+### Keywords
+- [[data munging]]
+- [[Turing Complete]]
+
+
+### 3.1 Languages for Data Science
+- Any **Turing Complete** language is technically sufficient but some languages design fits data science tasks better than others
+- Depending on the specific task "better" can mean
+	- Easier for the programmer to use and understand
+	- More computationally efficient
+
+##### Python
+
+##### Perl
+
+##### R
+
+##### Matlab
+
+##### Java and C/C++
+
+##### Mathematica/Wolfram Alpha
+
+##### Excel
+
+#### 3.1.1 Importance of Notebook Environments
+- Data science results easily communicated with notebooks which allow the DS to combine data, code, computational results, visuals, and written analysis in a single cohesive artifact **59**
+		- *Reproducible*
+		- *Tweakable*
+		- *Documented*
+
+#### 3.1.2 Standard Data Formats
+
+##### CSV
+
+##### XML
+
+##### SQL
+
+##### JSON
+
+##### Protocol Buffer
+
+### 3.2 Collecting Data
+
+#### 3.2.1 Hunting
+
+##### Companies and Proprietary Data Sources
+
+##### Government Data Sources
+
+##### Academic Data Sets
+
+##### Sweat Equity
+
+#### 3.2.2 Scraping
+
+#### 3.2.3 Logging
+
+### 3.3 Cleaning Data
+
+#### 3.3.1 Errors vs. Artifacts
+
+#### 3.3.2 Data Compatibility
+
+##### Unit Conversion
+
+##### Numerical Representation Conversions
+
+##### Name Unification
+
+##### Time/Date Unification
+
+##### Financial Unification
+
+#### 3.3.3 Dealing with Missing Values
+
+##### Heuristic Imputation
+
+##### Mean Value Imputation
+
+##### Random Value Imputation
+
+##### Imputation by Nearest Neighbor
+
+##### Imputation by Interpolation
+
+#### 3.2.4 Outlier Detection
+
+### 3.4 War Story: Beating the Market
+
+### 3.5 Crowdsourcing
+
+#### 3.5.1 The Penny Demo
+
+#### 3.5.2 When is the Crowd Wise
+
+##### Opinions are Independent
+
+##### Crowds have Diverse Knowledge and Methods
+
+##### Unspecialized Domain
+
+##### Opinions Can be Aggregated Fairly
+
+#### 3.5.3 Mechanisms for Aggregation
+
+#### 3.5.4 Crowdsourcing Services
+
+##### Measuring Aspects of Human Perception
+
+##### Training Data for Machine Learning
+
+##### Obtaining Evaluation Data for Computer Systems
+
+##### Human-in-Loop
+
+##### Independent Creative Efforts
+
+##### Economic/Psychological Experiments
+
+##### Tasks Requiring Advanced Training
+
+##### Unclearly Specified Tasks
+
+##### Verification of Quality Difficult/Impossible
+
+##### Illegal/Inhumane Tasks
+
+#### 3.5.4 Gamification
+
+##### CAPTCHA
+
+##### App/Game Embedded Psychological Tests
+
+##### FoldIt for Protein Structures
+
+### 3.6 Chapter Notes
+
+### 3.7 Exercises
+
 ## Scoring and Ranking
 [[202206071016-Optimizing Search Engines using Clickthrough Data|learning rannking functions]]
 [[202206071022-A FAST & EFFECTIVE HEURISTIC FOR THE FEEDBACK ARC SET PROBLEM|minimize edge conflicts]]
