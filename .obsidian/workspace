@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_inbox/developing references/Skiena-The Data Science  Design Manual 1st.md",
+            "file": "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
             "mode": "source",
             "backlinks": true,
             "source": false
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_inbox/developing references/Skiena-The Data Science  Design Manual 1st.md",
+                "file": "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_inbox/developing references/Skiena-The Data Science  Design Manual 1st.md",
+                "file": "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,18 +137,7 @@
   },
   "active": "2f01071c45a43da2",
   "lastOpenFiles": [
-<<<<<<< HEAD
-    "class/S21-solution.pdf",
-    "class/F21-solution.pdf",
-    "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
-    "class/F21-solution (1).pdf",
-    "_project/Archive/Obsidian Tutorial/2a11 callout block.md",
-    "_project/Archive/Obsidian Tutorial/_OBSIDIAN TUTORIAL.md",
-    "_inbox/developing references/The AI Hierarchy of Need.md",
-    "_inbox/developing notes/strategic interaction.md",
-    "_inbox/developing notes/score interpretation.md",
-    "_inbox/developing references/Do data-driven companies actually win.md"
-=======
+    "_inbox/developing references/Skiena-The Data Science  Design Manual 1st.md",
     "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
     "_project/Turtl/Turtl Notes.md",
     "_project/Jira/Jira Notes.md",
@@ -157,8 +146,6 @@
     "_project/Archive/Feedly API/What_is_the_Feedly_JSON_representation_of_an_article.pdf",
     "_project/Archive/Feedly API/What is the Feedly JSON representation of an article.md",
     "_project/Archive/Feedly API/2022-07-21.md",
-    "daily notes/2022-08-01.md",
-    "daily notes/2022-08-05.md"
->>>>>>> ceded16d21eea789d972cf0a83d05809a03bc239
+    "daily notes/2022-08-01.md"
   ]
 }

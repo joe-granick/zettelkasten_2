@@ -916,7 +916,6 @@ b[i] = a[i];
 	- Numeric arrays  0
 	- Boolean arrays: `false`
 	- String arrays `null`
->>>>>>> ceded16d21eea789d972cf0a83d05809a03bc239
 ```Java
 double[] a = new double a[n];
 ```
@@ -948,10 +947,7 @@ double[] a = new double a[n];
 #### Setting array values at run time
 - Typical way to set value as we often want to compute the values to store in the array **96**
 - array name w/ indices are used the same way as variable names in an assignment statement
-<<<<<<< HEAD
-=======
 
->>>>>>> ceded16d21eea789d972cf0a83d05809a03bc239
 #### Exchanging two values in an array
 - Swapping the values of elements is useful for many situations and comes up often **97**
 	- Reversing a list
