@@ -4,30 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "f83fdd6a2baf833c",
-        "type": "leaf",
-        "pinned": true,
-        "state": {
-          "type": "pdf",
-          "state": {
-            "file": "_project/Feedly API/What_is_the_Feedly_JSON_representation_of_an_article.pdf"
-          },
-          "pinned": true
-        }
-      },
-      {
         "id": "2f01071c45a43da2",
         "type": "leaf",
-        "pinned": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_project/Feedly API/What is the Feedly JSON representation of an article.md",
+            "file": "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
             "mode": "source",
             "backlinks": true,
             "source": false
-          },
-          "pinned": true
+          }
         }
       }
     ],
@@ -76,8 +62,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 744.5,
-    "collapsed": true
+    "width": 744.5
   },
   "right": {
     "id": "c3be8f9964344a2c",
@@ -93,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_project/Feedly API/What is the Feedly JSON representation of an article.md",
+                "file": "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_project/Feedly API/What is the Feedly JSON representation of an article.md",
+                "file": "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,15 +137,15 @@
   },
   "active": "2f01071c45a43da2",
   "lastOpenFiles": [
+    "_project/Turtl/Turtl Notes.md",
+    "_project/Jira/Jira Notes.md",
+    "_project/Feedly API/How_to_search_for_articles_mentioning_a_specific_company_entity.pdf",
+    "_project/Feedly API/How_to_search_for_certain_keywords_or_phrases_in_articles_published_in_our_team_feeds.pdf",
     "_project/Feedly API/What_is_the_Feedly_JSON_representation_of_an_article.pdf",
     "_project/Feedly API/What is the Feedly JSON representation of an article.md",
     "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
     "_project/Feedly API/2022-07-21.md",
     "daily notes/2022-08-01.md",
-    "daily notes/2022-08-05.md",
-    "daily notes/2022-08-08.md",
-    "daily notes/2022-08-10.md",
-    "_project/Turtl/Turtl Notes.md",
-    "_project/Archive/Obsidian Tutorial/2a11 callout block.md"
+    "daily notes/2022-08-05.md"
   ]
 }

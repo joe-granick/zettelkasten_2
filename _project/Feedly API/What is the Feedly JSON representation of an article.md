@@ -55,7 +55,6 @@ Cite:
 // If available, the canonicalUrl of the article. The alternate might be a non canonical URL
 "canonicalUrl": "https://www.theverge.com/2020/10/5/21503082/slack-down-issues-slow-loading-threads-messages"
 }
-
 ```
 
 ## HTML Content
