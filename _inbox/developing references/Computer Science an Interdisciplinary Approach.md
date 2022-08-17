@@ -909,6 +909,15 @@ b[i] = a[i];
 	- `floats` to `0.0`
 	- `Boolean` to  `false`
 	- `Strings` to `null`
+<<<<<<< HEAD
+=======
+=======
+- *default array initialization* can be used to save time declaring, creating, adn initializing an array in one line
+- Automatically initialize values of elements
+	- Numeric arrays  0
+	- Boolean arrays: `false`
+	- String arrays `null`
+>>>>>>> 7609cf24b06030a2342b07eb7ef07250629c92ea
 ```Java
 double[] a = new double a[n];
 ```
@@ -940,6 +949,10 @@ double[] a = new double a[n];
 #### Setting array values at run time
 - Typical way to set value as we often want to compute the values to store in the array **96**
 - array name w/ indices are used the same way as variable names in an assignment statement
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7609cf24b06030a2342b07eb7ef07250629c92ea
 #### Exchanging two values in an array
 - Swapping the values of elements is useful for many situations and comes up often **97**
 	- Reversing a list
