@@ -963,6 +963,58 @@ double[] a = new double a[n];
 - implemented for cards, but type of problem of interest in science **101**
 - can be used to simulate sequences like genetic sequences to se how like they are to occur at random **101**
 
+#### Q.  Do the implementations work differently?
+
+##### BOOK IMPLEMENTATION
+```Java
+public class CouponCollector {
+   public static void main(String[] args){
+      int n = Integer.parseInt(args[0]);
+      boolean[] isCollected = new boolean[n];
+      int count = 0;
+      int distinct = 0;
+
+      for(int i = 0; i < n; i++)
+      {
+         while(distinct < n){
+            int r = (int)(Math.random()*(n);
+            count++;
+            
+            if(!isCollected[r])
+            {
+               distinct++;
+               isCollected[r] = true;
+            }
+         }
+      }
+      System.out.println(count + " Trials");
+   }
+}
+```
+
+##### MY IMPLEMENTATON
+```Java
+public class CouponCollector {
+   public static void main(String[] args){
+
+      int n = Integer.parseInt(args[0]);
+      boolean[] isCollected = new boolean[n];
+      int count = 0;
+
+      for(int i = 0; i < n; i++)
+      {
+         while(isCollected[i] == false){
+            int r = (int)(Math.random()*(n));
+            count++;
+            isCollected[r] = true;
+            
+         }
+      }
+      System.out.println(count + " Trials");
+   } 
+}
+```
+
 ### Sieve of Eratosthenes
 
 ### Two-dimensional arrays
