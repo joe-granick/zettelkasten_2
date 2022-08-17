@@ -794,6 +794,18 @@ public class MontyHall {
 - "Using an expression to index into an array plays a central role and enables a computation that would not otherwise be possible" **100**
 	- Coupon collector
 	- Sieve of Eratosthenes 
+- 3 Steps Needed to Create an Array **91**
+	1.  declaration
+	2. creation
+	3. initialization
+
+### Key questions
+- What is done at run time
+	- arrays **created** explicitly at run-time because compiler won't always know how much space to allocate at compile time 
+		- Java allocates primitve variable memory at run-time as well?
+		- `new` keyword is used with arrays in run time environment to reserve memory
+		- variables do not need `new` keyword with memory specification as it is standard for each data type
+- What is done at compile time
 
 ### Arrays in Java
 - 3 Steps to make array in Java **(91)**
@@ -884,30 +896,72 @@ b[i] = a[i];
 - **off-by-one errors** can occur if the indexing is not understood **92**
 
 #### Array length
-- Array length is fixed
+- Array length is fixed upon creation **92**
+- Arrays need to be explicitly created at run time because Java compiler can't know how much memory to reserve at compile time (since length isn't known until run time) **92**
+- Variables vs array memory allocation **92**
+- `a.length` can be used to refer to the size of an array
+	- last array element is always `a[a.length-1]` **92**
+
 #### Default array initialization
-
-#### Memory representation
-
+- *default array initialization* can be used to save time declaring, creating, and initializing an array in one line
+- Automatically initialize values of elements
+	- `int`  to `0`
+	- `floats` to `0.0`
+	- `Boolean` to  `false`
+	- `Strings` to `null`
+```Java
+double[] a = new double a[n];
+```
+ 
+ #### Memory representation
+- Arrays directly correspond tp system memory for practically any computer **94**
+- Memory can be modeled as a giant array **94**
+	- sequence of memory location accessed by index
+- Array elements are sequences of memory locations accessed by index as well **94**
+- Location's index in computer memory is it's **address** **94**
+- Arrays store address of first element along with length in another location  **94**
+	- address points to referenced memory location, in this capacity it is a **pointer** **94**
+- if array is stored in memory location `523 -530`
+	- accessing `a[4]` Java would find stored address `523` - index for, accessing memory location `523 + 4 = 527`
+- Accessing element of array by index is efficient requiring only two steps:
+	1. Adding two integers
+	2. Referencing memory location
 #### Memory allocation
-
+- **memory allocation** is process whereby Java reserved space in memory to store specified number of elements **92**
+	- For arrays done when using `new` to create an arrays 
+	- 
+- blocks of memory allocated for n sequence starting with the address of first element **94**
 #### Bounds checking
-
+- **buffer overflow**
+- `ArrayIndexOutOfBoundsException` runtime error
 #### Setting array values at compile time
-
+- `new` keyword unnecessary as curly braces with values in declaration implies creation **95**
+- makes sense when all array values known beforehand **96**
 #### Setting array values at run time
-
+- Typical way to set value as we often want to compute the values to store in the array **96**
+- array name w/ indices are used the same way as variable names in an assignment statement
 #### Exchanging two values in an array
-
+- Swapping the values of elements is useful for many situations and comes up often **97**
+	- Reversing a list
+	- Shuffling a deck of cards
+	- Sampling without replacement
 #### Shuffling an array
+- Code to shuffle an array is a nuanced implementation of the swap mechanism**97**
 
 #### Sampling without replacement
-
+- Random sampling common statistical technique in science **97**
+- Implemented similiarly to shuffling a deck of cards **97**
 #### Precomputed values
-
+- Precomputing values and storing them in an array can save compute time **100
+- Important in dynamic programming **memoization** 
+- Example of the **space-time tradeoff** one of the reasons it is important to understand how the program operates and what tradeoffs in design choices affect efficiency, or even make a program possible/impossible **100+**
 #### Simplifying repetitive code
-
+- Arrays can be used where previously would need many if statements or a switch statement **100**
+	- arrays used where conditionals change based on the number of a variable
+	- variable can be translated to the array index and the conditional return value can be the element at that index
 ### Coupon collector
+- implemented for cards, but type of problem of interest in science **101**
+- can be used to simulate sequences like genetic sequences to se how like they are to occur at random **101**
 
 ### Sieve of Eratosthenes
 
