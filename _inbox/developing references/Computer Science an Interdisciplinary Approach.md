@@ -767,7 +767,7 @@ public class MontyHall {
 - [[memory address]]
 - [[pointer]]
 - [[memory allocation]]
-- [[buffer overflow]] **95**
+- [[buffer overflow]]
 - [[precomputed value]]
 - [[space-time tradeoff]]
 - [[coupon collector problem]]
@@ -903,20 +903,12 @@ b[i] = a[i];
 	- last array element is always `a[a.length-1]` **92**
 
 #### Default array initialization
-<<<<<<< HEAD
 - *default array initialization* can be used to save time declaring, creating, and initializing an array in one line
 - Automatically initialize values of elements
 	- `int`  to `0`
 	- `floats` to `0.0`
 	- `Boolean` to  `false`
 	- `Strings` to `null`
-=======
-- *default array initialization* can be used to save time declaring, creating, adn initializing an array in one line
-- Automatically initialize values of elements
-	- Numeric arrays  0
-	- Boolean arrays: `false`
-	- String arrays `null`
->>>>>>> ceded16d21eea789d972cf0a83d05809a03bc239
 ```Java
 double[] a = new double a[n];
 ```
@@ -948,10 +940,6 @@ double[] a = new double a[n];
 #### Setting array values at run time
 - Typical way to set value as we often want to compute the values to store in the array **96**
 - array name w/ indices are used the same way as variable names in an assignment statement
-<<<<<<< HEAD
-=======
-
->>>>>>> ceded16d21eea789d972cf0a83d05809a03bc239
 #### Exchanging two values in an array
 - Swapping the values of elements is useful for many situations and comes up often **97**
 	- Reversing a list
