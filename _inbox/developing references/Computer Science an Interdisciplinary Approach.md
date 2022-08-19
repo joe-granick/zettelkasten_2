@@ -11,7 +11,7 @@ Date:
 Year: 
 Edition:
 URL: https://introcs.cs.princeton.edu/java/home/
-Class: [[Intro to computer science]]
+Class: [[1. Intro to computer science]]
 
 
 ## What kind of book is this?
@@ -613,8 +613,8 @@ public class Kary {
 
 #### Infinite loops
 
-### Exercises
-#### 1.3.5
+#### Exercises
+##### 1.3.5
 Write program `RollLoadedDie` that prints result of rolling a loaded die such that probability of getting `1,2,3,4,5` is $\frac{1}{8}$ and getting `6` is $\frac{3}{8}$ **(81)**
 
 ```Java
@@ -909,15 +909,11 @@ b[i] = a[i];
 	- `floats` to `0.0`
 	- `Boolean` to  `false`
 	- `Strings` to `null`
-<<<<<<< HEAD
-=======
-=======
 - *default array initialization* can be used to save time declaring, creating, adn initializing an array in one line
 - Automatically initialize values of elements
 	- Numeric arrays  0
 	- Boolean arrays: `false`
 	- String arrays `null`
->>>>>>> 7609cf24b06030a2342b07eb7ef07250629c92ea
 ```Java
 double[] a = new double a[n];
 ```
@@ -949,10 +945,7 @@ double[] a = new double a[n];
 #### Setting array values at run time
 - Typical way to set value as we often want to compute the values to store in the array **96**
 - array name w/ indices are used the same way as variable names in an assignment statement
-<<<<<<< HEAD
-=======
 
->>>>>>> 7609cf24b06030a2342b07eb7ef07250629c92ea
 #### Exchanging two values in an array
 - Swapping the values of elements is useful for many situations and comes up often **97**
 	- Reversing a list
@@ -1029,11 +1022,18 @@ public class CouponCollector {
 ```
 
 ### Sieve of Eratosthenes
-
+- Prime numbers incredibly important in number theory, computation, and cryptography **103**
+- $\pi(n)$ number of primes $\le n$ **103** 
+- Naive approach, something like the example  `Factors.java` but the number of operations grows  nearly **exponentially** $\mathcal{O}(n \sqrt{n})$        
+- **Sieve of Eratosthenes** is an ancient method for counting prime numbers more efficiently **103**
+- Cuts down on number of redundant calculations by recording multiplication of numbers less than the square root of the the desired count limit **103**
+- This is implemented in Java using an array; cuts down on number of redundant loop operations as numbers eliminated numbers can be stored and looked up immediately to verify they can be skipped as they are already know to not be prime **103**
+- Tiem complexity plumets to  $\mathcal{O}(n \log{\log{n}})$        
+- SIeves are common technique in number theory 
 ### Two-dimensional arrays
 
 #### Default initialization
-
+- 
 #### Output
 
 #### Memory representation
@@ -1051,8 +1051,13 @@ public class CouponCollector {
 ### Example: self-avoiding random walks
 
 ### Summary
+4 elements found in almost every language:
+1. Assignments
+2. Conditionals
+3. Loops
+4. Arrays
 
-
+- Arrays allow for a large increase in the programs state
 
 ### 1.5 Input and Output
 #### Terms
