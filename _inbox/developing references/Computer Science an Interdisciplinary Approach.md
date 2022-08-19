@@ -774,8 +774,8 @@ public class MontyHall {
 - [[Sieve of Eratosthenes]] **103**
 - [[spreadsheet]] **108**
 	- [[row-major order]] **108**
-- [[column-major order]] **108**
-	-  [[matrix]] **106**
+	- [[column-major order]] **108**
+-  [[matrix]] **106**
 	- [[matrix operations]] **109**
 		- [[matrix addition]] **109**
 		- [[matrix multiplication]] **109**
@@ -783,8 +783,10 @@ public class MontyHall {
 				- [[column vector]] **110**
 			- [[vector-matrix multiplication]] **110**
 				- [[row vector]] **110**
-		- [[columnar vector]] **110**
-
+	- [[ragged array]]
+	- [[multi-dimensional array]]
+	- [[tensor]]
+	- [[n-dimensional space]]
 - [[lattice]] **112**
 - [[self-avoiding random walk]] **113**
 - [[state]] **115** 
@@ -1044,7 +1046,10 @@ public class CouponCollector {
 	- columns j
 -  `double[][] a = new double[m][m]` declares a new 2d array of type double with $m \text{ rows}  \times n \text{ columns}$ 
 	- $m \text{ -by-}n \text{ array}$
-	- 
+- *two-dimensional arrays* naturally represent a *matrix* **111**
+	- *matrix* common representation of problems and data in math, science, and engineering
+	- *matrices* natural way to store and process data and key component in many applications like spreadsheets
+	- *matrices* represented in *Cartesian-coordinates* cab ve used to model real world phenomenon 
 #### Default initialization
 - default initializations same for corresponding one-dimensional arrays **106**
 - masks a lot more code than default for normal array as nested loops are needed **106**
@@ -1103,7 +1108,7 @@ double[][] a =
 	- **row-major order** processing can be used for aggregate calculations by column
 	- **column-major order** processing can be used for aggregate rowise calculations
 #### Matrix operations
-- Many scientifc and engineering utilizes Linear Algebra tools for operating on matrices **109**
+- Many scientific and engineering utilizes Linear Algebra tools for operating on matrices **109**
 ##### Matrix Addition
 
 #### Matrix multiplication
@@ -1114,15 +1119,21 @@ double[][] a =
 	- **column vector**
 	- column vector can be used to store weights for variables
 		- each column of row contains value for the variable for that observation
-	- can calculate **row averages**
 2. **vector-matrix multiplication**
 	- **row vector**
-	- can calculate  **column averages**
+- can be used to succinctly express many matrix calculations **110**
+	- *matrix-vector multiplication* can be used to calculate  **row averages**
+	- *vector-matrix  multiplication* can be used for **column averages**
 
 #### Ragged arrays
+- *two-dimensional arrays* aren't required to have uniform rows **111**
+- **ragged arrays** are arrays with rows of unequal length **111**
+- more sophisticated array-processing code design required **111**
 
 #### Multidimensional arrays
-
+- arrays can be extended to $n$ dimension using same syntax **111**
+- `double[][][] a = new double[][][]` **111**
+- **tensors** are matrices generalized to *n-dimensional space*
 ### Example: self-avoiding random walks
 
 ### Summary
