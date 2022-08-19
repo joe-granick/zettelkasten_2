@@ -1135,6 +1135,19 @@ double[][] a =
 - `double[][][] a = new double[][][]` **111**
 - **tensors** are matrices generalized to *n-dimensional space*
 ### Example: self-avoiding random walks
+- **self-avoiding random walks** used to study random walks **112**
+- set up movement on grid, goal is to escape the grid stops if surrounded by dead ends **112**
+- Can study how % of times automaton gets surrounded by dead-ends vs times escaped as the grid size grows **112**
+	- accuracy of approximation increases as the number of trials increased
+- can be used for modeling **112**
+	- materials growing until no growth possible
+	- polymers
+	- statistical mechanics
+- program shows *example* of **guard** building exit test in `while` loop to prevent illegal operation **112**
+	- while loops exit *guards* against out of bounds array access checking whether the automaton escaped the grid as the stopping condition (`x` and `y` checked against the grid boundaries)
+- Big enough grid almost certain to get trapped **113**
+- *self-avoiding random walks* open problem without mathematical solution **113**
+- no succinct mathematical expression for the **escape probability**, **average path length** and most other important parameters **113**
 
 ### Summary
 4 elements found in almost every language:
@@ -1143,7 +1156,14 @@ double[][] a =
 3. Loops
 4. Arrays
 
-- Arrays allow for a large increase in the programs state
+- Arrays allow for a large increase in the programs **state** **115**
+- **state** of program is the information needed to understand what it is doing **115**
+- more challenging to track state as the number of variables arrays can store makes tracing very difficult **115**
+- exist in almost every language **115**
+- used explicitly for many software problems **115**
+- used implicitly all the time since computer memory is essentially constructed as arrays **115**
+- Natural representation for *matrices* and *vector* which are used to model many problems science, engineering, and mathematics **115**
+- provide succinct notation for manipulating large volumes of data in uniform way, making them critical for any application that involves processing large volumes of data **115**
 
 ### 1.5 Input and Output
 #### Terms
