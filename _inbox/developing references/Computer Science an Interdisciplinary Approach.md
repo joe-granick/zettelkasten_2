@@ -773,14 +773,16 @@ public class MontyHall {
 - [[coupon collector problem]]
 - [[Sieve of Eratosthenes]] **103**
 - [[spreadsheet]] **108**
-- [[row-major order]] **108**
+	- [[row-major order]] **108**
 - [[column-major order]] **108**
--  [[matrix]] **106**
+	-  [[matrix]] **106**
 	- [[matrix operations]] **109**
 		- [[matrix addition]] **109**
 		- [[matrix multiplication]] **109**
 			- [[matrix-vector multiplication]] **110**
+				- [[column vector]] **110**
 			- [[vector-matrix multiplication]] **110**
+				- [[row vector]] **110**
 		- [[columnar vector]] **110**
 
 - [[lattice]] **112**
@@ -1031,18 +1033,91 @@ public class CouponCollector {
 - Tiem complexity plumets to  $\mathcal{O}(n \log{\log{n}})$        
 - SIeves are common technique in number theory 
 ### Two-dimensional arrays
-
+- Often useful to organize data into a table of rows and columns where each row represents an obervation/entity and each column s a variable of interest **106**
+	- Teachers keeping table of students as rows and tests scores as columns
+- Mathematical abstraction for tables is a **matrix** **106**
+- **Two-dimensional arrays** can be used to implement matrices in java **106**
+- Many of most important applications of matrices and two-dimensional arrays involves storing and processing large volumes of data **106**
+	- much like vectors and one-dimensional arrays
+- notations `a[i][j]` to reefer to two dimensional array **106**
+	- row i
+	- columns j
+-  `double[][] a = new double[m][m]` declares a new 2d array of type double with $m \text{ rows}  \times n \text{ columns}$ 
+	- $m \text{ -by-}n \text{ array}$
+	- 
 #### Default initialization
-- 
+- default initializations same for corresponding one-dimensional arrays **106**
+- masks a lot more code than default for normal array as nested loops are needed **106**
+- but any values desired other than default require nested loops **107**
+```Java
+/* defualt initilization replaces following type of nested loop
+*to initializae to any value besides the default (0, 0.0, *false,Null) loopw will be needed*/
+
+double[][] a;
+a = new double[m][n];
+for (int i = 0; i < m; i++){
+	//initialize row i
+	for (int j = 0; j < n; j++){
+		//initialize row j
+		a[i][j] = 0.0;
+	}
+}
+```
+- This type of nesting is the model for accessing and modifying individual elements in a 2d Array **107**
+
 #### Output
+```Java 
+for (int i = 0; i < m; i++){
+	for (int j = 0; j < n; j++){
+		System.out.print(a[i][j] + " ");
+	}
+		System.out.println();
+}
+```
 
 #### Memory representation
+- Two-dimensional arrays represented as arrays of array **107**
 
 #### Setting values at compile time
+- The way two-dimensional arrays are represented as arrays of arrays also dictates how intiializing at compile time owkrs
+```Java
+double[][] a = 
+	{
+		{99.0, 85.0, 98.0, 0.0},
+		{99.0, 85.0, 98.0, 0.0},
+		{99.0, 85.0, 98.0, 0.0},
+		{99.0, 85.0, 98.0, 0.0},
+		{99.0, 85.0, 98.0, 0.0},
+		{99.0, 85.0, 98.0, 0.0},
+		{99.0, 85.0, 98.0, 0.0},
+		{99.0, 85.0, 98.0, 0.0},
+		{99.0, 85.0, 98.0, 0.0},
+		{99.0, 85.0, 98.0, 0.0},
+		{99.0, 85.0, 98.0, 0.0}
+	};
+```
 
+####  Spreadsheets
+- Two-dimensional arrays can be used like spreadsheets **108**
+- Useful to study to understand **array processing** **108**
+	- **row-major order** processing can be used for aggregate calculations by column
+	- **column-major order** processing can be used for aggregate rowise calculations
 #### Matrix operations
+- Many scientifc and engineering utilizes Linear Algebra tools for operating on matrices **109**
+##### Matrix Addition
 
+#### Matrix multiplication
 #### Special cases of matrix multiplication
+- Two special cases of matrix multiplication **110**
+- Both involve one the matrices being only one dimension, meaning it can be represented as a vector
+1. **matrix-vector multiplication**
+	- **column vector**
+	- column vector can be used to store weights for variables
+		- each column of row contains value for the variable for that observation
+	- can calculate **row averages**
+2. **vector-matrix multiplication**
+	- **row vector**
+	- can calculate  **column averages**
 
 #### Ragged arrays
 
