@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
+            "file": "class/flashcards/1.4 ARRAYS -2.md",
             "mode": "source",
             "backlinks": true,
             "source": false
@@ -58,13 +58,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 744.5,
-    "collapsed": true
+    "width": 744.5
   },
   "right": {
     "id": "c3be8f9964344a2c",
@@ -80,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
+                "file": "class/flashcards/1.4 ARRAYS -2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
+                "file": "class/flashcards/1.4 ARRAYS -2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,17 +135,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "7ab24089a389d9eb",
+  "active": "659a60cfec0c82f5",
   "lastOpenFiles": [
+    "class/flashcards/1.4 ARRAYS -1.md",
+    "class/1.4.16-RELATIVELY-PRIME-SIEVE-WORK-2-PG120.JPG",
+    "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
+    "class/1. Intro to computer science.md",
     "class/flashcards/1.2 DATA TYPES-1.md",
     "class/flashcards/1.3 Exercise 1.3.5.md",
-    "class/flashcards/1.4 ARRAYS -1.md",
     "class/S21-solution EXAM 2.pdf",
     "class/flashcards/Intro to CS Exam 1 Problem 1.md",
-    "class/1. Intro to computer science.md",
     "class/flashcards/Intro to CS Exam 1 Problem 3.md",
-    "class/flashcards/Intro to CS Exam 1 Short Answer Problem 1c.md",
-    "class/F21-solution FINAL.pdf",
-    "class/A1-Pseudocode.pdf"
+    "class/flashcards/Intro to CS Exam 1 Short Answer Problem 1c.md"
   ]
 }

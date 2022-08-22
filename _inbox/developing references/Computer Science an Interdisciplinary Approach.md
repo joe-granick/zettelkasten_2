@@ -1164,6 +1164,60 @@ double[][] a =
 - used implicitly all the time since computer memory is essentially constructed as arrays **115**
 - Natural representation for *matrices* and *vector* which are used to model many problems science, engineering, and mathematics **115**
 - provide succinct notation for manipulating large volumes of data in uniform way, making them critical for any application that involves processing large volumes of data **115**
+#### to-do
+- [ ] **1.** *problem*  **pg**
+- [ ] **2** *problem*  **pg**
+- [ ] **3.** *problem*  **pg**
+- [ ] **4.** *problem*  **pg**
+- [ ] **5.** *problem*  **pg**
+- [ ] **6.** *problem*  **pg**
+- [ ] **7** *problem*  **pg**
+- [ ] **8.** *problem*  **pg**
+- [ ] **9.** *problem*  **pg**
+- [ ] **10.** *problem*  **pg**
+- [ ] **11.** *problem*  **pg**
+- [x] **1.4.12.** *Discrete Distribution*  **pg*119*
+	- ==What is being calculated here?==
+	- [ ] test with probability trials
+- [x] **1.4.13.** *Copy matrices*  **pg 119**
+	- [x] **a.** *Square Matrix*
+	- [x] **b.** *Rectangular Matrix*
+	- [x] **c.** *Ragged array*
+		- this works by creating each subarray individually, with length of corresponding initial nested array 
+- [x] **1.4.14.** *Transpose Matrix*  **pg 120**
+- [x] **1.4.15.** *Transpose Square Matrix*  **pg 120**
+- [x] **==1.4.16.** *RelativelyPrime* use a prime number sieve to determine if cli arguments `i` and `j` are *relatively prime*  (`RelativelyPrimeSieve.java)`**pg 120**==
+	- [ ] ==Could this be more efficient w/ **ragged array**?==
+![[1.4.16-RELATIVELY-PRIME-SIEVE-WORK-PG120.JPG]]
+![[1.4.16-RELATIVELY-PRIME-SIEVE-WORK-INITIALIZATION-PG120.JPG]]
+![[1.4.16-RELATIVELY-PRIME-SIEVE-WORK-2-PG120.JPG]]
+- [x] **17.** *1.4.17*  use weights with **matrix-vector** multiplication to find average grades  **pg 120**
+- [ ] **18.** *problem*  **pg**
+- [ ] **19.** *problem*  **pg**
+- [ ] **1.4.20.** *SelfAvoidingWalk*  modify program to track average path for escape and deadend walks**pg 120**
+- [ ] **1.4.21.** *SelfAvoidingWalk* calculate average area of smallest *axis-aligned rectangle* enclosing dead end paths  **pg 120**
+- [ ] **1.4.22.** *DiceSim*  **pg 121**
+- [ ] **23.** *LongestPlateau*  **pg 121**
+- [ ] **24.** *problem*  **pg**
+- [ ] **25.** *problem*  **pg**
+- [ ] **26.** *problem*  **pg**
+- [ ] **27.** *problem*  **pg**
+- [ ] **28.** *problem*  **pg**
+- [ ] **29.** *problem*  **pg**
+- [ ] **30.** *problem*  **pg**
+- [ ] **31.** *problem*  **pg**
+- [ ] **32.** *problem*  **pg**
+- [ ] **33.** *problem*  **pg**
+- [ ] **34.** *problem*  **pg**
+- [ ] **35.** *problem*  **pg**
+- [ ] **36.** *problem*  **pg**
+- [ ] **37.** *problem*  **pg**
+- [ ] **38.** *problem*  **pg**
+- [ ] **39.** *problem*  **pg**
+- [ ] **40.** *problem* **pg**
+- [ ] **41.** *problem*  **pg**
+- [ ] **42.** *problem*  **pg**
+- [ ] **43.** *problem*  **pg**
 
 ### 1.5 Input and Output
 #### Terms
@@ -1181,5 +1235,51 @@ double[][] a =
 - **Q.** What does **standard input** allow programs to do beyond **command-line arguments**?
 - 
 #### Examples
+
+
+
+#### to-do
+- [ ] **1.** *problem*  **pg**
+- [ ] **2** *problem*  **pg**
+- [ ] **3.** *problem*  **pg**
+- [ ] **4.** *problem*  **pg**
+- [ ] **5.** *problem*  **pg**
+- [ ] **6.** *problem*  **pg**
+- [ ] **7** *problem*  **pg**
+- [ ] **8.** *problem*  **pg**
+- [ ] **9.** *problem*  **pg**
+- [ ] **10.** *problem*  **pg**
+- [ ] **12.** *problem*  **pg**
+- [ ] **13.** *problem*  **pg**
+- [ ] **14.** *problem*  **pg**
+- [ ] **15.** *problem*  **pg**
+- [ ] **16.** *problem*  **pg**
+- [ ] **17.** *problem*  **pg**
+- [ ] **18.** *problem*  **pg**
+- [ ] **19.** *problem*  **pg**
+- [ ] **20.** *problem* **pg**
+- [ ] **21.** *problem*  **pg**
+- [ ] **22.** *problem*  **pg**
+- [ ] **23.** *problem*  **pg**
+- [ ] **24.** *problem*  **pg**
+- [ ] **25.** *problem*  **pg**
+- [ ] **26.** *problem*  **pg**
+- [ ] **27.** *problem*  **pg**
+- [ ] **28.** *problem*  **pg**
+- [ ] **29.** *problem*  **pg**
+- [ ] **30.** *problem*  **pg**
+- [ ] **31.** *problem*  **pg**
+- [ ] **32.** *problem*  **pg**
+- [ ] **33.** *problem*  **pg**
+- [ ] **34.** *problem*  **pg**
+- [ ] **35.** *problem*  **pg**
+- [ ] **36.** *problem*  **pg**
+- [ ] **37.** *problem*  **pg**
+- [ ] **38.** *problem*  **pg**
+- [ ] **39.** *problem*  **pg**
+- [ ] **40.** *problem* **pg**
+- [ ] **41.** *problem*  **pg**
+- [ ] **42.** *problem*  **pg**
+- [ ] **43.** *problem*  **pg**
 
 
