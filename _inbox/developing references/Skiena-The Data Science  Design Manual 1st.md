@@ -238,18 +238,55 @@ $$y=log_bx \longleftrightarrow b^y=x$$
 	- More computationally efficient
 
 ##### Python
-
+- predominate language for data science **58**
+- variety of data manipulation tools **58**
+	- reGex
+- variety of libraries **58**
+	- web scraping
+	- data visualization
+	- linear algebra
+	- ML
+- interpreted language **58**
+	- quick to work with
+	- REPL
+- python inefficient compared to compiled languages **58**
+- many libraries for processing large amounts of data computationally expensive link to assembly or C for more efficient execution on large tasks **58**
+- often default tool for working with data **58**
 ##### Perl
-
+- interesting facilities for data munging have since been surpassed by python **58**
+- may need to know for some legacy codebases **58**
 ##### R
+- popular programming language oriented toward statisticians, scientists, economists and statistically focused data science**58**
+- between python and R, most used by data scientists
+	- Julia growing popularity
+- more advanced and niche statistical facilities and libraries, and since many of the libraries come from academic statistician, some libraries are more rigorous in their functions **58**
+- more comprehensive data manipulation and visualization libraries **58**
+- r may be better suited for exploration, and statistical modeling while python may be better suited for production and ML **58**
+- can call many functions from python **58**
+- can be used as a **GPP** but unconventional style turns developers away, and is rarely used for traditional applications **78 
 
 ##### Matlab
-
+- designed for matrix operations, popular for engineering applications **58**
+- many ML operations can be implemented as matrix operations **58**
+- many libraries in R and python offer similar functionality **58**
 ##### Java and C/C++
+- important for distributed systems **59**
+- predominate in date engineering and big data **59**
+	- Java - **Hadoop**
+	- C++ - **Spark**
 
-##### Mathematica/Wolfram Alpha
+##### Mathematica/Wolfram-Alpha
+- computational support for symbolic and numerical mathematics **59**
+- **Wolfram-Alpha** built on top of **Mathematica**, allows natural language queries **59**
 
 ##### Excel
+- ubiquitous in corporate America
+- despites misuse and limitations, provides a host of convenient but powerful tools for exploring and manipulating data **59**
+- may even be suitable for pro-typing ideas and filling quick ad-hoc requests **59**
+- nay be useful for small analyses and simulations, if cost is prohibitive **Wolfram** language is open source alternative **59**
+- long tail of features that are rarely used, but function likely exists for data need
+	- many times use may be complicated or performance poor to the point where it just makes more sense to use a more powerful language, but can probably get very far with excel **59**
+- should not be used beyond intended purposes, or with carless organization, many expensive disasters have been facilitated through excel abuse, care should be taken if used for more sensitive projects
 
 #### 3.1.1 Importance of Notebook Environments
 - Data science results easily communicated with notebooks which allow the DS to combine data, code, computational results, visuals, and written analysis in a single cohesive artifact **59**

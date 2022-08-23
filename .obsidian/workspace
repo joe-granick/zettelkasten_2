@@ -6,14 +6,16 @@
       {
         "id": "659a60cfec0c82f5",
         "type": "leaf",
+        "pinned": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
+            "file": "_inbox/developing references/Skiena-The Data Science  Design Manual 1st.md",
             "mode": "source",
             "backlinks": true,
             "source": false
-          }
+          },
+          "pinned": true
         }
       }
     ],
@@ -58,12 +60,12 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 744.5
+    "width": 744.5,
+    "collapsed": true
   },
   "right": {
     "id": "c3be8f9964344a2c",
@@ -79,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
+                "file": "_inbox/developing references/Skiena-The Data Science  Design Manual 1st.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,7 +98,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
+                "file": "_inbox/developing references/Skiena-The Data Science  Design Manual 1st.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,15 +140,15 @@
   },
   "active": "659a60cfec0c82f5",
   "lastOpenFiles": [
+    "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
+    "_inbox/developing references/Skiena-The Data Science  Design Manual 1st.md",
     "class/flashcards/1.4 ARRAYS -2.md",
     "class/flashcards/1.4 ARRAYS -1.md",
     "class/1.4.16-RELATIVELY-PRIME-SIEVE-WORK-2-PG120.JPG",
-    "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
     "class/1. Intro to computer science.md",
     "class/flashcards/1.2 DATA TYPES-1.md",
     "class/flashcards/1.3 Exercise 1.3.5.md",
     "class/S21-solution EXAM 2.pdf",
-    "class/flashcards/Intro to CS Exam 1 Problem 1.md",
-    "class/flashcards/Intro to CS Exam 1 Problem 3.md"
+    "class/flashcards/Intro to CS Exam 1 Problem 1.md"
   ]
 }
