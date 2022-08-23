@@ -1194,8 +1194,9 @@ double[][] a =
 - [x] **17.** *1.4.17*  use weights with **matrix-vector** multiplication to find average grades  **pg 120**
 - [ ] **18.** *problem*  **pg**
 - [ ] **19.** *problem*  **pg**
-- [ ] **1.4.20.** *SelfAvoidingWalk*  modify program to track average path for escape and deadend walks**pg 120**
-- [ ] **1.4.21.** *SelfAvoidingWalk* calculate average area of smallest *axis-aligned rectangle* enclosing dead end paths  **pg 120**
+- [x] **1.4.20.** *SelfAvoidingWalk* calculate average length of dead end and escape paths  **pg 120**
+- [x] **1.4.21.** *SelfAvoidingWalk* calculate average area of smallest *axis-aligned rectangle* enclosing dead end paths  **pg 120**
+	- [ ] Check variable scope understanding for `deadEndArea`
 - [ ] **1.4.22.** *DiceSim*  **pg 121**
 - [ ] **23.** *LongestPlateau*  **pg 121**
 - [ ] **24.** *problem*  **pg**
