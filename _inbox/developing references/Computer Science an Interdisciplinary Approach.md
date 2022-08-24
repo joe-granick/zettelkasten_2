@@ -1202,8 +1202,8 @@ double[][] a =
 	- [ ] ==formalize 3 sig fig approx text== 
 - [x] **23.** *LongestPlateau*  **pg 121**
 - [x] **24.** *Empirical Shuffle*  test accuracy of shuffling by approximating frequencies over n trials  **pg 121**
-- [ ] **25.** *problem*  **pg**
-- [ ] **26.** *problem*  **pg**
+- [x] **25.** *BadShuffle*  run the shuffle test where card is not removed from shuffle deck (porbability for (0 , n-1) not (j, n-1) ) **pg 121**
+- [ ] **26.** *MusicShuffle*  **pg**
 - [ ] **27.** *problem*  **pg**
 - [ ] **28.** *problem*  **pg**
 - [ ] **29.** *problem*  **pg**
