@@ -1191,15 +1191,17 @@ double[][] a =
 ![[1.4.16-RELATIVELY-PRIME-SIEVE-WORK-PG120.JPG]]
 ![[1.4.16-RELATIVELY-PRIME-SIEVE-WORK-INITIALIZATION-PG120.JPG]]
 ![[1.4.16-RELATIVELY-PRIME-SIEVE-WORK-2-PG120.JPG]]
+- [ ] ==POTENTIAL NEW APPORACH TO TRY WITH SIEVE, FACTOR AS THE OUTER LOOPS==
 - [x] **17.** *1.4.17*  use weights with **matrix-vector** multiplication to find average grades  **pg 120**
 - [ ] **18.** *problem*  **pg**
 - [ ] **19.** *problem*  **pg**
 - [x] **1.4.20.** *SelfAvoidingWalk* calculate average length of dead end and escape paths  **pg 120**
 - [x] **1.4.21.** *SelfAvoidingWalk* calculate average area of smallest *axis-aligned rectangle* enclosing dead end paths  **pg 120**
 	- [ ] Check variable scope understanding for `deadEndArea`
-- [ ] **1.4.22.** *DiceSim*  **pg 121**
-- [ ] **23.** *LongestPlateau*  **pg 121**
-- [ ] **24.** *problem*  **pg**
+- [x] **1.4.22.** *DiceSim*  **pg 121**
+	- [ ] ==formalize 3 sig fig approx text== 
+- [x] **23.** *LongestPlateau*  **pg 121**
+- [x] **24.** *Empirical Shuffle*  test accuracy of shuffling by approximating frequencies over n trials  **pg 121**
 - [ ] **25.** *problem*  **pg**
 - [ ] **26.** *problem*  **pg**
 - [ ] **27.** *problem*  **pg**

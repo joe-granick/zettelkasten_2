@@ -4,18 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "659a60cfec0c82f5",
+        "id": "b870595278da64f5",
         "type": "leaf",
-        "pinned": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_inbox/developing references/Skiena-The Data Science  Design Manual 1st.md",
+            "file": "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
             "mode": "source",
             "backlinks": true,
             "source": false
-          },
-          "pinned": true
+          }
         }
       }
     ],
@@ -60,7 +58,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -81,7 +80,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_inbox/developing references/Skiena-The Data Science  Design Manual 1st.md",
+                "file": "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +97,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_inbox/developing references/Skiena-The Data Science  Design Manual 1st.md",
+                "file": "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,10 +137,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "659a60cfec0c82f5",
+  "active": "b870595278da64f5",
   "lastOpenFiles": [
-    "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
     "_inbox/developing references/Skiena-The Data Science  Design Manual 1st.md",
+    "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
     "class/flashcards/1.4 ARRAYS -2.md",
     "class/flashcards/1.4 ARRAYS -1.md",
     "class/1.4.16-RELATIVELY-PRIME-SIEVE-WORK-2-PG120.JPG",
