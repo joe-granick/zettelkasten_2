@@ -790,6 +790,7 @@ public class MontyHall {
 - [[lattice]] **112**
 - [[self-avoiding random walk]] **113**
 - [[state]] **115** 
+- [[Haddamard Matrix]] **123**
 - [[binomial distribution]] **125**
 	- [[binomial coefficient]] **125**
 	- [[Pascal's Triangle]] **125**
@@ -1200,18 +1201,22 @@ double[][] a =
 	- [ ] Check variable scope understanding for `deadEndArea`
 - [x] **1.4.22.** *DiceSim*  **pg 121**
 	- [ ] ==formalize 3 sig fig approx text== 
-- [x] **23.** *LongestPlateau*  **pg 121**
-- [x] **24.** *Empirical Shuffle*  test accuracy of shuffling by approximating frequencies over n trials  **pg 121**
-- [x] **25.** *BadShuffle*  run the shuffle test where card is not removed from shuffle deck (porbability for (0 , n-1) not (j, n-1) ) **pg 121**
-- [ ] **26.** *MusicShuffle*  **pg**
-- [ ] **27.** *problem*  **pg**
-- [ ] **28.** *problem*  **pg**
-- [ ] **29.** *problem*  **pg**
+- [x] **1.4.23.** *LongestPlateau*  **pg 121**
+- [x] **1.4.24.** *Empirical Shuffle*  test accuracy of shuffling by approximating frequencies over n trials  **pg 121**
+- [x] **1.4.25.** *BadShuffle*  run the shuffle test where card is not removed from shuffle deck (porbability for (0 , n-1) not (j, n-1) ) **pg 121**
+	- [ ] double check against online answer
+- [x] **1.4.26.** *MusicShuffle*  create program to estimate likelihood of having at least one sequential pair of songs when shuffling a playlist of length n**pg 121**
+	- [ ] ==Analytical solution?==
+- [x] **1.4.27.** *Permutations Minima* find average number of left-right minima in random shuffles  **pg 122**
+- [x] **1.4.28.** *Inverse Permutation*  **pg 122**
+- [ ] **1.4.29.** *Hadamard matrix*   **pg 122**
 - [ ] **30.** *problem*  **pg**
-- [ ] **31.** *problem*  **pg**
+- [x] **1.4.31.** *Sieve Comparison*  **pg 123**
 - [ ] **32.** *problem*  **pg**
 - [ ] **33.** *problem*  **pg**
-- [ ] **34.** *problem*  **pg**
+- [x] **1.4.34.** *SelfAvoidingRanomWalk* find what average steps are if grid size unlimited **pg 124**
+	- [ ] Try to set stop on program that actually terminates
+	- **HYPOTHESIS** as grid size approaches infinity it becomes almost statistically impossible to escape grid and average step count converges toward the dead end average, which should be mostly stable once an adequate grid size is reached
 - [ ] **35.** *problem*  **pg**
 - [ ] **36.** *problem*  **pg**
 - [ ] **37.** *problem*  **pg**
