@@ -1,8 +1,7 @@
 #flashcards/intro-to-cs/exam-1 
 
-Q. What is the correct syntax for declaring a real number variable named 'points’ and initializing its value to 10.0
+What is the correct syntax for declaring a real number variable named 'points’ and initializing its value to 10.0
 ?
-A.
 ```java
 double points = 10.0
 ```

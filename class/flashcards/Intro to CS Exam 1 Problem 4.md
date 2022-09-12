@@ -1,5 +1,5 @@
 #flashcards/intro-to-cs/exam-1 
-Q. Assume that x and y are Boolean variables and have been properly initialized. Consider the Boolean expression:
+Assume that x and y are Boolean variables and have been properly initialized. Consider the Boolean expression:
 ```
 (x || y) && x
 ``` 
@@ -10,5 +10,4 @@ Which of the following always evaluates to the same value as the expression abov
 	4. `x||y`
 	5. `x!=y`
 ?
-A.
-	1. `x`
+1. `x`

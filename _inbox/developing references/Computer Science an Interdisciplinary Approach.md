@@ -1188,10 +1188,8 @@ double[][] a =
 - [x] **1.4.14.** *Transpose Matrix*  **pg 120**
 - [x] **1.4.15.** *Transpose Square Matrix*  **pg 120**
 - [x] **==1.4.16.** *RelativelyPrime* use a prime number sieve to determine if cli arguments `i` and `j` are *relatively prime*  (`RelativelyPrimeSieve.java)`**pg 120**==
-	- [ ] ==Could this be more efficient w/ **ragged array**?==
-![[1.4.16-RELATIVELY-PRIME-SIEVE-WORK-PG120.JPG]]
-![[1.4.16-RELATIVELY-PRIME-SIEVE-WORK-INITIALIZATION-PG120.JPG]]
-![[1.4.16-RELATIVELY-PRIME-SIEVE-WORK-2-PG120.JPG]]
+		- [x] ==Could this be more efficient w/ **ragged array**?==
+	 ![[1.4.16-RELATIVELY-PRIME-SIEVE-WORK-PG120.JPG]]![[1.4.16-RELATIVELY-PRIME-SIEVE-WORK-INITIALIZATION-PG120.JPG]]![[1.4.16-RELATIVELY-PRIME-SIEVE-WORK-2-PG120.JPG]]
 - [ ] ==POTENTIAL NEW APPORACH TO TRY WITH SIEVE, FACTOR AS THE OUTER LOOPS==
 - [x] **17.** *1.4.17*  use weights with **matrix-vector** multiplication to find average grades  **pg 120**
 - [ ] **18.** *problem*  **pg**
@@ -1210,22 +1208,25 @@ double[][] a =
 - [x] **1.4.27.** *Permutations Minima* find average number of left-right minima in random shuffles  **pg 122**
 - [x] **1.4.28.** *Inverse Permutation*  **pg 122**
 - [ ] **1.4.29.** *Hadamard matrix*   **pg 122**
-- [ ] **30.** *problem*  **pg**
+- [x] **1.4.30.** *Rumors*  estimate likelihood of rumors fully propgating a party with n guests, if each guest spread to one person and any guest that has heard the rumor before will cease to propagate **pg 123**
+	- [ ] How does this related to population growth?
+	- [ ] ==How would this be affected if 1 person spreads it to multiple people?==
+		- [ ] how to account for multiple independent spreaders?
+	- [ ] ==Alternatively how long does it take for spread with multiple spreaders?==
 - [x] **1.4.31.** *Sieve Comparison*  **pg 123**
-- [ ] **32.** *problem*  **pg**
+- [x] **32.** *MineSweeper*  **pg 123**
 - [ ] **33.** *problem*  **pg**
 - [x] **1.4.34.** *SelfAvoidingRanomWalk* find what average steps are if grid size unlimited **pg 124**
 	- [ ] Try to set stop on program that actually terminates
 	- **HYPOTHESIS** as grid size approaches infinity it becomes almost statistically impossible to escape grid and average step count converges toward the dead end average, which should be mostly stable once an adequate grid size is reached
-- [ ] **35.** *problem*  **pg**
-- [ ] **36.** *problem*  **pg**
+- [x] **1.4.35.** *3D Random Walk*  fin average escape probability with a 3d grid **pg 124**
+- [ ] **1.4.36.** *N Random walkers* how many steps on average does it take to fill a grid with n random walkers starting from same point  **pg 124**
 - [ ] **37.** *problem*  **pg**
-- [ ] **38.** *problem*  **pg**
-- [ ] **39.** *problem*  **pg**
-- [ ] **40.** *problem* **pg**
-- [ ] **41.** *problem*  **pg**
-- [ ] **42.** *problem*  **pg**
-- [ ] **43.** *problem*  **pg**
+- [x] **38.** *Birthday Paradox* what is the average number of people needed to have a duplicate birthday in a group  **pg 124**
+- [x] **1.4.39.** *Coupon Collector*  **pg 124**
+	- [ ] why does $n\sum \frac{1}{n}$ equal average number of draws before all combos will be seen?
+- [ ] **1.40.** *RiffleShuffle* **pg 125**
+- [x] **1.4.41.** *Binomial coefficient*  **pg 125**
 
 ### 1.5 Input and Output
 #### Terms
@@ -1247,47 +1248,46 @@ double[][] a =
 
 
 #### to-do
-- [ ] **1.** *problem*  **pg**
+- [x] **1.5.1** *MaxMin* find maz and min integers in a user input stream **pg 162**
 - [ ] **2** *problem*  **pg**
-- [ ] **3.** *problem*  **pg**
-- [ ] **4.** *problem*  **pg**
-- [ ] **5.** *problem*  **pg**
+- [x] **1.5.3** *DescriptiveStats*  Take user ploating punt inptu and sample size and calculate mean and sample deviation for input **pg 162**
+	- ==Is there a more elegant approach?== 
+- [ ] ==**1.5.4** *zScoreFilter* use previously calculated descriptive stats and print out all numbers in sample that are more than 1.5 deviations from mean **pg 162**==
+- [x] **1.5.5** *LongestRun* create program that takes integer input and returns the integer with the longest consecutive input stream along with said integer  **pg 162**
 - [ ] **6.** *problem*  **pg**
 - [ ] **7** *problem*  **pg**
-- [ ] **8.** *problem*  **pg**
-- [ ] **9.** *problem*  **pg**
+- [ ] ==**1.5.8** *EuclideanMeans* calculate **harmonic mean** and **geometric mean** from floating point input stream **pg 162**==
+- [x] **1.5.9** *Dragon* determine what program that takes dragon curve input wilk do when supplied starting point and self referential input   **pg 162 - 163**
+	- Adaptation of program **1.2.35 pg 49**
+	- ==how would this be rewritten **recursively**==
 - [ ] **10.** *problem*  **pg**
+- [x] **1.5.11** *WordCount* create program that takes input from a text file and count the number of word strings withing **pg 163**
 - [ ] **12.** *problem*  **pg**
 - [ ] **13.** *problem*  **pg**
 - [ ] **14.** *problem*  **pg**
 - [ ] **15.** *problem*  **pg**
-- [ ] **16.** *problem*  **pg**
+- [ ] **1.5.16** *Centroids*  **pg**
 - [ ] **17.** *problem*  **pg**
-- [ ] **18.** *problem*  **pg**
-- [ ] **19.** *problem*  **pg**
-- [ ] **20.** *problem* **pg**
-- [ ] **21.** *problem*  **pg**
+- [ ] **1.5.18** *problem*  **pg 165**
+- [ ] **1.5.19** *problem*  **pg 165**
+- [ ] **1.5.20** *problem* **pg 165**
+- [ ] **1.5.21** *problem*  **pg 165**
 - [ ] **22.** *problem*  **pg**
 - [ ] **23.** *problem*  **pg**
 - [ ] **24.** *problem*  **pg**
-- [ ] **25.** *problem*  **pg**
+- [ ] **1.5.25** *problem*  **pg 166**
 - [ ] **26.** *problem*  **pg**
-- [ ] **27.** *problem*  **pg**
-- [ ] **28.** *problem*  **pg**
-- [ ] **29.** *problem*  **pg**
-- [ ] **30.** *problem*  **pg**
+- [ ] **1.5.27** *problem*  **pg 167**
+- [ ] **1.5.28** *problem*  **pg 167**
+- [ ] **1.529** *problem*  **pg 167**
+- [ ] **1.5.30** *problem*  **pg 167**
 - [ ] **31.** *problem*  **pg**
 - [ ] **32.** *problem*  **pg**
 - [ ] **33.** *problem*  **pg**
-- [ ] **34.** *problem*  **pg**
-- [ ] **35.** *problem*  **pg**
-- [ ] **36.** *problem*  **pg**
-- [ ] **37.** *problem*  **pg**
-- [ ] **38.** *problem*  **pg**
-- [ ] **39.** *problem*  **pg**
-- [ ] **40.** *problem* **pg**
-- [ ] **41.** *problem*  **pg**
-- [ ] **42.** *problem*  **pg**
-- [ ] **43.** *problem*  **pg**
+- [ ] **1.5.34** *problem*  **pg 168**
+- [ ] **1.5.35** *problem*  **pg 168**
+- [ ] **1.5.36** *problem*  **pg 168**
+- [ ] **1.5.37** *problem*  **pg 168**
+
 
 

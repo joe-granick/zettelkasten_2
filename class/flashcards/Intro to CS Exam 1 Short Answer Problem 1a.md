@@ -1,5 +1,5 @@
 #flashcards/intro-to-cs/exam-1 
-Q. Evaluate the following expressions. Give the type and value of each
+Evaluate the following expressions. Give the type and value of each
 | Expression                  | Type | Value |
 | --------------------------- | ---- | ----- |
 | `(8/3) + 2.0`               |      |       |
@@ -9,7 +9,6 @@ Q. Evaluate the following expressions. Give the type and value of each
 | `“(int)2.0” + 2 * 5`        |      |       |
 |     `4 + (-3 + 2) > -3 – (-3 + 4) * 2`                        |      |       |
 ?
-A.
 | Expression                         | Type | Value |
 | ---------------------------------- | ---- | ----- |
 | `(8/3) + 2.0`                      |  double    |   `4.0`    |
@@ -18,3 +17,4 @@ A.
 | `"Computer 32" +2*3`               |     String |     `Computer 326`  |
 | `“(int)2.0” + 2 * 5`               | String     |`(int)2.010`       |
 | `4 + (-3 + 2) > -3 – (-3 + 4) * 2` | boolean     |  `true`     |
+<!--SR:!2022-09-13,1,230-->

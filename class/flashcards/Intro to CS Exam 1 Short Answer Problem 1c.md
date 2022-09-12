@@ -1,5 +1,5 @@
 #flashcards/intro-to-cs/exam-1 
-Q. (8 Points) Truth Table: Complete the truth table for the Boolean Expression:
+(8 Points) Truth Table: Complete the truth table for the Boolean Expression:
 | `x`      | `y`      | `z`      | `(!x&& y) && !(y||z) || (x && !z` |
 | ------ | ------ | ------ | --------------------------------- |
 | `true` | `true` | `true` |                                   |
@@ -10,9 +10,7 @@ Q. (8 Points) Truth Table: Complete the truth table for the Boolean Expression:
 | `false` | `true` | `false`  |                                   |
 | `false` | `false` | `true`  |                                   |
 | `false` | `false` | `false`|                                         |
-
 ?
-A.
 | `x`      | `y`      | `z`      | `(!x&& y) && !(y||z) || (x && !z` |
 | ------ | ------ | ------ | --------------------------------- |
 | `true` | `true` | `true` |             `false`                      |
@@ -23,4 +21,5 @@ A.
 | `false` | `true` | `false`  |                                `false`   |
 | `false` | `false` | `true`  |                                 `false`  |
 | `false` | `false` | `false`|                                       `false`  |
+<!--SR:!2022-09-13,1,230-->
 
