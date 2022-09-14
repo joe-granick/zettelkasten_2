@@ -29,6 +29,7 @@ Topic:
 - *run-time errors* occur when program is executed due to invalid operation
 - *logical errors* produces wrong answers and bugs when program is executed. Doesn't prevent program from running nd needs to be caught by programmer
 
+
 ### 1.2 Built-In Types of Data
 #### Keywords
 - [[primitive data-type]]
@@ -1242,11 +1243,7 @@ double[][] a =
 - 
 #### Questions
 - **Q.** What does **standard input** allow programs to do beyond **command-line arguments**?
-- 
 #### Examples
-
-
-
 #### to-do
 - [x] **1.5.1** *MaxMin* find maz and min integers in a user input stream **pg 162**
 - [ ] **2** *problem*  **pg**
@@ -1291,3 +1288,1334 @@ double[][] a =
 
 
 
+## 1.6 Case Study: Random Web-Surfer
+#### Terms
+#### Propositions
+#### Questions
+#### to-do
+- [ ] **1.** *problem*  **pg**
+- [ ] **2** *problem*  **pg**
+- [ ] **3.** *problem*  **pg**
+- [ ] **4.** *problem*  **pg**
+- [ ] **5.** *problem*  **pg**
+- [ ] **6.** *problem*  **pg**
+- [ ] **7** *problem*  **pg**
+- [ ] **8.** *problem*  **pg**
+- [ ] **9.** *problem*  **pg**
+- [ ] **10.** *problem*  **pg**
+- [ ] **11.** *problem*  **pg**
+- [ ]  **12.** *problem*  **pg**
+- [ ] **13.** *problem*  **pg**
+- [ ] **14.** *problem*  **pg**
+- [ ] **15.** *problem*  **pg**
+- [ ] **16.** *problem*  **pg**
+- [ ] **17** *problem*  **pg**
+- [ ] **18.** *problem*  **pg**
+- [ ] **19.** *problem*  **pg**
+- [ ] **20.** *problem*  **pg**
+- [ ]  **21.** *problem*  **pg**
+- [ ] **22** *problem*  **pg**
+- [ ] **23.** *problem*  **pg**
+- [ ] **24.** *problem*  **pg**
+- [ ] **25.** *problem*  **pg**
+- [ ] **26.** *problem*  **pg**
+- [ ] **27** *problem*  **pg**
+- [ ] **28.** *problem*  **pg**
+- [ ] **29.** *problem*  **pg**
+- [ ] **30.** *problem*  **pg**
+- [ ] **31.** *problem*  **pg**
+- [ ] **32** *problem*  **pg**
+- [ ] **33.** *problem*  **pg**
+- [ ] **34.** *problem*  **pg**
+- [ ] **35.** *problem*  **pg**
+- [ ] **36.** *problem*  **pg**
+- [ ] **37** *problem*  **pg**
+- [ ] **38.** *problem*  **pg**
+- [ ] **39.** *problem*  **pg**
+- [ ] **40.** *problem*  **pg**
+
+### 2.1 Defining functions
+
+#### Terms
+#### Propositions
+#### Questions
+#### Static methods
+##### Control flow
+##### Function-call trace
+##### Terminology
+##### Static method definition
+##### Function calls
+##### Multiple arguments
+##### Multiple methods
+##### Overloading
+##### Multiple return statements
+##### Single return value
+##### Scope
+##### Side effects
+#### Implementing mathematical functions
+##### Closed form
+##### No closed form
+#### Using static methods to organize code
+#### Passing arguments and returning values
+##### Pass by value
+##### Arrays as arguments
+##### Side effects with arrays
+##### Arrays as return values
+#### Example: superposition of sound waves
+##### Weighted superposition
+#### to-do
+- [ ] **1.** *problem*  **pg**
+- [ ] **2** *problem*  **pg**
+- [ ] **3.** *problem*  **pg**
+- [ ] **4.** *problem*  **pg**
+- [ ] **5.** *problem*  **pg**
+- [ ] **6.** *problem*  **pg**
+- [ ] **7** *problem*  **pg**
+- [ ] **8.** *problem*  **pg**
+- [ ] **9.** *problem*  **pg**
+- [ ] **10.** *problem*  **pg**
+- [ ] **11.** *problem*  **pg**
+- [ ]  **12.** *problem*  **pg**
+- [ ] **13.** *problem*  **pg**
+- [ ] **14.** *problem*  **pg**
+- [ ] **15.** *problem*  **pg**
+- [ ] **16.** *problem*  **pg**
+- [ ] **17** *problem*  **pg**
+- [ ] **18.** *problem*  **pg**
+- [ ] **19.** *problem*  **pg**
+- [ ] **20.** *problem*  **pg**
+- [ ]  **21.** *problem*  **pg**
+- [ ] **22** *problem*  **pg**
+- [ ] **23.** *problem*  **pg**
+- [ ] **24.** *problem*  **pg**
+- [ ] **25.** *problem*  **pg**
+- [ ] **26.** *problem*  **pg**
+- [ ] **27** *problem*  **pg**
+- [ ] **28.** *problem*  **pg**
+- [ ] **29.** *problem*  **pg**
+- [ ] **30.** *problem*  **pg**
+- [ ] **31.** *problem*  **pg**
+- [ ] **32** *problem*  **pg**
+- [ ] **33.** *problem*  **pg**
+- [ ] **34.** *problem*  **pg**
+- [ ] **35.** *problem*  **pg**
+- [ ] **36.** *problem*  **pg**
+- [ ] **37** *problem*  **pg**
+- [ ] **38.** *problem*  **pg**
+- [ ] **39.** *problem*  **pg**
+- [ ] **40.** *problem*  **pg**
+
+## 2.2 Libraries and Clients
+#### Terms
+#### Propositions
+#### Questions
+#### to-do
+- [ ] **1.** *problem*  **pg**
+- [ ] **2** *problem*  **pg**
+- [ ] **3.** *problem*  **pg**
+- [ ] **4.** *problem*  **pg**
+- [ ] **5.** *problem*  **pg**
+- [ ] **6.** *problem*  **pg**
+- [ ] **7** *problem*  **pg**
+- [ ] **8.** *problem*  **pg**
+- [ ] **9.** *problem*  **pg**
+- [ ] **10.** *problem*  **pg**
+- [ ] **11.** *problem*  **pg**
+- [ ]  **12.** *problem*  **pg**
+- [ ] **13.** *problem*  **pg**
+- [ ] **14.** *problem*  **pg**
+- [ ] **15.** *problem*  **pg**
+- [ ] **16.** *problem*  **pg**
+- [ ] **17** *problem*  **pg**
+- [ ] **18.** *problem*  **pg**
+- [ ] **19.** *problem*  **pg**
+- [ ] **20.** *problem*  **pg**
+- [ ]  **21.** *problem*  **pg**
+- [ ] **22** *problem*  **pg**
+- [ ] **23.** *problem*  **pg**
+- [ ] **24.** *problem*  **pg**
+- [ ] **25.** *problem*  **pg**
+- [ ] **26.** *problem*  **pg**
+- [ ] **27** *problem*  **pg**
+- [ ] **28.** *problem*  **pg**
+- [ ] **29.** *problem*  **pg**
+- [ ] **30.** *problem*  **pg**
+- [ ] **31.** *problem*  **pg**
+- [ ] **32** *problem*  **pg**
+- [ ] **33.** *problem*  **pg**
+- [ ] **34.** *problem*  **pg**
+- [ ] **35.** *problem*  **pg**
+- [ ] **36.** *problem*  **pg**
+- [ ] **37** *problem*  **pg**
+- [ ] **38.** *problem*  **pg**
+- [ ] **39.** *problem*  **pg**
+- [ ] **40.** *problem*  **pg**
+
+## 2.3 Recursion
+#### Terms
+#### Propositions
+#### Questions
+#### to-do
+- [ ] **1.** *problem*  **pg**
+- [ ] **2** *problem*  **pg**
+- [ ] **3.** *problem*  **pg**
+- [ ] **4.** *problem*  **pg**
+- [ ] **5.** *problem*  **pg**
+- [ ] **6.** *problem*  **pg**
+- [ ] **7** *problem*  **pg**
+- [ ] **8.** *problem*  **pg**
+- [ ] **9.** *problem*  **pg**
+- [ ] **10.** *problem*  **pg**
+- [ ] **11.** *problem*  **pg**
+- [ ]  **12.** *problem*  **pg**
+- [ ] **13.** *problem*  **pg**
+- [ ] **14.** *problem*  **pg**
+- [ ] **15.** *problem*  **pg**
+- [ ] **16.** *problem*  **pg**
+- [ ] **17** *problem*  **pg**
+- [ ] **18.** *problem*  **pg**
+- [ ] **19.** *problem*  **pg**
+- [ ] **20.** *problem*  **pg**
+- [ ]  **21.** *problem*  **pg**
+- [ ] **22** *problem*  **pg**
+- [ ] **23.** *problem*  **pg**
+- [ ] **24.** *problem*  **pg**
+- [ ] **25.** *problem*  **pg**
+- [ ] **26.** *problem*  **pg**
+- [ ] **27** *problem*  **pg**
+- [ ] **28.** *problem*  **pg**
+- [ ] **29.** *problem*  **pg**
+- [ ] **30.** *problem*  **pg**
+- [ ] **31.** *problem*  **pg**
+- [ ] **32** *problem*  **pg**
+- [ ] **33.** *problem*  **pg**
+- [ ] **34.** *problem*  **pg**
+- [ ] **35.** *problem*  **pg**
+- [ ] **36.** *problem*  **pg**
+- [ ] **37** *problem*  **pg**
+- [ ] **38.** *problem*  **pg**
+- [ ] **39.** *problem*  **pg**
+- [ ] **40.** *problem*  **pg**
+
+## 2.4 Case Study: Percolation
+#### Terms
+#### Propositions
+#### Questions
+#### to-do
+- [ ] **1.** *problem*  **pg**
+- [ ] **2** *problem*  **pg**
+- [ ] **3.** *problem*  **pg**
+- [ ] **4.** *problem*  **pg**
+- [ ] **5.** *problem*  **pg**
+- [ ] **6.** *problem*  **pg**
+- [ ] **7** *problem*  **pg**
+- [ ] **8.** *problem*  **pg**
+- [ ] **9.** *problem*  **pg**
+- [ ] **10.** *problem*  **pg**
+- [ ] **11.** *problem*  **pg**
+- [ ]  **12.** *problem*  **pg**
+- [ ] **13.** *problem*  **pg**
+- [ ] **14.** *problem*  **pg**
+- [ ] **15.** *problem*  **pg**
+- [ ] **16.** *problem*  **pg**
+- [ ] **17** *problem*  **pg**
+- [ ] **18.** *problem*  **pg**
+- [ ] **19.** *problem*  **pg**
+- [ ] **20.** *problem*  **pg**
+- [ ]  **21.** *problem*  **pg**
+- [ ] **22** *problem*  **pg**
+- [ ] **23.** *problem*  **pg**
+- [ ] **24.** *problem*  **pg**
+- [ ] **25.** *problem*  **pg**
+- [ ] **26.** *problem*  **pg**
+- [ ] **27** *problem*  **pg**
+- [ ] **28.** *problem*  **pg**
+- [ ] **29.** *problem*  **pg**
+- [ ] **30.** *problem*  **pg**
+- [ ] **31.** *problem*  **pg**
+- [ ] **32** *problem*  **pg**
+- [ ] **33.** *problem*  **pg**
+- [ ] **34.** *problem*  **pg**
+- [ ] **35.** *problem*  **pg**
+- [ ] **36.** *problem*  **pg**
+- [ ] **37** *problem*  **pg**
+- [ ] **38.** *problem*  **pg**
+- [ ] **39.** *problem*  **pg**
+- [ ] **40.** *problem*  **pg**
+
+# Chapter 3: Object Oriented Programming
+
+## 3.1 Using Data Types
+#### Terms
+#### Propositions
+#### Questions
+#### to-do
+- [ ] **1.** *problem*  **pg**
+- [ ] **2** *problem*  **pg**
+- [ ] **3.** *problem*  **pg**
+- [ ] **4.** *problem*  **pg**
+- [ ] **5.** *problem*  **pg**
+- [ ] **6.** *problem*  **pg**
+- [ ] **7** *problem*  **pg**
+- [ ] **8.** *problem*  **pg**
+- [ ] **9.** *problem*  **pg**
+- [ ] **10.** *problem*  **pg**
+- [ ] **11.** *problem*  **pg**
+- [ ]  **12.** *problem*  **pg**
+- [ ] **13.** *problem*  **pg**
+- [ ] **14.** *problem*  **pg**
+- [ ] **15.** *problem*  **pg**
+- [ ] **16.** *problem*  **pg**
+- [ ] **17** *problem*  **pg**
+- [ ] **18.** *problem*  **pg**
+- [ ] **19.** *problem*  **pg**
+- [ ] **20.** *problem*  **pg**
+- [ ]  **21.** *problem*  **pg**
+- [ ] **22** *problem*  **pg**
+- [ ] **23.** *problem*  **pg**
+- [ ] **24.** *problem*  **pg**
+- [ ] **25.** *problem*  **pg**
+- [ ] **26.** *problem*  **pg**
+- [ ] **27** *problem*  **pg**
+- [ ] **28.** *problem*  **pg**
+- [ ] **29.** *problem*  **pg**
+- [ ] **30.** *problem*  **pg**
+- [ ] **31.** *problem*  **pg**
+- [ ] **32** *problem*  **pg**
+- [ ] **33.** *problem*  **pg**
+- [ ] **34.** *problem*  **pg**
+- [ ] **35.** *problem*  **pg**
+- [ ] **36.** *problem*  **pg**
+- [ ] **37** *problem*  **pg**
+- [ ] **38.** *problem*  **pg**
+- [ ] **39.** *problem*  **pg**
+- [ ] **40.** *problem*  **pg**
+
+## 3.2 Creating Data Types
+#### Terms
+#### Propositions
+#### Questions
+#### to-do
+- [ ] **1.** *problem*  **pg**
+- [ ] **2** *problem*  **pg**
+- [ ] **3.** *problem*  **pg**
+- [ ] **4.** *problem*  **pg**
+- [ ] **5.** *problem*  **pg**
+- [ ] **6.** *problem*  **pg**
+- [ ] **7** *problem*  **pg**
+- [ ] **8.** *problem*  **pg**
+- [ ] **9.** *problem*  **pg**
+- [ ] **10.** *problem*  **pg**
+- [ ] **11.** *problem*  **pg**
+- [ ]  **12.** *problem*  **pg**
+- [ ] **13.** *problem*  **pg**
+- [ ] **14.** *problem*  **pg**
+- [ ] **15.** *problem*  **pg**
+- [ ] **16.** *problem*  **pg**
+- [ ] **17** *problem*  **pg**
+- [ ] **18.** *problem*  **pg**
+- [ ] **19.** *problem*  **pg**
+- [ ] **20.** *problem*  **pg**
+- [ ]  **21.** *problem*  **pg**
+- [ ] **22** *problem*  **pg**
+- [ ] **23.** *problem*  **pg**
+- [ ] **24.** *problem*  **pg**
+- [ ] **25.** *problem*  **pg**
+- [ ] **26.** *problem*  **pg**
+- [ ] **27** *problem*  **pg**
+- [ ] **28.** *problem*  **pg**
+- [ ] **29.** *problem*  **pg**
+- [ ] **30.** *problem*  **pg**
+- [ ] **31.** *problem*  **pg**
+- [ ] **32** *problem*  **pg**
+- [ ] **33.** *problem*  **pg**
+- [ ] **34.** *problem*  **pg**
+- [ ] **35.** *problem*  **pg**
+- [ ] **36.** *problem*  **pg**
+- [ ] **37** *problem*  **pg**
+- [ ] **38.** *problem*  **pg**
+- [ ] **39.** *problem*  **pg**
+- [ ] **40.** *problem*  **pg**
+
+## 3.3 Designing Data Types
+#### Terms
+#### Propositions
+#### Questions
+#### to-do
+- [ ] **1.** *problem*  **pg**
+- [ ] **2** *problem*  **pg**
+- [ ] **3.** *problem*  **pg**
+- [ ] **4.** *problem*  **pg**
+- [ ] **5.** *problem*  **pg**
+- [ ] **6.** *problem*  **pg**
+- [ ] **7** *problem*  **pg**
+- [ ] **8.** *problem*  **pg**
+- [ ] **9.** *problem*  **pg**
+- [ ] **10.** *problem*  **pg**
+- [ ] **11.** *problem*  **pg**
+- [ ]  **12.** *problem*  **pg**
+- [ ] **13.** *problem*  **pg**
+- [ ] **14.** *problem*  **pg**
+- [ ] **15.** *problem*  **pg**
+- [ ] **16.** *problem*  **pg**
+- [ ] **17** *problem*  **pg**
+- [ ] **18.** *problem*  **pg**
+- [ ] **19.** *problem*  **pg**
+- [ ] **20.** *problem*  **pg**
+- [ ]  **21.** *problem*  **pg**
+- [ ] **22** *problem*  **pg**
+- [ ] **23.** *problem*  **pg**
+- [ ] **24.** *problem*  **pg**
+- [ ] **25.** *problem*  **pg**
+- [ ] **26.** *problem*  **pg**
+- [ ] **27** *problem*  **pg**
+- [ ] **28.** *problem*  **pg**
+- [ ] **29.** *problem*  **pg**
+- [ ] **30.** *problem*  **pg**
+- [ ] **31.** *problem*  **pg**
+- [ ] **32** *problem*  **pg**
+- [ ] **33.** *problem*  **pg**
+- [ ] **34.** *problem*  **pg**
+- [ ] **35.** *problem*  **pg**
+- [ ] **36.** *problem*  **pg**
+- [ ] **37** *problem*  **pg**
+- [ ] **38.** *problem*  **pg**
+- [ ] **39.** *problem*  **pg**
+- [ ] **40.** *problem*  **pg**
+
+## 3.4 Case Study: N-Body Simulation
+#### Terms
+#### Propositions
+#### Questions
+#### to-do
+- [ ] **1.** *problem*  **pg**
+- [ ] **2** *problem*  **pg**
+- [ ] **3.** *problem*  **pg**
+- [ ] **4.** *problem*  **pg**
+- [ ] **5.** *problem*  **pg**
+- [ ] **6.** *problem*  **pg**
+- [ ] **7** *problem*  **pg**
+- [ ] **8.** *problem*  **pg**
+- [ ] **9.** *problem*  **pg**
+- [ ] **10.** *problem*  **pg**
+- [ ] **11.** *problem*  **pg**
+- [ ]  **12.** *problem*  **pg**
+- [ ] **13.** *problem*  **pg**
+- [ ] **14.** *problem*  **pg**
+- [ ] **15.** *problem*  **pg**
+- [ ] **16.** *problem*  **pg**
+- [ ] **17** *problem*  **pg**
+- [ ] **18.** *problem*  **pg**
+- [ ] **19.** *problem*  **pg**
+- [ ] **20.** *problem*  **pg**
+- [ ]  **21.** *problem*  **pg**
+- [ ] **22** *problem*  **pg**
+- [ ] **23.** *problem*  **pg**
+- [ ] **24.** *problem*  **pg**
+- [ ] **25.** *problem*  **pg**
+- [ ] **26.** *problem*  **pg**
+- [ ] **27** *problem*  **pg**
+- [ ] **28.** *problem*  **pg**
+- [ ] **29.** *problem*  **pg**
+- [ ] **30.** *problem*  **pg**
+- [ ] **31.** *problem*  **pg**
+- [ ] **32** *problem*  **pg**
+- [ ] **33.** *problem*  **pg**
+- [ ] **34.** *problem*  **pg**
+- [ ] **35.** *problem*  **pg**
+- [ ] **36.** *problem*  **pg**
+- [ ] **37** *problem*  **pg**
+- [ ] **38.** *problem*  **pg**
+- [ ] **39.** *problem*  **pg**
+- [ ] **40.** *problem*  **pg**
+
+# Chapter 4: Algorithms and Data Structures
+
+## 4.1 Performance
+#### Terms
+#### Propositions
+#### Questions
+#### to-do
+- [ ] **1.** *problem*  **pg**
+- [ ] **2** *problem*  **pg**
+- [ ] **3.** *problem*  **pg**
+- [ ] **4.** *problem*  **pg**
+- [ ] **5.** *problem*  **pg**
+- [ ] **6.** *problem*  **pg**
+- [ ] **7** *problem*  **pg**
+- [ ] **8.** *problem*  **pg**
+- [ ] **9.** *problem*  **pg**
+- [ ] **10.** *problem*  **pg**
+- [ ] **11.** *problem*  **pg**
+- [ ]  **12.** *problem*  **pg**
+- [ ] **13.** *problem*  **pg**
+- [ ] **14.** *problem*  **pg**
+- [ ] **15.** *problem*  **pg**
+- [ ] **16.** *problem*  **pg**
+- [ ] **17** *problem*  **pg**
+- [ ] **18.** *problem*  **pg**
+- [ ] **19.** *problem*  **pg**
+- [ ] **20.** *problem*  **pg**
+- [ ]  **21.** *problem*  **pg**
+- [ ] **22** *problem*  **pg**
+- [ ] **23.** *problem*  **pg**
+- [ ] **24.** *problem*  **pg**
+- [ ] **25.** *problem*  **pg**
+- [ ] **26.** *problem*  **pg**
+- [ ] **27** *problem*  **pg**
+- [ ] **28.** *problem*  **pg**
+- [ ] **29.** *problem*  **pg**
+- [ ] **30.** *problem*  **pg**
+- [ ] **31.** *problem*  **pg**
+- [ ] **32** *problem*  **pg**
+- [ ] **33.** *problem*  **pg**
+- [ ] **34.** *problem*  **pg**
+- [ ] **35.** *problem*  **pg**
+- [ ] **36.** *problem*  **pg**
+- [ ] **37** *problem*  **pg**
+- [ ] **38.** *problem*  **pg**
+- [ ] **39.** *problem*  **pg**
+- [ ] **40.** *problem*  **pg**
+
+## 4.2 Sorting and Searching
+#### Terms
+#### Propositions
+#### Questions
+#### to-do
+- [ ] **1.** *problem*  **pg**
+- [ ] **2** *problem*  **pg**
+- [ ] **3.** *problem*  **pg**
+- [ ] **4.** *problem*  **pg**
+- [ ] **5.** *problem*  **pg**
+- [ ] **6.** *problem*  **pg**
+- [ ] **7** *problem*  **pg**
+- [ ] **8.** *problem*  **pg**
+- [ ] **9.** *problem*  **pg**
+- [ ] **10.** *problem*  **pg**
+- [ ] **11.** *problem*  **pg**
+- [ ]  **12.** *problem*  **pg**
+- [ ] **13.** *problem*  **pg**
+- [ ] **14.** *problem*  **pg**
+- [ ] **15.** *problem*  **pg**
+- [ ] **16.** *problem*  **pg**
+- [ ] **17** *problem*  **pg**
+- [ ] **18.** *problem*  **pg**
+- [ ] **19.** *problem*  **pg**
+- [ ] **20.** *problem*  **pg**
+- [ ]  **21.** *problem*  **pg**
+- [ ] **22** *problem*  **pg**
+- [ ] **23.** *problem*  **pg**
+- [ ] **24.** *problem*  **pg**
+- [ ] **25.** *problem*  **pg**
+- [ ] **26.** *problem*  **pg**
+- [ ] **27** *problem*  **pg**
+- [ ] **28.** *problem*  **pg**
+- [ ] **29.** *problem*  **pg**
+- [ ] **30.** *problem*  **pg**
+- [ ] **31.** *problem*  **pg**
+- [ ] **32** *problem*  **pg**
+- [ ] **33.** *problem*  **pg**
+- [ ] **34.** *problem*  **pg**
+- [ ] **35.** *problem*  **pg**
+- [ ] **36.** *problem*  **pg**
+- [ ] **37** *problem*  **pg**
+- [ ] **38.** *problem*  **pg**
+- [ ] **39.** *problem*  **pg**
+- [ ] **40.** *problem*  **pg**
+
+## 4.3 Stacks and Queues
+#### Terms
+#### Propositions
+#### Questions
+#### to-do
+- [ ] **1.** *problem*  **pg**
+- [ ] **2** *problem*  **pg**
+- [ ] **3.** *problem*  **pg**
+- [ ] **4.** *problem*  **pg**
+- [ ] **5.** *problem*  **pg**
+- [ ] **6.** *problem*  **pg**
+- [ ] **7** *problem*  **pg**
+- [ ] **8.** *problem*  **pg**
+- [ ] **9.** *problem*  **pg**
+- [ ] **10.** *problem*  **pg**
+- [ ] **11.** *problem*  **pg**
+- [ ]  **12.** *problem*  **pg**
+- [ ] **13.** *problem*  **pg**
+- [ ] **14.** *problem*  **pg**
+- [ ] **15.** *problem*  **pg**
+- [ ] **16.** *problem*  **pg**
+- [ ] **17** *problem*  **pg**
+- [ ] **18.** *problem*  **pg**
+- [ ] **19.** *problem*  **pg**
+- [ ] **20.** *problem*  **pg**
+- [ ]  **21.** *problem*  **pg**
+- [ ] **22** *problem*  **pg**
+- [ ] **23.** *problem*  **pg**
+- [ ] **24.** *problem*  **pg**
+- [ ] **25.** *problem*  **pg**
+- [ ] **26.** *problem*  **pg**
+- [ ] **27** *problem*  **pg**
+- [ ] **28.** *problem*  **pg**
+- [ ] **29.** *problem*  **pg**
+- [ ] **30.** *problem*  **pg**
+- [ ] **31.** *problem*  **pg**
+- [ ] **32** *problem*  **pg**
+- [ ] **33.** *problem*  **pg**
+- [ ] **34.** *problem*  **pg**
+- [ ] **35.** *problem*  **pg**
+- [ ] **36.** *problem*  **pg**
+- [ ] **37** *problem*  **pg**
+- [ ] **38.** *problem*  **pg**
+- [ ] **39.** *problem*  **pg**
+- [ ] **40.** *problem*  **pg**
+
+## 4.4 Symbol Tables
+#### Terms
+#### Propositions
+#### Questions
+#### to-do
+- [ ] **1.** *problem*  **pg**
+- [ ] **2** *problem*  **pg**
+- [ ] **3.** *problem*  **pg**
+- [ ] **4.** *problem*  **pg**
+- [ ] **5.** *problem*  **pg**
+- [ ] **6.** *problem*  **pg**
+- [ ] **7** *problem*  **pg**
+- [ ] **8.** *problem*  **pg**
+- [ ] **9.** *problem*  **pg**
+- [ ] **10.** *problem*  **pg**
+- [ ] **11.** *problem*  **pg**
+- [ ]  **12.** *problem*  **pg**
+- [ ] **13.** *problem*  **pg**
+- [ ] **14.** *problem*  **pg**
+- [ ] **15.** *problem*  **pg**
+- [ ] **16.** *problem*  **pg**
+- [ ] **17** *problem*  **pg**
+- [ ] **18.** *problem*  **pg**
+- [ ] **19.** *problem*  **pg**
+- [ ] **20.** *problem*  **pg**
+- [ ]  **21.** *problem*  **pg**
+- [ ] **22** *problem*  **pg**
+- [ ] **23.** *problem*  **pg**
+- [ ] **24.** *problem*  **pg**
+- [ ] **25.** *problem*  **pg**
+- [ ] **26.** *problem*  **pg**
+- [ ] **27** *problem*  **pg**
+- [ ] **28.** *problem*  **pg**
+- [ ] **29.** *problem*  **pg**
+- [ ] **30.** *problem*  **pg**
+- [ ] **31.** *problem*  **pg**
+- [ ] **32** *problem*  **pg**
+- [ ] **33.** *problem*  **pg**
+- [ ] **34.** *problem*  **pg**
+- [ ] **35.** *problem*  **pg**
+- [ ] **36.** *problem*  **pg**
+- [ ] **37** *problem*  **pg**
+- [ ] **38.** *problem*  **pg**
+- [ ] **39.** *problem*  **pg**
+- [ ] **40.** *problem*  **pg**
+
+## 4.5 Case Study: Small World
+#### Terms
+#### Propositions
+#### Questions
+#### to-do
+- [ ] **1.** *problem*  **pg**
+- [ ] **2** *problem*  **pg**
+- [ ] **3.** *problem*  **pg**
+- [ ] **4.** *problem*  **pg**
+- [ ] **5.** *problem*  **pg**
+- [ ] **6.** *problem*  **pg**
+- [ ] **7** *problem*  **pg**
+- [ ] **8.** *problem*  **pg**
+- [ ] **9.** *problem*  **pg**
+- [ ] **10.** *problem*  **pg**
+- [ ] **11.** *problem*  **pg**
+- [ ]  **12.** *problem*  **pg**
+- [ ] **13.** *problem*  **pg**
+- [ ] **14.** *problem*  **pg**
+- [ ] **15.** *problem*  **pg**
+- [ ] **16.** *problem*  **pg**
+- [ ] **17** *problem*  **pg**
+- [ ] **18.** *problem*  **pg**
+- [ ] **19.** *problem*  **pg**
+- [ ] **20.** *problem*  **pg**
+- [ ]  **21.** *problem*  **pg**
+- [ ] **22** *problem*  **pg**
+- [ ] **23.** *problem*  **pg**
+- [ ] **24.** *problem*  **pg**
+- [ ] **25.** *problem*  **pg**
+- [ ] **26.** *problem*  **pg**
+- [ ] **27** *problem*  **pg**
+- [ ] **28.** *problem*  **pg**
+- [ ] **29.** *problem*  **pg**
+- [ ] **30.** *problem*  **pg**
+- [ ] **31.** *problem*  **pg**
+- [ ] **32** *problem*  **pg**
+- [ ] **33.** *problem*  **pg**
+- [ ] **34.** *problem*  **pg**
+- [ ] **35.** *problem*  **pg**
+- [ ] **36.** *problem*  **pg**
+- [ ] **37** *problem*  **pg**
+- [ ] **38.** *problem*  **pg**
+- [ ] **39.** *problem*  **pg**
+- [ ] **40.** *problem*  **pg**
+
+# Chapter 5: Theory of Computing
+
+## 5.1 Formal Languages
+#### Terms
+#### Propositions
+#### Questions
+#### to-do
+- [ ] **1.** *problem*  **pg**
+- [ ] **2** *problem*  **pg**
+- [ ] **3.** *problem*  **pg**
+- [ ] **4.** *problem*  **pg**
+- [ ] **5.** *problem*  **pg**
+- [ ] **6.** *problem*  **pg**
+- [ ] **7** *problem*  **pg**
+- [ ] **8.** *problem*  **pg**
+- [ ] **9.** *problem*  **pg**
+- [ ] **10.** *problem*  **pg**
+- [ ] **11.** *problem*  **pg**
+- [ ]  **12.** *problem*  **pg**
+- [ ] **13.** *problem*  **pg**
+- [ ] **14.** *problem*  **pg**
+- [ ] **15.** *problem*  **pg**
+- [ ] **16.** *problem*  **pg**
+- [ ] **17** *problem*  **pg**
+- [ ] **18.** *problem*  **pg**
+- [ ] **19.** *problem*  **pg**
+- [ ] **20.** *problem*  **pg**
+- [ ]  **21.** *problem*  **pg**
+- [ ] **22** *problem*  **pg**
+- [ ] **23.** *problem*  **pg**
+- [ ] **24.** *problem*  **pg**
+- [ ] **25.** *problem*  **pg**
+- [ ] **26.** *problem*  **pg**
+- [ ] **27** *problem*  **pg**
+- [ ] **28.** *problem*  **pg**
+- [ ] **29.** *problem*  **pg**
+- [ ] **30.** *problem*  **pg**
+- [ ] **31.** *problem*  **pg**
+- [ ] **32** *problem*  **pg**
+- [ ] **33.** *problem*  **pg**
+- [ ] **34.** *problem*  **pg**
+- [ ] **35.** *problem*  **pg**
+- [ ] **36.** *problem*  **pg**
+- [ ] **37** *problem*  **pg**
+- [ ] **38.** *problem*  **pg**
+- [ ] **39.** *problem*  **pg**
+- [ ] **40.** *problem*  **pg**
+
+## 5.2 Turing Machines
+#### Terms
+#### Propositions
+#### Questions
+#### to-do
+- [ ] **1.** *problem*  **pg**
+- [ ] **2** *problem*  **pg**
+- [ ] **3.** *problem*  **pg**
+- [ ] **4.** *problem*  **pg**
+- [ ] **5.** *problem*  **pg**
+- [ ] **6.** *problem*  **pg**
+- [ ] **7** *problem*  **pg**
+- [ ] **8.** *problem*  **pg**
+- [ ] **9.** *problem*  **pg**
+- [ ] **10.** *problem*  **pg**
+- [ ] **11.** *problem*  **pg**
+- [ ]  **12.** *problem*  **pg**
+- [ ] **13.** *problem*  **pg**
+- [ ] **14.** *problem*  **pg**
+- [ ] **15.** *problem*  **pg**
+- [ ] **16.** *problem*  **pg**
+- [ ] **17** *problem*  **pg**
+- [ ] **18.** *problem*  **pg**
+- [ ] **19.** *problem*  **pg**
+- [ ] **20.** *problem*  **pg**
+- [ ]  **21.** *problem*  **pg**
+- [ ] **22** *problem*  **pg**
+- [ ] **23.** *problem*  **pg**
+- [ ] **24.** *problem*  **pg**
+- [ ] **25.** *problem*  **pg**
+- [ ] **26.** *problem*  **pg**
+- [ ] **27** *problem*  **pg**
+- [ ] **28.** *problem*  **pg**
+- [ ] **29.** *problem*  **pg**
+- [ ] **30.** *problem*  **pg**
+- [ ] **31.** *problem*  **pg**
+- [ ] **32** *problem*  **pg**
+- [ ] **33.** *problem*  **pg**
+- [ ] **34.** *problem*  **pg**
+- [ ] **35.** *problem*  **pg**
+- [ ] **36.** *problem*  **pg**
+- [ ] **37** *problem*  **pg**
+- [ ] **38.** *problem*  **pg**
+- [ ] **39.** *problem*  **pg**
+- [ ] **40.** *problem*  **pg**
+
+## 5.3 Universality
+#### Terms
+#### Propositions
+#### Questions
+#### to-do
+- [ ] **1.** *problem*  **pg**
+- [ ] **2** *problem*  **pg**
+- [ ] **3.** *problem*  **pg**
+- [ ] **4.** *problem*  **pg**
+- [ ] **5.** *problem*  **pg**
+- [ ] **6.** *problem*  **pg**
+- [ ] **7** *problem*  **pg**
+- [ ] **8.** *problem*  **pg**
+- [ ] **9.** *problem*  **pg**
+- [ ] **10.** *problem*  **pg**
+- [ ] **11.** *problem*  **pg**
+- [ ]  **12.** *problem*  **pg**
+- [ ] **13.** *problem*  **pg**
+- [ ] **14.** *problem*  **pg**
+- [ ] **15.** *problem*  **pg**
+- [ ] **16.** *problem*  **pg**
+- [ ] **17** *problem*  **pg**
+- [ ] **18.** *problem*  **pg**
+- [ ] **19.** *problem*  **pg**
+- [ ] **20.** *problem*  **pg**
+- [ ]  **21.** *problem*  **pg**
+- [ ] **22** *problem*  **pg**
+- [ ] **23.** *problem*  **pg**
+- [ ] **24.** *problem*  **pg**
+- [ ] **25.** *problem*  **pg**
+- [ ] **26.** *problem*  **pg**
+- [ ] **27** *problem*  **pg**
+- [ ] **28.** *problem*  **pg**
+- [ ] **29.** *problem*  **pg**
+- [ ] **30.** *problem*  **pg**
+- [ ] **31.** *problem*  **pg**
+- [ ] **32** *problem*  **pg**
+- [ ] **33.** *problem*  **pg**
+- [ ] **34.** *problem*  **pg**
+- [ ] **35.** *problem*  **pg**
+- [ ] **36.** *problem*  **pg**
+- [ ] **37** *problem*  **pg**
+- [ ] **38.** *problem*  **pg**
+- [ ] **39.** *problem*  **pg**
+- [ ] **40.** *problem*  **pg**
+
+## 5.4 Computability
+#### Terms
+#### Propositions
+#### Questions
+#### to-do
+- [ ] **1.** *problem*  **pg**
+- [ ] **2** *problem*  **pg**
+- [ ] **3.** *problem*  **pg**
+- [ ] **4.** *problem*  **pg**
+- [ ] **5.** *problem*  **pg**
+- [ ] **6.** *problem*  **pg**
+- [ ] **7** *problem*  **pg**
+- [ ] **8.** *problem*  **pg**
+- [ ] **9.** *problem*  **pg**
+- [ ] **10.** *problem*  **pg**
+- [ ] **11.** *problem*  **pg**
+- [ ]  **12.** *problem*  **pg**
+- [ ] **13.** *problem*  **pg**
+- [ ] **14.** *problem*  **pg**
+- [ ] **15.** *problem*  **pg**
+- [ ] **16.** *problem*  **pg**
+- [ ] **17** *problem*  **pg**
+- [ ] **18.** *problem*  **pg**
+- [ ] **19.** *problem*  **pg**
+- [ ] **20.** *problem*  **pg**
+- [ ]  **21.** *problem*  **pg**
+- [ ] **22** *problem*  **pg**
+- [ ] **23.** *problem*  **pg**
+- [ ] **24.** *problem*  **pg**
+- [ ] **25.** *problem*  **pg**
+- [ ] **26.** *problem*  **pg**
+- [ ] **27** *problem*  **pg**
+- [ ] **28.** *problem*  **pg**
+- [ ] **29.** *problem*  **pg**
+- [ ] **30.** *problem*  **pg**
+- [ ] **31.** *problem*  **pg**
+- [ ] **32** *problem*  **pg**
+- [ ] **33.** *problem*  **pg**
+- [ ] **34.** *problem*  **pg**
+- [ ] **35.** *problem*  **pg**
+- [ ] **36.** *problem*  **pg**
+- [ ] **37** *problem*  **pg**
+- [ ] **38.** *problem*  **pg**
+- [ ] **39.** *problem*  **pg**
+- [ ] **40.** *problem*  **pg**
+
+## 5.5 Intractability
+#### Terms
+#### Propositions
+#### Questions
+#### to-do
+- [ ] **1.** *problem*  **pg**
+- [ ] **2** *problem*  **pg**
+- [ ] **3.** *problem*  **pg**
+- [ ] **4.** *problem*  **pg**
+- [ ] **5.** *problem*  **pg**
+- [ ] **6.** *problem*  **pg**
+- [ ] **7** *problem*  **pg**
+- [ ] **8.** *problem*  **pg**
+- [ ] **9.** *problem*  **pg**
+- [ ] **10.** *problem*  **pg**
+- [ ] **11.** *problem*  **pg**
+- [ ]  **12.** *problem*  **pg**
+- [ ] **13.** *problem*  **pg**
+- [ ] **14.** *problem*  **pg**
+- [ ] **15.** *problem*  **pg**
+- [ ] **16.** *problem*  **pg**
+- [ ] **17** *problem*  **pg**
+- [ ] **18.** *problem*  **pg**
+- [ ] **19.** *problem*  **pg**
+- [ ] **20.** *problem*  **pg**
+- [ ]  **21.** *problem*  **pg**
+- [ ] **22** *problem*  **pg**
+- [ ] **23.** *problem*  **pg**
+- [ ] **24.** *problem*  **pg**
+- [ ] **25.** *problem*  **pg**
+- [ ] **26.** *problem*  **pg**
+- [ ] **27** *problem*  **pg**
+- [ ] **28.** *problem*  **pg**
+- [ ] **29.** *problem*  **pg**
+- [ ] **30.** *problem*  **pg**
+- [ ] **31.** *problem*  **pg**
+- [ ] **32** *problem*  **pg**
+- [ ] **33.** *problem*  **pg**
+- [ ] **34.** *problem*  **pg**
+- [ ] **35.** *problem*  **pg**
+- [ ] **36.** *problem*  **pg**
+- [ ] **37** *problem*  **pg**
+- [ ] **38.** *problem*  **pg**
+- [ ] **39.** *problem*  **pg**
+- [ ] **40.** *problem*  **pg**
+
+# Chapter 6: A Computing Machine
+
+## 6.1 Representing Information
+#### Terms
+#### Propositions
+#### Questions
+#### to-do
+- [ ] **1.** *problem*  **pg**
+- [ ] **2** *problem*  **pg**
+- [ ] **3.** *problem*  **pg**
+- [ ] **4.** *problem*  **pg**
+- [ ] **5.** *problem*  **pg**
+- [ ] **6.** *problem*  **pg**
+- [ ] **7** *problem*  **pg**
+- [ ] **8.** *problem*  **pg**
+- [ ] **9.** *problem*  **pg**
+- [ ] **10.** *problem*  **pg**
+- [ ] **11.** *problem*  **pg**
+- [ ]  **12.** *problem*  **pg**
+- [ ] **13.** *problem*  **pg**
+- [ ] **14.** *problem*  **pg**
+- [ ] **15.** *problem*  **pg**
+- [ ] **16.** *problem*  **pg**
+- [ ] **17** *problem*  **pg**
+- [ ] **18.** *problem*  **pg**
+- [ ] **19.** *problem*  **pg**
+- [ ] **20.** *problem*  **pg**
+- [ ]  **21.** *problem*  **pg**
+- [ ] **22** *problem*  **pg**
+- [ ] **23.** *problem*  **pg**
+- [ ] **24.** *problem*  **pg**
+- [ ] **25.** *problem*  **pg**
+- [ ] **26.** *problem*  **pg**
+- [ ] **27** *problem*  **pg**
+- [ ] **28.** *problem*  **pg**
+- [ ] **29.** *problem*  **pg**
+- [ ] **30.** *problem*  **pg**
+- [ ] **31.** *problem*  **pg**
+- [ ] **32** *problem*  **pg**
+- [ ] **33.** *problem*  **pg**
+- [ ] **34.** *problem*  **pg**
+- [ ] **35.** *problem*  **pg**
+- [ ] **36.** *problem*  **pg**
+- [ ] **37** *problem*  **pg**
+- [ ] **38.** *problem*  **pg**
+- [ ] **39.** *problem*  **pg**
+- [ ] **40.** *problem*  **pg**
+
+## 6.2 TOY Machine
+#### Terms
+#### Propositions
+#### Questions
+#### to-do
+- [ ] **1.** *problem*  **pg**
+- [ ] **2** *problem*  **pg**
+- [ ] **3.** *problem*  **pg**
+- [ ] **4.** *problem*  **pg**
+- [ ] **5.** *problem*  **pg**
+- [ ] **6.** *problem*  **pg**
+- [ ] **7** *problem*  **pg**
+- [ ] **8.** *problem*  **pg**
+- [ ] **9.** *problem*  **pg**
+- [ ] **10.** *problem*  **pg**
+- [ ] **11.** *problem*  **pg**
+- [ ]  **12.** *problem*  **pg**
+- [ ] **13.** *problem*  **pg**
+- [ ] **14.** *problem*  **pg**
+- [ ] **15.** *problem*  **pg**
+- [ ] **16.** *problem*  **pg**
+- [ ] **17** *problem*  **pg**
+- [ ] **18.** *problem*  **pg**
+- [ ] **19.** *problem*  **pg**
+- [ ] **20.** *problem*  **pg**
+- [ ]  **21.** *problem*  **pg**
+- [ ] **22** *problem*  **pg**
+- [ ] **23.** *problem*  **pg**
+- [ ] **24.** *problem*  **pg**
+- [ ] **25.** *problem*  **pg**
+- [ ] **26.** *problem*  **pg**
+- [ ] **27** *problem*  **pg**
+- [ ] **28.** *problem*  **pg**
+- [ ] **29.** *problem*  **pg**
+- [ ] **30.** *problem*  **pg**
+- [ ] **31.** *problem*  **pg**
+- [ ] **32** *problem*  **pg**
+- [ ] **33.** *problem*  **pg**
+- [ ] **34.** *problem*  **pg**
+- [ ] **35.** *problem*  **pg**
+- [ ] **36.** *problem*  **pg**
+- [ ] **37** *problem*  **pg**
+- [ ] **38.** *problem*  **pg**
+- [ ] **39.** *problem*  **pg**
+- [ ] **40.** *problem*  **pg**
+
+## 6.3 Machine Language Programming
+#### Terms
+#### Propositions
+#### Questions
+#### to-do
+- [ ] **1.** *problem*  **pg**
+- [ ] **2** *problem*  **pg**
+- [ ] **3.** *problem*  **pg**
+- [ ] **4.** *problem*  **pg**
+- [ ] **5.** *problem*  **pg**
+- [ ] **6.** *problem*  **pg**
+- [ ] **7** *problem*  **pg**
+- [ ] **8.** *problem*  **pg**
+- [ ] **9.** *problem*  **pg**
+- [ ] **10.** *problem*  **pg**
+- [ ] **11.** *problem*  **pg**
+- [ ]  **12.** *problem*  **pg**
+- [ ] **13.** *problem*  **pg**
+- [ ] **14.** *problem*  **pg**
+- [ ] **15.** *problem*  **pg**
+- [ ] **16.** *problem*  **pg**
+- [ ] **17** *problem*  **pg**
+- [ ] **18.** *problem*  **pg**
+- [ ] **19.** *problem*  **pg**
+- [ ] **20.** *problem*  **pg**
+- [ ]  **21.** *problem*  **pg**
+- [ ] **22** *problem*  **pg**
+- [ ] **23.** *problem*  **pg**
+- [ ] **24.** *problem*  **pg**
+- [ ] **25.** *problem*  **pg**
+- [ ] **26.** *problem*  **pg**
+- [ ] **27** *problem*  **pg**
+- [ ] **28.** *problem*  **pg**
+- [ ] **29.** *problem*  **pg**
+- [ ] **30.** *problem*  **pg**
+- [ ] **31.** *problem*  **pg**
+- [ ] **32** *problem*  **pg**
+- [ ] **33.** *problem*  **pg**
+- [ ] **34.** *problem*  **pg**
+- [ ] **35.** *problem*  **pg**
+- [ ] **36.** *problem*  **pg**
+- [ ] **37** *problem*  **pg**
+- [ ] **38.** *problem*  **pg**
+- [ ] **39.** *problem*  **pg**
+- [ ] **40.** *problem*  **pg**
+
+## 6.4 TOY Virtual Machine
+#### Terms
+#### Propositions
+#### Questions
+#### to-do
+- [ ] **1.** *problem*  **pg**
+- [ ] **2** *problem*  **pg**
+- [ ] **3.** *problem*  **pg**
+- [ ] **4.** *problem*  **pg**
+- [ ] **5.** *problem*  **pg**
+- [ ] **6.** *problem*  **pg**
+- [ ] **7** *problem*  **pg**
+- [ ] **8.** *problem*  **pg**
+- [ ] **9.** *problem*  **pg**
+- [ ] **10.** *problem*  **pg**
+- [ ] **11.** *problem*  **pg**
+- [ ]  **12.** *problem*  **pg**
+- [ ] **13.** *problem*  **pg**
+- [ ] **14.** *problem*  **pg**
+- [ ] **15.** *problem*  **pg**
+- [ ] **16.** *problem*  **pg**
+- [ ] **17** *problem*  **pg**
+- [ ] **18.** *problem*  **pg**
+- [ ] **19.** *problem*  **pg**
+- [ ] **20.** *problem*  **pg**
+- [ ]  **21.** *problem*  **pg**
+- [ ] **22** *problem*  **pg**
+- [ ] **23.** *problem*  **pg**
+- [ ] **24.** *problem*  **pg**
+- [ ] **25.** *problem*  **pg**
+- [ ] **26.** *problem*  **pg**
+- [ ] **27** *problem*  **pg**
+- [ ] **28.** *problem*  **pg**
+- [ ] **29.** *problem*  **pg**
+- [ ] **30.** *problem*  **pg**
+- [ ] **31.** *problem*  **pg**
+- [ ] **32** *problem*  **pg**
+- [ ] **33.** *problem*  **pg**
+- [ ] **34.** *problem*  **pg**
+- [ ] **35.** *problem*  **pg**
+- [ ] **36.** *problem*  **pg**
+- [ ] **37** *problem*  **pg**
+- [ ] **38.** *problem*  **pg**
+- [ ] **39.** *problem*  **pg**
+- [ ] **40.** *problem*  **pg**
+
+# Chapter 7: Building a Computing Device
+
+## 7.1 Boolean Logic
+#### Terms
+#### Propositions
+#### Questions
+#### to-do
+- [ ] **1.** *problem*  **pg**
+- [ ] **2** *problem*  **pg**
+- [ ] **3.** *problem*  **pg**
+- [ ] **4.** *problem*  **pg**
+- [ ] **5.** *problem*  **pg**
+- [ ] **6.** *problem*  **pg**
+- [ ] **7** *problem*  **pg**
+- [ ] **8.** *problem*  **pg**
+- [ ] **9.** *problem*  **pg**
+- [ ] **10.** *problem*  **pg**
+- [ ] **11.** *problem*  **pg**
+- [ ]  **12.** *problem*  **pg**
+- [ ] **13.** *problem*  **pg**
+- [ ] **14.** *problem*  **pg**
+- [ ] **15.** *problem*  **pg**
+- [ ] **16.** *problem*  **pg**
+- [ ] **17** *problem*  **pg**
+- [ ] **18.** *problem*  **pg**
+- [ ] **19.** *problem*  **pg**
+- [ ] **20.** *problem*  **pg**
+- [ ]  **21.** *problem*  **pg**
+- [ ] **22** *problem*  **pg**
+- [ ] **23.** *problem*  **pg**
+- [ ] **24.** *problem*  **pg**
+- [ ] **25.** *problem*  **pg**
+- [ ] **26.** *problem*  **pg**
+- [ ] **27** *problem*  **pg**
+- [ ] **28.** *problem*  **pg**
+- [ ] **29.** *problem*  **pg**
+- [ ] **30.** *problem*  **pg**
+- [ ] **31.** *problem*  **pg**
+- [ ] **32** *problem*  **pg**
+- [ ] **33.** *problem*  **pg**
+- [ ] **34.** *problem*  **pg**
+- [ ] **35.** *problem*  **pg**
+- [ ] **36.** *problem*  **pg**
+- [ ] **37** *problem*  **pg**
+- [ ] **38.** *problem*  **pg**
+- [ ] **39.** *problem*  **pg**
+- [ ] **40.** *problem*  **pg**
+
+## 7.2 Basic Circuit Model
+#### Terms
+#### Propositions
+#### Questions
+#### to-do
+- [ ] **1.** *problem*  **pg**
+- [ ] **2** *problem*  **pg**
+- [ ] **3.** *problem*  **pg**
+- [ ] **4.** *problem*  **pg**
+- [ ] **5.** *problem*  **pg**
+- [ ] **6.** *problem*  **pg**
+- [ ] **7** *problem*  **pg**
+- [ ] **8.** *problem*  **pg**
+- [ ] **9.** *problem*  **pg**
+- [ ] **10.** *problem*  **pg**
+- [ ] **11.** *problem*  **pg**
+- [ ]  **12.** *problem*  **pg**
+- [ ] **13.** *problem*  **pg**
+- [ ] **14.** *problem*  **pg**
+- [ ] **15.** *problem*  **pg**
+- [ ] **16.** *problem*  **pg**
+- [ ] **17** *problem*  **pg**
+- [ ] **18.** *problem*  **pg**
+- [ ] **19.** *problem*  **pg**
+- [ ] **20.** *problem*  **pg**
+- [ ]  **21.** *problem*  **pg**
+- [ ] **22** *problem*  **pg**
+- [ ] **23.** *problem*  **pg**
+- [ ] **24.** *problem*  **pg**
+- [ ] **25.** *problem*  **pg**
+- [ ] **26.** *problem*  **pg**
+- [ ] **27** *problem*  **pg**
+- [ ] **28.** *problem*  **pg**
+- [ ] **29.** *problem*  **pg**
+- [ ] **30.** *problem*  **pg**
+- [ ] **31.** *problem*  **pg**
+- [ ] **32** *problem*  **pg**
+- [ ] **33.** *problem*  **pg**
+- [ ] **34.** *problem*  **pg**
+- [ ] **35.** *problem*  **pg**
+- [ ] **36.** *problem*  **pg**
+- [ ] **37** *problem*  **pg**
+- [ ] **38.** *problem*  **pg**
+- [ ] **39.** *problem*  **pg**
+- [ ] **40.** *problem*  **pg**
+
+## 7.3 Combinational Circuits
+#### Terms
+#### Propositions
+#### Questions
+#### to-do
+- [ ] **1.** *problem*  **pg**
+- [ ] **2** *problem*  **pg**
+- [ ] **3.** *problem*  **pg**
+- [ ] **4.** *problem*  **pg**
+- [ ] **5.** *problem*  **pg**
+- [ ] **6.** *problem*  **pg**
+- [ ] **7** *problem*  **pg**
+- [ ] **8.** *problem*  **pg**
+- [ ] **9.** *problem*  **pg**
+- [ ] **10.** *problem*  **pg**
+- [ ] **11.** *problem*  **pg**
+- [ ]  **12.** *problem*  **pg**
+- [ ] **13.** *problem*  **pg**
+- [ ] **14.** *problem*  **pg**
+- [ ] **15.** *problem*  **pg**
+- [ ] **16.** *problem*  **pg**
+- [ ] **17** *problem*  **pg**
+- [ ] **18.** *problem*  **pg**
+- [ ] **19.** *problem*  **pg**
+- [ ] **20.** *problem*  **pg**
+- [ ]  **21.** *problem*  **pg**
+- [ ] **22** *problem*  **pg**
+- [ ] **23.** *problem*  **pg**
+- [ ] **24.** *problem*  **pg**
+- [ ] **25.** *problem*  **pg**
+- [ ] **26.** *problem*  **pg**
+- [ ] **27** *problem*  **pg**
+- [ ] **28.** *problem*  **pg**
+- [ ] **29.** *problem*  **pg**
+- [ ] **30.** *problem*  **pg**
+- [ ] **31.** *problem*  **pg**
+- [ ] **32** *problem*  **pg**
+- [ ] **33.** *problem*  **pg**
+- [ ] **34.** *problem*  **pg**
+- [ ] **35.** *problem*  **pg**
+- [ ] **36.** *problem*  **pg**
+- [ ] **37** *problem*  **pg**
+- [ ] **38.** *problem*  **pg**
+- [ ] **39.** *problem*  **pg**
+- [ ] **40.** *problem*  **pg**
+
+## 7.4 Sequential Circuits
+#### Terms
+#### Propositions
+#### Questions
+#### to-do
+- [ ] **1.** *problem*  **pg**
+- [ ] **2** *problem*  **pg**
+- [ ] **3.** *problem*  **pg**
+- [ ] **4.** *problem*  **pg**
+- [ ] **5.** *problem*  **pg**
+- [ ] **6.** *problem*  **pg**
+- [ ] **7** *problem*  **pg**
+- [ ] **8.** *problem*  **pg**
+- [ ] **9.** *problem*  **pg**
+- [ ] **10.** *problem*  **pg**
+- [ ] **11.** *problem*  **pg**
+- [ ]  **12.** *problem*  **pg**
+- [ ] **13.** *problem*  **pg**
+- [ ] **14.** *problem*  **pg**
+- [ ] **15.** *problem*  **pg**
+- [ ] **16.** *problem*  **pg**
+- [ ] **17** *problem*  **pg**
+- [ ] **18.** *problem*  **pg**
+- [ ] **19.** *problem*  **pg**
+- [ ] **20.** *problem*  **pg**
+- [ ]  **21.** *problem*  **pg**
+- [ ] **22** *problem*  **pg**
+- [ ] **23.** *problem*  **pg**
+- [ ] **24.** *problem*  **pg**
+- [ ] **25.** *problem*  **pg**
+- [ ] **26.** *problem*  **pg**
+- [ ] **27** *problem*  **pg**
+- [ ] **28.** *problem*  **pg**
+- [ ] **29.** *problem*  **pg**
+- [ ] **30.** *problem*  **pg**
+- [ ] **31.** *problem*  **pg**
+- [ ] **32** *problem*  **pg**
+- [ ] **33.** *problem*  **pg**
+- [ ] **34.** *problem*  **pg**
+- [ ] **35.** *problem*  **pg**
+- [ ] **36.** *problem*  **pg**
+- [ ] **37** *problem*  **pg**
+- [ ] **38.** *problem*  **pg**
+- [ ] **39.** *problem*  **pg**
+- [ ] **40.** *problem*  **pg**
+
+## 7.5 Digital Devices
+#### Terms
+#### Propositions
+#### Questions
+#### to-do
+- [ ] **1.** *problem*  **pg**
+- [ ] **2** *problem*  **pg**
+- [ ] **3.** *problem*  **pg**
+- [ ] **4.** *problem*  **pg**
+- [ ] **5.** *problem*  **pg**
+- [ ] **6.** *problem*  **pg**
+- [ ] **7** *problem*  **pg**
+- [ ] **8.** *problem*  **pg**
+- [ ] **9.** *problem*  **pg**
+- [ ] **10.** *problem*  **pg**
+- [ ] **11.** *problem*  **pg**
+- [ ]  **12.** *problem*  **pg**
+- [ ] **13.** *problem*  **pg**
+- [ ] **14.** *problem*  **pg**
+- [ ] **15.** *problem*  **pg**
+- [ ] **16.** *problem*  **pg**
+- [ ] **17** *problem*  **pg**
+- [ ] **18.** *problem*  **pg**
+- [ ] **19.** *problem*  **pg**
+- [ ] **20.** *problem*  **pg**
+- [ ]  **21.** *problem*  **pg**
+- [ ] **22** *problem*  **pg**
+- [ ] **23.** *problem*  **pg**
+- [ ] **24.** *problem*  **pg**
+- [ ] **25.** *problem*  **pg**
+- [ ] **26.** *problem*  **pg**
+- [ ] **27** *problem*  **pg**
+- [ ] **28.** *problem*  **pg**
+- [ ] **29.** *problem*  **pg**
+- [ ] **30.** *problem*  **pg**
+- [ ] **31.** *problem*  **pg**
+- [ ] **32** *problem*  **pg**
+- [ ] **33.** *problem*  **pg**
+- [ ] **34.** *problem*  **pg**
+- [ ] **35.** *problem*  **pg**
+- [ ] **36.** *problem*  **pg**
+- [ ] **37** *problem*  **pg**
+- [ ] **38.** *problem*  **pg**
+- [ ] **39.** *problem*  **pg**
+- [ ] **40.** *problem*  **pg**
+
+# Context
+##### Java libraries
+##### Programming environments
+##### Scientific computing
+##### Apps and cloud computing
+##### Computer systems
+##### Theory of computing
+##### Machine learning

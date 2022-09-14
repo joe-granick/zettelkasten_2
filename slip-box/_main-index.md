@@ -25,9 +25,8 @@ data properties impose constraints on potential analysis -
 
 # Computer Science
 
-**Data-Type**
-- Formally defined by value domain and associated operations[[202207121923-data types formally defined by values and operations|202207121923]]
-
+## **Data-Type**
+- ==Formally defined by value domain and associated operations== [[202207121923-data types formally defined by values and operations|202207121923]]
 - **Strong Typing**
 	- Important to know data-type to prevent errors, especially for **strongly typed** languages (eg *Java*) [[202207121924a1--must always be aware of data typed used in program written in strongly typed language|202207121924]]
 - **Primitive**
@@ -40,6 +39,19 @@ data properties impose constraints on potential analysis -
 2. conditionals
 3. loops
 4. arrays
+### Built In data types
+**Expressions**
+- Expressions [[202207150901- expressions compute new values by combining entities like formulas in math|202207150901]]
+- Composed of 
+	- [[operator]]
+	- [[literal]]
+		- literal are how a programming language represents a value [[202207121947c-literals are how Java represent data-type value|202207121947c]]
+	- [[variables]]
+		- variable is a name that refers to a mutable value[[202207150840-variables store data-type values that can be changed referred by name]]
+	- [[operations]]
+		- [[boolean operand]] most common
+
+
 ### Paradigms
 - **Procedural**
 - **Functional**

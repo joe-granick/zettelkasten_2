@@ -1,5 +1,4 @@
 #flashcards/intro-to-cs/exam-1 
-
 Which, if any, of the following is NOT a primitive type in Java
 	1. int
 	2. double
