@@ -13,7 +13,9 @@ Dates:
 Exams:
 Pre-Requistes:
 Pre-Requisites to:
+- [[01-198-112 Data Structures]]
 Grades:
+URL: https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-111-introduction-to-computer-science
 
 # Exams
 ## Exam 1
@@ -30,6 +32,7 @@ Grades:
 	- [ ] [**(1.6)**](https://youtu.be/2P9O3g2Zie8) Count the number of operations executed in an algorithm involving decision statements.
 
 ### Week 2 Algorithmic Thinking and Analysis
+- [ ] Review counting operations examples (Lecture slides 2)
 - [ ] Review video lectures
 	- [ ] **(2.1)** Given a problem specification, determine the inputs, outputs and error conditions of the algorithmic solution to the problem
 	- [ ] [**(2.2)**](https://youtu.be/OyAbVnnZAlw) Analyze algorithms by counting operations executed in the algorithm
@@ -39,7 +42,7 @@ Grades:
 - [ ] HW1 Psuedocode Open: 9/16 Due: 9/23
 - [x] **Recitation PreQuiz Due: 9/16**
 - [ ] **Recitation PostQuiz Due:9/17**
-- [[Week-2 Lecture 1]]
+- [[Week-2L1]]
 #### Currently unlcear
 **Identify** (*precise definition needed*)
 - variable

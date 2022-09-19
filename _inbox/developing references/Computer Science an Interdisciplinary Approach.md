@@ -11,7 +11,7 @@ Date:
 Year: 
 Edition:
 URL: https://introcs.cs.princeton.edu/java/home/
-Class: [[1. Intro to computer science]]
+Class: [[01-198-205 Intro to computer science]]
 
 
 ## What kind of book is this?
@@ -796,7 +796,7 @@ public class MontyHall {
 	- [[binomial coefficient]] **125**
 	- [[Pascal's Triangle]] **125**
 
-### Key sentences
+#### Key sentences
 - "Using an expression to index into an array plays a central role and enables a computation that would not otherwise be possible" **100**
 	- Coupon collector
 	- Sieve of Eratosthenes 
@@ -805,7 +805,7 @@ public class MontyHall {
 	2. creation
 	3. initialization
 
-### Key questions
+#### Key questions
 - What is done at run time
 	- arrays **created** explicitly at run-time because compiler won't always know how much space to allocate at compile time 
 		- Java allocates primitve variable memory at run-time as well?
@@ -813,7 +813,7 @@ public class MontyHall {
 		- variables do not need `new` keyword with memory specification as it is standard for each data type
 - What is done at compile time
 
-### Arrays in Java
+#### Arrays in Java
 - 3 Steps to make array in Java **(91)**
 	1. **Declare** array with data type and *indentfier*
 	2. **Create array** specify length*
@@ -971,7 +971,7 @@ double[] a = new double a[n];
 - Arrays can be used where previously would need many if statements or a switch statement **100**
 	- arrays used where conditionals change based on the number of a variable
 	- variable can be translated to the array index and the conditional return value can be the element at that index
-### Coupon collector
+#### Coupon collector
 - implemented for cards, but type of problem of interest in science **101**
 - can be used to simulate sequences like genetic sequences to se how like they are to occur at random **101**
 
@@ -1027,7 +1027,7 @@ public class CouponCollector {
 }
 ```
 
-### Sieve of Eratosthenes
+#### Sieve of Eratosthenes
 - Prime numbers incredibly important in number theory, computation, and cryptography **103**
 - $\pi(n)$ number of primes $\le n$ **103** 
 - Naive approach, something like the example  `Factors.java` but the number of operations grows  nearly **exponentially** $\mathcal{O}(n \sqrt{n})$        
@@ -1036,7 +1036,7 @@ public class CouponCollector {
 - This is implemented in Java using an array; cuts down on number of redundant loop operations as numbers eliminated numbers can be stored and looked up immediately to verify they can be skipped as they are already know to not be prime **103**
 - Tiem complexity plumets to  $\mathcal{O}(n \log{\log{n}})$        
 - SIeves are common technique in number theory 
-### Two-dimensional arrays
+#### Two-dimensional arrays
 - Often useful to organize data into a table of rows and columns where each row represents an obervation/entity and each column s a variable of interest **106**
 	- Teachers keeping table of students as rows and tests scores as columns
 - Mathematical abstraction for tables is a **matrix** **106**
@@ -1136,7 +1136,7 @@ double[][] a =
 - arrays can be extended to $n$ dimension using same syntax **111**
 - `double[][][] a = new double[][][]` **111**
 - **tensors** are matrices generalized to *n-dimensional space*
-### Example: self-avoiding random walks
+#### Example: self-avoiding random walks
 - **self-avoiding random walks** used to study random walks **112**
 - set up movement on grid, goal is to escape the grid stops if surrounded by dead ends **112**
 - Can study how % of times automaton gets surrounded by dead-ends vs times escaped as the grid size grows **112**
@@ -1151,7 +1151,7 @@ double[][] a =
 - *self-avoiding random walks* open problem without mathematical solution **113**
 - no succinct mathematical expression for the **escape probability**, **average path length** and most other important parameters **113**
 
-### Summary
+#### Summary
 4 elements found in almost every language:
 1. Assignments
 2. Conditionals
@@ -1288,7 +1288,7 @@ double[][] a =
 
 
 
-## 1.6 Case Study: Random Web-Surfer
+### 1.6 Case Study: Random Web-Surfer
 #### Terms
 #### Propositions
 #### Questions
@@ -1334,13 +1334,43 @@ double[][] a =
 - [ ] **39.** *problem*  **pg**
 - [ ] **40.** *problem*  **pg**
 
+
+## Chapter 2: Functions and Modules
 ### 2.1 Defining functions
+#### Learning Objectives
+**(7.1a)** Explain the meaning and use of static methods in Java.
+**(7.1b)** Use pre-existing functions/modules when writing program code.
+**(7.1c)** Define and use static methods with and without parameters in program code.
+**(7.1d)** Define and use static methods with and without return values in program code.
+**(7.1e)** Define and use static methods that include arrays as parameters or return types.
+**(7.1f)** Explain and illustrate the call stack for a program that includes multiple method calls.
+**(7.1g)** Trace and write programs that include methods having multiple return statements.
+**(7.1h)** Write program code that includes calls to Java Library methods. 
+**(7.1i)** Describe the meaning of each part of a method signature.
+**(7.1j)** Identify the scope of variables in a program that includes multiple methods.
+**(7.1k)** Explain the difference between local variables and parameter variables.
+**(7.1l)** Explain the difference between a method implementation and a method call.
+**(7.1m)** Trace and write programs involving overloaded methods.
+**(7.1n)** Identify the scope of a variables in a program with multiple methods and method calls.
+**(7.1o)** Use debugging tools to step through code in order to identify errors at various stages of program development.
 
 #### Terms
+- [[static method]]
+- [[modularity]] **193**
+- [[encapsulation]] **205**
 #### Propositions
+- *whenever you can clearly separate tasks within programs you should do so*
 #### Questions
 #### Static methods
+- static methods change a program's control flow **193**
+- can define separate static methods to separate tasks **193**
+- **modularity** whenever you can clearly separate tasks within programs you should do so **193**
 ##### Control flow
+- despite physical placement within a class, java executes `main` method first... always **193**
+- from main java can **call** on another static method causing **transfer of control** to the called method **193**
+	- this can even be called from other classes
+- a variable can be passed from calling method as argument for parameter in called method **194**
+- **static methods** work as standalone functions and are not tied to an object
 ##### Function-call trace
 ##### Terminology
 ##### Static method definition
@@ -1356,9 +1386,19 @@ double[][] a =
 ##### Closed form
 ##### No closed form
 #### Using static methods to organize code
+- Ability to calculate output values based on an input value is important for organizing complex control flow **205**
+- essential to taking advantage of **modularity** in organization of code **205**
+- separating distinct task into their own methods allows us to change specific method without have to worry about impact on other methods **205**
+- using static methods allows for specific function to be **encapsulated**
 #### Passing arguments and returning values
 ##### Pass by value
+- **pass by value** allows parameter variables to be used anywhere within the method the same way as a **local variable** **207**
+	- only difference is that a parameter argument is evaluated by java calling the code and initializing it as the return value
+- works with value of arguments rather than argument itself
+- changing parameter variable within the static method has no effect on calling code
+	- doesn't change the input variable outside the method
 ##### Arrays as arguments
+
 ##### Side effects with arrays
 ##### Arrays as return values
 #### Example: superposition of sound waves
@@ -1405,7 +1445,7 @@ double[][] a =
 - [ ] **39.** *problem*  **pg**
 - [ ] **40.** *problem*  **pg**
 
-## 2.2 Libraries and Clients
+### 2.2 Libraries and Clients
 #### Terms
 #### Propositions
 #### Questions
@@ -1451,7 +1491,7 @@ double[][] a =
 - [ ] **39.** *problem*  **pg**
 - [ ] **40.** *problem*  **pg**
 
-## 2.3 Recursion
+### 2.3 Recursion
 #### Terms
 #### Propositions
 #### Questions
@@ -1497,7 +1537,7 @@ double[][] a =
 - [ ] **39.** *problem*  **pg**
 - [ ] **40.** *problem*  **pg**
 
-## 2.4 Case Study: Percolation
+### 2.4 Case Study: Percolation
 #### Terms
 #### Propositions
 #### Questions
@@ -1543,9 +1583,9 @@ double[][] a =
 - [ ] **39.** *problem*  **pg**
 - [ ] **40.** *problem*  **pg**
 
-# Chapter 3: Object Oriented Programming
+## Chapter 3: Object Oriented Programming
 
-## 3.1 Using Data Types
+### 3.1 Using Data Types
 #### Terms
 #### Propositions
 #### Questions
@@ -1591,7 +1631,7 @@ double[][] a =
 - [ ] **39.** *problem*  **pg**
 - [ ] **40.** *problem*  **pg**
 
-## 3.2 Creating Data Types
+### 3.2 Creating Data Types
 #### Terms
 #### Propositions
 #### Questions
@@ -1637,7 +1677,7 @@ double[][] a =
 - [ ] **39.** *problem*  **pg**
 - [ ] **40.** *problem*  **pg**
 
-## 3.3 Designing Data Types
+### 3.3 Designing Data Types
 #### Terms
 #### Propositions
 #### Questions
@@ -1683,7 +1723,7 @@ double[][] a =
 - [ ] **39.** *problem*  **pg**
 - [ ] **40.** *problem*  **pg**
 
-## 3.4 Case Study: N-Body Simulation
+### 3.4 Case Study: N-Body Simulation
 #### Terms
 #### Propositions
 #### Questions
@@ -1729,9 +1769,9 @@ double[][] a =
 - [ ] **39.** *problem*  **pg**
 - [ ] **40.** *problem*  **pg**
 
-# Chapter 4: Algorithms and Data Structures
+## Chapter 4: Algorithms and Data Structures
 
-## 4.1 Performance
+### 4.1 Performance
 #### Terms
 #### Propositions
 #### Questions
@@ -1777,7 +1817,7 @@ double[][] a =
 - [ ] **39.** *problem*  **pg**
 - [ ] **40.** *problem*  **pg**
 
-## 4.2 Sorting and Searching
+### 4.2 Sorting and Searching
 #### Terms
 #### Propositions
 #### Questions
@@ -1823,7 +1863,7 @@ double[][] a =
 - [ ] **39.** *problem*  **pg**
 - [ ] **40.** *problem*  **pg**
 
-## 4.3 Stacks and Queues
+### 4.3 Stacks and Queues
 #### Terms
 #### Propositions
 #### Questions
@@ -1869,7 +1909,7 @@ double[][] a =
 - [ ] **39.** *problem*  **pg**
 - [ ] **40.** *problem*  **pg**
 
-## 4.4 Symbol Tables
+### 4.4 Symbol Tables
 #### Terms
 #### Propositions
 #### Questions
@@ -1915,7 +1955,7 @@ double[][] a =
 - [ ] **39.** *problem*  **pg**
 - [ ] **40.** *problem*  **pg**
 
-## 4.5 Case Study: Small World
+### 4.5 Case Study: Small World
 #### Terms
 #### Propositions
 #### Questions
