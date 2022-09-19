@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
+            "file": "class/Week-3L1.md",
             "mode": "source",
             "backlinks": true,
             "source": false
@@ -58,8 +58,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -80,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
+                "file": "class/Week-3L1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,7 +96,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
+                "file": "class/Week-3L1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,15 +138,15 @@
   },
   "active": "2da61acda1bae7a9",
   "lastOpenFiles": [
+    "Untitled 3.md",
+    "class/Week-3L1.md",
+    "class/flashcards/W3L1.md",
+    "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
     "class/flashcards/HW1-1.md",
     "Untitled 2.md",
     "class/flashcards/W3R-1.md",
     "class/flashcards/W2R-2.md",
     "class/flashcards/W2R-3.md",
-    "class/flashcards/W2R-1.md",
-    "Untitled 1.md",
-    "class/01-198-205 Intro to computer science.md",
-    "class/flashcards/W2R-1 1 2.md",
-    "class/flashcards/W2R-1 1 1 1.md"
+    "class/flashcards/W2R-1.md"
   ]
 }
