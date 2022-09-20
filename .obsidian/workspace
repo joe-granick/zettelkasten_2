@@ -9,11 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-<<<<<<< HEAD
-            "file": "_project/202209191151-DL for tabular data.md",
-=======
             "file": "class/Week-3L1.md",
->>>>>>> bba200083904ef148a88e59edc7502021603483e
             "mode": "source",
             "backlinks": true,
             "source": false
@@ -66,7 +62,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 782.5,
+    "width": 528.5,
     "collapsed": true
   },
   "right": {
@@ -83,11 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-<<<<<<< HEAD
-                "file": "_project/202209191151-DL for tabular data.md",
-=======
                 "file": "class/Week-3L1.md",
->>>>>>> bba200083904ef148a88e59edc7502021603483e
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,11 +96,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-<<<<<<< HEAD
-                "file": "_project/202209191151-DL for tabular data.md",
-=======
                 "file": "class/Week-3L1.md",
->>>>>>> bba200083904ef148a88e59edc7502021603483e
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,25 +138,15 @@
   },
   "active": "2da61acda1bae7a9",
   "lastOpenFiles": [
-<<<<<<< HEAD
-=======
-    "Untitled 3.md",
+    "class/flashcards/W3R-1.md",
+    "class/01-198-205 Introduction to Discrete Structures 1.md",
     "class/Week-3L1.md",
+    "Untitled 3.md",
     "class/flashcards/W3L1.md",
->>>>>>> bba200083904ef148a88e59edc7502021603483e
     "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
     "class/flashcards/HW1-1.md",
     "Untitled 2.md",
-    "class/flashcards/W3R-1.md",
     "class/flashcards/W2R-2.md",
-    "class/flashcards/W2R-3.md",
-<<<<<<< HEAD
-    "class/flashcards/W2R-1.md",
-    "Untitled 1.md",
-    "class/01-198-205 Intro to computer science.md",
-    "class/flashcards/W2R-1 1 2.md"
-=======
-    "class/flashcards/W2R-1.md"
->>>>>>> bba200083904ef148a88e59edc7502021603483e
+    "class/flashcards/W2R-3.md"
   ]
 }

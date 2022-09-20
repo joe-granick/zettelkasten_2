@@ -20,7 +20,30 @@ Grades:
 **3.1** **Java Programs**
 https://youtu.be/1wee9uiyrhk
 -   (3.1a) Edit, compile, and run a program
--   (3.1b) Find and correct errors in a program
+-   (3.1b) Find and correct errors in a 
+- (8:20) **public** class like bathrooms
+- name of file must be same as name of class
+- filename ending in **.java**
+- **main method** 
+- What does it take to run a java program?
+	-  Have to compile before running**s15**
+	- **compiler** is just a program that checks syntax before running
+	- **syntax errors** 
+		- misspelled keywords
+		- missing semicolons/braces etc.
+	- java program is **input** for compiler
+	- **compiler** takes source code as input and outputs the **byte code**
+	- **byte code** is closer to the machine code, and is difficult for humans to understand
+	- **how to compile
+		- `javac Fileame.java`
+		- produces class file `filename.class`
+	- **Interpreter** takes bytecode and executes **one line at the time**	
+		- 	- **Interpreter** takes bytecode and executes **one line at the time**
+		- **java virtual machine (*JVM*)** command called with `java`
+		- follow with class method you want to call and any input arguments `java classMethod args`
+	- comments not executed
+		- used for explanation/reminder for programmers
+
 **3.2 Built In Data Types**
 https://youtu.be/f4jBh9OfCds
 -   **(3.2a)** Identify the four primitive types in Java and operations on those primitive types.
@@ -33,6 +56,23 @@ https://youtu.be/f4jBh9OfCds
 -   **(3.2d)** Evaluate results of assignment statements involving arithmetic operations.
 -   **(3.2e)** Write and evaluate statements involving compound assignment operators (+=, -=, etc.).
 -   **(3.2f)** Evaluate given expressions that involve the primitive types and/or  Strings and operations performed on them.
+- **data type** is a set of values and a set of operations on those values
+	- related to **domain** and **range**
+- **variables** have a data type and the corresponding set of operations that can be performed on that type of data
+- **primitive data types**
+-  `int`: `+,-,*,/,% `
+	- `double: `+,-,*,/`
+	- `boolean`: `&&, ||, !`
+	- `char`: 
+- **strings** are a special data type. They are not a primitive type, but are a **basic data type** and is syntactically treated similarly
+	- `String` data-type variables **declared** and **assigned** like primitve data type variables
+	- Have built in **concatenation** operation utilize with `+` operators 
+	- They are built in but not primitive as they are just a composition of the built in primitive `char` data-type
+- variables can be declared and assigned at same time
+- **declaration** declare data type and identifier for variable
+- **assignment** store value of corresponding data type in variable
+- use **camel case** for naming variables (and methods later on)
+- 
 **3.3 Input and Output**
 https://youtu.be/CPvJjbmowwg
 -   (3.3a) Use _System.out.println(…)_ method to output information as a String in a Java program.
