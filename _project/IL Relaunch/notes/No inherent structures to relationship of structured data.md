@@ -1,0 +1,1 @@
+No way to extract common structure in tabular parameters data like image and text data as no information conveyed by the proximity of variables beyond the whim of the person who constructed it

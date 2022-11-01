@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "2da61acda1bae7a9",
+        "id": "529a39d4986e6f79",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "class/Week-3L1.md",
+            "file": "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/__inbox/R4 Conditionals and Loops.md",
             "mode": "source",
             "backlinks": true,
             "source": false
@@ -27,14 +27,6 @@
         "id": "c79c68be5fd0c6df",
         "type": "tabs",
         "children": [
-          {
-            "id": "c2c3b9e9934a9c8a",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {}
-            }
-          },
           {
             "id": "84f6d2d399534710",
             "type": "leaf",
@@ -57,13 +49,21 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "5826e619d4132bc7",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 528.5,
-    "collapsed": true
+    "width": 378.5
   },
   "right": {
     "id": "c3be8f9964344a2c",
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "class/Week-3L1.md",
+                "file": "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/__inbox/R4 Conditionals and Loops.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,7 +96,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "class/Week-3L1.md",
+                "file": "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/__inbox/R4 Conditionals and Loops.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,17 +136,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "2da61acda1bae7a9",
+  "active": "529a39d4986e6f79",
   "lastOpenFiles": [
-    "class/flashcards/W3R-1.md",
-    "class/01-198-205 Introduction to Discrete Structures 1.md",
-    "class/Week-3L1.md",
-    "Untitled 3.md",
-    "class/flashcards/W3L1.md",
-    "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
-    "class/flashcards/HW1-1.md",
-    "Untitled 2.md",
-    "class/flashcards/W2R-2.md",
-    "class/flashcards/W2R-3.md"
+    "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/__inbox/R4 Conditionals and Loops.md",
+    "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/__inbox/Week-3R.md",
+    "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/__inbox/Week-2R.md",
+    "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/WEEK4/LO4.1e/L4 Pop Quiz Nested if Statements.md",
+    "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/WEEK4/LO4.1i/L4 Buggy Code 1.md",
+    "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/WEEK3/LO3.6 Casting/L3 Explicit Casting Error.md",
+    "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/WEEK3/LO3.6 Casting/L3 Explicit Casting.md",
+    "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/WEEK3/LO3.6 Casting/L3 Type Conversion Quiz.md",
+    "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/WEEK3/LO3.3 Input and Output/L3 Input and Ouput.md",
+    "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/WEEK3/LO3.4 Booleans and Logical Operators/L3 XOR.md"
   ]
 }

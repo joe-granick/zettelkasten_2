@@ -1,0 +1,4 @@
+- Irrational Exuberance
+- Cognitive Bias
+- Chaotic lifecycle
+- Opaque product requiring specialized knowledge to understand encrypted w/ abstruse jargon

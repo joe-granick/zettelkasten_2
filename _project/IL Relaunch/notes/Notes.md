@@ -1,0 +1,14 @@
+- Like trying to turn around a cruise ship in molasses
+- Laggard firms are being rational just like bankers during the financial crisis
+	- Being right and different might get you fired
+	- Being wrong and different will definitely get you fired
+	- Being wrong with everyone else, may keep your job
+	- **Moral Hazard**
+	- **Principle Agent Theory**
+- Always Buy IBM
+- Companies know that they don't know how to identify tech
+- Technology has become so specialized and cahnges so rapidly and corporation can't maneuver that fast
+- **unlocking access**
+- We are facilitating but not implementing
+	- Done on vendor client side
+- 

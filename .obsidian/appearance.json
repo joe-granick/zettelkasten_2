@@ -1,5 +1,7 @@
 {
-  "cssTheme": "Deep Work",
+  "cssTheme": "Sanctum",
   "theme": "moonstone",
-  "baseFontSize": 17
+  "baseFontSize": 22,
+  "accentColor": "",
+  "showViewHeader": false
 }

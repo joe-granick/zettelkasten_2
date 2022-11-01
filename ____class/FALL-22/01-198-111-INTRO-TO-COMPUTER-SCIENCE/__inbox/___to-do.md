@@ -1,0 +1,101 @@
+### 9-22-2022
+- [ ] consolidate lecture notes
+- [ ] double check recitation
+- [ ] consolidate lecture notes
+- [ ] convert lecture and recitation examples to flash cards
+- [ ] use flash cards
+	- [x]  4 9/20/2022
+	- [ ] 
+- [ ] fill out LO Week 3
+- [ ] Review Week 3 book videos
+	- [ ] Basic Programming Concepts https://www.cubits.ai/collections/41/modules/1/videos/1/?key=c9be4c54-e487-4648-b149-cb2281e95fc9
+	- [ ] Program Development https://www.cubits.ai/collections/41/modules/1/videos/2/?key=c9be4c54-e487-4648-b149-cb2281e95fc9
+	- [ ] Built-In Data Types https://www.cubits.ai/collections/41/modules/1/videos/3/?key=c9be4c54-e487-4648-b149-cb2281e95fc9
+	- [ ] Type Conversions https://www.cubits.ai/collections/41/modules/1/videos/4/?key=c9be4c54-e487-4648-b149-cb2281e95fc9
+- [ ] Read 1.1
+- [ ] Read 1.2
+- [ ] Settle class and book notes
+- [ ] watch week 3 lecture
+	- [x] 3-1
+	- [x] 3-2 https://www.youtube.com/watch?v=f4jBh9OfCds
+	- [x] 3-3 https://www.youtube.com/watch?v=CPvJjbmowwg
+	- [x] 3-4 https://www.youtube.com/watch?v=rkupNx7V8cE
+	- [ ] 3-5 https://www.youtube.com/watch?v=u9YjV9P4KQI
+	- [ ] 3-6  https://www.youtube.com/watch?v=kE3tQEuqQWM
+	- [ ] 3-7 https://www.youtube.com/watch?v=IUQlbMgyP1s
+- [ ] Review Week 3 Slides
+	- [ ] pay attention to 3-7 examples
+- [ ] 
+
+## Week 4
+### 9-25-2022
+- [x] **Pre-Review** LO 4.1
+	- [x] 4.1a
+	- [x] 4.1b
+	- [x] 4.1c
+	- [ ] 4.1d
+	- [x] 4.1e
+	- [ ] 4.1f
+	- [ ] 4.1g
+	- [x] 4.1h
+	- [x] 4.1i
+	- [x] 4.1j
+	- [x] 4.1k
+	- [x] 4.1l
+	- [ ] 4.1m
+	- [x] 4.1n
+	- [x] 4.1o
+	- [ ] 4.11
+- [ ] **Review** LO 4.1 WRT **Book Sections**
+	- [ ] 4.1a
+	- [ ] 4.1b
+	- [ ] 4.1c
+	- [ ] 4.1d
+	- [ ] 4.1e
+	- [ ] 4.1f
+	- [ ] 4.1g
+	- [ ] 4.1h
+	- [ ] 4.1i
+	- [ ] 4.1j
+	- [ ] 4.1k
+	- [ ] 4.1l
+	- [ ] 4.1m
+	- [ ] 4.1n
+	- [ ] 4.1o
+	- [ ] 4.11
+- [ ] **Flash-cards**
+	- [ ] book
+	- [ ] lecture slide
+	- [ ] recitation slides
+	- [ ] homework **week 2**
+	- [ ] lecture vids
+	- [x] **midterm**
+	- [ ] review flash cards
+
+## Week 5
+### 10-2-2022
+- [ ] **Flashcards**
+	- [ ] Review
+	- [ ] Add
+		- [ ] Exam 1
+		- [ ] Slides 1
+		- [ ] Slides 2
+		- [ ] Recitation 1
+		- [ ] Slides 3
+		- [ ] Recitation 2
+		- [ ] Slides 4
+		- [ ] Recitation 3
+	- [ ] LO - Week 4
+	- [ ] LO - Week 5
+	- [ ] Read 2.1
+	- [ ] Read 2.2
+	- [ ] Read 2.3
+	- [x] Homework 3
+	- [x] Homework 4
+	- [x] Homework 5
+	- [ ] Homework 6
+	- [ ] Homework 7
+	- [ ] Homework 8
+	- [ ] Homework 9
+	- [ ] Homework 10
+	- [ ] 

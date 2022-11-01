@@ -1338,12 +1338,12 @@ double[][] a =
 ## Chapter 2: Functions and Modules
 ### 2.1 Defining functions
 #### Learning Objectives
-**(7.1a)** Explain the meaning and use of static methods in Java.
+**(7.1a)** Explain the **meaning** and **use** of *static methods* in Java.
 **(7.1b)** Use pre-existing functions/modules when writing program code.
-**(7.1c)** Define and use static methods with and without parameters in program code.
-**(7.1d)** Define and use static methods with and without return values in program code.
-**(7.1e)** Define and use static methods that include arrays as parameters or return types.
-**(7.1f)** Explain and illustrate the call stack for a program that includes multiple method calls.
+**(7.1c)** Define and use **static methods** *with and without **parameters*** in program code.
+**(7.1d)** Define and use **static methods** *with and without **return values*** in program code.
+**(7.1e)** Define and use **static methods** that include ***arrays** as **parameters** or **return types**.*
+**(7.1f)** *Explain and illustrate* the **call stack** for a program that includes multiple method calls.
 **(7.1g)** Trace and write programs that include methods having multiple return statements.
 **(7.1h)** Write program code that includes calls to Java Library methods. 
 **(7.1i)** Describe the meaning of each part of a method signature.
@@ -1360,6 +1360,8 @@ double[][] a =
 - [[encapsulation]] **205**
 #### Propositions
 - *whenever you can clearly separate tasks within programs you should do so*
+- variable **scope** should be as limited as possible **200**
+- **static methods** make debugging easier by limiting variable scope **200**
 #### Questions
 #### Static methods
 - static methods change a program's control flow **193**
@@ -1370,18 +1372,128 @@ double[][] a =
 - from main java can **call** on another static method causing **transfer of control** to the called method **193**
 	- this can even be called from other classes
 - a variable can be passed from calling method as argument for parameter in called method **194**
-- **static methods** work as standalone functions and are not tied to an object
-##### Function-call trace
+- **static methods** work as standalone functions and are not tied to an object 
+##### Function-call 
+
 ##### Terminology
+- **parameter variable** is a placeholder for an input value that will be substituted much like $x$ in a mathematical function **196**
+	- **arguments** are the input value for which the function is to be evaluated 
 ##### Static method definition
+- method's **signature** **196**
+	- first line of static method
+	- provides
+		- method name
+		- parameter variable names
+		- method return type
+		- parameter variable type
+		- keywords 
+			- `public`
+			- `static`
+			- `return type`
+```Java
+public static double harmonic(int n)
+```
+- method **body** follows signature
+	- enclosed in curly braces
+	- includes statements that implement method's functionality
+	- **return statement** transfers control back to point where static methods took over.
+		- typically provides a **return value** as well
+		- **void** return types methods don't return a value, but often still include a return statement to formalize return of control, or add conditional return of control
+			- not necessary though
+	- **local variables** declared in body of function are scoped to  function and can only be used within the method in which they are declared
 ##### Function calls
+- method calls are **expressions** that can be used to compose more complex expressions **197**
+- **arguments** are also expressions and Java will evaluate the expression before passing it to the method
+	- `Math.exp(-x*x/2)/Math.sqrt(2*Math.PI)` are perfectly valid arguments to pass, Java will evaluate the result and pass it to the parameter variable
 ##### Multiple arguments
+- methods can take multiple arguments and can have multiple parameter variables defined
+- parameter variables can be of different types
+- parameter variables declared in signature and separated by commas
+``` Java
+public static double hypotenuse(double a, double b)
+{
+	return Math.sqrt(a*a + b*b);
+}
+```
 ##### Multiple methods
+- can define as many methods as needed **197**
+- methods are independent and can be organized in any order
+- **static** methods can call any other **static** methods in the same file or in another library that it has access to (eg `Math` library)
+```Java
+public static double square(double a)
+{
+	return a*a;	
+}
+
+public static hypotenuse(double a, double b)
+{
+	return Math.sqrt(square(a) + square(b));
+}
+```
+- static methods can call static methods from other `.java` files as long as it has access
+- static methods can use **recursion** and even call themselves
+
 ##### Overloading
+-  **Static methods** are considered ditinct as long as they have *different signatures* **198**
+- this means that even methods with the same name can be treated as distinct methods
+```Java
+/*
+ *OVERLOADING method name, performing same operation for 
+ *different data types
+ */
+public static int abs(int x)
+{
+	if (x < 0) return -x;
+	else       return  x;
+}
+
+public static double abs(double x)
+{
+	if (x < 0.0) return -x;
+	else       return  x;
+}
+```
+- **Overloading** is common practice when same name is used for methods with distinct signatures
+	- useful when same methods are sufficiently similiar to warrant same name
+		- eg Java math library using same name to perform same operation on different data types
+			- `Math.max(), Math.min(), Math.abs()` etc.
+	- also commonly used to define two versions of same method , but one has a variable argument while the other uses a **default value** for that argument 
 ##### Multiple return statements
+- `return` statements can be placed anywhere they are needed in a method **198**
+- control returned to calling program as soon as first return statement is executed
+	- only one value returned, even if there are multiple return statements
+- some problems naturally expressed with multiple return statements that are typically designed to execute conditionally
+```Java
+public static boolean isPrime(int n)
+{
+	if(n < 2) return false;
+	for (int i = 2; i <= n/i; i++)
+		if (n % i == 0) return false;
+	return true;
+}
+```
 ##### Single return value
+- a method only returns a **single** value to calling program **200**
+	- must be of same data type value
+- java data types can be returned, containing more info than a primitive return type
+	- **arrays** can be used as return values for example
+
 ##### Scope
+- **scope** of a variable is the parts of the program that can use that variable **200**
+- A variable declared is usually scoped local to the code block in which it was declared
+	- variables declared within static methods cannot be used by other methods
+	- variables declared within nested block, cannot be accessed by containing block
+- local scoping lets same variable names be reused by independent code blocks as the name allowing independent variables to share a name provided they don't share a scope
+- *principle of good software design is to make a variable's scope as small as possible*
+- **static methods limit ease debugging by limiting scope**
 ##### Side effects
+- **pure functions** take arguments and input and return a single value **201**
+	- similar to mathematical functions which can take multiple inputs and map them to a single outputs
+- pure functions don't produce any **side effects**
+- Often useful to have functions that produce side effects like printing and drawing
+- `void` functions are designed only for it's side effects
+	- can include but don't require a `return` statement as control returned to the caller after last statement executed
+
 #### Implementing mathematical functions
 ##### Closed form
 ##### No closed form
@@ -1398,6 +1510,17 @@ double[][] a =
 - changing parameter variable within the static method has no effect on calling code
 	- doesn't change the input variable outside the method
 ##### Arrays as arguments
+- When an arrays are passed as arguments for functions that need to work on an arbitrary amount of inputs of the same *data-type* **208**
+- Array arguments are passed as references, rather that copies **217**
+
+##### Side effects with arrays
+- Since arrays are passed as references, a method that takes an array argument causes as **side-effect** when it works on the array, as it works on the original not an array copy
+- this is because copying an array would be potentially incredibly memory since arrays can be of arbitrary value **217**
+	- Most languages are designed this way, although some like `Matlab` do create an arrays copy
+- Passing arrays as arguments is **call by value** wrt the array reference but **call by reference** for the array elements **210**
+	- A method doesn't change the arrays itself (memory location, length, and type are same when array created)
+	- Method can assign different values to be assigned to the elements of the array
+##### Arrays as return values
 
 ##### Side effects with arrays
 ##### Arrays as return values

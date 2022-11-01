@@ -1,0 +1,1 @@
+Current performance variance in DS problems often comes down to better problem definition collection of more data abilty to mathematically model data statistically analyze results more buy-in staffing expertise and processes cleaner data
