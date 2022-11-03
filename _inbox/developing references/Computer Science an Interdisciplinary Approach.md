@@ -1521,6 +1521,11 @@ public static boolean isPrime(int n)
 	- A method doesn't change the arrays itself (memory location, length, and type are same when array created)
 	- Method can assign different values to be assigned to the elements of the array
 ##### Arrays as return values
+- methods that modify an array can be `void` as they do not require a return value **210**
+	- sorting, shuffling etc,
+- other array procedures it may be useful to `return ` and array
+	- `tone` 
+
 
 ##### Side effects with arrays
 ##### Arrays as return values
