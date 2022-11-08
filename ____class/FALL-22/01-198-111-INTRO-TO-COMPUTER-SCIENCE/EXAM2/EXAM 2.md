@@ -1,0 +1,83 @@
+# Topics
+## 1.4 Arrays
+- compile vs runtime errors
+	- `arrayIndexOutOfBounds`
+- declaring an array
+- 2D Arrays
+### Learning Objectives
+- (5.1a) Declare, create, and initialize one-dimensional(1D) and two-dimensional (2D) arrays.
+- (5.1b) Explain Java’s default array initialization.
+- (5.1c) Describe and implement initializer lists to initialize arrays.
+- (5.1d) Describe and illustrate memory representation and allocation involving array implementations in Java.
+- (5.1e) Distinguish between valid and invalid array index references in code segments.
+- (5.1f) Identify ArrayIndexOutOfBoundsExceptions in program code segments.
+- (5.1g) Implement Java code to manipulate 1D arrays including, but not limited to, the following tasks:
+	- Traverse and display the elements in an array in order and in reverse order.
+	- Reverse the elements in an array.
+	- Find and report the minimum/maximum value in an array.
+	- Find and report the index of the minimum/maximum value in an array.
+	- Find the average of numerical values in an array.
+	- Exchange values of two elements in an array.
+	- Shift elements in array to the right/left as specifications describe.
+	- Count the number of elements in an array satisfying given specifications.
+	- Remove elements that satisfy certain conditions from an array.
+	- Remove duplicate values from an array.
+- (5.1h) Demonstrate the use of the enhanced for loop (for-each) when writing code involving arrays.
+- (5.1i) Distinguish between situations that can and that cannot utilize an enhanced for loop.
+- (5.1j) Determine the result of program code that traverses and manipulates the elements in a 2D array.
+- (5.1k) Trace and implement code to traverse and manipulate 2D arrays in row-major and column-major order.
+## 1.5 Input Output
+- (6.1a) Use command line arguments to provide input values to programs.
+- (6.1b) Explain the meaning and functioning of `String args[]` as a parameter to main.
+- (6.1c) Explain the need for `Integer.parseInt()` and `Double.parseDouble()` when using command line input.
+- (6.1d) Use standard output in programs: 
+	- `System.out.print()`, 
+	- `System.out println()`
+- (6.1e) Use the following methods of `StdIn` in programs to read individual tokens from standard input: 
+	- `isEmpty()`, 
+	- `readInt()`, 
+	- `readDouble()`, 
+	- `readBoolean()`, 
+	- `readString()`
+- (6.1f) Use the following methods of `StdIn` in programs for reading characters from standard input: 
+	- `hasNextChar()`, 
+	- `readChar()`
+- (6.1g) Use the following methods of `StdIn` in programs for reading lines from standard input: 
+	- `hasNextLine()`, 
+	- `readLine()`, 
+	- `readAll()`
+- (6.1h) Use the following methods of `StdIn` in programs for reading from standard input to arrays:
+	- `readAllInts()`, 
+	- `readAllDoubles()`, 
+	- `readAllBooleans()`,
+	- ` readAllStrings()`, 
+	- `readAllLines()`
+- (6.1i) Explain and implement an **end-of-file sequence** to end user input.
+- (6.1j) Redirect standard output to a file when executing a program.
+- (6.k) Redirect from a file to standard input when executing a program.
+- (6.1l) Demonstrate piping the output of one program to the input of another
+## 2.1 Static Methods & 2.2 Libraries and Clients
+- (7.1a) Explain the meaning and use of static methods in Java.
+- (7.1b) Use pre-existing functions/modules when writing program code.
+- (7.1c) Define and use static methods with and without parameters in program code.
+- (7.1d) Define and use static methods with and without return values in program code.
+- (7.1e) Define and use static methods that include arrays as parameters or return types.
+- (7.1f) Explain and illustrate the call stack for a program that includes multiple method calls.
+- (7.1g) Trace and write programs that include methods having multiple return statements.
+- (7.1h) Write program code that includes calls to Java Library methods. 
+- (7.1i) Describe the meaning of each part of a method signature.
+- (7.1j) Identify the scope of variables in a program that includes multiple methods.
+- (7.1k) Explain the difference between local variables and parameter variables.
+- (7.1l) Explain the difference between a method implementation and a method call.
+- (7.1m) Trace and write programs involving overloaded methods.
+- (7.1n) Identify the scope of a variables in a program with multiple methods and method calls.
+- (7.1o) Use debugging tools to step through code in order to identify errors at various stages of program development
+
+## 2.3 Recursion
+- (8.1a) Determine the purpose or output of a recursive method by tracing the program code.
+- (8.1b) Compare the readability and efficiency of iterative and recursive solutions to the same problem.
+- (8.1c) Identify the **base case** and **general case** for a recursive solution.
+- (8.1d) Design and implement a recursive method to solve a problem.
+- (8.1e) Explain and illustrate the **call stack** developed in a recursive solution to a problem.
+- (8.1f) Check and test a recursive method for correctness.
+- (8.1g) Use debugging tools to step through code in order to identify errors at various stages of program development.

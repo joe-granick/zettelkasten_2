@@ -21,6 +21,45 @@
             }
           },
           {
+            "id": "2b416775f335b002",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled 1.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6dbfb66bb28d8908",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "l.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "10353d113307273f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/EXAM2/EXAM 2.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
             "id": "8ac44da3fdc86936",
             "type": "leaf",
             "state": {
@@ -69,8 +108,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -137,7 +175,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/__inbox/R8-Recursion.md",
+                "file": "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,7 +192,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/__inbox/R8-Recursion.md",
+                "file": "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -194,17 +232,17 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "8ac44da3fdc86936",
+  "active": "529a39d4986e6f79",
   "lastOpenFiles": [
+    "Untitled 1.md",
     "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
+    "l.md",
+    "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/EXAM2/EXAM 2.md",
+    "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/EXAM2/S21-solution EXAM 2.pdf",
+    "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/__inbox/R8-Recursion.md",
     "____class/SPRING-23/01-198-205 Intro to computer science.md",
     "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/__inbox/R4 Conditionals and Loops.md",
     "_project/IL Relaunch/notes/Alan Turing and Alonzo Church independetly redeveloped ideas of Babbage and Lovelace.md",
-    "_project/IL Relaunch/notes/No inherent structures to relationship of structured data.md",
-    "_project/IL Relaunch/notes/Large Parameter models driving much of ML progress.md",
-    "_project/IL Relaunch/IL Relaunch.md",
-    "_project/IL Relaunch/notes/Performance Variance in DS.md",
-    "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/__inbox/EXAM-2 Topics.md",
-    "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/__inbox/7k parameter and local variables only differe because parameters are passed into a method.md"
+    "_project/IL Relaunch/notes/No inherent structures to relationship of structured data.md"
   ]
 }

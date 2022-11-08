@@ -1524,13 +1524,20 @@ public static boolean isPrime(int n)
 - methods that modify an array can be `void` as they do not require a return value **210**
 	- sorting, shuffling etc,
 - other array procedures it may be useful to `return ` and array
-	- `tone` 
+	- `tone` functuion samples a sine wave and returns it as a new array
+		- this is useful since pure sounds waves can be combined through **superposition** by adding and scaling sound waves allowing arbitrily complex sounds
+#### Importance of Functions
+- **static methods** give ability to extend java language within a program
+- ability to use functions as if they're part of the changes understanding of programs as sequence of statements to **sequence of static methods**
+	- programs now have higher level control flow defined by method calls and returns
+- can now conceive operations beyond the simple primitives built in
+- **Clearly separate tasks within program wherever possible**
+- Benefits of modularization with static methods
+	- Divide long sequences of statements into independent parts
+	- Easy reuse of code w/out copying
+	- Able to define and work with higher level concepts (like sound waves)
+- Code will be easier to understand, maintain and debug
 
-
-##### Side effects with arrays
-##### Arrays as return values
-#### Example: superposition of sound waves
-##### Weighted superposition
 #### to-do
 - [ ] **1.** *problem*  **pg**
 - [ ] **2** *problem*  **pg**
@@ -1573,10 +1580,140 @@ public static boolean isPrime(int n)
 - [ ] **39.** *problem*  **pg**
 - [ ] **40.** *problem*  **pg**
 
-### 2.2 Libraries and Clients
+### 2.2 Libraries and Clients (226)
+- Ability to reference methods in other programs
+	- allows for code reuse
+	- allows  **modular programming**programs to be divided and organized into files based on application need
+- **modular programming** important level of abstraction
+	- allows parts of programs to be developed, compiled, and debugged independent of other parts, allowing us to ignore those parts that haven't been developed yet
+	- programs can be developed one piece at a time, with no need to worry about independent components not currently being worked on
+- can now progress to understanding of program as **set of classes, each of which is an independent module composed of a set of methods**
+- All code can interact as network of methods calling each other, grouped together in classes
+- allows management of complexity by decomposing tasks into separate classes that can be iimplemented and tested independently
+
 #### Terms
 #### Propositions
 #### Questions
+
+#### Using static methods in other programs(227)
+- Can access static methods in other program
+- call method prepended with class name
+- make sure client and library class are accessible to java
+- with **modular programming** we define multiple files each a different class composed of multiple methods
+	- independently develop and debug methods that can be used at a  later time
+	- profoundly changes how we can develop programs
+- this allows us to think of programs astools that can be usefule later, meaning every computational problem is improving our computational environment **(229)**
+- **every program should** *be written by  dividing computation into sperate parts of manageable size implementing each part as if* **someone will use it later ***(229)***
+	- this someone is often **you**
+	- this will save a large amount of effort in debugging and rewriting code
+##### The public keyword (228)
+- `public` identifies methods as being for general use by any other program with access to the file
+- other ways to identify methods like `private` and some others
+##### Each module is a class (228)
+- **module** refers to all code with a file
+- each module is a class contained within single file with `.java` extension with matching class and file names
+##### The . class file (228)
+- compiled `.class` files are the java program translated into machine friendly language
+- any method can be run with only `.class`, but won't be able to make any changes if there is a bug without the source code `.java` file
+##### Compile when necessary (229)
+- Java only what is necessary when compiling a new file (wrt methods called)
+- If methods called form other classes, java checks if any changes were made since last time it was compiled.
+	- if so java will recompile the file that is being called
+- This is helpful, as all classes calling a function will be propagated with new code, meaning any bug fixes will be applied to all dependencies
+
+##### Multiple main methods (229)
+- multiple classes can have `main()` methods
+- `main()` will be included in most classes to test and debug included methods
+####  Libraries (230)
+- a **library** is a module whose methods are primarily intended for use by other programs
+- **user-defined libraries** are classes that contain sets of *related* methods for use by other programs
+- many predefined `Java` libraires exist, but no library contains all methods needed for all computations
+- ability to create your own libraries as needed crucial to developing complex programs
+##### Clients (230)
+- **client** is the program that calls a library method
+- when class contains a method that is a client method in another class then the first class is a client of the second class
+- example `Sat` is a client of `Guassian`
+- a class can have multiple clients
+	- all classes that call `Math.random()` and `Math.sqrt()` are clients of the `Math` class
+##### APIS (230)
+- **API**s define the contract between the client and implementation, with what the method is meant for clearly specified
+- *provide to clients the methods they need and no others*
+- APIs allow users to understand and use the code, without needing to examine the implementation. This us allows us to limit the contract of what the library will do only to the API specification, not the implementation
+##### Implementations 231
+- **Implementation** is code that implements the methods in an API
+- Every Java program is implementation of some API and no API is of use without an implementation
+- goal of implementations is to **honor the terms of the contract**
+- separating client code from implementation provides freedom to substitute new and improved implementations, since there be many ways to do so, and optimal may not be clear at the outset
+- *provide client programmers the info they need and no more*
+- any unnecessary information implicitly extends the contract, which is not desirable
+- implementation should not be checked for understanding utilization, only should go off API contract
+##### Unit testing (235)
+- even if a class is implemented without reference to any particular client it is good practice to include a `main()` method for **unit testing** and debugging methods in the library
+- `main()` should minimally
+	- exercise all code
+	- provide some assurance code is working
+	- take command line arguments for further testing
+##### Stress testing (236)
+- extensively used libraries should be subject to robust **stress testing**
+- make sure it doesn't crash if client doesn't follow contract or makes assumptions no covered explicitly in API
+- each line of code should be questioned carefully for any conditions that may cause issues or **edge/corner cases**
+#### Input and output for arrays (237)
+- `StdArrayIO` contains static methods for reading primitivize type arrays from standard input and printing them to standard output 
+	- `double[] readDouble1d()`
+	- `double[][] readDouble2d`
+	- `void print(double([] a)`
+	- `void print(double[][] a)`
+- `StdArrayIO` notes
+	- need to settle on file format
+	- print methods are overloaded
+- implementing this library with arrays processing methods from section 1.4 prevents us from having to think about the implementation details for basic array processing and printing
+#### Modular programming (252)
+- library implementations demonstrate value of **modular programming**, instead of writing new program self-contained within own file to address new problem we break up each task into smaller more manageable subtasks, then implement and debug code that addresses each subtask
+- *whenever you can clearly separate tasks within a program, you should do so*
+- **module** typically refers to code that can be compiled and run independently
+- in java each class is a module
+- **dependency graph** maps the relationship between modules in a modular program
+- advantages of modular program have become **crucial** in modern programming
+	- allows us to keep program to a **reasonable size** even in large systems
+	- **debugging** contained to small pieces of code
+	- code can be **reused** without needing re-implementation
+	- **maintaining** and improving code is simpler
+##### Reasonable size programs (252)
+- no large task is so complex that it cannot be broken down into subtasks
+- no hard and fast rule for module size
+- tradeoff between having too many small modules or too few inflexible modules
+- questions to consider as for **monolithic modules**
+	- Are there subtasks that can be and make sense to implement separately?
+	- Could some subtask be logically grouped into a separate library?
+	- Would it be useful for other clients use code in the future?
+- question to consider for **large number of tiny modules**
+	- Is there some group of subtasks that should logically belong to the same module?
+	- Is each separate module really likely to be useful to other clients?
+##### Debugging (253)
+- tracing becomes more difficult with more statements and variable interactions
+- with modular programming and containing the scope of variable local to the modules dramatically cut down on number of possibilities to consider when debugging
+- **contract** between client and implementation, once we're satisfied implementation is meeting contract all of its clients can be debugged under that assumptions
+
+##### Code reuse (253)
+- once a library is written we don't need to worry about implementing those methods again, they can just be called from their module
+- any module can refer to any public method in any other available module
+
+##### Maintenance and improvement (253)
+- modular programming facilitates **continuous improvement**
+- improving module improves all of its clients
+- several different approaches to a problem may be available
+- modular programming allows implementation of each one independently
+- also important is if a bug is noticed with modular programming fixing the bug also fixes the bug in the module's clients
+
+#### sharing static methods extends programming model in two ways
+1. allows code reuse without having to maintain multiple copies
+2. supports message of *whenever you can clearly separate tasks in programs, you should do so* by allowing us to organize programs into files of manageable size that can be independently debugged and compiled
+
+
+
+
+
+
 #### to-do
 - [ ] **1.** *problem*  **pg**
 - [ ] **2** *problem*  **pg**
@@ -1619,10 +1756,176 @@ public static boolean isPrime(int n)
 - [ ] **39.** *problem*  **pg**
 - [ ] **40.** *problem*  **pg**
 
-### 2.3 Recursion
+### 2.3 Recursion (262)
+- **recursions** functions have the ability to call themselves
+- recursion can be a useful way to describe the natural world
+	- recursive trees
+- recursion plays central role in CS
+	- provides a simple computational model embracing anything that can be computed with any computer
+	- helps organize and analyze programs
+	- key to many critical types of applications including
+		- combinatorial search
+		- tree data structures for information processing
+		- **Fast Fourier Transform** for signal processing
+- through the proof technique of **mathematical induction** recursion provides straightforward way to build mathematical models that can be used to prove important facts about programs
+
+
+
+
 #### Terms
+1. [[recursion]] (262)
+2. [[mathematical induction]] (262)
+3. [[induction step]] 
+4. [[reduction step]]
+5. [[recurrence relations]] (272)
+6. [[exponential time]] (272)
+7. [[H-tree]] (277)
+8. [[fractal]] (278)
+9. [[fractional Brownian motion]] (278)
+10. [[Brownian bridge]] (278)
+11. [[midpoint displacement method]] (279)
+12. [[Hurst exponent]] (280)
+13. [[infinite recursion]] (281)
+14. [[call stack]] (281)
+15. [[stack overflow]] (281)
+16. [[dynamic programming]] 283
+17. [[memoization]] (284)
+18. [[static variable]] (284)
+
 #### Propositions
 #### Questions
+
+#### Your first recursive program (264)
+- `factorial` is `hello world` for recursion
+- two main components **required** of every recursive function
+	1. **base case** comes first and defines the stopping condition for the calls
+	2. **reduction step** or **induction step** is the central piece of the recursion, relating the value of a function at one or more arguments to the value at one or more other arguments 
+- *sequence of argument values **must converge** to the base case*
+- base case is place first with a `return` instead of using an `else` clause as it adds unnecessary complexity to larger programs
+	- rest of code dedicated to reduction step
+- small recursive functions are useful for calculating finite sums
+	- this type of recursion acts like a loop in disguise
+
+
+#### Mathematical Induction (265)
+- recursive programming directly related to **mathematical induction** which is used for many proofs about the **natural numbers**
+- proving statement involving integer $n$ for infinitely many values of $n$ with mathematical induction involves 
+	1. **base case:** prove true for specific value of values of $n$ typically $1$ or $0$
+	2. **induction step:** assume statement is true for all positive integers $< n$, then use to prove it is true for all $n$
+- this type of proof showing statement is true for infinitely many values of $n$
+	- can start at base case and use proof to establish statement is true for each larger value of $n$ one-by-one
+- every time we write a recursive program we need mathematical induction to be convinced it will produce desired effect (266)
+- clear line between induction and recursion (266)
+- difference in nomenclature (*induction vs reduction*) indicates the different outlook (266)
+	- with recursion we are trying to get a computation done by *reducing* it to a smaller problem so use a **reduction step**
+	- with *inductive proofs* we are trying to establish truth of statement for larger problems so use an **induction step** (266)
+- with recursive programs we don't always write a formal proof, but we are dependent that such a proof exits (266)
+- often rely on an **informal proof** like with `factorial`
+##### Proof Sum of Positive integers <= n = n(n+1)/2 (266)
+$1+ 2 + 3 + ... + (n-1) + n = n(n+1)/2$
+it is true for base case $n=1 = 1(1+1)/2$
+assume true for all positive integers less than $n$ with $n-1$ in particular
+$1+ 2 + 3 + ... + (n-1)= (n-1)(n)/2$
+add $n$ to both sides and simplify to get desired equation (*induction step*)
+$1+ 2 + 3 + ... + (n-1) + n= \frac{(n^2-n)}{2} +n$
+$1+ 2 + 3 + ... + (n-1) + n = \frac{(n^2+n)}{2}$
+$1+ 2 + 3 + ... + (2n-1) = \frac{n(n+1)}{2}$
+**QED**
+
+##### Euclid's algorithm (268)
+
+##### Towers of Hanoi (269)
+
+#### Function-call trees (269)
+- each method call represented as a **tree-node**
+- tracing function of recursive program may indicate ways to develop non-recursively like with `Towers of Hanoi`
+- **trees** are quintessential recursive object
+- trees play essential role as abstract mathematical object in many programs
+
+#### Exponential time (272)
+- advantage of using recursion is it often allows us to develop mathematical models to prove important facts about behavior of recursive program (like disc movement patterns in `Towers of Hanoi`) 
+	- or the amount of time before it finishes
+- this is important to help us avoid writing programs that take an intractably long time to compute
+- **recurrence relations** naturally arise in recursice programs. These are used in *discrete mathematics* and can often be used to develop a **closed form expression** for quantity of interest
+- `Towers of Hanoi` must satisfy recurrence $T(n) = 2T(n-1) +1 \text{ for } n>1, \text{ with } T(1) = 1$
+	- $T(n)$ is the number of disc move needed
+	- *base case:* $T(1) = 2^n-1=1$
+	- *induction step:* 
+- therefore $t(N) = 2^n -1$ for all inputs $n>0$ 
+- **exponential growth** can quickly exceed capacity for computer to finish program in reasonable amount of time
+*beware of programs that might require exponential time*
+
+##### Gray codes (273)
+
+#### Recursive graphics (276)
+- simple recursive schemes can create remarkably intricate image output
+- examples like **H-trees** have practical applications
+	- H-trees can be used for running cable, planning number of centers in the region, running cable through connecting each home to a center
+##### Brownian bridge (278)
+- **H-tree** is a a type of **fractal**, a geometric shape that can be divided into parts, each of which is approximately a reduced size copy of the original
+- fractals are naturally expressed recrusively
+- fractals useful for fields as diverse as art, econ, and scientific analysis
+- fractals can be used to build compact models of complex shapes, that otherwise defy description
+- **Fractional Brownian motion** is a mathematical model for creating realistic fractal models, often used in
+	- computational finance
+	- study of phenomena like ocean waves and nerve membranes
+- **Brownian bridge**
+- **midpoint displacement method**
+- **Hurst exponent** controls smoothness of curve
+
+#### Pitfalls of recursion (281)
+- pitfalls can be overcome, but need to be careful to recognize
+##### Missing base case (281)
+- without a base case the program will not terminate resulting in an **infinite recursion**
+- infinite recursion differs from infinite loops as the system keeps track of each recursive call in the **call stack**
+- this eventually exceeds the system memory resulting in a `StackOverflowError` at *run time*
+- can use an informal argument using mathematical induction to make sure recursion has desired effect, this can uncover a missing base case
+
+##### No guarantee of convergence (281)
+- recursion design might not reduce meaning base case will not be reached, resulting in an infinite recursion
+- can sometimes be difficult to identify, depending on complexity of code
+
+##### Excessive memory requirements (282)
+- functions that call themselves excessively may exceed memory and overflow the call stack
+##### Excessive recomputation (282)
+- use of recursion to simply solve problem must be weighed against understanding if it will take *exponential time
+- naive implementation of recursive **Fibonacci** sequence incredibly inefficient as same numbers are being computed repeatedly, growing exponentially with `n`
+- **dynamic programming** can be used to prevent recomputation of values already computed
+
+#### Dynamic programming (284)
+- Idea of **dynamic programming** is **divide-and-conquer** strategy
+	- recursively divide complex problems into smaller subproblems
+	- store the answer to each subproblem
+	- use stored answers to solve original problem
+- for `fibonacci` can store calculations then use them to solve when values need to be computed again
+
+
+##### Top-down dynamic programming (284)
+- **top-down** we store or **cache** result of computations
+- next time same computation is needed, stored value can be used 
+- in Java we use a `static` variable aka **class variable** or **global variable** declared outside method
+- top-down DP also known as **memoization**
+
+##### Bottom-up dynamic programming (285)
+- **bottom-up dynamic programming** 
+	- compute solutions of all subproblems, starting with simplest
+	- gradually build up more complicated subproblems
+- to solve this ways subproblems must be *ordered* so each subsequent subproblem, can be solved by combining subproblems earlier in the order
+- 
+##### Longest common subsequence problem (285)
+
+##### Longest common subsequence recurrence (286)
+
+##### Dynamic programming solution (286)
+
+#### Perspective (289)
+- not using recursion miss out on some advantages
+	1. compact solutions to complex problems
+	2. Recursive solutions embody argument that program works as intended
+- recursion illustrates power of carefully articulated abstraction
+- essential to understanding and exploiting computation and understanding role of computational models in natural phenomena
+- 
+
 #### to-do
 - [ ] **1.** *problem*  **pg**
 - [ ] **2** *problem*  **pg**
