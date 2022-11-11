@@ -10,45 +10,7 @@
           {
             "id": "529a39d4986e6f79",
             "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2b416775f335b002",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Untitled 1.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6dbfb66bb28d8908",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "l.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "10353d113307273f",
-            "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
@@ -56,6 +18,17 @@
                 "mode": "source",
                 "backlinks": true,
                 "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "6dbfb66bb28d8908",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/EXAM2/S21-solution EXAM 2.pdf"
               }
             }
           },
@@ -73,12 +46,12 @@
             }
           },
           {
-            "id": "a84c7466a01348f9",
+            "id": "374b8f4fee10c72d",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "image",
               "state": {
-                "currentVersion": "1.0.3"
+                "file": "LO 5.1A declare create initialize arrays.png"
               }
             }
           },
@@ -159,7 +132,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 227.5
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "c3be8f9964344a2c",
@@ -175,7 +149,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
+                "file": "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/EXAM2/EXAM 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -192,7 +166,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
+                "file": "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/EXAM2/EXAM 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -234,15 +208,15 @@
   },
   "active": "529a39d4986e6f79",
   "lastOpenFiles": [
-    "Untitled 1.md",
-    "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
-    "l.md",
+    "method signartue.md",
     "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/EXAM2/EXAM 2.md",
-    "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/EXAM2/S21-solution EXAM 2.pdf",
+    "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/__inbox/R9 Abstract Data Types.md",
     "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/__inbox/R8-Recursion.md",
-    "____class/SPRING-23/01-198-205 Intro to computer science.md",
-    "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/__inbox/R4 Conditionals and Loops.md",
-    "_project/IL Relaunch/notes/Alan Turing and Alonzo Church independetly redeveloped ideas of Babbage and Lovelace.md",
-    "_project/IL Relaunch/notes/No inherent structures to relationship of structured data.md"
+    "5.1C array initialization at compile time with list of literals.md",
+    "LO 5.1A declare create initialize arrays.png",
+    "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/EXAM2/S21-solution EXAM 2.pdf",
+    "Untitled 1.md",
+    "l.md",
+    "_inbox/developing references/Computer Science an Interdisciplinary Approach.md"
   ]
 }
