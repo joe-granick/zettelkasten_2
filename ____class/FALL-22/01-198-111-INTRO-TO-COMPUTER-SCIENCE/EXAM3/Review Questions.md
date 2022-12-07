@@ -1,0 +1,15 @@
+# Book
+- [ ] Program 3.1.1 Identifying potential gene pg 337
+	- [ ] `substring()` IS ALL **lower** CASE pg 332
+- [ ] Program 3.1.2 AlbersSquares
+	- [ ] how to draw nested rectangles
+	- [ ] `StdDraw.filledSquare(x, y, r)` arguments
+	- [ ] what does `import` do
+- [ ] Program 3.1.3 `Grayscale` pg 348
+- [ ] Program 3.1.4 `Scale` pg 350
+	- [ ] New `Picture` needs to be initialized with `width` and `height`
+	- [ ] `Picture(col, row)`
+- [ ] Exercise **3.1.1** `reverse()`
+	- [ ] properties of `substring`
+	- [ ] attempt with character array
+- [ ] 

@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "2a381c92f0419ffb",
+        "id": "8d837deff6370c46",
         "type": "tabs",
         "children": [
           {
-            "id": "529a39d4986e6f79",
+            "id": "f358b346e8381c38",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/EXAM2/EXAM 2.md",
+                "file": "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -23,22 +23,12 @@
             }
           },
           {
-            "id": "6dbfb66bb28d8908",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/EXAM2/S21-solution EXAM 2.pdf"
-              }
-            }
-          },
-          {
-            "id": "8ac44da3fdc86936",
+            "id": "24dba056cd2ea375",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/__inbox/R8-Recursion.md",
+                "file": "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/__inbox/R11 Efficiency.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -46,22 +36,12 @@
             }
           },
           {
-            "id": "374b8f4fee10c72d",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "LO 5.1A declare create initialize arrays.png"
-              }
-            }
-          },
-          {
-            "id": "6b87a8bfc3f27062",
+            "id": "1c6ec887eea2edaa",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/__inbox/EXAM-2 Topics.md",
+                "file": "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/EXAM3/Review Questions.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -69,16 +49,18 @@
             }
           },
           {
-            "id": "f93ca95be18b1a19",
+            "id": "ee05b53f9949fedb",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/__inbox/7k parameter and local variables only differe because parameters are passed into a method.md",
+                "file": "index/Computer Science.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
-              }
+              },
+              "pinned": true
             }
           }
         ]
@@ -132,8 +114,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 648.5
   },
   "right": {
     "id": "c3be8f9964344a2c",
@@ -149,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/EXAM2/EXAM 2.md",
+                "file": "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -166,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/EXAM2/EXAM 2.md",
+                "file": "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -206,17 +187,17 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "529a39d4986e6f79",
+  "active": "f358b346e8381c38",
   "lastOpenFiles": [
-    "method signartue.md",
-    "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/EXAM2/EXAM 2.md",
-    "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/__inbox/R9 Abstract Data Types.md",
-    "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/__inbox/R8-Recursion.md",
-    "5.1C array initialization at compile time with list of literals.md",
-    "LO 5.1A declare create initialize arrays.png",
-    "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/EXAM2/S21-solution EXAM 2.pdf",
-    "Untitled 1.md",
-    "l.md",
-    "_inbox/developing references/Computer Science an Interdisciplinary Approach.md"
+    "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/EXAM3/Review Questions.md",
+    "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/__inbox/R11 Efficiency.md",
+    "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
+    "index/Computer Science.md",
+    "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/EXAM2/EXAM 2 Review Questions.md",
+    "assignment  with reference type.md",
+    "linear interpolation.md",
+    "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/__LO-INDEX.md",
+    "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/__inbox/R11 OOP.md",
+    "Q. recursive bunny ears.md"
   ]
 }

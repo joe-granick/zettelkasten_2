@@ -236,6 +236,8 @@ String[] RANKS = {
 ##### Lecture Videos
 
 ##### Slides
+
+
 [[array index out of bounds]]
 ![[Pasted image 20221109093839.png]]
 [[uninitialized array]]
@@ -644,7 +646,38 @@ use [[Euclid's algorithm]] to find [[greatest common factor]] of two integers
 - are there methods that can be created in recursion that cannot be implemented iteratively"
 
 [[recursion pitfalls]]
+Q. what is the error with this code
+![[Pasted image 20221112130054.png]]
+![[Pasted image 20221112130210.png]]
+Q. what is the issue with this code 
+![[Pasted image 20221112130316.png]]
+![[Pasted image 20221112130339.png]]
 
+[[recursive sum]]
+Q. implement a method that calculate the sum of an integer array of elements recursively
+![[Pasted image 20221112130646.png]]
+
+[[recursive min]]
+Q. implement a function that recursively finds the minimum of element in an array specified as follows
+![[Pasted image 20221112131052.png]]
+![[Pasted image 20221112131113.png]]
+
+[[recursive array search]]
+Q. Given an array of ints, compute recursively the number of times that the value 11 appears in the array. We‘ll use the convention of considering only the part of the array that begins at the given index. In this way, a recursive call can pass index+1 to move down the array. The initial call will pass in index as 0.
+![[Pasted image 20221112131424.png]]
+![[Pasted image 20221112131436.png]]
+
+[[recursive bunny ears]]
+**Q.** We have bunnies standing in a line, numbered 1, 2, ... The odd bunnies (1, 3, ..) have the normal 2 ears. The even bunnies (2, 4, ..) we‘ll say have 3 ears, because they each have a raised foot. Recursively return the number of “ears” in the bunny line 1, 2, ... n (without loops or multiplication).
+![[Pasted image 20221112131626.png]]
+![[Pasted image 20221112131723.png]]
+
+[[towers of hanoi]]
+![[Pasted image 20221112131815.png]]
+![[Pasted image 20221112131846.png]]
+![[Pasted image 20221112131902.png]]
+![[Pasted image 20221112131919.png]]
+![[Pasted image 20221112132147.png]]
 
 ##### LO
 - (8.1a) Determine the purpose or output of a recursive method by tracing the program code.
