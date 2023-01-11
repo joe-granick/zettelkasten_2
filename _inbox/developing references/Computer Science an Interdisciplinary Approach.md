@@ -1524,13 +1524,20 @@ public static boolean isPrime(int n)
 - methods that modify an array can be `void` as they do not require a return value **210**
 	- sorting, shuffling etc,
 - other array procedures it may be useful to `return ` and array
-	- `tone` 
+	- `tone` functuion samples a sine wave and returns it as a new array
+		- this is useful since pure sounds waves can be combined through **superposition** by adding and scaling sound waves allowing arbitrily complex sounds
+#### Importance of Functions
+- **static methods** give ability to extend java language within a program
+- ability to use functions as if they're part of the changes understanding of programs as sequence of statements to **sequence of static methods**
+	- programs now have higher level control flow defined by method calls and returns
+- can now conceive operations beyond the simple primitives built in
+- **Clearly separate tasks within program wherever possible**
+- Benefits of modularization with static methods
+	- Divide long sequences of statements into independent parts
+	- Easy reuse of code w/out copying
+	- Able to define and work with higher level concepts (like sound waves)
+- Code will be easier to understand, maintain and debug
 
-
-##### Side effects with arrays
-##### Arrays as return values
-#### Example: superposition of sound waves
-##### Weighted superposition
 #### to-do
 - [ ] **1.** *problem*  **pg**
 - [ ] **2** *problem*  **pg**
@@ -1573,10 +1580,140 @@ public static boolean isPrime(int n)
 - [ ] **39.** *problem*  **pg**
 - [ ] **40.** *problem*  **pg**
 
-### 2.2 Libraries and Clients
+### 2.2 Libraries and Clients (226)
+- Ability to reference methods in other programs
+	- allows for code reuse
+	- allows  **modular programming**programs to be divided and organized into files based on application need
+- **modular programming** important level of abstraction
+	- allows parts of programs to be developed, compiled, and debugged independent of other parts, allowing us to ignore those parts that haven't been developed yet
+	- programs can be developed one piece at a time, with no need to worry about independent components not currently being worked on
+- can now progress to understanding of program as **set of classes, each of which is an independent module composed of a set of methods**
+- All code can interact as network of methods calling each other, grouped together in classes
+- allows management of complexity by decomposing tasks into separate classes that can be iimplemented and tested independently
+
 #### Terms
 #### Propositions
 #### Questions
+
+#### Using static methods in other programs(227)
+- Can access static methods in other program
+- call method prepended with class name
+- make sure client and library class are accessible to java
+- with **modular programming** we define multiple files each a different class composed of multiple methods
+	- independently develop and debug methods that can be used at a  later time
+	- profoundly changes how we can develop programs
+- this allows us to think of programs astools that can be usefule later, meaning every computational problem is improving our computational environment **(229)**
+- **every program should** *be written by  dividing computation into sperate parts of manageable size implementing each part as if* **someone will use it later ***(229)***
+	- this someone is often **you**
+	- this will save a large amount of effort in debugging and rewriting code
+##### The public keyword (228)
+- `public` identifies methods as being for general use by any other program with access to the file
+- other ways to identify methods like `private` and some others
+##### Each module is a class (228)
+- **module** refers to all code with a file
+- each module is a class contained within single file with `.java` extension with matching class and file names
+##### The . class file (228)
+- compiled `.class` files are the java program translated into machine friendly language
+- any method can be run with only `.class`, but won't be able to make any changes if there is a bug without the source code `.java` file
+##### Compile when necessary (229)
+- Java only what is necessary when compiling a new file (wrt methods called)
+- If methods called form other classes, java checks if any changes were made since last time it was compiled.
+	- if so java will recompile the file that is being called
+- This is helpful, as all classes calling a function will be propagated with new code, meaning any bug fixes will be applied to all dependencies
+
+##### Multiple main methods (229)
+- multiple classes can have `main()` methods
+- `main()` will be included in most classes to test and debug included methods
+####  Libraries (230)
+- a **library** is a module whose methods are primarily intended for use by other programs
+- **user-defined libraries** are classes that contain sets of *related* methods for use by other programs
+- many predefined `Java` libraires exist, but no library contains all methods needed for all computations
+- ability to create your own libraries as needed crucial to developing complex programs
+##### Clients (230)
+- **client** is the program that calls a library method
+- when class contains a method that is a client method in another class then the first class is a client of the second class
+- example `Sat` is a client of `Guassian`
+- a class can have multiple clients
+	- all classes that call `Math.random()` and `Math.sqrt()` are clients of the `Math` class
+##### APIS (230)
+- **API**s define the contract between the client and implementation, with what the method is meant for clearly specified
+- *provide to clients the methods they need and no others*
+- APIs allow users to understand and use the code, without needing to examine the implementation. This us allows us to limit the contract of what the library will do only to the API specification, not the implementation
+##### Implementations 231
+- **Implementation** is code that implements the methods in an API
+- Every Java program is implementation of some API and no API is of use without an implementation
+- goal of implementations is to **honor the terms of the contract**
+- separating client code from implementation provides freedom to substitute new and improved implementations, since there be many ways to do so, and optimal may not be clear at the outset
+- *provide client programmers the info they need and no more*
+- any unnecessary information implicitly extends the contract, which is not desirable
+- implementation should not be checked for understanding utilization, only should go off API contract
+##### Unit testing (235)
+- even if a class is implemented without reference to any particular client it is good practice to include a `main()` method for **unit testing** and debugging methods in the library
+- `main()` should minimally
+	- exercise all code
+	- provide some assurance code is working
+	- take command line arguments for further testing
+##### Stress testing (236)
+- extensively used libraries should be subject to robust **stress testing**
+- make sure it doesn't crash if client doesn't follow contract or makes assumptions no covered explicitly in API
+- each line of code should be questioned carefully for any conditions that may cause issues or **edge/corner cases**
+#### Input and output for arrays (237)
+- `StdArrayIO` contains static methods for reading primitivize type arrays from standard input and printing them to standard output 
+	- `double[] readDouble1d()`
+	- `double[][] readDouble2d`
+	- `void print(double([] a)`
+	- `void print(double[][] a)`
+- `StdArrayIO` notes
+	- need to settle on file format
+	- print methods are overloaded
+- implementing this library with arrays processing methods from section 1.4 prevents us from having to think about the implementation details for basic array processing and printing
+#### Modular programming (252)
+- library implementations demonstrate value of **modular programming**, instead of writing new program self-contained within own file to address new problem we break up each task into smaller more manageable subtasks, then implement and debug code that addresses each subtask
+- *whenever you can clearly separate tasks within a program, you should do so*
+- **module** typically refers to code that can be compiled and run independently
+- in java each class is a module
+- **dependency graph** maps the relationship between modules in a modular program
+- advantages of modular program have become **crucial** in modern programming
+	- allows us to keep program to a **reasonable size** even in large systems
+	- **debugging** contained to small pieces of code
+	- code can be **reused** without needing re-implementation
+	- **maintaining** and improving code is simpler
+##### Reasonable size programs (252)
+- no large task is so complex that it cannot be broken down into subtasks
+- no hard and fast rule for module size
+- tradeoff between having too many small modules or too few inflexible modules
+- questions to consider as for **monolithic modules**
+	- Are there subtasks that can be and make sense to implement separately?
+	- Could some subtask be logically grouped into a separate library?
+	- Would it be useful for other clients use code in the future?
+- question to consider for **large number of tiny modules**
+	- Is there some group of subtasks that should logically belong to the same module?
+	- Is each separate module really likely to be useful to other clients?
+##### Debugging (253)
+- tracing becomes more difficult with more statements and variable interactions
+- with modular programming and containing the scope of variable local to the modules dramatically cut down on number of possibilities to consider when debugging
+- **contract** between client and implementation, once we're satisfied implementation is meeting contract all of its clients can be debugged under that assumptions
+
+##### Code reuse (253)
+- once a library is written we don't need to worry about implementing those methods again, they can just be called from their module
+- any module can refer to any public method in any other available module
+
+##### Maintenance and improvement (253)
+- modular programming facilitates **continuous improvement**
+- improving module improves all of its clients
+- several different approaches to a problem may be available
+- modular programming allows implementation of each one independently
+- also important is if a bug is noticed with modular programming fixing the bug also fixes the bug in the module's clients
+
+#### sharing static methods extends programming model in two ways
+1. allows code reuse without having to maintain multiple copies
+2. supports message of *whenever you can clearly separate tasks in programs, you should do so* by allowing us to organize programs into files of manageable size that can be independently debugged and compiled
+
+
+
+
+
+
 #### to-do
 - [ ] **1.** *problem*  **pg**
 - [ ] **2** *problem*  **pg**
@@ -1619,10 +1756,176 @@ public static boolean isPrime(int n)
 - [ ] **39.** *problem*  **pg**
 - [ ] **40.** *problem*  **pg**
 
-### 2.3 Recursion
+### 2.3 Recursion (262)
+- **recursions** functions have the ability to call themselves
+- recursion can be a useful way to describe the natural world
+	- recursive trees
+- recursion plays central role in CS
+	- provides a simple computational model embracing anything that can be computed with any computer
+	- helps organize and analyze programs
+	- key to many critical types of applications including
+		- combinatorial search
+		- tree data structures for information processing
+		- **Fast Fourier Transform** for signal processing
+- through the proof technique of **mathematical induction** recursion provides straightforward way to build mathematical models that can be used to prove important facts about programs
+
+
+
+
 #### Terms
+1. [[recursion]] (262)
+2. [[mathematical induction]] (262)
+3. [[induction step]] 
+4. [[reduction step]]
+5. [[recurrence relations]] (272)
+6. [[exponential time]] (272)
+7. [[H-tree]] (277)
+8. [[fractal]] (278)
+9. [[fractional Brownian motion]] (278)
+10. [[Brownian bridge]] (278)
+11. [[midpoint displacement method]] (279)
+12. [[Hurst exponent]] (280)
+13. [[infinite recursion]] (281)
+14. [[call stack]] (281)
+15. [[stack overflow]] (281)
+16. [[dynamic programming]] 283
+17. [[memoization]] (284)
+18. [[static variable]] (284)
+
 #### Propositions
 #### Questions
+
+#### Your first recursive program (264)
+- `factorial` is `hello world` for recursion
+- two main components **required** of every recursive function
+	1. **base case** comes first and defines the stopping condition for the calls
+	2. **reduction step** or **induction step** is the central piece of the recursion, relating the value of a function at one or more arguments to the value at one or more other arguments 
+- *sequence of argument values **must converge** to the base case*
+- base case is place first with a `return` instead of using an `else` clause as it adds unnecessary complexity to larger programs
+	- rest of code dedicated to reduction step
+- small recursive functions are useful for calculating finite sums
+	- this type of recursion acts like a loop in disguise
+
+
+#### Mathematical Induction (265)
+- recursive programming directly related to **mathematical induction** which is used for many proofs about the **natural numbers**
+- proving statement involving integer $n$ for infinitely many values of $n$ with mathematical induction involves 
+	1. **base case:** prove true for specific value of values of $n$ typically $1$ or $0$
+	2. **induction step:** assume statement is true for all positive integers $< n$, then use to prove it is true for all $n$
+- this type of proof showing statement is true for infinitely many values of $n$
+	- can start at base case and use proof to establish statement is true for each larger value of $n$ one-by-one
+- every time we write a recursive program we need mathematical induction to be convinced it will produce desired effect (266)
+- clear line between induction and recursion (266)
+- difference in nomenclature (*induction vs reduction*) indicates the different outlook (266)
+	- with recursion we are trying to get a computation done by *reducing* it to a smaller problem so use a **reduction step**
+	- with *inductive proofs* we are trying to establish truth of statement for larger problems so use an **induction step** (266)
+- with recursive programs we don't always write a formal proof, but we are dependent that such a proof exits (266)
+- often rely on an **informal proof** like with `factorial`
+##### Proof Sum of Positive integers <= n = n(n+1)/2 (266)
+$1+ 2 + 3 + ... + (n-1) + n = n(n+1)/2$
+it is true for base case $n=1 = 1(1+1)/2$
+assume true for all positive integers less than $n$ with $n-1$ in particular
+$1+ 2 + 3 + ... + (n-1)= (n-1)(n)/2$
+add $n$ to both sides and simplify to get desired equation (*induction step*)
+$1+ 2 + 3 + ... + (n-1) + n= \frac{(n^2-n)}{2} +n$
+$1+ 2 + 3 + ... + (n-1) + n = \frac{(n^2+n)}{2}$
+$1+ 2 + 3 + ... + (2n-1) = \frac{n(n+1)}{2}$
+**QED**
+
+##### Euclid's algorithm (268)
+
+##### Towers of Hanoi (269)
+
+#### Function-call trees (269)
+- each method call represented as a **tree-node**
+- tracing function of recursive program may indicate ways to develop non-recursively like with `Towers of Hanoi`
+- **trees** are quintessential recursive object
+- trees play essential role as abstract mathematical object in many programs
+
+#### Exponential time (272)
+- advantage of using recursion is it often allows us to develop mathematical models to prove important facts about behavior of recursive program (like disc movement patterns in `Towers of Hanoi`) 
+	- or the amount of time before it finishes
+- this is important to help us avoid writing programs that take an intractably long time to compute
+- **recurrence relations** naturally arise in recursice programs. These are used in *discrete mathematics* and can often be used to develop a **closed form expression** for quantity of interest
+- `Towers of Hanoi` must satisfy recurrence $T(n) = 2T(n-1) +1 \text{ for } n>1, \text{ with } T(1) = 1$
+	- $T(n)$ is the number of disc move needed
+	- *base case:* $T(1) = 2^n-1=1$
+	- *induction step:* 
+- therefore $t(N) = 2^n -1$ for all inputs $n>0$ 
+- **exponential growth** can quickly exceed capacity for computer to finish program in reasonable amount of time
+*beware of programs that might require exponential time*
+
+##### Gray codes (273)
+
+#### Recursive graphics (276)
+- simple recursive schemes can create remarkably intricate image output
+- examples like **H-trees** have practical applications
+	- H-trees can be used for running cable, planning number of centers in the region, running cable through connecting each home to a center
+##### Brownian bridge (278)
+- **H-tree** is a a type of **fractal**, a geometric shape that can be divided into parts, each of which is approximately a reduced size copy of the original
+- fractals are naturally expressed recrusively
+- fractals useful for fields as diverse as art, econ, and scientific analysis
+- fractals can be used to build compact models of complex shapes, that otherwise defy description
+- **Fractional Brownian motion** is a mathematical model for creating realistic fractal models, often used in
+	- computational finance
+	- study of phenomena like ocean waves and nerve membranes
+- **Brownian bridge**
+- **midpoint displacement method**
+- **Hurst exponent** controls smoothness of curve
+
+#### Pitfalls of recursion (281)
+- pitfalls can be overcome, but need to be careful to recognize
+##### Missing base case (281)
+- without a base case the program will not terminate resulting in an **infinite recursion**
+- infinite recursion differs from infinite loops as the system keeps track of each recursive call in the **call stack**
+- this eventually exceeds the system memory resulting in a `StackOverflowError` at *run time*
+- can use an informal argument using mathematical induction to make sure recursion has desired effect, this can uncover a missing base case
+
+##### No guarantee of convergence (281)
+- recursion design might not reduce meaning base case will not be reached, resulting in an infinite recursion
+- can sometimes be difficult to identify, depending on complexity of code
+
+##### Excessive memory requirements (282)
+- functions that call themselves excessively may exceed memory and overflow the call stack
+##### Excessive recomputation (282)
+- use of recursion to simply solve problem must be weighed against understanding if it will take *exponential time
+- naive implementation of recursive **Fibonacci** sequence incredibly inefficient as same numbers are being computed repeatedly, growing exponentially with `n`
+- **dynamic programming** can be used to prevent recomputation of values already computed
+
+#### Dynamic programming (284)
+- Idea of **dynamic programming** is **divide-and-conquer** strategy
+	- recursively divide complex problems into smaller subproblems
+	- store the answer to each subproblem
+	- use stored answers to solve original problem
+- for `fibonacci` can store calculations then use them to solve when values need to be computed again
+
+
+##### Top-down dynamic programming (284)
+- **top-down** we store or **cache** result of computations
+- next time same computation is needed, stored value can be used 
+- in Java we use a `static` variable aka **class variable** or **global variable** declared outside method
+- top-down DP also known as **memoization**
+
+##### Bottom-up dynamic programming (285)
+- **bottom-up dynamic programming** 
+	- compute solutions of all subproblems, starting with simplest
+	- gradually build up more complicated subproblems
+- to solve this ways subproblems must be *ordered* so each subsequent subproblem, can be solved by combining subproblems earlier in the order
+- 
+##### Longest common subsequence problem (285)
+
+##### Longest common subsequence recurrence (286)
+
+##### Dynamic programming solution (286)
+
+#### Perspective (289)
+- not using recursion miss out on some advantages
+	1. compact solutions to complex problems
+	2. Recursive solutions embody argument that program works as intended
+- recursion illustrates power of carefully articulated abstraction
+- essential to understanding and exploiting computation and understanding role of computational models in natural phenomena
+- 
+
 #### to-do
 - [ ] **1.** *problem*  **pg**
 - [ ] **2** *problem*  **pg**
@@ -1715,8 +2018,511 @@ public static boolean isPrime(int n)
 
 ### 3.1 Using Data Types
 #### Terms
+[[object-oriented programming]] (330)
+[[String data-type]] (330)
+[[constructor method]] (331)
+[[reference data-type]] (334)
+[[static methods]] (340)
+[[instance methods]] (340)
+[[color data-type]] (341)
 #### Propositions
 #### Questions
+
+- [[object-oriented programming]] (**OOP**)organizes data for processing using abstract data-types know n as [[reference types]]
+	- OOP is a programming paradigm facilitating organizing and processing data
+- extensive libraries of reference types supplements primitive data-types including the [[String data-type]]
+- with the ability to use and create reference types we are not only limited to operations on primitive types (mostly numeric), or even the built -in string and [[color data-type]]
+#### Basic definitions (331)
+- *do not need to know how a data-type is implemented to be able to use it*
+- data-types defined by values and operations, but when using a data-type the focus is on the **operations**
+##### The String data-type (331)
+- String processing is critical to many applications
+	- lie at heart of ability to compile and run programs
+	- basis of info processing apps crucial to business systems
+	- people use them to communicate
+		- blogs
+		- chat
+		- email
+		- documents for publication
+	- important to scientific advancements especially in molecular biology
+- Strings are an object and have separate operations for *declaring variables*, *creating objects* to hold data-type values and *invoking instance methods* associated with data-type to perform operations
+	- they are the only object that have shortcuts for operations so they can by used in a similar way to primitive data-types
+	- reference data type declaration, creation, and operations are used differently from primitive types, but corresponding mechanisms perform similar functions
+##### API (332)
+- Java classes can be used to define reference data types
+- like any class of methods the API contract can specify what a user needs to know and allows us to guarantee that *data -types can be used even if a user is ignorant of the implementation details**
+- API purpose is to provide information needed to be able to utilize data type appropriately in a client program calling the class
+- a [[constructor]] is a special method, it is the first class entry  has same name as the class and no return type
+- class entries are [[instance methods]] that can take arguments and return values for objects of the reference data-type
+	- similar to [[static method]]s  but are only associated with objects the reference data-type
+	- `string.length()` returns number of characters in a string
+	- `string.charAt(i)` returns character at index if of a string objects
+- [[string]]s are indexed similar to arrays
+
+##### Declaring variables (333)
+- Declare reference data-type same ways as a primitive data-type
+	- `String s;`
+	- Convention is for reference data-types to be declared with a capitalized data-type and primitive data-types use lower case `int, double, char etc.`
+- Doesn't create anything just declares that the identifier will be used for an object of that type
+- 
+##### Creating objects (333)
+- `String s = new String("Hello, world");`
+##### Invoking instance methods (334)
+- each data-type value is tored in a na object
+- when [[constructor method]] called by a client, Java instantiates a new instance of the object
+- `s = new String("Hello, World);"`
+- declaration and instantaiation can be called in the same line
+- `String s = new String("Hello, World);"`
+- An unlimited number of objects can be created from the same data class
+- each object has same identity and values that can be manipulated independently
+```Java
+//3 Differente string objects (even s1 and s3)
+String s1 = new String("Cat");
+String s2 = new String("Dog");
+String s3 = new String("Cat");
+```
+
+
+##### Invoking instance methods (334)
+-    biggest difference between primitive and reference data-types is how op-erations are invoked
+	- [[primitive data-type operations]]
+		- `+,-,/,*` etc.
+	- [[reference data-type]] variables themselves are sued to invoke instance methods
+- similar to calling a static method except the method is associated with the object itself as well as the method class like with a [[static method]]
+	- typically use object name instead of class name when identifying instance method
+- `s.chartAt(1)` invokes the instance method to find the character at index 1 on the string object `s`
+##### Strings shortcuts (335)
+- Strings are only reference data type with shortcuts resembling primitive data-type operations
+- These are just shortcuts for corresponding long form operations like a traditional object method call
+``` Java
+String s = "abc";
+String s = new String("abc");
+
+String t = r + s;
+String t = r.concat(s);
+```
+- String class has many more operations for processing Strings
+- String API good example of developing and abstract model and separating the code that implements the abstraction from the code that uses it
+- [[object-oriented programming]] is built around this idea, where programs are based on defining and invoking methods that implement abstractions through data-type operations
+#### String-processing application: [[genomics]] (336)
+- String's useful for working with gene models
+- Biologists model [[DNA]] using  *A, C, G, T* as the four bases in DNA of living organisms
+	- one for each [[chromosome]]
+- building blocks appear in long sequence known as a [[genome]]
+- Genome for many living creatures is known allowing scientists to compose programs to study the structure
+- String processing critical to molecular biology for both experimental and coputational purposes, especially since a specie's genome can be massive
+	- human genome made up of a sequence of 3,000,000,000 bases
+##### Gene prediction (336)
+- [[gene]] is a substring of a genome that represents a functional unit for life processes
+- genes are made up of a sequence of [[codons]], made up of 3 bases representing an amino acid
+- [[start codon]] *ATG* marks beggining
+- [[stop codon]] *TAG, TAA, TGA* mark the end
+- first step in analyzing genome is a [[String processing]] task
+	- sued to identify potential genes by making sure sequences comply with the conditions specified below
+		- length must be multiple of 3
+		- starts with *start codon*
+		- ends with an *end codon*
+		- no *stop codon*s appear in between
+##### Program 3.1.1 Identifying potential gene
+###### Methods used
+```Java
+length()
+charAt()
+startsWith()
+endsWith()
+substring()
+equals()
+```
+#### Properties of reference types and objects 
+##### Object references (338)
+- [[constructor]] creates object returns reference to the object
+- `new` assigns memory space to hold object's [[data-type value]] and return's a [[pointer]] to memory address 
+	- memory address associated with object is the [[object's identity]]
+- *Why is address returned rather than object itself?*
+	- data-type values consume a lot memory
+	- if object is large it would be very costly to copy and move all data every time an object is passed as an argument to a method
+	- same reasoning as with arrays because **arrays are objects**
+- primitive types are natural to represent in memory so doesn't make sense to use references
+
+##### Using objects (338)
+- variable names can be used similar to variables for primitive types
+	- as arguments or return values in methods
+	- in array assignments statements
+	- in arrays
+- Additionally **object** variable names can be used to *invoke instance methods defined for the object type*
+	- not available for primitive variables as operations are built into the language
+
+##### Uninitialized variables (339)
+- variables that are declared but not assigned a value are [[uninitialized]]
+- Using uninitialized objects variables returns a *compile-time error* like using unitialized primitive variables
+##### Type conversion (339)
+- need to write code if you want to convert an object of one type to the other
+- often not necessary as object data-types are so different conversion wouldn't make sense
+	- what does it mean to convert a String to a Color object
+- `toString()` is one conversion that is worthwhile
+	- details of conversion are up to implementation
+	- usually implemented where String encodes object value
+- Java automatically calls `toString()` for certain situations like
+	- [[string concatenation]]
+	- printing to console
+
+##### Accessing a reference data type (339)
+- similar to [[static methods]] code implementing class 
+	- stored in file of same name
+	- needs to be accessible to java to utilize in client code
+
+##### Distinction between instance methods and static methods (340)
+- purpose of [[static methods]] is to implement functions
+- purpose of [[instance methods]] is to implement [[data-type operations]]
+- visual difference
+	- static methods typically start with class name
+	- instance methods starts with object name
+|              | instance method                     | static method    |
+| ------------ | ----------------------------------- | ---------------- |
+| sample call  | `s.startsWith("Hello")`               | `Math.sqrt(2.0)` |
+| invoked with | object name/object reference        | class name       |
+| parameters   | reference to invoking object + args | args             |
+| purpose      |manipulate an object's value         |compute a return value  |
+
+##### OOP Summary (340)
+- **Data type:** is set of values and operations defined on those values
+	- data types are implemented in modules which client programs can use
+- **Object:** is an *instance* of a data-type
+- **Objects** characterized by 3 properties
+	1. [[state]]: value from an object's data type
+	2. [[behavior]]: defined by object's [[data-type operations]] 
+	3. [[identity]]: object's memory location
+- Invoke [[constructor method]] to create objects
+- Invoke [[instance method]] to modify object state
+- Objects are manipulated via [[object references]]
+
+#### Color (341)
+- [[color]] is a widely used abstraction in computer graphics
+- representing and using color is a complex task and depends heavily on publication format
+- Java provides a color reference type allowing for separation between designer's problem of specifying a color and the system's problem of representing it accurately
+- `import java.awt.Color` allows us to explicitly list which libraries to use to avoid name conflicts
+- `Color` represents color values at [[RGB color model]]
+	- recolor defined by `int` values from `0-255` representing intensity of red green and blue
+	- other colors obtained by mixing these 3 colors
+	- data type value of `Color` represented by 3 8-bit integers
+- `Color` constructor takes 3 integer arguments
+```Java
+Color red = new Color(255, 0, 0);
+Color bookBlue = new Color(9, 90, 166);
+```
+- Here color is used to demonstrate object-oriented programs, as well as being a useful tool for program development
+	- mainly exploring one property [[monochrome luminance]] to show that using oop for abstract concepts like color is convenient approach
+
+##### Luminance (343)
+- luminance is the effective brightness of a color and is critical to the function of modern LCD displays
+- it is a [[linear combination]] of the 3 RGB intensities
+$$Y = 0.299r + 0.587g + 0.114b$$
+- coefficients are positive and sum to 1, meaning luminance is a real number from 0 - 255
+##### Grayscale (344)
+- when all 3 RGB intensities are equal, produces a color in the [[grayscale]]
+	- ranges from black (all 0's) to white (all 255)
+- to print in black and white need a function to convert color to grayscale
+- this can be accomplished by *replace color with new one where rgb values equal monochrome luminance*
+
+##### Color compatibility (344)
+- **monochrome luminance** also helps determine whether colors are compatible if printed together
+- *rule of thumb* difference between two color's luminance should be >= 128
+- Using Color objects as arguments and return values simplifies libraries developed to process color
+	- alternative would be functions passing around 3 rgb intensities
+		- passing values is cumbersome
+		- no way to return multiple values without objects
+	- object allow maintenance of state
+
+#### Digital image processing (346)
+
+##### Digital images (346)
+
+##### Grayscale (347)
+
+##### Scaling (349)
+
+##### Fade effect (351)
+
+- abstraction for color can also be built upon to build [[higher-level data types]] that have color values (344)
+- Can be used to create data types that can be utilized in programs for image processing (344)
+- [[digital images]] are now computationally dependent and easily allow users to perform operations on image attributes
+	- [[crop]]
+	- [[scale]]
+	- [[fade]]
+	- [[contrast]]
+	- [[brightness]]
+##### Digital images (346)
+- digital images are a rectangular grid of [[pixels]]
+	- each color of a pixel is individually defined making up the atomic elements of digital images
+	- pixels are the values that are processed when rendering digital images and operated on when modifying
+- [[Picture object]] is an implementation of this abstraction
+	- it is a two dimensional matrix, where each element is a separate [[Color object]]
+	- Instance methods defining operations include
+		- creating blank image with given width and height
+		- load image from file
+		- set a pixel value to a color
+		- return color of a pixel value
+		- return the width/height of an image
+```Java
+//Picture API
+	Picture(String filename) //creat picture from file
+	Picture(int w, int h)    // create blank wxh image
+int width()                  // return picture width
+int height()                 // return picture height
+Color get(int col, int row)  // return color of pixel at (c,r)
+void set(int col, int row, Color c) // set color of pixel at (col,row) to c
+void show()                         // display image
+void save(String filename)          // save image to file
+```
+- (0,0) customarily the top -left pixel, meaning images are ordered like 2D arrays
+	- contrast to `StdDraw` functions that have (0,0) as bottom left-most location
+	- oriented like [[Cartesian coordinates]]
+- These methods along with `Color` data type provide ability for image processing
+##### Grayscale (347)
+- converting to grayscale is greatly simplified with pixel based abstraction implemented as an object
+- Need to calculate luminance for color pixels, then convert to a grayscale color with the same intensity by setting all 3 RGB values to the *monochrome luminance* returned
+- A target is created where each pixel corresponding to the original image is set to its monochrome luminance value
+	- Creates new `Picture` object, which is initialized to the color original, then converts each pixel by applying `Luminance.togray()` to the color in value in the pixel  
+
+##### Scaling (349)
+- [[scale]] common task in image processing is making image bigger or smaller
+- If target image needs to be scaled to half size can simply delete half the pixels
+	- technique known as [[sampling]]
+- For doubling need to take a different approach
+	- can replace the pixel with 4 pixels of the same color
+- halving a doubling an image will not give back the same image as information is lost in the scale down
+- Can adapt a general strategy for [[upscaling]] and [[downscaling]]
+	- go through pixel by pixel in target
+	- scale each pixel's coordinates to identify pixel color in the source
+	- source:
+		- width $w_s$
+		- height $h_s$
+	- target 
+		- width $w_t$
+		- height $h_t$
+	- scale column index by $w_s/w_t$
+	- scale row index by $h_s/h_t$
+	- this means we get the color for pixel in col c and row r of the target for
+		-  column $c*w_s/w_t$
+		- row $r*h_s/h_t$ 
+	- other approaches can be taken for low resolution photos
+		- might downscale to half size by taking average of four pixels in source to make one pixel in target
+```Java
+public class Scale{
+	public static void main(String[] args){
+		int w = Integer.parseInt(args[1]);
+		int h = Integer.parseInt(args[2]);
+		
+		Picture source = new Picture(args[0]);
+		Picture target = new Picture(w, h);
+		for(int colT = 0; colT < w; colT++){
+			for(int rowT = 0; rowT < h; rowT++)
+			{
+				int colS = colT*source.width()/w;
+				int rowS = rowT*source.height()/h;
+				target.set(colT, rowT, source.get(colS, rowS));
+			}
+		}
+		source.show();
+		target.show();
+	}
+}
+```
+
+##### Fade effect (351)
+- [[fade effect]] transform one image into another
+- uses [[linear interpolation]] to create transition effect
+	- $n-1$ intermediate pictures calculated
+	- each pixel in picture $i$ weighted average of corresponding pixels in source and target images 
+- static method `blend()` implements interpolation
+	- source pixel weighted by factor of $1- i/n$
+	- target pixel weighted by factor of $i/n$
+```Java
+import java.awt.Color;
+
+public class Fade{
+	public static Color blend(Color c1, Color c2, double alpha)
+	{
+		double r = (1-alpha)*c1.getRed + alpha*c2.getRed();
+		double g = (1-alpha)*c1.getGreen + alpha*c2.getGreen();
+		double b = (1-alpha)*c1.getBlue + alpha*c2.getBlue();
+		return new Color((int)r, (int)g, (int)b));
+	}
+
+	public static void main(String[] args){
+		Picture source = new Picture(args[0]);
+		Picture target = new Picture(args[1]);
+		int n = Integer.parseInter(args[2]);
+		int w = source.width();
+		int h = source.height();
+		Picture picture = new Picture(w, h);
+		for(int i = 0; i <=n; i++){
+			for( int c = 0; c < w; c++){
+				for(int r = 0; r < h; r++)
+				{
+					Color c1 = source.get(c,r);
+					Col0r c2 = target.get(c, r);
+					double alpha = (double)i/n;
+					Color color = blend(c1, c2, alpha);
+					picture.set(c, r, color);
+				}
+			}
+			picture.show();
+		}
+	}
+}
+```
+
+#### Input and output revisited (353)
+- standard input is convenient as it is accessible from anywhere in the program, 
+- unfortunately dependent on the the OS's piping and redirection utilities to access files
+- also restricts I/O to one file input, one output file, and one drawing
+- can use OOP to define I/O mechanisms that allow multiple [[input streams]], [[output streams]], and drawings in a single program
+- can now define multiple objects of each I/O data-type which allows us to connect multiple I/O streams to different sources and destinations
+- can also assign these objects to variables and manipulate like any other object
+
+##### Input stream data type (354)
+- [[input stream data-type]] 
+	- no longer restricted to one abstract input stream
+	- can now specify the source including input streams from
+		- *file*
+		- *website*
+- specified file/website becomes source for the assigned object
+	- now possible to process multiple files in same program as multiple objects can be created with different sources
+- ability to access web for input streams greatly expands access to data to the entire world wide web
+	- can access files maintained online by other like:
+		- scientific data files
+		- satellite photos
+		- astronomical observations
+		- stocks performance
+		- government agency data
+			- federal reserve
+			- census
+- can now write programs that directly read these files
+
+##### Output stream data type (355)
+- [[output data-type]] serves as a similar analog allowing text to be printed to a large variety of [[output streams]]
+- can now specify a location to send output to, as well as standard output
+
+
+##### File concatenation and filtering (356)
+- [[file concatenation]] programs can be composed with input and output objects to allow us to combine files into a single output file, while specifying filter conditions
+- the ability to control implementation details rather than the OS `cat` utility is useful in many applications including [[web scraping]]
+##### Screen scraping (357)
+-  many websites defined with text files
+- using input and output data-stream objects, can set website as source destination and extract text
+	- stored in highly structured format like `HTML`
+	- Java sees text as just another string
+	- filters can be set in program to ignore irrelevant elements in web text
+- process known as [[web scraping]]
+	- allows us to extract info without having to browse site
+- `String.indexOf()` and `String.substring()` methods can be used to take advantage of `HTML` structure find and extract patterns for data you are interested in
+	- HTML highly structured and uses tagging to identify content types
+	- can find tag patterns and extract the substring between them
+- website formats may change, potentially requiring changes in program implementation if the program needs to be used continuously
+
+
+##### Extracting data (358)
+- spreadsheets can be saved into some organized text format like [[comma separated value files]] (**CSV**)
+	- data delimited by commas, where each comma indicates new column
+	- each line is a separate row
+- This data can be read into java into java as input streams
+	- `String.split()` can be used to read file line by line, splitting by the delimiter (",")
+	- this allows us to isolate and extracts specific columns
+	- Can then go on to define multiple output streams, dedicating a different file to every column
+
+##### Drawing data type (361)
+- can create multiple objects containing drawing type
+- can have multiple output windows
+#### Properties of reference types (362)
+- [[reference data-type]]s capture the distinction between a thing and its name
+	- [[Rene Magritte]] [[This is not a pipe]]
+	- once an object is created multiple names can be assigned all referencing the same object
+	- similar to [[array assignment]]
+	- 
+##### Aliasing (363)
+- [[aliasing]]-  assignment  with reference type creates a copy of the reference
+	- does **not** create a new object
+	- both variables will refer to same object
+	- [[aliasing bugs]] this can be a source of bugs
+- following this logic changing the state of an object changes the state for all references to that object
+##### Immutable types (364)
+- [[immutable]] types are objects where data-type values cannot be changed once created
+- may be used to prevent [[aliasing bugs]]
+- `Strings` are *immutable*, there are no operations available to clients that can change the string's characters
+	- conversely `arrays` and `Picture`objects are  [[mutable]] data-types
+##### Comparing objects (364)
+- for reference data-types `==` compares whether references are equal, not whether they contain the same values
+- instance methods to check equality need to be explicitly defined for new data-types
+##### Pass by value (364)
+- when arguments are passed to methods, Java passes copy of the argument value from the caller to the method
+	- [[pass by value]]  primitive types arguments Java passes  a copy of that value
+	- [[pass by reference]] for arguments of object references, Java passes a copy of the object reference
+- this is because individual primitive type values will be small, but abstract data-types can be arbitrarily large and needing to copy all elements could potentially be resource instensive
+- this also means methods can't change the value of a caller's variable, each time a reference type is used a new *alias* is created for it
+	- method cannot change the caller's object reference (make it refer to a different `Picture`  for object)
+	- it can change the value of the object (`Picture.set()` to change a picture's color)
+##### Arrays are objects (365)
+- [[array]]s are [[mutable]] objects
+	- appropriate for typical function where we want to be able to modify the elements within
+		- `shuffle()`
+		- `exchange()`
+- built in language support for arrays like `Strings` for certain operations
+	- declaration
+	- initialization
+	- indexing
+
+##### Arrays of objects (365)
+- arrays can contain any type of data-type including objects
+- arrays of objects are actually [[array of references]] to objects
+	- gain efficiency if objects are large as we don't have to shuffle values around
+	- if objects are small we lose efficiency following references every time information about object is needed
+- create an [[array of objects]] in 2 steps
+	1. create array with `new` and square bracket syntax
+	2. create each object using `new` to call constructor method for object of interest
+```Java
+Color[] a = new Color[2];
+a[0] = new Color(255, 255, 0);
+a[1] = new Color(160, 82, 45);
+```
+##### Safe pointers (366)
+- many languages provide [[pointer]]s to locate and manipulate memory addresses 
+- similar to Java references
+	- common in C and C++
+- pointers can be dangerous and error prone
+	- languages often provide special methods for working with pointers to avoid these errors
+- Java implements concept of [[safe pointer]]s where Java guarantees each reference points to an object of that data-type not an empty memory address
+	- only one way to create a reference (with `new`)
+	- only one way to manipulate that reference (with the [[assignment statement]])
+- this means programmers can only create and copy references
+##### Orphaned objects (366)
+- ability to assign different objects to a reference variable can lead to [[orphaned]] objects
+	- an object in a program that can no longer be referenced, if originally assigned a reference which now references a different object
+- objects out of scope are also considered to be orphaned
+##### Memory management (367)
+- Programs will typically create many objects, but only need a small number at any time
+- Need mechanisms to [[allocate memory]] when storage need for data-type variables then [[free memory]] when no longer needed
+- memory easier to manage for primitive types, because storage needs are know at compile time
+- object memory management more complicated
+	- knows when to *allocate* with `new` keyword
+	- less straightforward to know when to *free* the memory because when an object is orphaned depends on the execution dynamic of a program at run-time 
+
+##### Memory leaks (367)
+- languages like C and C++ require programmer to **manually** *allocate and free memory*
+- Can be tedious and error prone
+- If a program deallocates memory then continues to refer to the object later in the program program may have reallocated the memory for other purposes in between leading to chaos and error
+- If programmer forgets to deallocate memory for *orphaned objects* can result in a [[memory leak]] where memory dedicated to orphaned objects accumulates
+	- causes performance degradation as if memory leaking out of computer
+	- one of reasons rebooting solves many issues
+##### Garbage collection (367)
+- Java automatically manages and clear unused memory including orphaned objects through [[garbage collection]]
+- *safe pointer* allows this to be done automatically
+- programmer no longer needs to keep track of orphaned objects and returning memory
+	- debated whether additional overhead worth the gain
+#### Q&A
+- [[pass by object reference]] Java is purely a *pass by value language* with objects you are passing the value of the reference to the object
+	- value is either a primitive data type or a reference to an object
+	- method cannot modify the data type and it cannot modify the reference name, but can modify the value of the object at the reference address 
 #### to-do
 - [ ] **1.** *problem*  **pg**
 - [ ] **2** *problem*  **pg**
@@ -1763,6 +2569,229 @@ public static boolean isPrime(int n)
 #### Terms
 #### Propositions
 #### Questions
+- while many convenient abstractions defined for data types beyond primitive data-types, built in libraries could not possibly capture all potential needs for every user
+- [[data abstraction]]: need to be able to define custom data-types in Java
+- creating data types is similar to writing libraries of static methods
+- key differences 
+	- data is associated with the method implementation 
+- API specifies constructor and and instance methods needed to be implemented but are free to define any appropriate representation
+- ability to define abstractions helps address arbitrarily complex programming challenges
+#### Basic elements of a data type (383)
+- demonstrate process of implementing data type with `Charge` data-type
+- 
+##### API (383)
+- API is contract with all clients and should be the starting point for defining the `Charge` data-type
+- To implement data-type
+	- define data-type values
+	- implement constructor that creates charged particle
+	- method `potentialAt()` returns potential at $(x, y)$ point due to charge
+	- `toString()` return String representation of charge
+
+##### Class (383)
+
+- data-types are implemented as classes
+- key features of a data-type
+	- [[instance variable]]s
+	- [[contractor]]s
+	- [[instance method]]s
+- each element of data-type qualified by [[access modifier]]
+##### Access modifiers (384)
+
+- [[access modifier]]s sometimes precede class names, *instance variable* names and method names, control access of these items from the client code  
+	- `public` accessible by clients
+	- `private` not accessible by clients
+	- `final` value of variable does not change once initialized
+- **convention:**
+	- `public` used for constructors and methods defined in API
+	- `private` used for everything else (usually helper functions to simplify code in the class)
+- 
+##### Instance variables (384)
+
+- need to declare [[instance variable]]s before [[instance method]]s can be defined to operate on data-type values stored in variables
+- can be of any data-type
+- declared same way as local variables
+- declared as first statements in class
+- [[difference between instance and local variables]]
+	- only one value for each local variable in a block or method
+	- will be as values for  instance variables as there are objects of the data type
+	- each time instance method is invoked it is done with an object reference to the object whose value is actually being manipulated. *separation of concerns*
+```Java 
+public class Charge{
+	private final double rx, ry;
+	private final double q;
+}
+```
+##### Constructors (384)
+
+- [[constructor]]s are special methods that create and provide references to an object
+- automatically invoked with `new` keyword
+- Code needs to initialize constructor with meaningful values for instance variables
+- Share same name as the class 
+- can be [[overloaded]] with multiple constructors with different signatures 
+- `new` with constructor name equivalent as a function that returns an object reference of specified type
+- no return type as they *always return reference to object of the data type*
+- each time constructor is invoked
+	- memory allocated for object
+	- constructor code invoked to initialize instance variables
+	- reference to new object returned
+- **typical  constructor** *initializes instance variables with values provided by client as arguments*
+
+##### Instance Methods (385)
+
+- implementation of [[instance method]]s similar to [[static method]]s 
+- [[instance vs static methods]]
+	- each method has 
+		- signature specifying return type and parameter variables
+		- body consisting of sequence of statements and return statement 
+	- when instance method invoked by client
+		- parameter variables initialized with client values
+		- statements executed until return reached
+		- value returned to client
+	- only difference is that **instance methods** *perform operations on **instance variables***
+##### Variables within methods (386)
+
+- *instance methods* use three types of variables
+	1. [[parameter variable]]s (same as static method)
+	2. [[local variable]]s (same as static methods)
+	3. [[instance variable]]s
+- instance variables are completely different from other two
+	- hold data-type values for objects in class
+	- scope is the *entire class*
+- each object of class has a value
+- code in instance method refers to *value for object used to invoke method*
+- distinction between [[instance vs. parameter vs. local variables]] used to implement instance methods key to understanding *OOP*
+| variable  | purpose                          | example  | scope  |
+| --------- | -------------------------------- | -------- | ------ |
+| parameter | pass value from client to method | `x, y`   | method |
+| local     | temporary use within method      | `dx, dy` | block  |
+| instance  | specify data-type vale           | `rx, ry` | class       |
+##### Test client (388)
+
+- `main()` can be used for testing methods in each class
+##### Summary of basic data type elements
+- every data type has same basic elements
+	- instance variables
+	- constructors
+	- instance method
+	- test clients
+- Each data-type implemented with same steps
+	1. specify API to *separate clients from implementation* and enable [[modular programming]]
+		- should think about needs of client  then accomodate in data-type
+		- [[two goals for API]]
+			1. enable clear and correct client code
+			2. Want to be able to implement needed operations
+		- no point specifying operations that we can't realistically implement
+	2. second step is *implement class meeting API specifications*
+		1. choose instance variables
+		2. write code to manipulate instance variables to implement contructors and instance methods specified
+	3.  this write test clients to validate design decision made in previous steps
+#### Stopwatch (390)
+- [[object-oriented programming useful for modeling real world objects]] like a stopwatch
+#### Histogram (392)
+- [[whenever you can clearly separate data and associated operations within a program you should do so]]
+#### Turtle Graphics (394)
+- small amount of [[state]] can greatly simplify computations allowing data-types to maintain values for manipulation
+- should clearly separate state/data like other tasks when possible within a program
+- [[turtle graphics]] originally developed in 1960s at MIT to demonstrate LOGO programming language
+##### Recursive graphics (397)
+- [[koch curve]] 
+	- order 0 straight line
+	- order $n$ 
+		- draw curve of $n-1$ 
+		- turn left 60 degrees
+		- draw second curve $n-1$ 
+		- turn right 120 degrees (left -120 degrees)
+		- draw third curve
+		- turn left 60 degrees
+		- draw fourth curve
+- recursive implementation made simpler with objects
+- useful modeling self-similar structures found in natures like snowflakes
+- **proof by induction** width of curve order $n$ is $3^n * \text{step size}$  
+
+##### Spira mirabilis (398)
+- [[logarithmic spiral]] results if step size decreases each step
+##### Brownian motion (400)
+- [[brownian motion]] 
+#### Complex Numbers (402)
+- [[complex number]] is number of form $x + iy$
+	- $x \text{ and }  y$  real numbers
+	- $i$ is $\sqrt{-1}$ 
+	- $x$ is *real part*
+	- $i$ is *imaginary part*
+- complex numbers quintessential mathematical abstraction
+- used in applied mathematics
+- model many types of physical systems
+	- circuits
+	- soundwaves
+	- electromagnetic fields
+- developing data type for complex numbers perfect use of abstract data types
+	- provides freedom to think in new abstractions
+- can develop methods once to deal with a data type operation then not have to worry about how to implement again, it is *reusable* (404)
+	- save debugging
+	- allows changing implementation if needed since separate from clients
+- *whenever you can clearly separate data and associated tasks within a computation you should do so* (404)
+##### Accessing instance variables of other objects of the same type (403)
+- if private cannot access instance variables from another class
+- within a class can access instance variables of any object from same class directly
+	- not just limited to instance variables of invoking objects
+```Java
+public Complex plus(Complex b)
+{
+	double real = re + b.re;
+	double imag = im + b.im;
+	return new Complex(real, imag);  
+}
+```
+##### Creating and returning new objects (404)
+- clients can manipulate data types like complex numbers naturally by being able to manipulate local variables in the type `Complex`
+```Java
+public Complex times(Complex b)
+{
+	double real = re * b.re - im * b.im;
+	double imag = re * b.im + im * b.re;
+	return new Complex(real, imag);  
+}
+```
+##### Chaining method calls (404)
+- can chain method call into single statement eliminating need for intermediary variables
+- can use any object reference to invoke methods even without a name
+	- like one that results from evaluating subexpression
+- moving left to right instance will be invoked that is then passed to next instance method in chain
+```Java
+public static void main(String[] args)
+{
+	Complex z0 = new Complex(1.0, 1.0);
+	Complex z = z0;
+	z = z.times(z).plus(z0);
+	z = z.times(z).plus(z0);
+	StdOut.println(z);
+}
+```
+##### Final instance variables (404)
+- [[final instance variable]] values don't change during lifetime of objetc
+```Java
+public class Complex{
+	private final double re;
+	private final double im;
+	public Complex(double real; double imag)
+	{ re = real; im = imag}
+}
+```
+#### Mandelbrot Set (406)
+- [[mandlebrot set]] is set of self similar recursive pattern that cannot be described by an equation, instead is defined by an algorithm
+#### Commercial Data Processing (410)
+- need for reliable [[commercial data processing]] software has been driving force for OOP
+- can maintain different states of data for different objects of same type
+	- like balances within an account object
+- ro enable processing we need
+	- [[file format]]
+	- [[data structure]] or internal representation
+##### File format (411)
+- most modern systems use text files for data to minimize dependencies on formats defined for specific prorgams
+- can incorporate [[tags]] to introduce additional structure and label data reducing dependencies
+##### Data Structure (411)
+- use [[instance variable]]s to represent information for processing
+- specifies type of information and provide structure needed to refer to it in code`
 #### to-do
 - [ ] **1.** *problem*  **pg**
 - [ ] **2** *problem*  **pg**
@@ -1897,9 +2926,207 @@ public static boolean isPrime(int n)
 - [ ] **39.** *problem*  **pg**
 - [ ] **40.** *problem*  **pg**
 
-## Chapter 4: Algorithms and Data Structures
+# Chapter 4: Algorithms and Data Structures
 
 ### 4.1 Performance
+#### Intro (495)
+- important to *pay attention to the cost* of a program
+- cost dictates
+	- focus of implementation designed by engineers
+	- performance of software designed by developers
+	- which scientific problems can be addressed by physicists and biologists
+	- key to the jobs of businessmen and economists
+- Study cost with the [[scientific method]]
+- derive cost models with [[mathematical analysis]]
+- with programs the features of cost we study is *time*
+	- since complex operations are composed of relatively simple tasks, modeling time is relatively straightforward
+##### Scientific method
+1. *observe* feature of the world
+2. *hypothesize* a model consistent with observations
+3. *predict* events using hypothesis
+4. *verify* predictions with additional observations
+5. *validate* by repeating until hypothesis agrees with observations
+- experiments must be [[reproducible]] 
+- hypotheses must be [[falsifiable]]
+#### Observations (495)
+- programs have a *problem size* characterizing difficulty of computational tasks
+- typically the size of the input
+- running time should increase with problem size
+- question is by *how much?*
+- other problems may not change with input size
+- need a way to quantify sensitivity to input
+- need to quantify correspondence between problem size and running time
+- *what is the relation between problem size $n$ and running time?*
+#### Hypotheses (496)
+- Despite all potential confounding factors, possible *in principle* to create an accurate model to predict running time ([[Donald Knuth]])
+- Analysis requires
+	- Detailed understanding of the program
+	- Detailed understanding of the system and computer
+	- Advanced mathematical analysis tools
+- Simpler to create *back-of-the-envelope* calculations that capture essence of run-time growth using empirical observations and simpler mathematical analysis
+##### Doubling hypotheses (496)
+- Simple hypotheses can be formulate for many programs *what happens to running time of a program if the input size doubles*
+- known as the [[doubling hypothesis]]
+##### Empirical analysis (496)
+- might start by observing how runtime increases by tracking with a stopwatch and changing the input
+- can use a graph to add further clarity and help determine possible mathematical function of growth
+##### Mathematical analysis (498)
+- [[total runtime depends on two factors that are properties of the system and the algorithm]]
+	- Cost of executing each statement (property of system)
+	- frequency of executing each statement (property of algorithm)
+- can be difficult to identify frequency of execution, leading to complicated mathematical expressions
+- can practically simplify by using [[approximate expressions]]
+	- work only with the [[leading term]] 
+	- focus on instructions that occur most frequently, the [[inner loop]] of the program
+- instructions outside the inner loop and smaller than the leading term become practically insignificant as input grows large
+- **key point** For many programs running time satisfies relationship $T(n) \sim cf(n)$
+	- $c$ is a constant
+	- $f(n)$ is the [[order of growth]] function for the run time
+- do not need complex mathematical analysis for the most part
+	- safe to ignore costs outside *inner loop* because it is negligible in comparison
+	- don't need to know constant, because it cancels out as input grows
+- *approximate analysis* separates the algorithm from the system, allowing us to ignore the specifics of a machine or language
+- *algorithm determines the **order of growth***
+- separation allows us to develop knowledge of algorithm performance and apply the knowledge to any system 
+#### Order-of-growth classifications (503)
+- order of growth often falls into one of a few common types
+| description  | function              | factor for doubling hypothesis |
+| ------------ | --------------------- | ------------------------------ |
+| constant     | $\mathcal{O}(1)$      | $1$                            |
+| logarithmic  | $\mathcal{O}(log n)$  | $1$                              |
+| linear       | $\mathcal{O}(n)$      | $2$                              |
+| linearithmic | $\mathcal{O}(nlog n)$ | $2$                              |
+| quadratic    | $\mathcal{O}(n^2)$    | $4$                              |
+| cubic        | $\mathcal{O}(n^3)$    | $8$                           |
+| exponential  | $\mathcal{O}(2^n)$    |$2^n$                                |
+
+##### Constant (503)
+- [[constant time complexity]] executes a fixed number of statements meaning run time unaffected by problem size
+##### Logarithmic (503)
+- [[logarithmic time complexity]] almost as fast as *constant time*
+- common example [[binary search]]
+- program size grows slowly in proportion to growth of input size
+##### Linear (504)
+- [[linear time complexity]] require a constant amount of time for each input
+- execution time increases at a constant rate as program size increases
+##### Linearithmic (504)
+- [[linearithmic time complexity]] solutions can often be implemented for prorgams that are naturally quadratic
+- typically approach improvement with [[divide-and-conquer]] strategy
+##### Quadratic (504)
+- [[quadratic time complexity]] typically crops up with nested loops
+- [[insertion sort]]
+##### Cubic (506)
+
+##### Exponential (506)
+- [[exponential time complexity]] execution time grows at a faster rate with each additonal increase of input size
+- extremely slow, cannot be used for large problems
+- important role in [[theory of algorithms]] as many types of problems for which exponential time is best that can be don3e
+- [[towers of hanoi]]
+#### Predictions (507)
+- knowing [[order of growth]] allows us allows us to predict running time and make decisions about addressing problems that can be met with resources at hand without needing to actually run the program beforehand
+
+##### Estimating the feasibility of solving large problems (507)
+- *will this program be able to process input in a reasonable amount of time?*
+- If input size it too large for problem's time complexity need to find another approach
+- knowing *order of growth* allows you to predict accurately the limitations of the size of problems that can be solved
+##### Estimating the value of a faster computer (507)
+- *how much faster can I solve the problem with a faster computer?*
+- [[Moore's law]] can expect a computer with about twice the speed and double the memory in 18 months from now
+- cannot necessarily solve a program of double the input size in same time or the same input in half the time, because it depends on how fast the time grows, as increased speed and memory only decreases execution time at a constant rate
+- [[value of linear and logrithmic algorithms with increased computing resources]] is that they allow your performance to keep pace with Moore's law, as computer that is 10x faster with 10x memory will be able to solve programs 10x as large, unlike quadratic time complexities and slower
+##### Comparing Programs (508)
+- give two algorithms for same problem,, want to know which will solve w/ fewer computational resources
+- With ability to predict performance during development, can guide towards more efficient code
+- *order of growth allows us to compare an algorithm against entire classes of algorithms*
+	- once we have a *linearithmic solution* we're not interested in *quadratic* even if they are optimized
+- can use time complexity to estimate and compare run times of solutions
+
+#### Caveats (509)
+- Can get inconsistent/misleading results when analyzing program performance
+- error can will be due to underlying assumptions of hypothesis being incorrect
+- Can develop new hypothesis based on new assumptions but more care is required in analysis when more details are needed to be accounted for
+##### Instruction time (509)
+- incorrect to assume each instruction takes same amount of time due to [[caching]]
+	- *caching* is a way of organizing memory, and accessing elements in large arrays can take longer if they are not close
+##### Nondominant inner loop (510)
+- problem sioze $n$ might not be large enough to make leading term outsized compared to rest of program
+- programs with significant code in [[outer loop]] need to be taken into consideration
+
+##### System considerations (510)
+- many things going on in computer both within Java and in the rest of the computing environment consuming resources
+- makes it difficult for *reproducible research* as computing environment won't be the same at all times
+- whatever else is going on in system should be negligible *in principle*
+
+##### Too close to call (510)
+- one program may be faster than another in certain situations, depending on additional considerations mentioned
+
+##### Strong dependence on input values
+- assumption is that running time depends on problem size and relatively insensitive to input values, but not always the case sometimes leading to inconsistent results
+- prime design goal is to limit dependence on input values
+- if can't be done need to model carefully input to be processed which can be a difficult task
+
+##### Multiple problem parameters (511)
+- if multiple parameter input sizes, each will need to be analyzed independently 
+
+#### Performance guarantees (512)
+- [[performance guarantees]] provide *worse case scenario* boundary where programs need to be below a certain execution time bound
+- particularly important for applications with catastrophic results if performance cannot be guaranteed to certain level (brakes, nuclear reactors, air traffic control)
+- performance guarantee hypotheses would be difficult to verify experimentally, need to take  mathematical approach [[big O notation]]
+- *task of* *algorithm analyst* to discover as much relevant inof about algorithm as possible
+- *task of programmer* to apply info to develop programs to solve problem at hand
+- **ideally** want algorithms leading to concise clear code with good worst-case guarentee and good performance on the types and size of input we're interested in
+#### Memory (513)
+- need to be aware of [[memory usage]] to assess cost as well
+- takes up limited number of free circuits 
+- Java's memory allocation system automatically manages memory, but shoulds still be aware of memory impact *approximately* so you can assess whether amount of memory can realistically address problem
+##### Primitive types (513)
+- measy to estimate memory for simple programs of mostly primitive types, as memory for each dat-type is fixed
+count number of variables weighted by bytes associated with data-type
+| type      | bytes |
+| --------- | ----- |
+| `boolean` | 1     |
+| `byte`    | 1     |
+| `char`    | 2     |
+| `int`     | 4     |
+| `float`   | 4     |
+| `long`    | 8     |
+| `double`          |  8     |
+
+##### Objects (514)
+- for objects add the amount of memory used by each *instance variable* to [[object overhead]] 
+	- typically 16 bytes
+	- memory is [[padded]] to be a multiple of 8 bytes
+- *object reference* typically uses 8 bytes of memory
+- when class include *object reference* as *instance variable* need to separately account for object reference and memory needed for object itself
+##### Arrays (515)
+- implemented as objects
+- for [[primitive data-type arrays]] 
+	- 24 bytes [[array overhead]]
+		- 16 bytes *object overhead*
+		- 4 bytes for *length*
+		- 4 bytes *padding*
+	- n time bytes needed to store each element
+- [[object arrays]] are arrays of references to objects,
+	- need to account for memory needed for references and memory needed for objects themselves
+##### String objects (515)
+- memory for `String` accounted for like any other object
+- typically $2n + 56$ bytes
+	- 16 bytes *object overhead*
+	- 8 bytes reference to `char` array
+	- $2n + 24$ bytes memory for `char` array
+	- 4 bytes one `int value`
+	- 4 bytes padding
+##### Two-dimensional arrays (516)
+- array of arrays
+
+#### Perspective (518)
+- *intractably slow program almost as useless as an incorrect one*
+- need to *pay attention to the cost* at outset to understand what times of problems can be potentially solved with a practical program
+- don't make mistake of paying too much attention to performance characteristics first priority is *clear and correct code*
+	- "premature optimization is the root of all evil, or at least most of it" [[C.A.R. Hoare]], [[Donald Knuth]]
+	- only useful to improve performance if performance improvement is significant
+- second common mistake is to ignore performance characteristics entirely
+- pay attention to cost and developing clean and clear programs, and will reap the benefit every time you use it
 #### Terms
 #### Propositions
 #### Questions
@@ -1946,15 +3173,229 @@ public static boolean isPrime(int n)
 - [ ] **40.** *problem*  **pg**
 
 ### 4.2 Sorting and Searching
+- [[sorting]] problem is to arrange an array of items into ascending order
+- keeping things in order makes it much easier to [[search]] and is critical to the performance of many applications
+- Sorting and searching important for
+	- commercial applications
+	- scientific applications
+	- data compression
+	- computer graphics
+	- computational biology
+	- numerical computing
+	- combinatorial optimization
+	- computational biology
+	- cryptography
+- *efficient algorithms* are key to effective solutions to computational problems
+- Many searching and sorting algorithms available, which should we use?
+- 
+#### Binary Search (533)
+- twenty questions with a number and asking whether higher or lower demonstrates principle
+[[binary search]]
+- **base case:** if *hi-lo* equals 1 then secret number is *lo*
+- *reduction step:* ask if secret number is greater than or equal to *mid*,
+	- *mid = lo + (hi-lo)/2*
+	- If so repeat in range $[mid,hi)$
+	- If not repeat in range $[lo, hi)$
+##### Correctness proof (535)
+- Need to be convinced the algorithm correct and always leads to the secret number
+- Establish following facts
+	- Interval always contains secret number
+		- enforced by code
+	- Interval sizes are the powers of 2, decreasing from $n$
+		- follows from noting that if $(hi-lo)$ is a power of 2 then $(hi-lo)/2$ is the next smaller power of 2
+- Basis of induction proof that algorithm works as intended
+- Eventually interval size becomes 1, leaving only answer
+##### Analysis of running time (535)
+- Let $n$ be number of possible values
+- $n=2^k$ where $k = lg(n)$
+- Let $T(n)$ be the number of questions
+- Recursive strategy implies $T(N)$ should satisfy recurrence relation
+$$T(n) = T(n/2)+1$$
+-  with $T(1) = 0$ 
+- can [[telescope]] the recurrence
+$$T(2^k) = T(2^{k-1}) +1 = T(2^{k-2}) +2 =...= T(1)+k = k$$
+- substitute $n$ for $2^k$ and $lg(n)$ for $k$
+$$T(n) = lg(n)$$
+##### Linear-logarithmic chasm (535)
+- alternative would be a [[brute force search]]
+- *enormity of difference between n and lg(n) is key to understanding importance of algorithm design and analysis*
+
+##### Binary Representation (536)
+- nearly same computation as converting a  number to binary (`program 1.3.7`)
+- in example know number is between 1 and 127 means number of bits in binary representation is 7 
+- If special number is 77 sequence of answers is `no yes yes no no yes yes no` yields `1001101` the binary representation of 77
+- thinking in terms of binary is another way of undertsanding the [[linear-logarithmic chasm]]
+	- when running time is *linear* in a parameter $n$ run time is proportional to the *value* of $n$
+	- when run time is *logarithmic* it is proportional to the *number of digits* in $n$
+##### Inverting a function (536)
+- binary search useful for computing the [[inverse of a function ]] (increasing function) $f(x)$
+	- given a value $y$ find a value $x$ such that $f(x)=y$
+- in this context *binary search* often referred to as [[bisection search]] since interval is bisected at each stage
+##### Binary search in a sorted array (538)
+- one of the most important uses of [[binary search]] is finding information using a key to guide the search
+	- similar to using alphabetical order to find info in a phone book or dictionary
+	- 
+
+##### Exception filter (540)
+- [[existence problem]] does a key exist in a sorted array of keys
+- need to adjust binary search to return a value indicating if key is not located int the array
+- [[exception filter]] reads in a sorted list (known as a [[whitelist]]) of strings and prints those that do not appear
+##### Weighing an object (540)
+- can determine the weight of an object using only weights that are powers of 2 with binary search
+
+#### Insertion sort (543)
+- *insertion sort* requires [[quadratic time complexity]] for many situations, meaning we should consider faster potential algorithms to sort large arrasy
+- [[binary search]] requires that the data is sorted
+- [[sorting]] also has many other applications
+- [[insertion sort]] naïve brute force sorting algorithm
+	- similar to how people arrange a shuffled deck of playing card
+		- consider each card one at a time
+		- insert each into proper place with cards that have already been sorted
+```java
+public static void sort(String[] a){
+	int n = a.length;
+	for(int i = 1; i < n; i++)
+	{
+		for(int j = i; j > 0; j--){
+			if (a[j-1].compareTo(a[j]) > 0) 
+				exchange(a, j-1; j);
+			else break;
+			
+		}
+	}
+}
+```
+- at the beginning of an iteration all elements up to `i` will have been previously sorted
+- the inner loop then sorts `i` into the proper place checking if it should be placed before the previous element and `exchange`s it if so. 
+- This continues until a value is reached that should rpeced the lement, or the beginning of the list is reached
+- the outer loop then iterates to the elemnet that was after `i` at the start and repreats the process of sorting this
+- this continues until the end of the list is reached and all elements have been sorted
+
+>At the beginning of each iteration of the outer for loop, the first i elements in the array are in sorted order; the inner for loop moves a[i] into its proper position in the array by exchanging it with each large value to its left, moving from right to left, until it reaches its proper position. Here is an example when i is 6:
+>
+> ![Insertion sort iteration](https://introcs.cs.princeton.edu/java/42sort/images/insertion-iteration.png)
+>
+This process es executed first with i equal to 1, then 2, then 3, and so forth, as illustrated in the following trace.
+>
+> ![Insertion sort trace](https://introcs.cs.princeton.edu/java/42sort/images/insertion.png)
+
+##### Analysis of running time (544)
+- Inner loop is a double nested for loop suggesting [[quadratic time complexity]], but cannot be sure yet as there is a `break` statement, 
+- this means the run time can vary based on how the input arrives
+	- *best case* if array is already in sorted order the `break` is reached immediately and inner loop is only iterated once for each outer loop index, meaning it will run with [[linear time complexity]] 
+	- *worst case* if array is in descending order meaning the inner loop will run completely through with no `break` and frequency of execution $1 + 2 +...+n-1 \approx \frac{1}{2} n^2$ meaning [[quadratic time complexity]]
+	- *average case* expect array to be randomly sorted where each element equally likely to fall into any position, and on average expect any element to only need to move halfway to the left and the program will execute $n^2/4$ cycles meaning the average case has [[quadratic time complexity]]
+##### Sorting other types of data (545)
+- want to be able to sort many types of items, and need a general *functional abstraction* to work with
+- we can sort an array of any object as long as we can assume that elements can be compared as larger or smaller
+- Jav provides the `java.util.Comparable` interface for this
+```java
+public interface Comparable<Key>
+int compareTo(Key b) //compare object with b for order
+```
+- compares objects so that `a.compareTo(b)` 
+	- negative `int` if `a` is less than `b`
+	- positive if `a` is greater
+	- `0` if they're equal
+- `compareTo()` must define a [[total order]] requiring 3 properties to hold
+	1. [[Antisymmetric]] if both $x \le y$ and $y \le x$ then $x=y$
+	2. [[Transitive]] if both $x \le y$ and $y \le z$ then $x \le z$
+	3. [[Total]] either $x \le y$ or $y \le x$ or both
+- this type ordering applies to many types of ordering
+- data types that follow this ordering are [[comparable]] with their associated total order is known as [[natural order]]
+- can create data types that follow this type of order using [[implements keyword]] and adding a [[compareTo() method]] 
+```Java
+public class Counter implements Comparable<Counter{
+	private int count
+	public int compareTo(b)
+	{
+		if      (count < b.count) return -1;
+		else if (count > b.count) return +1;
+		else                      return  0;
+	}
+}
+```
+##### Empirical analysis (548)
+
+##### Sensitivity to input
+- when algorithm performance is sensitive to the input values may not be able to make accurate predictions without accounting for that
+
+#### Mergesort (550)
+- originally created by [[John von Neumann]], he recognized (554)
+	- sorting is essential to many applications
+	- [[quadratic time complexity]] is often too slow for practical purposes
+	- [[divide-and-conquer]] strategy is effective
+	- proving programs correct and knowing cost is important
+- [[mergesort]] utilizes the [[divide-and-conquer]] strategy of algorithm design to implement a faster seach method
+	- can often solve a problem by *dividing* into independent parts and *conquer* each independently then compose those smaller solutions into a complete solution for the whole
+- To sort an array with this strategy with [[mergesort]] 
+	- divide it into two halves
+	- sort the halves indpendently
+	- *merge* results to sort full array
+- [[mergesort]]
+	- *base case*: if sunarray is length 0 or 1 it is already sorted
+	- *reduction step*: compute `mid = lo + (hi - lo)/2`, recursively sort the two subarrays `a[lo, mid)` and `a[mid, hi)` and merge
+##### Analysis of runtime (553)
+- frequency of execution is proportional to the sum of subarray lengths
+- quantity emerges when calls arranged on levels by size
+- $k = lg(n)$ levels and each call has $n$ operations
+- leaves us with a [[linearithmic time complexity]] $\mathcal{O}(n*lgn)$
+##### Quadratic-linearithmic chasm (553)
+- difference between $n^2$ and $n \log(n)$ makes a practically signifcant difference in sorting, more so as input size grows large
+	- closer to [[linear time]] than [[quadratic time]]
+
+##### Divide-and-conquer algorithms (554)
+- [[divide-and-conquer]] useful paradigm for solving many algorithmic problems
+
+##### Reduction to sorting (554)
+- A problem [[reduces]] to another problem if we can use the solution from the reduction to solve the original
+- with [[divide-and-conquer]] simpler approach is often better
+	- given a new problem how would you solve if the data were sorted
+	- simple linear pass through data can often accomplish task
+- [[element distinctness]] trying to find if values in an arrray are all distinct
+	- sort the array
+	- pass through arrays to check whether any element is equivalent to the next
+	- if end is reached and this never returns true then all values are distinct
+- can also be used for the [[median]] 
+
+#### Application: frequency counts (555)
+
+##### Computing frequencies (555)
+
+##### Sorting frequencies (556)
+
+##### Zipf's law (556)
+- [[Zipf's law]] frequency of the $i$th most frequent word in a text of $m$ distinnct words is proportional tto $1/i$ 
+- with [[constant of proportionality]] the inverse of the harmonic number $H_M$
+	- second most common word should appear half as often as the first
+
+#### Lessons (558)
+- majority of programs inolve *managing the complexity of addressing new pracical problems by*
+	- developing *clear and correct* solution
+	- breaking problem into manageable modules
+	- testing and debugging solutions
+- The *clear and correct solution* is not always sufficient due to computational cost
+
+##### Respect the cost of computation (558)
+
+##### Reduce to a known problem (558)
+
+##### Divide-and-conquer
 #### Terms
 #### Propositions
 #### Questions
 #### to-do
-- [ ] **1.** *problem*  **pg**
+- [x] **3.1.1** `reverse()` **pg 373**
+	- [ ] properties of `substring`
+	- [ ] attempt with character array
 - [ ] **2** *problem*  **pg**
 - [ ] **3.** *problem*  **pg**
-- [ ] **4.** *problem*  **pg**
-- [ ] **5.** *problem*  **pg**
+- [x] **3.1.4.** `GrayScale` histogram  **pg 373**
+	- [ ] pictures and standard input
+	- [ ] pictures and standard output
+	- [ ] piping pictures 
+- [x] **3.1.5.** *flip picture horizontally*  **pg 373**
+	- [ ] **remember** can swap pixels as the new picture so only have to traverse half the width
 - [ ] **6.** *problem*  **pg**
 - [ ] **7** *problem*  **pg**
 - [ ] **8.** *problem*  **pg**
@@ -1963,8 +3404,8 @@ public static boolean isPrime(int n)
 - [ ] **11.** *problem*  **pg**
 - [ ]  **12.** *problem*  **pg**
 - [ ] **13.** *problem*  **pg**
-- [ ] **14.** *problem*  **pg**
-- [ ] **15.** *problem*  **pg**
+- [ ] **4.2.14.** modify `Counter` to implement `Comparable` *problem*  **pg 561** 
+- [ ] **4.2.15.** modify `Merge` to support sorting subarrays  **pg 561**
 - [ ] **16.** *problem*  **pg**
 - [ ] **17** *problem*  **pg**
 - [ ] **18.** *problem*  **pg**
