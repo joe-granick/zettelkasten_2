@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/__inbox/R4 Conditionals and Loops.md",
+            "file": "__DI-PRACTICE/Joe Stephen 1 - on - 1.md",
             "mode": "source",
             "backlinks": true,
             "source": false
@@ -63,7 +63,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 378.5
+    "width": 378.5,
+    "collapsed": true
   },
   "right": {
     "id": "c3be8f9964344a2c",
@@ -79,7 +80,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/__inbox/R4 Conditionals and Loops.md",
+                "file": "__DI-PRACTICE/Joe Stephen 1 - on - 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,7 +97,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/__inbox/R4 Conditionals and Loops.md",
+                "file": "__DI-PRACTICE/Joe Stephen 1 - on - 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,15 +139,15 @@
   },
   "active": "529a39d4986e6f79",
   "lastOpenFiles": [
+    "__DI-PRACTICE/2022-11-03-DI Team Meeting.md",
+    "DI-Practice-Focus.png",
+    "__DI-PRACTICE/Joe Stephen 1 - on - 1.md",
     "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/__inbox/R4 Conditionals and Loops.md",
     "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/__inbox/Week-3R.md",
     "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/__inbox/Week-2R.md",
     "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/WEEK4/LO4.1e/L4 Pop Quiz Nested if Statements.md",
     "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/WEEK4/LO4.1i/L4 Buggy Code 1.md",
     "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/WEEK3/LO3.6 Casting/L3 Explicit Casting Error.md",
-    "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/WEEK3/LO3.6 Casting/L3 Explicit Casting.md",
-    "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/WEEK3/LO3.6 Casting/L3 Type Conversion Quiz.md",
-    "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/WEEK3/LO3.3 Input and Output/L3 Input and Ouput.md",
-    "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/WEEK3/LO3.4 Booleans and Logical Operators/L3 XOR.md"
+    "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/WEEK3/LO3.6 Casting/L3 Explicit Casting.md"
   ]
 }

@@ -1,0 +1,11 @@
+- want to visualize important concepts in data science and and analytics
+	- Regression
+	- Trees
+	- SVM
+	- Diagnostics
+- guided EDA w/ annotations
+- want to visualize problems of interest to executives, but don't not top be limited exclusively to business data
+- need some data sets to work with
+- PBI PL-300 cert
+	- https://learn.microsoft.com/en-us/certifications/exams/pl-300
+	- 

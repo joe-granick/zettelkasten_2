@@ -1,0 +1,12 @@
+Needed
+- Datasets of interest to Corporate clients
+- Visulizations that make sense
+- Annotation with further suggestions based on data set
+- Log decision making process as analysis are worked through
+- Domain specific considerations?
+- apply stats/ ML algos?
+- underlying assumptions
+- integrate w/ different data sources
+- Customize/develop new features based on customer needs?
+- Simulations?
+- Auto document assumptions
