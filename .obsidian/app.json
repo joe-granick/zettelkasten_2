@@ -10,5 +10,7 @@
     "margin": "0",
     "downscalePercent": 100
   },
-  "spellcheck": true
+  "spellcheck": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "__DI-PRACTICE/SKO"
 }

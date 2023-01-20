@@ -1,0 +1,1 @@
+Studying large populations would be incredibly difficult (a [[census]]), especially when the population changes rapidly over time. Thankfully careful use of statistical sampling can yield accurate estimations of population measures, allowing inferences to be made about population characteristics.^[ [[How to Measure Anything]] **pg 41**]

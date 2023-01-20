@@ -1,0 +1,1 @@
+often misuse weighted scores performing invalid operations on ordinal scale data ^ [ [[How to Measure Anything]] pg 36 - 37]

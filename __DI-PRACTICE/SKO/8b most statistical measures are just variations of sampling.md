@@ -1,0 +1,1 @@
+Most of the time differences are in the type of sampling, the experimental controls and focusing on different types of questions that may also be indirect indicators of the desired object of measurement.^[ [[How to Measure Anything]] **pg 42**] 

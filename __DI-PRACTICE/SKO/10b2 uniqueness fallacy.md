@@ -1,0 +1,1 @@
+[[cognitive fallacy]] that if a situation is unique, there is nothing to be learned from observing other situations. ^ [ [[How to Measure Anything]] **pg 60**]

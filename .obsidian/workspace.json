@@ -4,40 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "8d837deff6370c46",
+        "id": "2a381c92f0419ffb",
         "type": "tabs",
         "children": [
           {
-<<<<<<< HEAD
-            "id": "90a8090cab027fd2",
-=======
-            "id": "f358b346e8381c38",
->>>>>>> ef42a538809dce8f9662bc2e7d0c0b96a767f805
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "__DI-PRACTICE/Joe-Stephen 1-on-1/2022-12-07.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-<<<<<<< HEAD
-            "id": "02dcdc37a9a40c44",
-=======
-            "id": "24dba056cd2ea375",
->>>>>>> ef42a538809dce8f9662bc2e7d0c0b96a767f805
+            "id": "87d248f5d2c7ca52",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-<<<<<<< HEAD
-                "file": "__DI-PRACTICE/ANALYTICS OFFERINGS/EDA and Visualization AI Driven Guide.md",
+                "file": "__DI-PRACTICE/SKO/10c not as much data is needed to provide some value.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -45,25 +21,15 @@
             }
           },
           {
-            "id": "760290030d54281c",
+            "id": "bc8e433efe463eca",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "__DI-PRACTICE/visulization portfolio.md",
+                "file": "__DI-PRACTICE/SKO/10d often possible to avoid need for sophisticated methods and data collection if careful consideration given to potential indirect measures.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "86b83c49d2c0c4fb",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.1.9"
               }
             }
           },
@@ -81,79 +47,8 @@
               },
               "pinned": true
             }
-          },
-          {
-            "id": "726f760194ca87f5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "reference/books/Data Points.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "87143da9cbaecee9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "__DI-PRACTICE/Thinking Like an Analyst.md",
-=======
-                "file": "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/__inbox/R11 Efficiency.md",
->>>>>>> ef42a538809dce8f9662bc2e7d0c0b96a767f805
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-<<<<<<< HEAD
-            "id": "a84c7466a01348f9",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.0.3"
-              }
-            }
-          }
-        ],
-        "currentTab": 4
-=======
-            "id": "1c6ec887eea2edaa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/EXAM3/Review Questions.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ee05b53f9949fedb",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "index/Computer Science.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "pinned": true
-            }
           }
         ]
->>>>>>> ef42a538809dce8f9662bc2e7d0c0b96a767f805
       }
     ],
     "direction": "vertical"
@@ -195,7 +90,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "byModifiedTime"
+                "sortOrder": "alphabetical"
               }
             }
           }
@@ -204,12 +99,7 @@
       }
     ],
     "direction": "horizontal",
-<<<<<<< HEAD
-    "width": 200,
-    "collapsed": true
-=======
-    "width": 648.5
->>>>>>> ef42a538809dce8f9662bc2e7d0c0b96a767f805
+    "width": 472.5
   },
   "right": {
     "id": "c3be8f9964344a2c",
@@ -225,11 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-<<<<<<< HEAD
-                "file": "__DI-PRACTICE/SKO/SKO - Thinking Like An Analyst.md",
-=======
-                "file": "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
->>>>>>> ef42a538809dce8f9662bc2e7d0c0b96a767f805
+                "file": "__DI-PRACTICE/SKO/10c not as much data is needed to provide some value.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -246,11 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-<<<<<<< HEAD
-                "file": "__DI-PRACTICE/SKO/SKO - Thinking Like An Analyst.md",
-=======
-                "file": "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
->>>>>>> ef42a538809dce8f9662bc2e7d0c0b96a767f805
+                "file": "__DI-PRACTICE/SKO/10c not as much data is needed to provide some value.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -290,7 +172,6 @@
     "width": 200,
     "collapsed": true
   },
-<<<<<<< HEAD
   "left-ribbon": {
     "hiddenItems": {
       "obsidian-spaced-repetition:Review flashcards": false,
@@ -306,31 +187,17 @@
       "zk-prefixer:Create new unique note": false
     }
   },
-  "active": "70effa9112318687",
+  "active": "87d248f5d2c7ca52",
   "lastOpenFiles": [
     "__DI-PRACTICE/SKO/SKO - Thinking Like An Analyst.md",
-    "reference/books/How to Measure Anything.md",
-    "__DI-PRACTICE/SKO/1 metrics must be aligned with strategic incentives.md",
-    "__DI-PRACTICE/ANALYTICS OFFERINGS/EDA and Visualization AI Driven Guide.md",
-    "__DI-PRACTICE/Joe-Stephen 1-on-1/2022-12-07.md",
-    "Untitled.md",
-    "____class/SPRING-23/16-198-522 Network and Combinatorial Optimization Algorithms.md",
-    "reference/images/2022-09-12 (2).png",
-    "reference/images/chrome_RBbBWvCnl3.png",
-    "reference/images/Pasted image 20221004201348.png"
-=======
-  "active": "f358b346e8381c38",
-  "lastOpenFiles": [
-    "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/EXAM3/Review Questions.md",
-    "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/__inbox/R11 Efficiency.md",
-    "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
-    "index/Computer Science.md",
-    "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/EXAM2/EXAM 2 Review Questions.md",
-    "assignment  with reference type.md",
-    "linear interpolation.md",
-    "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/__LO-INDEX.md",
-    "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/__inbox/R11 OOP.md",
-    "Q. recursive bunny ears.md"
->>>>>>> ef42a538809dce8f9662bc2e7d0c0b96a767f805
+    "__DI-PRACTICE/SKO/10b enough data is available and there is more than you think.md",
+    "__DI-PRACTICE/SKO/fill out/10b4 technology enabled sources of data.md",
+    "__DI-PRACTICE/SKO/fill out/10b3 optimizing a portfolio of decisions.md",
+    "__DI-PRACTICE/SKO/fill out/10b1 examples of indirect measurements.md",
+    "__DI-PRACTICE/SKO/10b2 uniqueness fallacy.md",
+    "__DI-PRACTICE/SKO/fill out/Eratosthenes infers a round earth.md",
+    "__DI-PRACTICE/SKO/fill out/number of piano tuners in Chicago.md",
+    "__DI-PRACTICE/SKO/10a some analog of the problem has been measured before.md",
+    "__DI-PRACTICE/SKO/fill out/10a1 examples of uncommon measured found on google scholar.md"
   ]
 }

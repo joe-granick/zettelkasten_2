@@ -1,5 +1,10 @@
-
-
+resources
+- https://benn.substack.com/p/data-is-for-dashboards
+- [[Skiena-The Data Science  Design Manual 1st|The Data Science Design Manual 1st]]
+- [[How to Measure Anything]]
+- [[Foster, Fawcett-Data Science for Business]]
+- 
+# 50 Years of Data Science
 >[!info]
 More than 50 years ago, John Tukey called for a reformation of academic statistics. In ‘The Future of Data Analysis’, he pointed to the existence of an as-yet unrecognized science, whose subject of interest was learning from data, or ‘data analysis’. Ten to twenty years ago, John Chambers, Bill Cleveland and Leo Breiman independently once again urged academic statistics to expand its boundaries beyond the classical domain of theoretical statistics; Chambers called for more emphasis on data preparation and presentation rather than statistical modeling; and Breiman called for emphasis on prediction rather than inference. Cleveland even suggested the catchy name “Data Science” for his envisioned field." ^[ [[50 Years of data science]]]
 
@@ -68,9 +73,12 @@ Humans are not optimizers, we’re satisficers, which is a fancy word for corner
 
 >[!info]
 >“He uses statistics as a drunken man uses lamp-posts… for support rather than illumination.” -Andrew Lang ^[https://towardsdatascience.com/introduction-to-decision-intelligence-5d147ddab767]
+# How to measure anything
+- [[anything that can be observed can be measured in some way]] **pg 3**
+- [[imprecise noisy measurements are better than no measurement even if the reduction of uncertainty is incomplete]] **pg 3**
+- [[3 something is important to measure because it has some observable effect meaning it can be measured even if it's intangible, and that measurement can inform a decision]] **pg 7**
 
->[!info]
- If you care about an "intangible" it is because it has observable consequences and usually you care because knowing more would inform a decision. Everything else is a matter of rigorously defining what you observe, why you care about it, and some mostly trivial math. ^[ [[How to Measure Anything]] pg 7]
+
 
 >[!info]
 >**Why measure in the first place**
@@ -107,14 +115,9 @@ technically not a measurement since it includes no new observation^[ [[How to Me
 - Measurement is **uncertainty reduction** not uncertainty *elimination*^[ [[How to Measure Anything]] pg 25]
 	- avoid defeatist attitudes, small reductions may be worth a lot even if it is in formal structure finding where uncertainty lies
 	- value depends on frequency of decision and magnitude of uncertainty
->[!info]
->**Misconceptions About Impossibility of Measurement**
->Often times people will claim something can't be measured because of lack of knowledge around the following concepts^[ [[How to Measure Anything]] pg 29]
->1. *Concept of measurement.* Definition of measurement of ten misunderstood.
->2. *Object of measurement.* Thing being measured is not well defined.
->3. *Methods of measurement.* Procedures of empirical observation are not well known. When people become familiar many more things will seem measurable.
-
-- [[Shannon entropy]] and measurement scales related to the definition of measurement ^[ [[How to Measure Anything]] pg 30 - 34]
+- [[3a1three aspects of measurement are commonly questioned with respect to impossibility of measurement]] **pg 29**
+- [[4 measurement is a quantitatively expressed reductions of uncertainty based on one or more observations]] **31**
+- [[4b1 Shannon entropy can be used to calculate information game of attributes]] ^[ [[Foster, Fawcett-Data Science for Business]] 48 -62]
 - Bayes theorem ^[ [[How to Measure Anything]] pg 34]
 - **Methods of measurement**
 	- rule of 5^[ [[How to Measure Anything]] pg 42] 
@@ -126,13 +129,16 @@ technically not a measurement since it includes no new observation^[ [[How to Me
 > "It is impossible to find any domain in which humans clearly outperform crude extrapolation algorithms, less still sophisticated statistical ones"
 > - Phillip Tetlock^[ [[How to Measure Anything]] pg 52]
 
->[!info]
->**Four Useful Measurement Assumptions**
->1. It's been measured before.
->2. You have more data than you think.
->3. You need less data than you think.
->4. Usefule new observations are more accessible than you think
-> Shouldn't dismiss something as unmeasurable outright^[ [[How to Measure Anything]] pg 59]
+- [[3a Useful to start with assumption that phenomena has been measured before, there is sufficient data, and observations are accessible for measurement]]
+- [[4b measurement is a type of information, and information theory provides rigorous mathematical construct for information]]
+- 
 
 
-
+- [[population proportion sampling]] used to measure what percentage of population has certain characteristic ^[ [How to Measure Anything]] pg 216]
+	- fish sampling
+- [[spot sampling]] ^[ [[How to Measure Anything]] pg 218]
+- [[serial sampling]] used by allies to estimatye tank production via serial numbers ^[ [[How to Measure Anything]] pg 220]
+- measures should reduce uncertainty and should be related to some decision threshold ^[ [[How to Measure Anything]] pg 222]
+	- example employee time in meetings that could be done remotely
+- measuring preferences, attitudes, and other intangible measures ^[ [[How to Measure Anything]] pg 287]]
+	- [[stated preferences]] vs. [[revealed preferences]]
