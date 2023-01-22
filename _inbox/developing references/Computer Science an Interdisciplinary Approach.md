@@ -2793,6 +2793,10 @@ public class Complex{
 - use [[instance variable]]s to represent information for processing
 - specifies type of information and provide structure needed to refer to it in code`
 #### to-do
+- [ ] Example 3.2.4 3.2.5
+	- [ ] recursive graphics
+	- [ ] proof by induction to find step size
+	- [ ] 
 - [ ] **1.** *problem*  **pg**
 - [ ] **2** *problem*  **pg**
 - [ ] **3.** *problem*  **pg**

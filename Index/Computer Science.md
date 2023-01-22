@@ -14,15 +14,9 @@
 - [[char]]
 
 ## [[reference data-type]]
+- [[object-oriented programming]]
 - [[String data-type]]
 - [[array]]
-
-### objects vs object references
-- object [[aliasing]]
-- *pass by **reference*** vs. *pass by **value***
-## mutability
-- [[immutable]] data-types
-- [[mutable]] data-types
 # methods
 - [[pure functions]]
 - [[side effects]]
@@ -32,14 +26,31 @@
 
 ## [[recursion]]
 - [[tail recursion]]
-- 
 
 ## Difference between instance and static methods
 
 # programming paradigms
+- [[object-oriented programming]]
 
-## [[object-oriented programming]]
+
+
+## performance
+- [[big O notation]]
+
+## algorithms
+
+### searching
+- [[sequential search]]
+- [[binary search]]
+
+### sorting
+- [[selection sort]]
+- [[insertion sort]]
+- [[mergesort]]
+
 
 # discrete structures
 [[propositional logic]]
 [[mathematical induction]]
+
+# data structures
