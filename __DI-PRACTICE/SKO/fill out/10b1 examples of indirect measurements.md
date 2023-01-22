@@ -1,0 +1,3 @@
+- [[Eratosthenes]] determined the earth was round from angles in of shadows at different times of the day [[Eratosthenes infers a round earth]]
+- [[Enrico Fermi]] showed how to estimate the [[number of piano tuners in Chicago]] without using anything but common knowledge (confirmed via phonebook)
+- insurance agencies interpolate risk of paying out claims by studying mortality rates along different variables (age, gender, health, habits etc.) and model the relationships in a way where they can set a profitable insurance rate and payout. ^ [ [[How to Measure Anything]] **pg 61**] 

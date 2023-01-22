@@ -4,10 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "8d837deff6370c46",
+        "id": "2a381c92f0419ffb",
         "type": "tabs",
         "children": [
           {
+<<<<<<< HEAD
             "id": "ef032d5c2fb716e9",
             "type": "leaf",
             "pinned": true,
@@ -24,11 +25,14 @@
           },
           {
             "id": "ac01eecd9460f038",
+=======
+            "id": "87d248f5d2c7ca52",
+>>>>>>> 2f83a3b1a6218ed5e7c7c4a6892cdac7baa5b03d
             "type": "leaf",
-            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
+<<<<<<< HEAD
                 "file": "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
                 "mode": "source",
                 "backlinks": true,
@@ -44,6 +48,9 @@
               "type": "markdown",
               "state": {
                 "file": "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/EXAM3/QUESTION/3.1/Q. data-type 2.md",
+=======
+                "file": "__DI-PRACTICE/SKO/10c not as much data is needed to provide some value.md",
+>>>>>>> 2f83a3b1a6218ed5e7c7c4a6892cdac7baa5b03d
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -51,12 +58,20 @@
             }
           },
           {
+<<<<<<< HEAD
             "id": "2b5a7904f579fbe2",
+=======
+            "id": "bc8e433efe463eca",
+>>>>>>> 2f83a3b1a6218ed5e7c7c4a6892cdac7baa5b03d
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
+<<<<<<< HEAD
                 "file": "____class/COMPUTER ARCHITECTURE.md",
+=======
+                "file": "__DI-PRACTICE/SKO/10d often possible to avoid need for sophisticated methods and data collection if careful consideration given to potential indirect measures.md",
+>>>>>>> 2f83a3b1a6218ed5e7c7c4a6892cdac7baa5b03d
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -64,12 +79,20 @@
             }
           },
           {
+<<<<<<< HEAD
             "id": "0da87d32762735d8",
+=======
+            "id": "70effa9112318687",
+>>>>>>> 2f83a3b1a6218ed5e7c7c4a6892cdac7baa5b03d
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
+<<<<<<< HEAD
                 "file": "__DI-PRACTICE/VIZ PORTFOLIO/2022-12-13.md",
+=======
+                "file": "__DI-PRACTICE/SKO/SKO - Thinking Like An Analyst.md",
+>>>>>>> 2f83a3b1a6218ed5e7c7c4a6892cdac7baa5b03d
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -119,7 +142,11 @@
             "state": {
               "type": "file-explorer",
               "state": {
+<<<<<<< HEAD
                 "sortOrder": "byCreatedTimeReverse"
+=======
+                "sortOrder": "alphabetical"
+>>>>>>> 2f83a3b1a6218ed5e7c7c4a6892cdac7baa5b03d
               }
             }
           }
@@ -128,8 +155,12 @@
       }
     ],
     "direction": "horizontal",
+<<<<<<< HEAD
     "width": 200,
     "collapsed": true
+=======
+    "width": 472.5
+>>>>>>> 2f83a3b1a6218ed5e7c7c4a6892cdac7baa5b03d
   },
   "right": {
     "id": "c3be8f9964344a2c",
@@ -145,7 +176,11 @@
             "state": {
               "type": "backlink",
               "state": {
+<<<<<<< HEAD
                 "file": "__DI-PRACTICE/VIZ PORTFOLIO/2022-12-13.md",
+=======
+                "file": "__DI-PRACTICE/SKO/10c not as much data is needed to provide some value.md",
+>>>>>>> 2f83a3b1a6218ed5e7c7c4a6892cdac7baa5b03d
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +197,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+<<<<<<< HEAD
                 "file": "__DI-PRACTICE/VIZ PORTFOLIO/2022-12-13.md",
+=======
+                "file": "__DI-PRACTICE/SKO/10c not as much data is needed to provide some value.md",
+>>>>>>> 2f83a3b1a6218ed5e7c7c4a6892cdac7baa5b03d
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -217,6 +256,7 @@
       "zk-prefixer:Create new unique note": false
     }
   },
+<<<<<<< HEAD
   "active": "0da87d32762735d8",
   "lastOpenFiles": [
     "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/EXAM3/QUESTION/3.1/Q. data-type 2.md",
@@ -229,5 +269,19 @@
     "index/reference data-type.md",
     "index/object-oriented programming.md",
     "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/__LO-INDEX.md"
+=======
+  "active": "87d248f5d2c7ca52",
+  "lastOpenFiles": [
+    "__DI-PRACTICE/SKO/SKO - Thinking Like An Analyst.md",
+    "__DI-PRACTICE/SKO/10b enough data is available and there is more than you think.md",
+    "__DI-PRACTICE/SKO/fill out/10b4 technology enabled sources of data.md",
+    "__DI-PRACTICE/SKO/fill out/10b3 optimizing a portfolio of decisions.md",
+    "__DI-PRACTICE/SKO/fill out/10b1 examples of indirect measurements.md",
+    "__DI-PRACTICE/SKO/10b2 uniqueness fallacy.md",
+    "__DI-PRACTICE/SKO/fill out/Eratosthenes infers a round earth.md",
+    "__DI-PRACTICE/SKO/fill out/number of piano tuners in Chicago.md",
+    "__DI-PRACTICE/SKO/10a some analog of the problem has been measured before.md",
+    "__DI-PRACTICE/SKO/fill out/10a1 examples of uncommon measured found on google scholar.md"
+>>>>>>> 2f83a3b1a6218ed5e7c7c4a6892cdac7baa5b03d
   ]
 }

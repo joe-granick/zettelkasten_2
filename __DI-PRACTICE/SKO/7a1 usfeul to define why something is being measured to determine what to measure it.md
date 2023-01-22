@@ -1,0 +1,1 @@
+Purpose of measurement is often the key to defining what should actually be measured^[ [[How to Measure Anything]] pg 40]

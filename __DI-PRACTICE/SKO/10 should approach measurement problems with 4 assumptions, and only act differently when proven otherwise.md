@@ -1,0 +1,5 @@
+Often preconceptions about the usefulness (or lack thereof) of a measure because it is indirect and noisy, can lead to premature pessimism about the ability to measure something in a valuable way. While these aren't necessarily incorrect, it is counterproductive to assume that they are before proven so. Instead assume the following until proven otherwise, and if proven otherwise it may help identify a solution. ^[[[How to Measure Anything]] **pg 58**]
+- [[10a some analog of the problem has been measured before]] ^[[[How to Measure Anything]] **pg 59-60**]
+- [[10b enough data is available and there is more than you think]] ^[[[How to Measure Anything]] **pg 60-62**]
+- [[10c not as much data is needed to provide some value]] ^[[[How to Measure Anything]] **pg 62**]
+- [[10d often possible to avoid need for sophisticated methods and data collection if careful consideration given to potential indirect measures]] ^[[[How to Measure Anything]] **pg 64**]

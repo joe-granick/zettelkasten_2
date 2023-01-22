@@ -1,0 +1,1 @@
+Common understanding of measuring does not lend itself to evaluation along lines of uncertainty and value. 
