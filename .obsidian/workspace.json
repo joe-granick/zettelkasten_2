@@ -4,95 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "2a381c92f0419ffb",
+        "id": "2eacaf73bc88f7d9",
         "type": "tabs",
         "children": [
           {
-<<<<<<< HEAD
-            "id": "ef032d5c2fb716e9",
+            "id": "529a39d4986e6f79",
             "type": "leaf",
-            "pinned": true,
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/EXAM3/QUESTION/Review Questions.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "pinned": true
+              "type": "empty",
+              "state": {}
             }
           },
           {
-            "id": "ac01eecd9460f038",
-=======
-            "id": "87d248f5d2c7ca52",
->>>>>>> 2f83a3b1a6218ed5e7c7c4a6892cdac7baa5b03d
+            "id": "6d20f6eaae06c647",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-<<<<<<< HEAD
-                "file": "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "970656bc7ed83838",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/EXAM3/QUESTION/3.1/Q. data-type 2.md",
-=======
-                "file": "__DI-PRACTICE/SKO/10c not as much data is needed to provide some value.md",
->>>>>>> 2f83a3b1a6218ed5e7c7c4a6892cdac7baa5b03d
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-<<<<<<< HEAD
-            "id": "2b5a7904f579fbe2",
-=======
-            "id": "bc8e433efe463eca",
->>>>>>> 2f83a3b1a6218ed5e7c7c4a6892cdac7baa5b03d
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-<<<<<<< HEAD
-                "file": "____class/COMPUTER ARCHITECTURE.md",
-=======
                 "file": "__DI-PRACTICE/SKO/10d often possible to avoid need for sophisticated methods and data collection if careful consideration given to potential indirect measures.md",
->>>>>>> 2f83a3b1a6218ed5e7c7c4a6892cdac7baa5b03d
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-<<<<<<< HEAD
-            "id": "0da87d32762735d8",
-=======
-            "id": "70effa9112318687",
->>>>>>> 2f83a3b1a6218ed5e7c7c4a6892cdac7baa5b03d
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-<<<<<<< HEAD
-                "file": "__DI-PRACTICE/VIZ PORTFOLIO/2022-12-13.md",
-=======
-                "file": "__DI-PRACTICE/SKO/SKO - Thinking Like An Analyst.md",
->>>>>>> 2f83a3b1a6218ed5e7c7c4a6892cdac7baa5b03d
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -100,7 +29,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -142,11 +71,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-<<<<<<< HEAD
-                "sortOrder": "byCreatedTimeReverse"
-=======
                 "sortOrder": "alphabetical"
->>>>>>> 2f83a3b1a6218ed5e7c7c4a6892cdac7baa5b03d
               }
             }
           }
@@ -155,12 +80,7 @@
       }
     ],
     "direction": "horizontal",
-<<<<<<< HEAD
-    "width": 200,
-    "collapsed": true
-=======
-    "width": 472.5
->>>>>>> 2f83a3b1a6218ed5e7c7c4a6892cdac7baa5b03d
+    "width": 378.5
   },
   "right": {
     "id": "c3be8f9964344a2c",
@@ -176,11 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-<<<<<<< HEAD
-                "file": "__DI-PRACTICE/VIZ PORTFOLIO/2022-12-13.md",
-=======
-                "file": "__DI-PRACTICE/SKO/10c not as much data is needed to provide some value.md",
->>>>>>> 2f83a3b1a6218ed5e7c7c4a6892cdac7baa5b03d
+                "file": "__DI-PRACTICE/SKO/10d often possible to avoid need for sophisticated methods and data collection if careful consideration given to potential indirect measures.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -197,11 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-<<<<<<< HEAD
-                "file": "__DI-PRACTICE/VIZ PORTFOLIO/2022-12-13.md",
-=======
-                "file": "__DI-PRACTICE/SKO/10c not as much data is needed to provide some value.md",
->>>>>>> 2f83a3b1a6218ed5e7c7c4a6892cdac7baa5b03d
+                "file": "__DI-PRACTICE/SKO/10d often possible to avoid need for sophisticated methods and data collection if careful consideration given to potential indirect measures.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -238,7 +150,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
+    "width": 300,
     "collapsed": true
   },
   "left-ribbon": {
@@ -256,32 +168,17 @@
       "zk-prefixer:Create new unique note": false
     }
   },
-<<<<<<< HEAD
-  "active": "0da87d32762735d8",
+  "active": "6d20f6eaae06c647",
   "lastOpenFiles": [
-    "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/EXAM3/QUESTION/3.1/Q. data-type 2.md",
-    "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/EXAM3/QUESTION/CORRECT/Q. data type 0.md",
-    "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/EXAM3/QUESTION/INCORRECT/Q. data type 1.md",
-    "_inbox/developing references/Computer Science an Interdisciplinary Approach.md",
-    "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/EXAM3/QUESTION/Review Questions.md",
-    "index/String data-type.md",
-    "index/Computer Science.md",
-    "index/reference data-type.md",
-    "index/object-oriented programming.md",
-    "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/__LO-INDEX.md"
-=======
-  "active": "87d248f5d2c7ca52",
-  "lastOpenFiles": [
-    "__DI-PRACTICE/SKO/SKO - Thinking Like An Analyst.md",
-    "__DI-PRACTICE/SKO/10b enough data is available and there is more than you think.md",
-    "__DI-PRACTICE/SKO/fill out/10b4 technology enabled sources of data.md",
-    "__DI-PRACTICE/SKO/fill out/10b3 optimizing a portfolio of decisions.md",
-    "__DI-PRACTICE/SKO/fill out/10b1 examples of indirect measurements.md",
-    "__DI-PRACTICE/SKO/10b2 uniqueness fallacy.md",
-    "__DI-PRACTICE/SKO/fill out/Eratosthenes infers a round earth.md",
-    "__DI-PRACTICE/SKO/fill out/number of piano tuners in Chicago.md",
-    "__DI-PRACTICE/SKO/10a some analog of the problem has been measured before.md",
-    "__DI-PRACTICE/SKO/fill out/10a1 examples of uncommon measured found on google scholar.md"
->>>>>>> 2f83a3b1a6218ed5e7c7c4a6892cdac7baa5b03d
+    "__DI-PRACTICE/SKO/10d1 examples of creative indirect measures.md",
+    "__DI-PRACTICE/SKO/10d often possible to avoid need for sophisticated methods and data collection if careful consideration given to potential indirect measures.md",
+    "__DI-PRACTICE/SKO/10c not as much data is needed to provide some value.md",
+    "__DI-PRACTICE/2022-11-03-DI Team Meeting.md",
+    "DI-Practice-Focus.png",
+    "__DI-PRACTICE/Joe Stephen 1 - on - 1.md",
+    "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/__inbox/R4 Conditionals and Loops.md",
+    "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/__inbox/Week-3R.md",
+    "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/__inbox/Week-2R.md",
+    "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/WEEK4/LO4.1e/L4 Pop Quiz Nested if Statements.md"
   ]
 }

@@ -1,0 +1,1 @@
+- Measuring orchestral audience staisfication by count/volume of standing ovataion ^[ [[How to Measure Anything]] **pg 64**]

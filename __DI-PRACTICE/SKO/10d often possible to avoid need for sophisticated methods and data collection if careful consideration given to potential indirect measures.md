@@ -1,0 +1,2 @@
+While you may not be able to get a perfect meaurement, with creativity and resourcefulness you can often conceive more easily obtainable measures. If these are not sufficiently informative you can adjust from there. measurement is an iterative process and it often is better to start from a sub-optimal baseline and improve as needed. ^[ [[How to Measure Anything]] **pg 64**]
+[[10d1 examples of creative indirect measures]]
