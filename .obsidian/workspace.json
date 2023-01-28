@@ -27,9 +27,35 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "81c0791536a1d74e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "____class/SPRING-23/01-198-142-DATA-101/2023-01-26_DATA-101.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f77d8ff1a765789c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "____class/SPRING-23/01-198-112-INTRO-TO-DATA-STRUCTURES-1/2023-01-26_R1_BIG-O_DATA-STRUCTURES.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -80,7 +106,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 378.5
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "c3be8f9964344a2c",
@@ -96,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "__DI-PRACTICE/SKO/10d often possible to avoid need for sophisticated methods and data collection if careful consideration given to potential indirect measures.md",
+                "file": "____class/SPRING-23/01-198-112-INTRO-TO-DATA-STRUCTURES-1/2023-01-26_R1_BIG-O_DATA-STRUCTURES.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "__DI-PRACTICE/SKO/10d often possible to avoid need for sophisticated methods and data collection if careful consideration given to potential indirect measures.md",
+                "file": "____class/SPRING-23/01-198-112-INTRO-TO-DATA-STRUCTURES-1/2023-01-26_R1_BIG-O_DATA-STRUCTURES.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,17 +195,17 @@
       "zk-prefixer:Create new unique note": false
     }
   },
-  "active": "6d20f6eaae06c647",
+  "active": "f77d8ff1a765789c",
   "lastOpenFiles": [
-    "__DI-PRACTICE/SKO/10d1 examples of creative indirect measures.md",
+    "____class/SPRING-23/01-198-142-DATA-101/2023-01-26_DATA-101.md",
     "__DI-PRACTICE/SKO/10d often possible to avoid need for sophisticated methods and data collection if careful consideration given to potential indirect measures.md",
+    "__DI-PRACTICE/SKO/10d1 examples of creative indirect measures.md",
     "__DI-PRACTICE/SKO/10c not as much data is needed to provide some value.md",
     "__DI-PRACTICE/2022-11-03-DI Team Meeting.md",
     "DI-Practice-Focus.png",
     "__DI-PRACTICE/Joe Stephen 1 - on - 1.md",
     "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/__inbox/R4 Conditionals and Loops.md",
     "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/__inbox/Week-3R.md",
-    "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/__inbox/Week-2R.md",
-    "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/WEEK4/LO4.1e/L4 Pop Quiz Nested if Statements.md"
+    "____class/FALL-22/01-198-111-INTRO-TO-COMPUTER-SCIENCE/__inbox/Week-2R.md"
   ]
 }
